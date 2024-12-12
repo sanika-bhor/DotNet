@@ -1,0 +1,7 @@
+A:\TAP\GitHub\DotNet\CmdArg_Use\CmdArg_Use\bin\Debug\CmdArg_Use.exe.config
+A:\TAP\GitHub\DotNet\CmdArg_Use\CmdArg_Use\bin\Debug\CmdArg_Use.exe
+A:\TAP\GitHub\DotNet\CmdArg_Use\CmdArg_Use\bin\Debug\CmdArg_Use.pdb
+A:\TAP\GitHub\DotNet\CmdArg_Use\CmdArg_Use\obj\Debug\CmdArg_Use.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\CmdArg_Use\CmdArg_Use\obj\Debug\CmdArg_Use.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\CmdArg_Use\CmdArg_Use\obj\Debug\CmdArg_Use.exe
+A:\TAP\GitHub\DotNet\CmdArg_Use\CmdArg_Use\obj\Debug\CmdArg_Use.pdb

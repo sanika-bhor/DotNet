@@ -1,0 +1,7 @@
+A:\TAP\GitHub\DotNet\basic\basic\bin\Debug\basic.exe.config
+A:\TAP\GitHub\DotNet\basic\basic\bin\Debug\basic.exe
+A:\TAP\GitHub\DotNet\basic\basic\bin\Debug\basic.pdb
+A:\TAP\GitHub\DotNet\basic\basic\obj\Debug\basic.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\basic\basic\obj\Debug\basic.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\basic\basic\obj\Debug\basic.exe
+A:\TAP\GitHub\DotNet\basic\basic\obj\Debug\basic.pdb

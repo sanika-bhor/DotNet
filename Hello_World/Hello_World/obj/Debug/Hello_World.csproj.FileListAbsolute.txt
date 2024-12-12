@@ -1,0 +1,7 @@
+A:\TAP\GitHub\DotNet\Hello_World\Hello_World\bin\Debug\Hello_World.exe.config
+A:\TAP\GitHub\DotNet\Hello_World\Hello_World\bin\Debug\Hello_World.exe
+A:\TAP\GitHub\DotNet\Hello_World\Hello_World\bin\Debug\Hello_World.pdb
+A:\TAP\GitHub\DotNet\Hello_World\Hello_World\obj\Debug\Hello_World.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\Hello_World\Hello_World\obj\Debug\Hello_World.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\Hello_World\Hello_World\obj\Debug\Hello_World.exe
+A:\TAP\GitHub\DotNet\Hello_World\Hello_World\obj\Debug\Hello_World.pdb

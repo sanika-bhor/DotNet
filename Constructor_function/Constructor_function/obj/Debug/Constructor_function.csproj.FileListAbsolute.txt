@@ -1,0 +1,7 @@
+C:\Users\91997\source\repos\Constructor_function\Constructor_function\bin\Debug\Constructor_function.exe.config
+C:\Users\91997\source\repos\Constructor_function\Constructor_function\bin\Debug\Constructor_function.exe
+C:\Users\91997\source\repos\Constructor_function\Constructor_function\bin\Debug\Constructor_function.pdb
+C:\Users\91997\source\repos\Constructor_function\Constructor_function\obj\Debug\Constructor_function.csproj.AssemblyReference.cache
+C:\Users\91997\source\repos\Constructor_function\Constructor_function\obj\Debug\Constructor_function.csproj.CoreCompileInputs.cache
+C:\Users\91997\source\repos\Constructor_function\Constructor_function\obj\Debug\Constructor_function.exe
+C:\Users\91997\source\repos\Constructor_function\Constructor_function\obj\Debug\Constructor_function.pdb

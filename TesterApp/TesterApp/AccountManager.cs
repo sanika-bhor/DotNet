@@ -39,7 +39,7 @@ namespace MemberShip
             return status;
         }
 
-        public static bool changePassword(string loginID, string password)
+        public static bool changePassword(string loginID, string existingPassword, string newPasswoed)
         {
             bool status = false;
            

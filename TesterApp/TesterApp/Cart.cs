@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TesterApp
+namespace ShoppingCart
 {
-    internal class Cart
+    public class Cart
     {
     }
 }

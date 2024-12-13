@@ -3,31 +3,31 @@
   "WorkspaceRootPath": "A:\\TAP\\GitHub\\DotNet\\TesterApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|A:\\TAP\\GitHub\\DotNet\\TesterApp\\testerapp\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|solutionrelative:testerapp\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|a:\\tap\\github\\dotnet\\testerapp\\testerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|solutionrelative:testerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|a:\\tap\\github\\dotnet\\testerapp\\testerapp\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|A:\\TAP\\GitHub\\DotNet\\TesterApp\\testerapp\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|solutionrelative:testerapp\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|a:\\tap\\github\\dotnet\\testerapp\\testerapp\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|A:\\TAP\\GitHub\\DotNet\\TesterApp\\testerapp\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|solutionrelative:testerapp\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|a:\\tap\\github\\dotnet\\testerapp\\testerapp\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|solutionrelative:testerapp\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|a:\\tap\\github\\dotnet\\testerapp\\testerapp\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|A:\\TAP\\GitHub\\DotNet\\TesterApp\\testerapp\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|solutionrelative:testerapp\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|a:\\tap\\github\\dotnet\\testerapp\\testerapp\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|A:\\TAP\\GitHub\\DotNet\\TesterApp\\testerapp\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|solutionrelative:testerapp\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|a:\\tap\\github\\dotnet\\testerapp\\testerapp\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|A:\\TAP\\GitHub\\DotNet\\TesterApp\\testerapp\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|solutionrelative:testerapp\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,20 +46,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Customer.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\TesterApp\\TesterApp\\Customer.cs",
               "RelativeDocumentMoniker": "TesterApp\\Customer.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\TesterApp\\TesterApp\\Customer.cs",
               "RelativeToolTip": "TesterApp\\Customer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T13:57:55.515Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Product.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\TesterApp\\TesterApp\\Product.cs",
               "RelativeDocumentMoniker": "TesterApp\\Product.cs",
@@ -67,8 +67,7 @@
               "RelativeToolTip": "TesterApp\\Product.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAACEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T13:57:24.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T13:57:24.606Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "TesterApp\\Item.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T13:57:06.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T13:57:06.696Z"
             },
             {
               "$type": "Document",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "TesterApp\\Cart.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T13:53:31.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T13:53:31.044Z"
             },
             {
               "$type": "Document",
@@ -106,12 +103,11 @@
               "RelativeToolTip": "TesterApp\\AccountManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T13:53:17.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T13:53:17.319Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Account.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\TesterApp\\TesterApp\\Account.cs",
               "RelativeDocumentMoniker": "TesterApp\\Account.cs",
@@ -119,12 +115,11 @@
               "RelativeToolTip": "TesterApp\\Account.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T13:52:55.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T13:52:55.841Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\TesterApp\\TesterApp\\Program.cs",
               "RelativeDocumentMoniker": "TesterApp\\Program.cs",

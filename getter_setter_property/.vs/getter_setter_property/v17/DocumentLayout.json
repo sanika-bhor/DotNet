@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\91997\\source\\repos\\getter_setter_property\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6EF242D3-A367-408A-8DED-6D01182EF57D}|getter_setter_property\\getter_setter_property.csproj|c:\\users\\91997\\source\\repos\\getter_setter_property\\getter_setter_property\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EF242D3-A367-408A-8DED-6D01182EF57D}|getter_setter_property\\getter_setter_property.csproj|solutionrelative:getter_setter_property\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\91997\\source\\repos\\getter_setter_property\\getter_setter_property\\Program.cs",
+              "RelativeDocumentMoniker": "getter_setter_property\\Program.cs",
+              "ToolTip": "C:\\Users\\91997\\source\\repos\\getter_setter_property\\getter_setter_property\\Program.cs",
+              "RelativeToolTip": "getter_setter_property\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T03:17:22.72Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

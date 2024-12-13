@@ -1,0 +1,7 @@
+C:\Users\91997\source\repos\getter_setter_property\getter_setter_property\bin\Debug\getter_setter_property.exe.config
+C:\Users\91997\source\repos\getter_setter_property\getter_setter_property\bin\Debug\getter_setter_property.exe
+C:\Users\91997\source\repos\getter_setter_property\getter_setter_property\bin\Debug\getter_setter_property.pdb
+C:\Users\91997\source\repos\getter_setter_property\getter_setter_property\obj\Debug\getter_setter_property.csproj.AssemblyReference.cache
+C:\Users\91997\source\repos\getter_setter_property\getter_setter_property\obj\Debug\getter_setter_property.csproj.CoreCompileInputs.cache
+C:\Users\91997\source\repos\getter_setter_property\getter_setter_property\obj\Debug\getter_setter_property.exe
+C:\Users\91997\source\repos\getter_setter_property\getter_setter_property\obj\Debug\getter_setter_property.pdb

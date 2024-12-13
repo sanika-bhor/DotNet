@@ -21,8 +21,9 @@ namespace MemberShip
         }
 
 
-        public static void Register(string loginID, string password, string name, string email, int contactNo, string location)
+        public static bool Register(string loginID, string password, string name, string email, int contactNo, string location)
         {
+            bool status = false;
             Customer customer = new Customer();
             customer.LoginId = loginID;
             customer.Password = password;
@@ -30,6 +31,26 @@ namespace MemberShip
             customer.Email = email;
             customer.ContactNo = contactNo;
             customer.Location = location;
+
+            if (customer == null)
+            {
+                status = true;
+            }
+            return status;
+        }
+
+        public static bool changePassword(string loginID, string password)
+        {
+            bool status = false;
+           
+            return status;
+        }
+
+        public static bool forgetPassword(string loginID)
+        {
+            bool status = false;
+
+            return status;
         }
     }
 }

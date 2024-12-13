@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Catalog
 {
     public class Product
@@ -61,6 +56,12 @@ namespace Catalog
         {
             get { return UnitPrice; }
             set { UnitPrice = value; }
+        }
+
+
+        public override string ToString()
+        {
+            return this.id + " " + this.tittle + " " + this.discription + " " + this.unitPrice + " " + this.quntity;
         }
     }
 }

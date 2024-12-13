@@ -17,7 +17,7 @@ namespace MemberShip
         }
 
 
-        public static bool Register(string loginID, string password, string name, string email, int contactNo, string location)
+        public static bool Register(string loginID, string password, string name, string email, string contactNo, string location)
         {
             bool status = false;
             Customer customer = new Customer();
@@ -28,7 +28,7 @@ namespace MemberShip
             customer.ContactNo = contactNo;
             customer.Location = location;
 
-            if (customer == null)
+            if (customer != null)
             {
                 status = true;
             }

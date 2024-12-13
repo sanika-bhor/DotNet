@@ -19,7 +19,7 @@ namespace Catalog
             this.unitPrice = 5;
         }
 
-        public Product(int id, string tittle, string discription, int quntity, int unitprice)
+        public Product(int id, string tittle, string discription, int quntity, int unitPrice)
         {
             this.id = id;
             this.tittle = tittle;
@@ -54,14 +54,14 @@ namespace Catalog
         }
         public int UnitPrice
         {
-            get { return UnitPrice; }
-            set { UnitPrice = value; }
+            get { return unitPrice; }
+            set { unitPrice = value; }
         }
 
 
         public override string ToString()
         {
-            return this.id + " " + this.tittle + " " + this.discription + " " + this.unitPrice + " " + this.quntity;
+            return this.id + " " + this.tittle + " " + this.discription + " " + this.quntity + " " + this.unitPrice;
         }
     }
 }

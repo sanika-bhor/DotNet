@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+
 namespace ShoppingCart
 {
     public class Cart
@@ -22,5 +23,5 @@ namespace ShoppingCart
         }
     }
 
-    }
+    
 }

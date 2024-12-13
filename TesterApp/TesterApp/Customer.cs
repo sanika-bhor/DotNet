@@ -10,7 +10,7 @@ namespace CRM
         public string Password { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-        public int ContactNo { get; set; }
+        public string ContactNo { get; set; }
         public string Location { get; set; }
     }
 }

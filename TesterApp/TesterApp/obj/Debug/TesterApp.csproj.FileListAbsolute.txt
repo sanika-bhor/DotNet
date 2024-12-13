@@ -1,0 +1,7 @@
+A:\TAP\GitHub\DotNet\TesterApp\TesterApp\bin\Debug\TesterApp.exe.config
+A:\TAP\GitHub\DotNet\TesterApp\TesterApp\bin\Debug\TesterApp.exe
+A:\TAP\GitHub\DotNet\TesterApp\TesterApp\bin\Debug\TesterApp.pdb
+A:\TAP\GitHub\DotNet\TesterApp\TesterApp\obj\Debug\TesterApp.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\TesterApp\TesterApp\obj\Debug\TesterApp.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\TesterApp\TesterApp\obj\Debug\TesterApp.exe
+A:\TAP\GitHub\DotNet\TesterApp\TesterApp\obj\Debug\TesterApp.pdb

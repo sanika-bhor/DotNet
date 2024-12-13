@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "A:\\TAP\\GitHub\\DotNet\\TesterApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|A:\\TAP\\GitHub\\DotNet\\TesterApp\\testerapp\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|a:\\tap\\github\\dotnet\\testerapp\\testerapp\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|solutionrelative:testerapp\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|solutionrelative:testerapp\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|a:\\tap\\github\\dotnet\\testerapp\\testerapp\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|A:\\TAP\\GitHub\\DotNet\\TesterApp\\testerapp\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6302832-B241-4C0E-A276-F3A96A8C129D}|TesterApp\\TesterApp.csproj|solutionrelative:testerapp\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -91,8 +91,7 @@
               "RelativeToolTip": "TesterApp\\Cart.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T13:53:31.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T13:53:31.044Z"
             },
             {
               "$type": "Document",
@@ -104,8 +103,7 @@
               "RelativeToolTip": "TesterApp\\AccountManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T13:53:17.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T13:53:17.319Z"
             },
             {
               "$type": "Document",

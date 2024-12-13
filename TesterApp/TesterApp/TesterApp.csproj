@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>TesterApp.SecurityTest</StartupObject>
+    <StartupObject>TesterApp.BankTest</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="AccountManager.cs" />
+    <Compile Include="BankTest.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Item.cs" />

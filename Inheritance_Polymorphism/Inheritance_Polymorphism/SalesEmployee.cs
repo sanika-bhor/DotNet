@@ -2,7 +2,11 @@
 
 namespace HR
 {
-    public class SalesEmployee:Employee
+
+    // to block the inheritance we used keyword: sealed
+    //it means we can not create derived class from this sealed class
+
+    public sealed class SalesEmployee:Employee
     {
         public float Incentives {  get; set; }
         public SalesEmployee():base() 

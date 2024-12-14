@@ -26,7 +26,7 @@ namespace HR
             this.WorkingDays = workedDay;
         }
 
-        public float calculate()
+        public virtual float calculate()
         {
             float salary = BasicSalary + (500 * WorkingDays);
             return salary;

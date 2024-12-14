@@ -1,0 +1,7 @@
+A:\TAP\GitHub\DotNet\Inheritance_Polymorphism\Inheritance_Polymorphism\bin\Debug\Inheritance_Polymorphism.exe.config
+A:\TAP\GitHub\DotNet\Inheritance_Polymorphism\Inheritance_Polymorphism\bin\Debug\Inheritance_Polymorphism.exe
+A:\TAP\GitHub\DotNet\Inheritance_Polymorphism\Inheritance_Polymorphism\bin\Debug\Inheritance_Polymorphism.pdb
+A:\TAP\GitHub\DotNet\Inheritance_Polymorphism\Inheritance_Polymorphism\obj\Debug\Inheritance_Polymorphism.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\Inheritance_Polymorphism\Inheritance_Polymorphism\obj\Debug\Inheritance_Polymorphism.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\Inheritance_Polymorphism\Inheritance_Polymorphism\obj\Debug\Inheritance_Polymorphism.exe
+A:\TAP\GitHub\DotNet\Inheritance_Polymorphism\Inheritance_Polymorphism\obj\Debug\Inheritance_Polymorphism.pdb

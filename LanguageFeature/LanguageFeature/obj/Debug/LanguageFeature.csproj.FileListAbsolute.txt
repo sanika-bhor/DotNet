@@ -1,0 +1,7 @@
+A:\TAP\GitHub\DotNet\LanguageFeature\LanguageFeature\bin\Debug\LanguageFeature.exe.config
+A:\TAP\GitHub\DotNet\LanguageFeature\LanguageFeature\bin\Debug\LanguageFeature.exe
+A:\TAP\GitHub\DotNet\LanguageFeature\LanguageFeature\bin\Debug\LanguageFeature.pdb
+A:\TAP\GitHub\DotNet\LanguageFeature\LanguageFeature\obj\Debug\LanguageFeature.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\LanguageFeature\LanguageFeature\obj\Debug\LanguageFeature.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\LanguageFeature\LanguageFeature\obj\Debug\LanguageFeature.exe
+A:\TAP\GitHub\DotNet\LanguageFeature\LanguageFeature\obj\Debug\LanguageFeature.pdb

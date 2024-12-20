@@ -6,16 +6,27 @@ using System.Threading.Tasks;
 
 namespace LanguageFeature
 {
+    //prototype
     interface IPrintable
     {
         void print();
     }
 
+    //prototype is implemented by concreate class
+    //concreate class: A class whose object has been created called as concreate class
     class Printer:IPrintable
     {
         void IPrintable.print()
         {
             Console.WriteLine("printing data");
+        }
+    }
+
+    class ThreeDPrinter : IPrintable 
+    {
+        void IPrintable.print()
+        {
+            Console.WriteLine("Printing 3D model");
         }
     }
      class CSharpLanguageFeature
@@ -35,6 +46,16 @@ namespace LanguageFeature
             //heap is managed by garbage collector
 
             CSharpLanguageFeature languageFeature=new CSharpLanguageFeature();
+            IPrintable outpuDevices = null;
+
+            Printer printer=new Printer();
+            outpuDevices = new Printer();
+            outpuDevices.print();
+
+            ThreeDPrinter threeDPrinter= new ThreeDPrinter();
+            outpuDevices = new ThreeDPrinter();
+            outpuDevices.print();
+
 
 
             Console.WriteLine("Hello World");

@@ -14,6 +14,9 @@ namespace LanguageFeature
     //          1. abstract:  whose object has not been created
     //          2. concreate: whose object has been created
 
+
+    //abstract class must enforce overriding
+    //To create abstract class minimum 1 method should be abstract
     abstract class Shape
     {
         public abstract void draw();

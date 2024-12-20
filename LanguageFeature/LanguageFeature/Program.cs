@@ -7,9 +7,13 @@ using System.Threading.Tasks;
 namespace LanguageFeature
 {
     //prototype
+
+    //all the method of interface must be implementd by its concreate class
     interface IPrintable
     {
         void print();
+        void start();
+        void stop();
     }
 
     //prototype is implemented by concreate class
@@ -20,6 +24,15 @@ namespace LanguageFeature
         {
             Console.WriteLine("printing data");
         }
+
+        void IPrintable.start()
+        {
+            Console.WriteLine("printer is start");
+        }
+        void IPrintable.stop()
+        {
+            Console.WriteLine("printer is stop");
+        }
     }
 
     class ThreeDPrinter : IPrintable 
@@ -27,6 +40,15 @@ namespace LanguageFeature
         void IPrintable.print()
         {
             Console.WriteLine("Printing 3D model");
+        }
+        void IPrintable.start()
+        {
+            Console.WriteLine("3D Printer is start");
+        }
+
+        void IPrintable.stop()
+        {
+            Console.WriteLine("3D printer is stop");
         }
     }
      class CSharpLanguageFeature

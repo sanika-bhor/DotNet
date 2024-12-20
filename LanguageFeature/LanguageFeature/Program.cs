@@ -3,10 +3,10 @@
 namespace LanguageFeature
 {
     //structure 
-    public struct Point
+     struct Point
     {
-        int x;
-        int y;
+        public int x;
+        public int y;
     }
 
     //class
@@ -14,7 +14,7 @@ namespace LanguageFeature
     //          1. abstract:  whose object has not been created
     //          2. concreate: whose object has been created
 
-    abstract class shape
+    abstract class Shape
     {
         public abstract void draw();
         public string color { get; set; }
@@ -26,7 +26,7 @@ namespace LanguageFeature
         }
     }
 
-    class Line : shape
+    class Line : Shape
     {
         public Point startPoint;
         public Point endPoint;
@@ -35,6 +35,7 @@ namespace LanguageFeature
         {
             Console.WriteLine("drawing line");
             Console.WriteLine("Starting point: X={0}, Y={1}", startPoint.x, startPoint.y);
+            Console.WriteLine("End point: X={0}, Y={1}", endPoint.x, endPoint.y);
             Console.WriteLine("Color: {0}", color);
             Console.WriteLine("Width: {0}", width);
         }
@@ -149,9 +150,24 @@ namespace LanguageFeature
             outpuDevices.print();
             outpuDevices.stop();
 
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Abstract demo");
+            Console.WriteLine();
 
-          
+            //Shape shape = new Line();
+            Line shape = new Line();
+            shape.color = "RED";
+            shape.width = 4;
+            shape.startPoint.x = 50;
+            shape.startPoint.y = 87;
+            shape.endPoint.x = 231;
+            shape.endPoint.y = 523;
 
+            shape.draw();
+            shape.display();
+
+            Console.WriteLine();
             Console.WriteLine("Hello World");
 
         }

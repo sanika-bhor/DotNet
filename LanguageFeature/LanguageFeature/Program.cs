@@ -1,13 +1,45 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LanguageFeature
 {
-    //prototype
+    //structure 
+    public struct Point
+    {
+        int x;
+        int y;
+    }
 
+    //class
+    //Types:
+    //          1. abstract:  whose object has not been created
+    //          2. concreate: whose object has been created
+
+    abstract class shape
+    {
+        public abstract void draw();
+        public string color { get; set; }
+        public int width { get; set; }
+
+        public void display()
+        {
+            Console.WriteLine("displaying shape");
+        }
+    }
+
+    class Line : shape
+    {
+        public Point startPoint;
+        public Point endPoint;
+        
+        public override void draw()
+        {
+            Console.WriteLine("drawing line");
+            Console.WriteLine("Starting point: X={0}, Y={1}", startPoint.x, startPoint.y);
+            Console.WriteLine("Color: {0}", color);
+            Console.WriteLine("Width: {0}", width);
+        }
+    }
+    //prototype
     //all the method of interface must be implementd by its concreate class
     interface IPrintable
     {
@@ -67,6 +99,7 @@ namespace LanguageFeature
             Console.WriteLine("Scanning 3D printing model");
         }
     }
+
      class CSharpLanguageFeature
     {
         static void Main(string[] args)
@@ -85,6 +118,8 @@ namespace LanguageFeature
 
             CSharpLanguageFeature languageFeature=new CSharpLanguageFeature();
 
+            //late binding: resolving function at run time
+            //early binding: resolving function at compile time
 
             Console.WriteLine("Interface demo");
             Console.WriteLine();

@@ -44,6 +44,26 @@ namespace ConstReadonly
             Months mon = Months.April;
             Console.WriteLine("Month: {0}", mon);
 
+
+            //Array
+            int[] type1;
+            int[] type2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            int[] type3 = new int[] { 1, 2 };
+
+            //string
+            string[] str = new string[] { "sanika", "Sumit" };
+
+            //list
+            List<string> list = new List<string>();
+            list.Add("sanika");
+            list.Add("sumit");
+
+            //display lilst
+            foreach (string name in list)
+            {
+                Console.WriteLine(name);
+            }
+
            
         }
     }

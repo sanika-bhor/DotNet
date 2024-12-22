@@ -32,6 +32,20 @@ namespace ConstReadonly
     }
     public class Program
     {
+        static void swap(ref int n1, ref int n2)
+        {
+            int temp;
+            temp= n1;
+            n1 = n2;
+            n2 = temp;
+        }
+
+        static void calculate(float radius, out float area, out float circum)
+        {
+            area = 3.14f * radius * radius;
+            circum = 2 * 3.14f* radius; 
+        }
+
         static void Main(string[] args)
         {
             MathEngine mathEngine = new MathEngine();
@@ -77,6 +91,30 @@ namespace ConstReadonly
                 displayData("ravi sir","shubhangi mam");
                 displayData("papa","mummy","brother","me");
             #endregion
+
+            //call by refernce
+            //ref keyword
+            int mumbaiPopulation = 4932246;
+            int punePopulation = 8496;
+
+            Console.WriteLine("before swapping population");
+            Console.WriteLine("mumbai population: {0}",mumbaiPopulation);
+            Console.WriteLine("pune population: {0}",punePopulation);
+
+            swap(ref punePopulation, ref mumbaiPopulation);
+
+            Console.WriteLine("after swapping population");
+            Console.WriteLine("mumbai population: {0}", mumbaiPopulation);
+            Console.WriteLine("pune population: {0}", punePopulation);
+
+            //out keyword
+            float area;
+            float circum;
+            float radius = 4;
+
+            calculate(radius, out area, out circum);
+            Console.WriteLine("area: {0}",area);
+            Console.WriteLine("circumfernce: {0}", circum);
         }
     }
 }

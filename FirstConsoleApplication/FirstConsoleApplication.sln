@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCart", "ShoppingCar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catelog", "Catelog\Catelog.csproj", "{B7921E0E-C84A-4480-B031-CA264C0F9025}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessing", "OrderProcessing\OrderProcessing.csproj", "{9BA996D7-D345-4EB1-A41E-F65FCE4759A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{B7921E0E-C84A-4480-B031-CA264C0F9025}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7921E0E-C84A-4480-B031-CA264C0F9025}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7921E0E-C84A-4480-B031-CA264C0F9025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA996D7-D345-4EB1-A41E-F65FCE4759A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA996D7-D345-4EB1-A41E-F65FCE4759A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA996D7-D345-4EB1-A41E-F65FCE4759A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA996D7-D345-4EB1-A41E-F65FCE4759A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

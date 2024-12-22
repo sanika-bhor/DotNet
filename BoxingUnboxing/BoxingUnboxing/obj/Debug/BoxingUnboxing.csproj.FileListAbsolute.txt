@@ -1,0 +1,7 @@
+A:\TAP\GitHub\DotNet\BoxingUnboxing\BoxingUnboxing\bin\Debug\BoxingUnboxing.exe.config
+A:\TAP\GitHub\DotNet\BoxingUnboxing\BoxingUnboxing\bin\Debug\BoxingUnboxing.exe
+A:\TAP\GitHub\DotNet\BoxingUnboxing\BoxingUnboxing\bin\Debug\BoxingUnboxing.pdb
+A:\TAP\GitHub\DotNet\BoxingUnboxing\BoxingUnboxing\obj\Debug\BoxingUnboxing.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\BoxingUnboxing\BoxingUnboxing\obj\Debug\BoxingUnboxing.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\BoxingUnboxing\BoxingUnboxing\obj\Debug\BoxingUnboxing.exe
+A:\TAP\GitHub\DotNet\BoxingUnboxing\BoxingUnboxing\obj\Debug\BoxingUnboxing.pdb

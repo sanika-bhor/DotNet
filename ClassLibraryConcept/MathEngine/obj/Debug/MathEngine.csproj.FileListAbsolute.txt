@@ -1,0 +1,6 @@
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\MathEngine\bin\Debug\MathEngine.dll
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\MathEngine\bin\Debug\MathEngine.pdb
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\MathEngine\obj\Debug\MathEngine.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\MathEngine\obj\Debug\MathEngine.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\MathEngine\obj\Debug\MathEngine.dll
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\MathEngine\obj\Debug\MathEngine.pdb

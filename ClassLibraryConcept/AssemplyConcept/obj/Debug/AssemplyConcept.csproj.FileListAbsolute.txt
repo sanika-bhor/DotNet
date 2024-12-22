@@ -1,0 +1,10 @@
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\AssemplyConcept\bin\Debug\AssemplyConcept.exe.config
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\AssemplyConcept\bin\Debug\AssemplyConcept.exe
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\AssemplyConcept\bin\Debug\AssemplyConcept.pdb
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\AssemplyConcept\bin\Debug\MathEngine.dll
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\AssemplyConcept\bin\Debug\MathEngine.pdb
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\AssemplyConcept\obj\Debug\AssemplyConcept.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\AssemplyConcept\obj\Debug\AssemplyConcept.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\AssemplyConcept\obj\Debug\Assemply.ACF6D9CC.Up2Date
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\AssemplyConcept\obj\Debug\AssemplyConcept.exe
+A:\TAP\GitHub\DotNet\ClassLibraryConcept\AssemplyConcept\obj\Debug\AssemplyConcept.pdb

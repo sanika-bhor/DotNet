@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "A:\\TAP\\GitHub\\DotNet\\AssemplyConcept\\",
+  "WorkspaceRootPath": "A:\\TAP\\GitHub\\DotNet\\ClassLibraryConcept\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6F93E427-141B-4539-9A0B-075E186347B2}|AssemplyConcept\\AssemplyConcept.csproj|A:\\TAP\\GitHub\\DotNet\\AssemplyConcept\\assemplyconcept\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6F93E427-141B-4539-9A0B-075E186347B2}|AssemplyConcept\\AssemplyConcept.csproj|a:\\tap\\github\\dotnet\\classlibraryconcept\\assemplyconcept\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F93E427-141B-4539-9A0B-075E186347B2}|AssemplyConcept\\AssemplyConcept.csproj|solutionrelative:assemplyconcept\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{885174A1-DB76-46CE-99C3-3F076D14D389}|MathEngine\\MathEngine.csproj|a:\\tap\\github\\dotnet\\assemplyconcept\\mathengine\\mathengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{885174A1-DB76-46CE-99C3-3F076D14D389}|MathEngine\\MathEngine.csproj|a:\\tap\\github\\dotnet\\classlibraryconcept\\mathengine\\complex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{885174A1-DB76-46CE-99C3-3F076D14D389}|MathEngine\\MathEngine.csproj|solutionrelative:mathengine\\complex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{885174A1-DB76-46CE-99C3-3F076D14D389}|MathEngine\\MathEngine.csproj|A:\\TAP\\GitHub\\DotNet\\ClassLibraryConcept\\mathengine\\mathengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{885174A1-DB76-46CE-99C3-3F076D14D389}|MathEngine\\MathEngine.csproj|solutionrelative:mathengine\\mathengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,12 +31,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Complex.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\ClassLibraryConcept\\MathEngine\\Complex.cs",
+              "RelativeDocumentMoniker": "MathEngine\\Complex.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\ClassLibraryConcept\\MathEngine\\Complex.cs",
+              "RelativeToolTip": "MathEngine\\Complex.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T16:18:13.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MathEngine.cs",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\AssemplyConcept\\MathEngine\\MathEngine.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\ClassLibraryConcept\\MathEngine\\MathEngine.cs",
               "RelativeDocumentMoniker": "MathEngine\\MathEngine.cs",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\AssemplyConcept\\MathEngine\\MathEngine.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\ClassLibraryConcept\\MathEngine\\MathEngine.cs",
               "RelativeToolTip": "MathEngine\\MathEngine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T15:27:23.375Z",
               "EditorCaption": ""
@@ -41,11 +58,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\AssemplyConcept\\AssemplyConcept\\Program.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\ClassLibraryConcept\\AssemplyConcept\\Program.cs",
               "RelativeDocumentMoniker": "AssemplyConcept\\Program.cs",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\AssemplyConcept\\AssemplyConcept\\Program.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\ClassLibraryConcept\\AssemplyConcept\\Program.cs",
               "RelativeToolTip": "AssemplyConcept\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T15:26:44.204Z",
               "EditorCaption": ""

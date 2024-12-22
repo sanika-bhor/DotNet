@@ -1,0 +1,194 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0504664B-5683-4190-930E-0789161307B5}|MemberShip\\MemberShip.csproj|a:\\tap\\github\\dotnet\\firstconsoleapplication\\membership\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0504664B-5683-4190-930E-0789161307B5}|MemberShip\\MemberShip.csproj|solutionrelative:membership\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73476774-35E6-4C9D-A02B-C40EDFE90D87}|ShoppingCart\\ShoppingCart.csproj|a:\\tap\\github\\dotnet\\firstconsoleapplication\\shoppingcart\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73476774-35E6-4C9D-A02B-C40EDFE90D87}|ShoppingCart\\ShoppingCart.csproj|solutionrelative:shoppingcart\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73476774-35E6-4C9D-A02B-C40EDFE90D87}|ShoppingCart\\ShoppingCart.csproj|a:\\tap\\github\\dotnet\\firstconsoleapplication\\shoppingcart\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73476774-35E6-4C9D-A02B-C40EDFE90D87}|ShoppingCart\\ShoppingCart.csproj|solutionrelative:shoppingcart\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11C278A3-D464-4CD1-A3A2-E72B1847852B}|CRM\\CRM.csproj|a:\\tap\\github\\dotnet\\firstconsoleapplication\\crm\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11C278A3-D464-4CD1-A3A2-E72B1847852B}|CRM\\CRM.csproj|solutionrelative:crm\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7921E0E-C84A-4480-B031-CA264C0F9025}|Catelog\\Catelog.csproj|a:\\tap\\github\\dotnet\\firstconsoleapplication\\catelog\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7921E0E-C84A-4480-B031-CA264C0F9025}|Catelog\\Catelog.csproj|solutionrelative:catelog\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6E57063-9517-4908-BB55-E467EF0AA2E1}|Banking\\Banking.csproj|a:\\tap\\github\\dotnet\\firstconsoleapplication\\banking\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6E57063-9517-4908-BB55-E467EF0AA2E1}|Banking\\Banking.csproj|solutionrelative:banking\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CF79B22-1D6B-4103-89FB-6821E8AE90D2}|HR\\HR.csproj|a:\\tap\\github\\dotnet\\firstconsoleapplication\\hr\\salesemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CF79B22-1D6B-4103-89FB-6821E8AE90D2}|HR\\HR.csproj|solutionrelative:hr\\salesemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CF79B22-1D6B-4103-89FB-6821E8AE90D2}|HR\\HR.csproj|a:\\tap\\github\\dotnet\\firstconsoleapplication\\hr\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CF79B22-1D6B-4103-89FB-6821E8AE90D2}|HR\\HR.csproj|solutionrelative:hr\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CF79B22-1D6B-4103-89FB-6821E8AE90D2}|HR\\HR.csproj|a:\\tap\\github\\dotnet\\firstconsoleapplication\\hr\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CF79B22-1D6B-4103-89FB-6821E8AE90D2}|HR\\HR.csproj|solutionrelative:hr\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\FirstConsoleApplication.csproj|a:\\tap\\github\\dotnet\\firstconsoleapplication\\firstconsoleapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\FirstConsoleApplication.csproj|solutionrelative:firstconsoleapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountManager.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\MemberShip\\AccountManager.cs",
+              "RelativeDocumentMoniker": "MemberShip\\AccountManager.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\MemberShip\\AccountManager.cs",
+              "RelativeToolTip": "MemberShip\\AccountManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T18:10:07.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\Catelog\\Product.cs",
+              "RelativeDocumentMoniker": "Catelog\\Product.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\Catelog\\Product.cs",
+              "RelativeToolTip": "Catelog\\Product.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAAgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T18:12:39.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Item.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\ShoppingCart\\Item.cs",
+              "RelativeDocumentMoniker": "ShoppingCart\\Item.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\ShoppingCart\\Item.cs",
+              "RelativeToolTip": "ShoppingCart\\Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T18:12:12.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\ShoppingCart\\Cart.cs",
+              "RelativeDocumentMoniker": "ShoppingCart\\Cart.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\ShoppingCart\\Cart.cs",
+              "RelativeToolTip": "ShoppingCart\\Cart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T18:11:04.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Account.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\Banking\\Account.cs",
+              "RelativeDocumentMoniker": "Banking\\Account.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\Banking\\Account.cs",
+              "RelativeToolTip": "Banking\\Account.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T18:07:44.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\CRM\\Customer.cs",
+              "RelativeDocumentMoniker": "CRM\\Customer.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\CRM\\Customer.cs",
+              "RelativeToolTip": "CRM\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T18:06:06.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SalesEmployee.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\HR\\SalesEmployee.cs",
+              "RelativeDocumentMoniker": "HR\\SalesEmployee.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\HR\\SalesEmployee.cs",
+              "RelativeToolTip": "HR\\SalesEmployee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T18:04:56.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Person.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\HR\\Person.cs",
+              "RelativeDocumentMoniker": "HR\\Person.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\HR\\Person.cs",
+              "RelativeToolTip": "HR\\Person.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T18:04:23.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\HR\\Employee.cs",
+              "RelativeDocumentMoniker": "HR\\Employee.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\HR\\Employee.cs",
+              "RelativeToolTip": "HR\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T18:00:20.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\FirstConsoleApplication\\Program.cs",
+              "RelativeDocumentMoniker": "FirstConsoleApplication\\Program.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\FirstConsoleApplication\\Program.cs",
+              "RelativeToolTip": "FirstConsoleApplication\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T17:57:18.249Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

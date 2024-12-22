@@ -29,3 +29,11 @@ namespace MathEngine
         }
     }
 }
+
+
+
+// for adding reference of userdefined class library
+//right click on refernce of main project->
+//add refernce->
+//project->
+//mathEngine->

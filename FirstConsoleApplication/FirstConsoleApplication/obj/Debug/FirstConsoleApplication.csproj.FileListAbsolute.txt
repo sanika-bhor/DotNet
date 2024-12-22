@@ -1,0 +1,7 @@
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\FirstConsoleApplication\bin\Debug\FirstConsoleApplication.exe.config
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\FirstConsoleApplication\bin\Debug\FirstConsoleApplication.exe
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\FirstConsoleApplication\bin\Debug\FirstConsoleApplication.pdb
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\FirstConsoleApplication\obj\Debug\FirstConsoleApplication.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\FirstConsoleApplication\obj\Debug\FirstConsoleApplication.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\FirstConsoleApplication\obj\Debug\FirstConsoleApplication.exe
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\FirstConsoleApplication\obj\Debug\FirstConsoleApplication.pdb

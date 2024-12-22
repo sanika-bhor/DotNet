@@ -58,13 +58,25 @@ namespace ConstReadonly
             list.Add("sanika");
             list.Add("sumit");
 
-            //display lilst
+            //display list
             foreach (string name in list)
             {
                 Console.WriteLine(name);
             }
 
-           
+           //params keyword
+           void displayData(params string[] data)
+            {
+                foreach(string d in data)
+                {
+                    Console.WriteLine(d);
+                }
+           }
+            #region params example
+                displayData("sanika", "sumit", "rishika");
+                displayData("ravi sir","shubhangi mam");
+                displayData("papa","mummy","brother","me");
+            #endregion
         }
     }
 }

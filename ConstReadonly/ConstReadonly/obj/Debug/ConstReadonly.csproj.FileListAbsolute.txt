@@ -1,0 +1,7 @@
+A:\TAP\GitHub\DotNet\ConstReadonly\ConstReadonly\bin\Debug\ConstReadonly.exe.config
+A:\TAP\GitHub\DotNet\ConstReadonly\ConstReadonly\bin\Debug\ConstReadonly.exe
+A:\TAP\GitHub\DotNet\ConstReadonly\ConstReadonly\bin\Debug\ConstReadonly.pdb
+A:\TAP\GitHub\DotNet\ConstReadonly\ConstReadonly\obj\Debug\ConstReadonly.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\ConstReadonly\ConstReadonly\obj\Debug\ConstReadonly.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\ConstReadonly\ConstReadonly\obj\Debug\ConstReadonly.exe
+A:\TAP\GitHub\DotNet\ConstReadonly\ConstReadonly\obj\Debug\ConstReadonly.pdb

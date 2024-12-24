@@ -51,6 +51,7 @@
     <Compile Include="PurchaseOrder.cs" />
     <Compile Include="PurchaseOrderService.cs" />
     <Compile Include="WorkOrder.cs" />
+    <Compile Include="WorkOrderService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CRM\CRM.csproj">

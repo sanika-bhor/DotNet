@@ -1,0 +1,13 @@
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\OrderProcessing\obj\Debug\OrderProcessing.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\OrderProcessing\obj\Debug\OrderProcessing.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\OrderProcessing\bin\Debug\OrderProcessing.dll
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\OrderProcessing\bin\Debug\OrderProcessing.pdb
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\OrderProcessing\bin\Debug\CRM.dll
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\OrderProcessing\bin\Debug\ShoppingCart.dll
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\OrderProcessing\bin\Debug\Catelog.dll
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\OrderProcessing\bin\Debug\CRM.pdb
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\OrderProcessing\bin\Debug\ShoppingCart.pdb
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\OrderProcessing\bin\Debug\Catelog.pdb
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\OrderProcessing\obj\Debug\OrderPro.3C1BC4D2.Up2Date
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\OrderProcessing\obj\Debug\OrderProcessing.dll
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\OrderProcessing\obj\Debug\OrderProcessing.pdb

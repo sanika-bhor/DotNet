@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace OrderProcessing
 {
-     public interface IOrderService
+    interface IOrderService
     {
-        public void Cancel(Order order);
-        public void create(Order order);
-        public void getOrder(int id);
-        public void update(Order order);
-        public List<Order> getAllOrders();
-        public bool process(Order order);
+         void Cancel(Order order);
+         void create(Order order);
+         void getOrder(int id);
+         void update(Order order);
+         List<Order> getAllOrders();
+         bool process(Order order);
     }
 }

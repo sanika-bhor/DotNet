@@ -42,12 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeliveryManger.cs" />
+    <Compile Include="IOrderService.cs" />
     <Compile Include="Job.cs" />
     <Compile Include="Manager.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PurchaseManager.cs" />
     <Compile Include="PurchaseOrder.cs" />
+    <Compile Include="PurchaseOrderService.cs" />
     <Compile Include="WorkOrder.cs" />
   </ItemGroup>
   <ItemGroup>

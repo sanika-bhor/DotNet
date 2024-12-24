@@ -11,7 +11,6 @@ namespace OrderProcessing
         public DateTime EndDate { get; set; }
         public int priority { get; set; }
         public bool status { get; set; }
-
         List<Job> jobs=new List<Job>();
     }
 }

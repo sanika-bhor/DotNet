@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace OrderProcessing
 {
@@ -17,10 +13,13 @@ namespace OrderProcessing
        
         public void update(Order order)
         {
-            orderData.Remove(order);
-            orderData.Add(order);
-
-            Console.WriteLine("ordere data updates");
+          foreach(Order singleOrder in orderData)
+            {
+                if(singleOrder.OrderId==order.OrderId)
+                {
+                    orderData.Add(singleOrder);
+                }
+            }
         }
         public void delete(Order order)
         {
@@ -34,13 +33,27 @@ namespace OrderProcessing
 
         public Order getOrderById(int id)
         {
-            return new Order { OrderId = id };
+            foreach(Order singleOrder in orderData)
+            {
+                if (singleOrder.OrderId == id)
+                    return singleOrder;
+            }
+            return null;
         }
         
-        public Order getOrderByVendor(string vendor)
+        public List<Order> getOrderByVendor(string vendor)
         {
-            return new WorkOrder { Vendor=vendor};
+            List<Order> orderList = new List<Order>();
+            foreach(WorkOrder singleOrder in orderData)
+            {
+                 if(singleOrder.Vendor==vendor)
+                {
+                    orderList.Add(singleOrder);
+                }
+            }
+            return orderList;
+
         }
-        */
+        
     }
 }

@@ -46,7 +46,19 @@
     <Compile Include="Manager.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseManager.cs" />
+    <Compile Include="PurchaseOrder.cs" />
     <Compile Include="WorkOrder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CRM\CRM.csproj">
+      <Project>{11c278a3-d464-4cd1-a3a2-e72b1847852b}</Project>
+      <Name>CRM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShoppingCart\ShoppingCart.csproj">
+      <Project>{73476774-35e6-4c9d-a02b-c40edfe90d87}</Project>
+      <Name>ShoppingCart</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

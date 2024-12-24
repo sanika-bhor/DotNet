@@ -10,6 +10,7 @@ namespace Delegation
     //it is of reference type
     //something which is of reference type so we have to create object of it
     //using delegate we can implement late binding
+    //it can hold a reference to the methods.
     public delegate void Handler();
 
     public class Program
@@ -37,13 +38,29 @@ namespace Delegation
 
             //creating object of delegate
             Handler operation1 = new Handler(payIncomeTax);
-            operation1();
-
             Handler operation2 = new Handler(payOutComeTax);
-            operation2();
-
             Handler operation3 = new Handler(payServiceTax);
-            operation3();
+
+            //invoking delegate
+            Console.WriteLine("\nInvoking individual delegate:");
+             operation1();
+             operation2();
+             operation3();
+
+            //multicast handler
+            Handler masterHandlerManager = null;
+            masterHandlerManager += operation1;
+            masterHandlerManager += operation2;
+            masterHandlerManager += operation3;
+
+            Console.WriteLine("\nInvoking multicast delegate:");
+            masterHandlerManager();
+
+
+            //unregister delegate
+            masterHandlerManager -= operation2;
+            Console.WriteLine("\nInvoking multicast delegate after unregistration:");
+            masterHandlerManager();
 
         }
     }

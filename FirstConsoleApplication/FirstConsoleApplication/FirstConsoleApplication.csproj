@@ -43,11 +43,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="WorkOrderServiceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Banking\Banking.csproj">
+      <Project>{c6e57063-9517-4908-bb55-e467ef0aa2e1}</Project>
+      <Name>Banking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Catelog\Catelog.csproj">
+      <Project>{b7921e0e-c84a-4480-b031-ca264c0f9025}</Project>
+      <Name>Catelog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CRM\CRM.csproj">
+      <Project>{11c278a3-d464-4cd1-a3a2-e72b1847852b}</Project>
+      <Name>CRM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HR\HR.csproj">
+      <Project>{9cf79b22-1d6b-4103-89fb-6821e8ae90d2}</Project>
+      <Name>HR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MemberShip\MemberShip.csproj">
+      <Project>{0504664b-5683-4190-930e-0789161307b5}</Project>
+      <Name>MemberShip</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OrderProcessing\OrderProcessing.csproj">
+      <Project>{9ba996d7-d345-4eb1-a41e-f65fce4759a3}</Project>
+      <Name>OrderProcessing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShoppingCart\ShoppingCart.csproj">
+      <Project>{73476774-35e6-4c9d-a02b-c40edfe90d87}</Project>
+      <Name>ShoppingCart</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

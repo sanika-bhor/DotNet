@@ -18,9 +18,10 @@ namespace OrderProcessing
             deliveryManger.insert(order);
         }
 
-        public void getOrder(int id)
+        public Order getOrder(int id)
         {
-            deliveryManger.getOrderById(id);
+           Order o= deliveryManger.getOrderById(id);
+            return o;
         }
 
         public void update(Order order)

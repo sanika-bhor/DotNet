@@ -18,9 +18,11 @@ namespace OrderProcessing
             purchaseManager.insert(order);
         }
 
-        public void getOrder(int id)
+        public Order getOrder(int id)
         {
-            purchaseManager.getOrderById(id);
+           Order o= purchaseManager.getOrderById(id);
+            return o;
+
         }
 
         public void update(Order order)

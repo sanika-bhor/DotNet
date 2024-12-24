@@ -5,7 +5,7 @@ using ShoppingCart;
 
 namespace OrderProcessing
 {
-    public class PurchaseOrder
+    public class PurchaseOrder:Order
     {
         public int PurchaseOrder_id { get; set; }
         public DateTime OrderTime { get; set; }

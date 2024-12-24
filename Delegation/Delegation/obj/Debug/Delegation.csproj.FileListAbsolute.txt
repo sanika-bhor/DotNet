@@ -1,0 +1,7 @@
+A:\TAP\GitHub\DotNet\Delegation\Delegation\bin\Debug\Delegation.exe.config
+A:\TAP\GitHub\DotNet\Delegation\Delegation\bin\Debug\Delegation.exe
+A:\TAP\GitHub\DotNet\Delegation\Delegation\bin\Debug\Delegation.pdb
+A:\TAP\GitHub\DotNet\Delegation\Delegation\obj\Debug\Delegation.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\Delegation\Delegation\obj\Debug\Delegation.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\Delegation\Delegation\obj\Debug\Delegation.exe
+A:\TAP\GitHub\DotNet\Delegation\Delegation\obj\Debug\Delegation.pdb

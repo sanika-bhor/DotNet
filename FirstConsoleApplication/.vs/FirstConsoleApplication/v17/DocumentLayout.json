@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\FirstConsoleApplication.csproj|solutionrelative:firstconsoleapplication\\singletonetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\FirstConsoleApplication.csproj|a:\\tap\\github\\dotnet\\firstconsoleapplication\\firstconsoleapplication\\purchaseorderservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\FirstConsoleApplication.csproj|A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\firstconsoleapplication\\purchaseorderservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\FirstConsoleApplication.csproj|solutionrelative:firstconsoleapplication\\purchaseorderservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{9BA996D7-D345-4EB1-A41E-F65FCE4759A3}|OrderProcessing\\OrderProcessing.csproj|solutionrelative:orderprocessing\\purchasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BA996D7-D345-4EB1-A41E-F65FCE4759A3}|OrderProcessing\\OrderProcessing.csproj|a:\\tap\\github\\dotnet\\firstconsoleapplication\\orderprocessing\\purchaseorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9BA996D7-D345-4EB1-A41E-F65FCE4759A3}|OrderProcessing\\OrderProcessing.csproj|A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\orderprocessing\\purchaseorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BA996D7-D345-4EB1-A41E-F65FCE4759A3}|OrderProcessing\\OrderProcessing.csproj|solutionrelative:orderprocessing\\purchaseorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -108,7 +108,7 @@
               "RelativeDocumentMoniker": "FirstConsoleApplication\\SingleToneTest.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\FirstConsoleApplication\\FirstConsoleApplication\\SingleToneTest.cs",
               "RelativeToolTip": "FirstConsoleApplication\\SingleToneTest.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T14:26:49.145Z",
               "EditorCaption": ""
@@ -123,8 +123,7 @@
               "RelativeToolTip": "FirstConsoleApplication\\PurchaseOrderServiceTest.cs",
               "ViewState": "AQIAADkAAAAAAAAAAAAAAE8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T17:57:18.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T17:57:18.249Z"
             },
             {
               "$type": "Document",
@@ -136,8 +135,7 @@
               "RelativeToolTip": "OrderProcessing\\WorkOrderService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T13:20:37.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T13:20:37.51Z"
             },
             {
               "$type": "Document",
@@ -149,8 +147,7 @@
               "RelativeToolTip": "OrderProcessing\\PurchaseOrderService.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T13:07:15.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T13:07:15.695Z"
             },
             {
               "$type": "Document",
@@ -162,8 +159,7 @@
               "RelativeToolTip": "OrderProcessing\\PurchaseManager.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAAABsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T12:11:54.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T12:11:54.196Z"
             },
             {
               "$type": "Document",
@@ -175,8 +171,7 @@
               "RelativeToolTip": "OrderProcessing\\Order.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T18:24:09.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T18:24:09.202Z"
             },
             {
               "$type": "Document",
@@ -188,8 +183,7 @@
               "RelativeToolTip": "OrderProcessing\\PurchaseOrder.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T12:26:59.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T12:26:59.543Z"
             },
             {
               "$type": "Document",

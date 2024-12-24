@@ -7,11 +7,11 @@ using ShoppingCart;
 
 namespace FirstConsoleApplication
 {
-    public class WorkOrderServiceTest
+    public class PurchaseOrderServiceTest
     {
         static void Main(string[] args)
         {
-            WorkOrderService orderService = new WorkOrderService();
+            PurchaseOrderService orderService = new PurchaseOrderService();
             Customer theCustomer = new Customer
             { 
                 LoginId="1001",

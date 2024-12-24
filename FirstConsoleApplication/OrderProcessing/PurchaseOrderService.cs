@@ -8,7 +8,7 @@ namespace OrderProcessing
 {
     public class PurchaseOrderService : IOrderService
     {
-        PurchaseManager purchaseManager = new PurchaseManager();
+        PurchaseManager purchaseManager =PurchaseManager.getManager();
         public void Cancel(Order order)
         {
             purchaseManager.delete(order);

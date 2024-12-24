@@ -9,6 +9,24 @@ namespace OrderProcessing
 {
     public class PurchaseManager
     {
+        private static PurchaseManager _ref = null;
+        private PurchaseManager() 
+        { 
+            //private constructor so that we cannot create constructor hence we can implement singletone design principle
+        }
+
+        public static PurchaseManager getManager()
+        {
+            if(_ref==null)
+            {
+                _ref = new PurchaseManager();
+                return _ref;
+            }
+            else
+            {
+                return _ref;
+            }
+        }
         public List<Order> Orders { get; set; }
 
         public void insert(Order order)

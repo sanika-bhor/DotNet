@@ -1,0 +1,10 @@
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\bin\Debug\WarehouseApp.exe.config
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\bin\Debug\WarehouseApp.exe
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\bin\Debug\WarehouseApp.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.MainForm.resources
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.Properties.Resources.resources
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.csproj.GenerateResource.cache
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.exe
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.pdb

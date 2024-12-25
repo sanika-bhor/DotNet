@@ -1,0 +1,6 @@
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\HR\bin\Debug\HR.dll
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\HR\bin\Debug\HR.pdb
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\HR\obj\Debug\HR.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\HR\obj\Debug\HR.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\HR\obj\Debug\HR.dll
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\HR\obj\Debug\HR.pdb

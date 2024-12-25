@@ -1,0 +1,6 @@
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\Catelog\bin\Debug\Catelog.dll
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\Catelog\bin\Debug\Catelog.pdb
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\Catelog\obj\Debug\Catelog.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\Catelog\obj\Debug\Catelog.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\Catelog\obj\Debug\Catelog.dll
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\Catelog\obj\Debug\Catelog.pdb

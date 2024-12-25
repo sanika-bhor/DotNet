@@ -1,0 +1,6 @@
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\CRM\bin\Debug\CRM.dll
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\CRM\bin\Debug\CRM.pdb
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\CRM\obj\Debug\CRM.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\CRM\obj\Debug\CRM.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\CRM\obj\Debug\CRM.dll
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\CRM\obj\Debug\CRM.pdb

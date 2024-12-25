@@ -1,0 +1,9 @@
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\MemberShip\obj\Debug\MemberShip.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\MemberShip\obj\Debug\MemberShip.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\MemberShip\bin\Debug\MemberShip.dll
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\MemberShip\bin\Debug\MemberShip.pdb
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\MemberShip\bin\Debug\CRM.dll
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\MemberShip\bin\Debug\CRM.pdb
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\MemberShip\obj\Debug\MemberShip.csproj.Up2Date
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\MemberShip\obj\Debug\MemberShip.dll
+A:\TAP\GitHub\DotNet\FirstConsoleApplication\MemberShip\obj\Debug\MemberShip.pdb

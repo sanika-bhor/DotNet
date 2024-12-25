@@ -1,0 +1,7 @@
+A:\TAP\GitHub\DotNet\EventHandling\EventHandling\bin\Debug\EventHandling.exe.config
+A:\TAP\GitHub\DotNet\EventHandling\EventHandling\bin\Debug\EventHandling.exe
+A:\TAP\GitHub\DotNet\EventHandling\EventHandling\bin\Debug\EventHandling.pdb
+A:\TAP\GitHub\DotNet\EventHandling\EventHandling\obj\Debug\EventHandling.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\EventHandling\EventHandling\obj\Debug\EventHandling.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\EventHandling\EventHandling\obj\Debug\EventHandling.exe
+A:\TAP\GitHub\DotNet\EventHandling\EventHandling\obj\Debug\EventHandling.pdb

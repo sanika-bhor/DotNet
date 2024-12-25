@@ -15,6 +15,8 @@ namespace WarehouseApp
         public MainForm()
         {
             InitializeComponent();
+            LoginForm lfre = new LoginForm();   
+            lfre.ShowDialog();
         }
 
         private void onFileOpen(object sender, EventArgs e)
@@ -32,6 +34,12 @@ namespace WarehouseApp
         private void onFileExit(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void onMenuLogin(object sender, EventArgs e)
+        {
+            LoginForm Lfrm=new LoginForm();
+            Lfrm.ShowDialog();
         }
     }
 }

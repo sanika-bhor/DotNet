@@ -9,3 +9,8 @@ A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.c
 A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.exe
 A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.pdb
 A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.LoginForm.resources
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\bin\Debug\MemberShip.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\bin\Debug\CRM.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\bin\Debug\MemberShip.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\bin\Debug\CRM.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\Warehous.D20347B5.Up2Date

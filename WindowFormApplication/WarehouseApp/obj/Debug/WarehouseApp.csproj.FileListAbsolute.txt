@@ -8,3 +8,4 @@ A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.c
 A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.csproj.CoreCompileInputs.cache
 A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.exe
 A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\WarehouseApp.LoginForm.resources

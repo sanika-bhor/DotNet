@@ -70,7 +70,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Id = new System.Windows.Forms.TextBox();
-            this.Name = new System.Windows.Forms.TextBox();
+            this.ProductName = new System.Windows.Forms.TextBox();
             this.Description = new System.Windows.Forms.TextBox();
             this.UnitPrice = new System.Windows.Forms.TextBox();
             this.Quantity = new System.Windows.Forms.TextBox();
@@ -427,13 +427,13 @@
             this.Id.Size = new System.Drawing.Size(215, 38);
             this.Id.TabIndex = 7;
             // 
-            // Name
+            // ProductName
             // 
-            this.Name.Font = new System.Drawing.Font("Rockwell Nova Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name.Location = new System.Drawing.Point(347, 166);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(215, 38);
-            this.Name.TabIndex = 8;
+            this.ProductName.Font = new System.Drawing.Font("Rockwell Nova Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductName.Location = new System.Drawing.Point(347, 166);
+            this.ProductName.Name = "ProductName";
+            this.ProductName.Size = new System.Drawing.Size(215, 38);
+            this.ProductName.TabIndex = 8;
             // 
             // Description
             // 
@@ -513,6 +513,7 @@
             this.button5.TabIndex = 16;
             this.button5.Text = "Insert";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.onInsert);
             // 
             // button6
             // 
@@ -551,7 +552,7 @@
             this.Controls.Add(this.Quantity);
             this.Controls.Add(this.UnitPrice);
             this.Controls.Add(this.Description);
-            this.Controls.Add(this.Name);
+            this.Controls.Add(this.ProductName);
             this.Controls.Add(this.Id);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -613,7 +614,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox Id;
-        private System.Windows.Forms.TextBox Name;
+        private System.Windows.Forms.TextBox ProductName;
         private System.Windows.Forms.TextBox Description;
         private System.Windows.Forms.TextBox UnitPrice;
         private System.Windows.Forms.TextBox Quantity;

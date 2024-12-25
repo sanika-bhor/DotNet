@@ -89,6 +89,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Catelog\Catelog.csproj">
+      <Project>{b7921e0e-c84a-4480-b031-ca264c0f9025}</Project>
+      <Name>Catelog</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MemberShip\MemberShip.csproj">
       <Project>{0504664b-5683-4190-930e-0789161307b5}</Project>
       <Name>MemberShip</Name>

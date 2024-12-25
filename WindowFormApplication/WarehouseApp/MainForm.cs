@@ -1,22 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Catalog;
 
 namespace WarehouseApp
 {
     public partial class MainForm : Form
     {
+        List<Product> products=new List<Product>();
+
         public MainForm()
         {
             InitializeComponent();
             LoginForm lfre = new LoginForm();   
-            lfre.ShowDialog();
+           // lfre.ShowDialog();
         }
 
         private void onFileOpen(object sender, EventArgs e)
@@ -42,6 +39,27 @@ namespace WarehouseApp
             Lfrm.ShowDialog();
         }
 
-      
+        private void onInsert(object sender, EventArgs e)
+        {
+            int id = int.Parse(Id.Text);
+            string name = ProductName.Text;
+            string description = Description.Text;
+            int unitPrice = int.Parse(UnitPrice.Text);
+            int quantity = int.Parse(Quantity.Text);
+
+            Product product=new Product
+            {
+                Id = id,
+                Tittle=name,
+                Discription=description,
+                UnitPrice=unitPrice,
+                Quantity=quantity
+            };
+
+            products.Add(product);
+          //  MessageBox.Show("product inserted successfully");
+        }
+
+        
     }
 }

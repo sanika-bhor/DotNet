@@ -14,3 +14,5 @@ A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\bin\Debug\CRM.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\bin\Debug\MemberShip.pdb
 A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\bin\Debug\CRM.pdb
 A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\obj\Debug\Warehous.D20347B5.Up2Date
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\bin\Debug\Catelog.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\WarehouseApp\bin\Debug\Catelog.pdb

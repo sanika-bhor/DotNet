@@ -11,6 +11,7 @@ namespace WarehouseApp
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        
         /// single threaded appartment thread
         [STAThread]
         static void Main()

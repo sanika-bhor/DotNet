@@ -41,5 +41,7 @@ namespace WarehouseApp
             LoginForm Lfrm=new LoginForm();
             Lfrm.ShowDialog();
         }
+
+      
     }
 }

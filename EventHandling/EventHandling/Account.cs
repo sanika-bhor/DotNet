@@ -16,7 +16,7 @@ namespace EventHandling
 
         public void monitor()
         {
-            if(Balance<500)
+            if(Balance<5000)
             {
                 underBalance();
             }

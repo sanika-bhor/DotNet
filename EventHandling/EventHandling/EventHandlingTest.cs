@@ -14,7 +14,11 @@ namespace EventHandling
             Account acc = new Account(500);
 
             acc.overBalance += new AccountHandler(GovernmentPolicy.payIncomeTax);
+            acc.overBalance += new AccountHandler(GovernmentPolicy.payServiceTax);
+            acc.overBalance += new AccountHandler(GovernmentPolicy.enquriry);
             acc.underBalance += new AccountHandler(BankPolicy.blockAccount);
+            acc.underBalance += new AccountHandler(BankPolicy.sendEmailNotificaation);
+
 
             Console.WriteLine("Initial balance:{0} ", acc.Balance);
 

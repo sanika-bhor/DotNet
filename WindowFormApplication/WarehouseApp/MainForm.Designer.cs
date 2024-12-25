@@ -469,6 +469,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "|<<";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.onFirst);
             // 
             // button2
             // 
@@ -480,6 +481,7 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "<<";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.onPrev);
             // 
             // button3
             // 
@@ -491,6 +493,7 @@
             this.button3.TabIndex = 14;
             this.button3.Text = ">>";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.onNext);
             // 
             // button4
             // 
@@ -502,6 +505,7 @@
             this.button4.TabIndex = 15;
             this.button4.Text = ">>|";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.onLast);
             // 
             // button5
             // 

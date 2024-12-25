@@ -49,8 +49,8 @@ namespace Catalog
 
         public int Quantity
         {
-            get { return Quantity; }
-            set { Quantity = value; }
+            get { return quntity; }
+            set { quntity = value; }
         }
         public int UnitPrice
         {

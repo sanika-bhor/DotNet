@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\warehouseapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\warehouseapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|solutionrelative:warehouseapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\warehouseapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|solutionrelative:warehouseapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\warehouseapp\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|solutionrelative:warehouseapp\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B7921E0E-C84A-4480-B031-CA264C0F9025}|Catelog\\Catelog.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\catelog\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\warehouseapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|solutionrelative:warehouseapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\warehouseapp\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|solutionrelative:warehouseapp\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\warehouseapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|solutionrelative:warehouseapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\warehouseapp\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -46,13 +46,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Product.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\Catelog\\Product.cs",
               "RelativeDocumentMoniker": "Catelog\\Product.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\Catelog\\Product.cs",
               "RelativeToolTip": "Catelog\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAJAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T18:17:41.289Z",
               "EditorCaption": ""
@@ -65,27 +65,27 @@
               "RelativeDocumentMoniker": "WarehouseApp\\MainForm.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.cs",
               "RelativeToolTip": "WarehouseApp\\MainForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHsAAAANAAAA",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAiwJ4AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T16:45:32.337Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\Program.cs",
               "RelativeDocumentMoniker": "WarehouseApp\\Program.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\Program.cs",
               "RelativeToolTip": "WarehouseApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T16:41:33.51Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "WarehouseApp\\MainForm.Designer.cs",
@@ -98,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.cs",
               "RelativeDocumentMoniker": "WarehouseApp\\MainForm.cs",
@@ -117,8 +117,7 @@
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\LoginForm.cs [Design]",
               "RelativeToolTip": "WarehouseApp\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T16:52:36.644Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-25T16:52:36.644Z"
             },
             {
               "$type": "Document",

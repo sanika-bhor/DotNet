@@ -9,7 +9,7 @@ namespace WarehouseApp
     public partial class MainForm : Form
     {
         List<Product> products=new List<Product>();
-        int i = 0;
+        int i=0;
 
         public MainForm()
         {
@@ -26,7 +26,7 @@ namespace WarehouseApp
 
             InitializeComponent();
             LoginForm lfre = new LoginForm();   
-           // lfre.ShowDialog();
+           lfre.ShowDialog();
         }
 
         private void onFileOpen(object sender, EventArgs e)
@@ -77,24 +77,29 @@ namespace WarehouseApp
             Description.Text = null;
             UnitPrice.Text = null;
             Quantity.Text = null;
+            i = products.Count;
 
         }
 
         private void onNext(object sender, EventArgs e)
         {
-            if (i > products.Count)
+            if(i==-1)
             {
-                MessageBox.Show("something went wrong");
+                MessageBox.Show("No products available.");               
+            }
+            else if (i > products.Count-1)
+            {
+                MessageBox.Show("you reach at last");
             }
             else
             {
-               i++;
+                i++;
                 Id.Text = products[i].Id.ToString();
                 ProductName.Text = products[i].Tittle;
                 Description.Text = products[i].Discription;
                 UnitPrice.Text = products[i].UnitPrice.ToString();
                 Quantity.Text = products[i].Quantity.ToString();
-             }
+            }
         }
 
 
@@ -118,7 +123,12 @@ namespace WarehouseApp
 
         private void onPrev(object sender, EventArgs e)
         {
-            if (i < 0)
+            if (i == 0)
+            {
+                MessageBox.Show("No products available.");
+
+            }
+            else if (i < 0 )
             {
                 MessageBox.Show("something went wrong");
             }
@@ -130,6 +140,24 @@ namespace WarehouseApp
                 Description.Text = products[i].Discription;
                 UnitPrice.Text = products[i].UnitPrice.ToString();
                 Quantity.Text = products[i].Quantity.ToString();
+            }
+        }
+
+        private void onRemove(object sender, EventArgs e)
+        {
+            int id = int.Parse(Id.Text);
+            string name = ProductName.Text;
+            string description = Description.Text;
+            int unitPrice = int.Parse(UnitPrice.Text);
+            int quantity = int.Parse(Quantity.Text);
+
+         
+            foreach (Product p in products)
+            {
+                if(p.Id == id)
+                {
+                    products.Remove(p);
+                }
             }
         }
     }

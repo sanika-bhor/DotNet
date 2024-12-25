@@ -540,6 +540,7 @@
             this.button7.TabIndex = 18;
             this.button7.Text = "Delete";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.onRemove);
             // 
             // MainForm
             // 

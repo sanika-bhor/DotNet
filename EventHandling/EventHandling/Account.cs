@@ -6,9 +6,25 @@ using System.Threading.Tasks;
 
 namespace EventHandling
 {
+    public delegate void AccountHandler();
     public class Account
     {
+        public event AccountHandler overBalance;
+        public event AccountHandler underBalance;
+
         public int Balance { get; set; }
+
+        public void monitor()
+        {
+            if(Balance<500)
+            {
+                underBalance();
+            }
+            else if(Balance > 250000)
+            {
+                overBalance();
+            }
+        }
 
         public Account(int balance)
         {
@@ -18,11 +34,13 @@ namespace EventHandling
         public void withdraw(int amount)
         {
             Balance -= amount;
+            monitor();
         }
 
         public void deposite(int amount)
         {
             Balance +=amount;
+            monitor();  
         }
     }
 }

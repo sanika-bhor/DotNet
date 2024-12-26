@@ -78,7 +78,7 @@ namespace WarehouseApp
             };
 
             products.Add(product);
-            MessageBox.Show("product inserted successfully");
+           // MessageBox.Show("product inserted successfully");
 
             Id.Text = null;
             ProductName.Text = null;
@@ -161,6 +161,53 @@ namespace WarehouseApp
                     products.Remove(p);
                 }
             }
+        }
+
+        private void onUpdate(object sender, EventArgs e)
+        {
+            bool status=false;
+            int id = int.Parse(Id.Text);
+            string name = ProductName.Text;
+            string description = Description.Text;
+            int unitPrice = int.Parse(UnitPrice.Text);
+            int quantity = int.Parse(Quantity.Text);
+
+            Product product = new Product
+            {
+                Id = id,
+                Tittle = name,
+                Discription = description,
+                UnitPrice = unitPrice,
+                Quantity = quantity
+            };
+
+            foreach (Product p in products)
+            {
+                if(p.Id==id)
+                {
+                    products.Remove(p);
+                    status = true;
+                    break;
+                }
+            }
+
+            if (status)
+            {
+                products.Add(product);
+            }
+            else
+            {
+                MessageBox.Show("No such product to update check this id is available or not");
+            }
+
+            Id.Text = null;
+            ProductName.Text = null;
+            Description.Text = null;
+            UnitPrice.Text = null;
+            Quantity.Text = null;
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = products;
         }
     }
 }

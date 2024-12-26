@@ -1,6 +1,9 @@
 ﻿
+using System;
+
 namespace Catalog
 {
+    [Serializable]
     public class Product
     {
         private int id;

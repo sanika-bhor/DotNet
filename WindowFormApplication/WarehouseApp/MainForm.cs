@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
-using System.Xml.Linq;
 using Catalog;
 
 namespace WarehouseApp
@@ -14,17 +15,7 @@ namespace WarehouseApp
         public MainForm()
         {
 
-            Product product = new Product
-            {
-                Id = 1,
-                Tittle = "rose",
-                Discription = "valentine",
-                UnitPrice = 25,
-                Quantity = 560
-            };
-          //  products.Add(product);
-
-            InitializeComponent();
+             InitializeComponent();
             LoginForm lfre = new LoginForm();   
            lfre.ShowDialog();
         }
@@ -38,7 +29,14 @@ namespace WarehouseApp
         private void onFileSaveAs(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.ShowDialog();
+            if(saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string fileName = saveFileDialog.FileName;
+                FileStream stream = new FileStream(fileName, FileMode.OpenOrCreate);
+                BinaryFormatter bf = new BinaryFormatter();
+                bf.Serialize(stream,products);
+                stream.Close();
+            }
         }
 
         private void onFileExit(object sender, EventArgs e)
@@ -78,12 +76,13 @@ namespace WarehouseApp
             UnitPrice.Text = null;
             Quantity.Text = null;
 
-            dataGridView1.DataSource = products;
+            dataGridView1.DataSource = null; 
+            dataGridView1.DataSource = products; 
         }
 
         private void onNext(object sender, EventArgs e)
         {
-            if(i== products.Count)
+            if(i== products.Count-1)
             {
                 MessageBox.Show("No products available.");               
             }
@@ -97,7 +96,6 @@ namespace WarehouseApp
                 Quantity.Text = products[i].Quantity.ToString();
             }
         }
-
 
         private void onFirst(object sender, EventArgs e)
         {

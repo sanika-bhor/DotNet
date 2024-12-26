@@ -7,3 +7,12 @@ A:\TAP\GitHub\DotNet\FirstConsoleApplication\ShoppingCart\obj\Debug\ShoppingCart
 A:\TAP\GitHub\DotNet\FirstConsoleApplication\ShoppingCart\obj\Debug\Shopping.CB5956BC.Up2Date
 A:\TAP\GitHub\DotNet\FirstConsoleApplication\ShoppingCart\obj\Debug\ShoppingCart.dll
 A:\TAP\GitHub\DotNet\FirstConsoleApplication\ShoppingCart\obj\Debug\ShoppingCart.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\bin\Debug\ShoppingCart.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\bin\Debug\ShoppingCart.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\bin\Debug\Catelog.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\bin\Debug\Catelog.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\obj\Debug\ShoppingCart.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\obj\Debug\ShoppingCart.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\obj\Debug\Shopping.CB5956BC.Up2Date
+A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\obj\Debug\ShoppingCart.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\obj\Debug\ShoppingCart.pdb

@@ -54,8 +54,7 @@
               "RelativeToolTip": "Catelog\\Product.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAAADIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T18:17:41.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-25T18:17:41.289Z"
             },
             {
               "$type": "Document",
@@ -65,7 +64,7 @@
               "RelativeDocumentMoniker": "WarehouseApp\\MainForm.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.cs",
               "RelativeToolTip": "WarehouseApp\\MainForm.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAiwJ4AAAAnAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAFAAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T16:45:32.337Z",
               "EditorCaption": ""
@@ -80,8 +79,7 @@
               "RelativeToolTip": "WarehouseApp\\Program.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T16:41:33.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-25T16:41:33.51Z"
             },
             {
               "$type": "Document",
@@ -91,7 +89,7 @@
               "RelativeDocumentMoniker": "WarehouseApp\\MainForm.Designer.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.Designer.cs",
               "RelativeToolTip": "WarehouseApp\\MainForm.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T16:43:20.561Z",
               "EditorCaption": ""

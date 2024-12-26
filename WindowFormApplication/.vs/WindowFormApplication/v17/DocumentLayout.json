@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|solutionrelative:warehouseapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\warehouseapp\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\warehouseapp\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|solutionrelative:warehouseapp\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -58,8 +58,7 @@
               "RelativeToolTip": "WarehouseApp\\LoginForm.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T15:46:07.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T15:46:07.93Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "Catelog\\Product.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T18:17:41.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-25T18:17:41.289Z"
             },
             {
               "$type": "Document",
@@ -82,7 +80,7 @@
               "RelativeDocumentMoniker": "WarehouseApp\\MainForm.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.cs",
               "RelativeToolTip": "WarehouseApp\\MainForm.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAwB0AAAAJAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABcAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T16:45:32.337Z",
               "EditorCaption": ""
@@ -109,8 +107,7 @@
               "RelativeToolTip": "WarehouseApp\\MainForm.Designer.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAAAAcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T16:43:20.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-25T16:43:20.561Z"
             },
             {
               "$type": "Document",
@@ -121,8 +118,7 @@
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.cs [Design]",
               "RelativeToolTip": "WarehouseApp\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T16:41:23.674Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-25T16:41:23.674Z"
             },
             {
               "$type": "Document",
@@ -133,8 +129,7 @@
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\LoginForm.cs [Design]",
               "RelativeToolTip": "WarehouseApp\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T16:52:36.644Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-25T16:52:36.644Z"
             },
             {
               "$type": "Document",

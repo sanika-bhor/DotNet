@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq.Expressions;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 using Catalog;
@@ -16,14 +17,23 @@ namespace WarehouseApp
         {
 
              InitializeComponent();
-            LoginForm lfre = new LoginForm();   
-           lfre.ShowDialog();
+             LoginForm lfre = new LoginForm();   
+             lfre.ShowDialog();
         }
 
         private void onFileOpen(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.ShowDialog();
+            if(openFileDialog.ShowDialog()== DialogResult.OK)
+            {
+                string fileName=openFileDialog.FileName;
+                FileStream stream = new FileStream(fileName, FileMode.OpenOrCreate);
+                BinaryFormatter bf = new BinaryFormatter();
+                products=(List<Product>)bf.Deserialize(stream);
+                stream.Close();
+
+                dataGridView1.DataSource = products;
+            }
         }
 
         private void onFileSaveAs(object sender, EventArgs e)

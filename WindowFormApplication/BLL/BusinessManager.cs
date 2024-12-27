@@ -67,5 +67,11 @@ namespace BLL
             status=CatelogDbManager.deleteProduct(id);
             return status;
         }
+
+        public static Product getProductById(int id)
+        {
+            Product product = CatelogDbManager.getProductById(id);
+            return product;
+        }
     }
 }

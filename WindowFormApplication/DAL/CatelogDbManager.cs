@@ -193,5 +193,52 @@ namespace DAL
             }
             return status;
         }
+
+        public static Product getProductById(int id)
+        {
+            Product product = null;
+            IDbConnection conn = CatelogDbManager.dbConnection();
+            IDbCommand cmd=new MySqlCommand();
+            string query = "select * from product where ProductId= @id";
+            cmd.Parameters.Add(new MySqlParameter("@id", id));
+            cmd.CommandText= query;
+            cmd.Connection= conn;
+            IDataReader reader=null;
+            try
+            {
+                conn.Open();
+                reader = cmd.ExecuteReader();
+                reader.Read();
+                int pid = int.Parse(reader["ProductId"].ToString());
+                string title=reader["Title"].ToString();
+                string description=reader["Description"].ToString();
+                int unitPrice = int.Parse(reader["UnitPrice"].ToString());
+                int quntity = int.Parse(reader["Quantity"].ToString());
+
+                product = new Product
+                {
+                    Id = pid,
+                    Tittle = title,
+                    Discription = description,
+                    UnitPrice = unitPrice,
+                    Quantity = quntity
+                };
+            }
+            catch (SqlException exp)
+            {
+                string msg = exp.Message;
+                Console.WriteLine(msg);
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+
+                }
+            }
+            return product;
+
+        }
     }
 }

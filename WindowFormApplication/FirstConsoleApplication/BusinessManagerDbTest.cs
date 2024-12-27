@@ -62,20 +62,27 @@ namespace FirstConsoleApplication
                   Console.WriteLine("Product not inserted successfully");
               }*/
 
-            Console.WriteLine("\ndelete existing products: ");
+            /*  Console.WriteLine("\ndelete existing products: ");
+              Console.WriteLine("Enter product id");
+              int id = int.Parse(Console.ReadLine());
+
+              bool deleteResult = BusinessManager.deleteFromProduct(id);
+              if(deleteResult)
+              {
+                  Console.WriteLine("Product deleted successfully");
+              }
+              else
+              {
+                  Console.WriteLine("Product not deleted ");
+              }*/
+
+            Console.WriteLine("\nget products by id: ");
             Console.WriteLine("Enter product id");
             int id = int.Parse(Console.ReadLine());
 
-            bool deleteResult = BusinessManager.deleteFromProduct(id);
-            if(deleteResult)
-            {
-                Console.WriteLine("Product deleted successfully");
-            }
-            else
-            {
-                Console.WriteLine("Product not deleted ");
-            }
-            
+            Product product = BusinessManager.getProductById(id);
+            Console.WriteLine(product.Id+"  "+product.Tittle+"  "+product.Discription+"  "+product.UnitPrice+"  "+product.Quantity);
+
         }
     }
 }

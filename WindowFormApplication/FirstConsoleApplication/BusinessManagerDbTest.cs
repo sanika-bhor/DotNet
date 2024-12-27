@@ -27,40 +27,55 @@ namespace FirstConsoleApplication
             }
 
 
-            Console.WriteLine("\ninsert new products: ");
+            /*  Console.WriteLine("\ninsert new products: ");
+              Console.WriteLine("Enter product id");
+              int id = int.Parse(Console.ReadLine());
+
+              Console.WriteLine("Enter product Title");
+              string title = Console.ReadLine();
+
+              Console.WriteLine("Enter product description");
+              string description = Console.ReadLine();
+
+              Console.WriteLine("Enter product Quantity");
+              int quantity = int.Parse(Console.ReadLine());
+
+              Console.WriteLine("Enter product unit Price");
+              int unitPrice = int.Parse(Console.ReadLine());
+
+              Product product = new Product
+              {
+                  Id = id,
+                  Tittle = title,
+                  Discription = description,
+                  UnitPrice = unitPrice,
+                  Quantity = quantity
+              };
+
+              bool insertStatus = BusinessManager.insertProductInDb(product);
+              if(insertStatus)
+              {
+                  Console.WriteLine("Product inserted successfully");
+              }
+              else
+              {
+                  Console.WriteLine("Product not inserted successfully");
+              }*/
+
+            Console.WriteLine("\ndelete existing products: ");
             Console.WriteLine("Enter product id");
             int id = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter product Title");
-            string title = Console.ReadLine();
-
-            Console.WriteLine("Enter product description");
-            string description = Console.ReadLine();
-
-            Console.WriteLine("Enter product Quantity");
-            int quantity = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter product unit Price");
-            int unitPrice = int.Parse(Console.ReadLine());
-
-            Product product = new Product
+            bool deleteResult = BusinessManager.deleteFromProduct(id);
+            if(deleteResult)
             {
-                Id = id,
-                Tittle = title,
-                Discription = description,
-                UnitPrice = unitPrice,
-                Quantity = quantity
-            };
-
-            bool insertStatus = BusinessManager.insertProductInDb(product);
-            if(insertStatus)
-            {
-                Console.WriteLine("Product inserted successfully");
+                Console.WriteLine("Product deleted successfully");
             }
             else
             {
-                Console.WriteLine("Product not inserted successfully");
+                Console.WriteLine("Product not deleted ");
             }
+            
         }
     }
 }

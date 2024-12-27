@@ -48,9 +48,11 @@ namespace DAL
 
                     products.Add(product);
                 }
-              
+                conn.Close();
+
+
             }
-            catch(SqlException exp)
+            catch (SqlException exp)
             {
                 string msg = exp.Message;
                 Console.WriteLine(msg);
@@ -97,8 +99,10 @@ namespace DAL
                         SoldProduct.Add(product);
                     }
                 }
+                conn.Close();
+
             }
-            catch(SqlException exp)
+            catch (SqlException exp)
             {
                 string msg = exp.Message;
                 Console.WriteLine(msg);
@@ -116,9 +120,6 @@ namespace DAL
         public static bool insertProduct(Product p)
         {
             bool status = false;
-            int iid = p.Id;
-            Console.WriteLine(iid);
-
             IDbConnection conn = CatelogDbManager.dbConnection();
             IDbCommand cmd = new MySqlCommand();
             string query = "insert into product(ProductId,Title,Description,UnitPrice,Quantity) values(@id,@title,@Discription, @UnitPrice,@Quantity)";
@@ -138,10 +139,11 @@ namespace DAL
                 conn.Open();
                 if (conn.State == ConnectionState.Open)
                 {
-                    cmd.CommandText = query;
                     cmd.ExecuteNonQuery();
                     status = true;
                 }
+                conn.Close();
+
             }
             catch (SqlException exp)
             {
@@ -158,6 +160,38 @@ namespace DAL
             return status;
         }
 
-        
+        public static bool deleteProduct(int id)
+        {
+            bool status = false;
+            IDbConnection conn = CatelogDbManager.dbConnection();
+            IDbCommand cmd = new MySqlCommand();
+            string query = "delete from product where ProductId =@Id";
+            cmd.Parameters.Add(new MySqlParameter("@Id", id));
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            try
+            {
+                conn.Open();
+                if (conn.State == ConnectionState.Open)
+                {
+                    cmd.ExecuteNonQuery();
+                    status = true;
+                }
+                conn.Close();
+            }
+            catch (SqlException exp)
+            {
+                string msg = exp.Message;
+                Console.WriteLine(msg);
+            }
+            finally
+            {
+                if(conn.State==ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+            return status;
+        }
     }
 }

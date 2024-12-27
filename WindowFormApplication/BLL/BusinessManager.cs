@@ -60,5 +60,12 @@ namespace BLL
             status = CatelogDbManager.insertProduct(p);
             return status;
         }
+
+        public static bool deleteFromProduct(int id)
+        {
+            bool status = false;
+            status=CatelogDbManager.deleteProduct(id);
+            return status;
+        }
     }
 }

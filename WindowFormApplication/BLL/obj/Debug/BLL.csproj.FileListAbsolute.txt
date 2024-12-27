@@ -1,0 +1,9 @@
+A:\TAP\GitHub\DotNet\WindowFormApplication\BLL\bin\Debug\BLL.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\BLL\bin\Debug\BLL.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\BLL\bin\Debug\Catelog.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\BLL\bin\Debug\Catelog.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\WindowFormApplication\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\WindowFormApplication\BLL\obj\Debug\BLL.csproj.Up2Date
+A:\TAP\GitHub\DotNet\WindowFormApplication\BLL\obj\Debug\BLL.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\BLL\obj\Debug\BLL.pdb

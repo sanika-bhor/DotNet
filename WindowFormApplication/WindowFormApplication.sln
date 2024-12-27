@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstConsoleApplication", "FirstConsoleApplication\FirstConsoleApplication.csproj", "{1A0697EF-76BB-492A-B5D3-F9DE5C965898}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondConsoleApplication", "FirstConsoleApplication\SecondConsoleApplication.csproj", "{1A0697EF-76BB-492A-B5D3-F9DE5C965898}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR", "HR\HR.csproj", "{9CF79B22-1D6B-4103-89FB-6821E8AE90D2}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessing", "OrderProcessing\OrderProcessing.csproj", "{9BA996D7-D345-4EB1-A41E-F65FCE4759A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseApp", "WarehouseApp\WarehouseApp.csproj", "{5D66A2F2-186C-4BC3-94AD-AE18347046A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{5D66A2F2-186C-4BC3-94AD-AE18347046A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D66A2F2-186C-4BC3-94AD-AE18347046A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D66A2F2-186C-4BC3-94AD-AE18347046A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

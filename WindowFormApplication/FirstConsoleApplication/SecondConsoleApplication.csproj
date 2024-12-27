@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>FirstConsoleApplication.SingleToneTest</StartupObject>
+    <StartupObject>FirstConsoleApplication.LINQTest</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LINQTest.cs" />
     <Compile Include="SingleToneTest.cs" />
     <Compile Include="PurchaseOrderServiceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -57,6 +58,10 @@
     <ProjectReference Include="..\Banking\Banking.csproj">
       <Project>{c6e57063-9517-4908-bb55-e467ef0aa2e1}</Project>
       <Name>Banking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{b9804060-523d-4e6a-a2a8-16ab9a37b5b4}</Project>
+      <Name>BLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Catelog\Catelog.csproj">
       <Project>{b7921e0e-c84a-4480-b031-ca264c0f9025}</Project>

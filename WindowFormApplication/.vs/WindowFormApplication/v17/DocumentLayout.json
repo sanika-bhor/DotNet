@@ -3,58 +3,20 @@
   "WorkspaceRootPath": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\firstconsoleapplication\\businessmanagerdbtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|solutionrelative:firstconsoleapplication\\businessmanagerdbtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\dal\\catelogdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|solutionrelative:dal\\catelogdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\bll\\businessmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|solutionrelative:bll\\businessmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\dal\\catelogdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|solutionrelative:dal\\catelogdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SecondConsoleApplication||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\firstconsoleapplication\\linqtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|solutionrelative:firstconsoleapplication\\linqtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\warehouseapp\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|solutionrelative:warehouseapp\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\warehouseapp\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|solutionrelative:warehouseapp\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\warehouseapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|solutionrelative:warehouseapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\warehouseapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|solutionrelative:warehouseapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B7921E0E-C84A-4480-B031-CA264C0F9025}|Catelog\\Catelog.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\catelog\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7921E0E-C84A-4480-B031-CA264C0F9025}|Catelog\\Catelog.csproj|solutionrelative:catelog\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\warehouseapp\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|solutionrelative:warehouseapp\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\warehouseapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D66A2F2-186C-4BC3-94AD-AE18347046A6}|WarehouseApp\\WarehouseApp.csproj|solutionrelative:warehouseapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0504664B-5683-4190-930E-0789161307B5}|MemberShip\\MemberShip.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\membership\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0504664B-5683-4190-930E-0789161307B5}|MemberShip\\MemberShip.csproj|solutionrelative:membership\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\firstconsoleapplication\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+      "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\firstconsoleapplication\\businessmanagerdbtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|solutionrelative:firstconsoleapplication\\businessmanagerdbtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -73,52 +35,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SecondConsoleApplication",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\SecondConsoleApplication.csproj",
-              "RelativeDocumentMoniker": "FirstConsoleApplication\\SecondConsoleApplication.csproj",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\SecondConsoleApplication.csproj",
-              "RelativeToolTip": "FirstConsoleApplication\\SecondConsoleApplication.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-27T14:33:04.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "BusinessManagerDbTest.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\BusinessManagerDbTest.cs",
               "RelativeDocumentMoniker": "FirstConsoleApplication\\BusinessManagerDbTest.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\BusinessManagerDbTest.cs",
               "RelativeToolTip": "FirstConsoleApplication\\BusinessManagerDbTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAkwDcAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-27T14:31:14.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CatelogDbManager.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\CatelogDbManager.cs",
               "RelativeDocumentMoniker": "DAL\\CatelogDbManager.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\CatelogDbManager.cs",
               "RelativeToolTip": "DAL\\CatelogDbManager.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAACYAAABMAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAAHYAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-27T12:23:36.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LINQTest.cs",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\LINQTest.cs",
-              "RelativeDocumentMoniker": "FirstConsoleApplication\\LINQTest.cs",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\LINQTest.cs",
-              "RelativeToolTip": "FirstConsoleApplication\\LINQTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T07:34:07.852Z",
               "EditorCaption": ""
             },
             {
@@ -129,111 +66,22 @@
               "RelativeDocumentMoniker": "BLL\\BusinessManager.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\BLL\\BusinessManager.cs",
               "RelativeToolTip": "BLL\\BusinessManager.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAkwAwAAAA0AAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-27T07:24:17.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\LoginForm.cs",
-              "RelativeDocumentMoniker": "WarehouseApp\\LoginForm.cs",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\LoginForm.cs",
-              "RelativeToolTip": "WarehouseApp\\LoginForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T15:46:07.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "Product.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\Catelog\\Product.cs",
               "RelativeDocumentMoniker": "Catelog\\Product.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\Catelog\\Product.cs",
               "RelativeToolTip": "Catelog\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T18:17:41.289Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.cs",
-              "RelativeDocumentMoniker": "WarehouseApp\\MainForm.cs",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.cs",
-              "RelativeToolTip": "WarehouseApp\\MainForm.cs",
-              "ViewState": "AQIAALkAAAAAAAAAAAAwwMEAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T16:45:32.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\Program.cs",
-              "RelativeDocumentMoniker": "WarehouseApp\\Program.cs",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\Program.cs",
-              "RelativeToolTip": "WarehouseApp\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T16:41:33.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainForm.Designer.cs",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.Designer.cs",
-              "RelativeDocumentMoniker": "WarehouseApp\\MainForm.Designer.cs",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.Designer.cs",
-              "RelativeToolTip": "WarehouseApp\\MainForm.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T16:43:20.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.cs",
-              "RelativeDocumentMoniker": "WarehouseApp\\MainForm.cs",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.cs [Design]",
-              "RelativeToolTip": "WarehouseApp\\MainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T16:41:23.674Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\LoginForm.cs",
-              "RelativeDocumentMoniker": "WarehouseApp\\LoginForm.cs",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\LoginForm.cs [Design]",
-              "RelativeToolTip": "WarehouseApp\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T16:52:36.644Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AccountManager.cs",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\MemberShip\\AccountManager.cs",
-              "RelativeDocumentMoniker": "MemberShip\\AccountManager.cs",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\MemberShip\\AccountManager.cs",
-              "RelativeToolTip": "MemberShip\\AccountManager.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAC8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T17:27:21.049Z",
               "EditorCaption": ""
             }
           ]

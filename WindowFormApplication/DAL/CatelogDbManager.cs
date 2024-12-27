@@ -116,13 +116,21 @@ namespace DAL
         public static bool insertProduct(Product p)
         {
             bool status = false;
-            int id = p.Id;
-            Console.WriteLine(id);
+            int iid = p.Id;
+            Console.WriteLine(iid);
+
             IDbConnection conn = CatelogDbManager.dbConnection();
             IDbCommand cmd = new MySqlCommand();
-            string query = "insert into product values('id','p.Tittle','p.Discription', 'p.Quantity','p.UnitPrice')";
+            string query = "insert into product(ProductId,Title,Description,UnitPrice,Quantity) values(@id,@title,@Discription, @UnitPrice,@Quantity)";
             cmd.Connection = conn;
             cmd.CommandText = query;
+            
+            cmd.Parameters.Add(new MySqlParameter("@id", p.Id));
+            cmd.Parameters.Add(new MySqlParameter("@title", p.Tittle));
+            cmd.Parameters.Add(new MySqlParameter("@Discription", p.Discription));
+            cmd.Parameters.Add(new MySqlParameter("@UnitPrice", p.UnitPrice));
+            cmd.Parameters.Add(new MySqlParameter("@Quantity", p.Quantity));
+          
 
 
             try
@@ -150,5 +158,6 @@ namespace DAL
             return status;
         }
 
+        
     }
 }

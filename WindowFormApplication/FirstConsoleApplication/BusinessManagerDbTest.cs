@@ -76,13 +76,49 @@ namespace FirstConsoleApplication
                   Console.WriteLine("Product not deleted ");
               }*/
 
-            Console.WriteLine("\nget products by id: ");
+            /* Console.WriteLine("\nget products by id: ");
+             Console.WriteLine("Enter product id");
+             int id = int.Parse(Console.ReadLine());
+
+             Product product = BusinessManager.getProductById(id);
+             Console.WriteLine(product.Id+"  "+product.Tittle+"  "+product.Discription+"  "+product.UnitPrice+"  "+product.Quantity);
+            */
+
+
+            Console.WriteLine("\nUpdate existing products by its id: ");
             Console.WriteLine("Enter product id");
             int id = int.Parse(Console.ReadLine());
 
-            Product product = BusinessManager.getProductById(id);
-            Console.WriteLine(product.Id+"  "+product.Tittle+"  "+product.Discription+"  "+product.UnitPrice+"  "+product.Quantity);
+            Console.WriteLine("Enter product Title");
+            string title = Console.ReadLine();
 
+            Console.WriteLine("Enter product description");
+            string description = Console.ReadLine();
+
+            Console.WriteLine("Enter product Quantity");
+            int quantity = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter product unit Price");
+            int unitPrice = int.Parse(Console.ReadLine());
+
+            Product product = new Product
+            {
+                Id = id,
+                Tittle = title,
+                Discription = description,
+                UnitPrice = unitPrice,
+                Quantity = quantity
+            };
+
+            bool insertStatus = BusinessManager.UpdateProductById(product);
+            if (insertStatus)
+            {
+                Console.WriteLine("Product update successfully");
+            }
+            else
+            {
+                Console.WriteLine("Product not update");
+            }
         }
     }
 }

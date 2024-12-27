@@ -73,5 +73,13 @@ namespace BLL
             Product product = CatelogDbManager.getProductById(id);
             return product;
         }
+
+        public static bool UpdateProductById(Product p)
+        {
+            bool status = false;
+
+            status = CatelogDbManager.UpdateProduct(p);
+            return status;
+        }
     }
 }

@@ -18,6 +18,7 @@ insert into  product values (104,"aster","festival Flower" ,6,5000);
 insert into  product values (105,"hibiscus","beautiful Flower" ,10,0);
 insert into  product values (107,"lily","cute and small" ,6,57240);
 
-delete from product where ProductId=107;
+set SQL_SAFE_UPDATES=0;
 
+delete from product where ProductId=107;
 select * from product;

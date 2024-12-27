@@ -240,5 +240,48 @@ namespace DAL
             return product;
 
         }
+
+        public static bool UpdateProduct(Product p)
+        {
+            bool status = false;
+            IDbConnection conn = CatelogDbManager.dbConnection();
+            IDbCommand cmd = new MySqlCommand();
+            //string query = "insert into product(ProductId,Title,Description,UnitPrice,Quantity) values(@id,@title,@Discription, @UnitPrice,@Quantity)";
+            string query = "update product set Title=@title, Description=@description, UnitPrice=@unitPrice, Quantity=@quantity where ProductId=@id";
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+
+            cmd.Parameters.Add(new MySqlParameter("@id", p.Id));
+            cmd.Parameters.Add(new MySqlParameter("@title", p.Tittle));
+            cmd.Parameters.Add(new MySqlParameter("@description", p.Discription));
+            cmd.Parameters.Add(new MySqlParameter("@unitPrice", p.UnitPrice));
+            cmd.Parameters.Add(new MySqlParameter("@quantity", p.Quantity));
+
+
+            try
+            {
+                conn.Open();
+                if (conn.State == ConnectionState.Open)
+                {
+                    cmd.ExecuteNonQuery();
+                    status = true;
+                }
+                conn.Close();
+
+            }
+            catch (SqlException exp)
+            {
+                string msg = exp.Message;
+                Console.WriteLine(msg);
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+            return status;
+        }
     }
 }

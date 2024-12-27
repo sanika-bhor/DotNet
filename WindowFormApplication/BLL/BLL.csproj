@@ -49,6 +49,10 @@
       <Project>{b7921e0e-c84a-4480-b031-ca264c0f9025}</Project>
       <Name>Catelog</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{04c488dc-9b23-40db-b1fd-c0ae4a5b2fb0}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

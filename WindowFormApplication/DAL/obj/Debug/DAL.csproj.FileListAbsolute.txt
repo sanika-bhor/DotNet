@@ -1,0 +1,11 @@
+A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\DAL.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\DAL.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\BLL.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\Catelog.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\BLL.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\Catelog.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\obj\Debug\DAL.csproj.Up2Date
+A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\obj\Debug\DAL.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\obj\Debug\DAL.pdb

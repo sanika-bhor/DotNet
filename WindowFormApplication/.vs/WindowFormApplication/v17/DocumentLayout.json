@@ -3,16 +3,19 @@
   "WorkspaceRootPath": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\dal\\catelogdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|solutionrelative:dal\\catelogdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\firstconsoleapplication\\businessmanagerdbtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|solutionrelative:firstconsoleapplication\\businessmanagerdbtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\bll\\businessmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\bll\\businessmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|solutionrelative:bll\\businessmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\firstconsoleapplication\\dbconnectiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|solutionrelative:firstconsoleapplication\\dbconnectiontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\dal\\catelogdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|solutionrelative:dal\\catelogdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SecondConsoleApplication||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\firstconsoleapplication\\linqtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,6 +52,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{0504664B-5683-4190-930E-0789161307B5}|MemberShip\\MemberShip.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\membership\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0504664B-5683-4190-930E-0789161307B5}|MemberShip\\MemberShip.csproj|solutionrelative:membership\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\firstconsoleapplication\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,33 +72,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DbConnectionTest.cs",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\DbConnectionTest.cs",
-              "RelativeDocumentMoniker": "FirstConsoleApplication\\DbConnectionTest.cs",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\DbConnectionTest.cs",
-              "RelativeToolTip": "FirstConsoleApplication\\DbConnectionTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAACFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T12:43:39.12Z",
+              "DocumentIndex": 3,
+              "Title": "SecondConsoleApplication",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\SecondConsoleApplication.csproj",
+              "RelativeDocumentMoniker": "FirstConsoleApplication\\SecondConsoleApplication.csproj",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\SecondConsoleApplication.csproj",
+              "RelativeToolTip": "FirstConsoleApplication\\SecondConsoleApplication.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-27T14:33:04.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BusinessManagerDbTest.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\BusinessManagerDbTest.cs",
+              "RelativeDocumentMoniker": "FirstConsoleApplication\\BusinessManagerDbTest.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\BusinessManagerDbTest.cs",
+              "RelativeToolTip": "FirstConsoleApplication\\BusinessManagerDbTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T14:31:14.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CatelogDbManager.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\CatelogDbManager.cs",
               "RelativeDocumentMoniker": "DAL\\CatelogDbManager.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\CatelogDbManager.cs",
               "RelativeToolTip": "DAL\\CatelogDbManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABDAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAACYAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-27T12:23:36.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "LINQTest.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\LINQTest.cs",
               "RelativeDocumentMoniker": "FirstConsoleApplication\\LINQTest.cs",
@@ -111,14 +129,14 @@
               "RelativeDocumentMoniker": "BLL\\BusinessManager.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\BLL\\BusinessManager.cs",
               "RelativeToolTip": "BLL\\BusinessManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAkwAwAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-27T07:24:17.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\LoginForm.cs",
               "RelativeDocumentMoniker": "WarehouseApp\\LoginForm.cs",
@@ -131,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Product.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\Catelog\\Product.cs",
               "RelativeDocumentMoniker": "Catelog\\Product.cs",
@@ -144,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MainForm.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.cs",
               "RelativeDocumentMoniker": "WarehouseApp\\MainForm.cs",
@@ -157,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\Program.cs",
               "RelativeDocumentMoniker": "WarehouseApp\\Program.cs",
@@ -170,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "WarehouseApp\\MainForm.Designer.cs",
@@ -183,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\MainForm.cs",
               "RelativeDocumentMoniker": "WarehouseApp\\MainForm.cs",
@@ -195,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\WarehouseApp\\LoginForm.cs",
               "RelativeDocumentMoniker": "WarehouseApp\\LoginForm.cs",
@@ -207,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AccountManager.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\MemberShip\\AccountManager.cs",
               "RelativeDocumentMoniker": "MemberShip\\AccountManager.cs",

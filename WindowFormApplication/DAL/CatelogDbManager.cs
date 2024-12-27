@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Catalog;
+using MySql.Data.MySqlClient;
 
 
 namespace DAL
@@ -13,10 +14,11 @@ namespace DAL
         {
             List<Product> products = new List<Product>();
 
-            IDbConnection conn = new SqlConnection();
-            conn.ConnectionString = @"Data Source=localhost;Initial Catalog=ECommerce;User ID=root;Password=root123";
+            IDbConnection conn = new MySqlConnection();
+            conn.ConnectionString = @"server=localhost;port=3306;user=root;password=root123;database=ecommerce";
 
-            IDbCommand cmd = new SqlCommand();
+
+            IDbCommand cmd = new MySqlCommand();
             string query = "select * from product";
             cmd.CommandText = query;
             cmd.Connection = conn;
@@ -25,9 +27,11 @@ namespace DAL
 
             try
             {
+                conn.Open();
+
                 reader = cmd.ExecuteReader();
 
-                while(reader.Read())
+                while (reader.Read())
                 {
                     int id = int.Parse(reader["ProductId"].ToString());
                     string title=reader["Title"].ToString();
@@ -39,7 +43,7 @@ namespace DAL
 
                     products.Add(product);
                 }
-                conn.Open();
+              
             }
             catch(SqlException exp)
             {

@@ -26,7 +26,6 @@ A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\Mic
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\MySql.Data.dll
-A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\MySqlConnector.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\System.Buffers.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\System.Memory.dll
@@ -44,12 +43,11 @@ A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\Mic
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\MySql.Data.xml
-A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\MySqlConnector.xml
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\System.Buffers.xml
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\System.Memory.xml
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\System.Numerics.Vectors.xml
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\System.Threading.Tasks.Extensions.xml
-A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\obj\Debug\SecondConsoleApplication.csproj.SuggestedBindingRedirects.cache
-A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\obj\Debug\FirstConsoleApplication.exe.config
+A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\DAL.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\DAL.pdb

@@ -4,7 +4,7 @@ using System;
 namespace Catalog
 {
     [Serializable]
-    public class Product
+    public class Product:IDisposable
     {
         private int id;
         private string tittle;
@@ -61,10 +61,19 @@ namespace Catalog
             set { unitPrice = value; }
         }
 
-
+        public void Dispose()
+        {
+            Console.WriteLine("Relesing resources");
+            GC.SuppressFinalize(this);
+        }
         public override string ToString()
         {
             return this.id + " " + this.tittle + " " + this.discription + " " + this.quntity + " " + this.unitPrice;
+        }
+        ~Product()
+        {
+            Console.WriteLine("Relesing resources By constructor");
+
         }
     }
 }

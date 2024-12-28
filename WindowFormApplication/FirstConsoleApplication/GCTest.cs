@@ -11,10 +11,23 @@ namespace FirstConsoleApplication
     {
         public static void Main(String[] args)
         {
-            using (Product p1 = new Product(101, "rose", "valentineflower", 503, 5))
-            {
-                Console.WriteLine(p1.Tittle + " " + p1.Discription);
-            }
+            //***** call despose() to deallocate memory when using block completed
+             using (Product p1 = new Product(101, "rose", "valentineflower", 503, 5))
+             {
+                 Console.WriteLine(p1.Tittle + " " + p1.Discription);
+                 Console.WriteLine("Thank You");
+                  //GC.SuppressFinalize(p1);
+
+             }
+
+
+            //***** call desstructor to deallocate memory
+            Product p2 = new Product(101, "rose", "valentineflower", 503, 5);
+            Console.WriteLine(p2.Tittle + " " + p2.Discription);
+            Console.WriteLine("Thank You");
+            //GC.Collect();
+            //  GC.WaitForPendingFinalizers();
+
         }
     }
 }

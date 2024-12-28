@@ -63,7 +63,7 @@ namespace Catalog
 
         public void Dispose()
         {
-            Console.WriteLine("Relesing resources");
+            Console.WriteLine("Relesing resources by dispose");
             GC.SuppressFinalize(this);
         }
         public override string ToString()

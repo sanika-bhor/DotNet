@@ -76,13 +76,17 @@ namespace FirstConsoleApplication
                   Console.WriteLine("Product not deleted ");
               }*/
 
-            /* Console.WriteLine("\nget products by id: ");
+            
+            
+            
+            
+            Console.WriteLine("\nget products by id: ");
              Console.WriteLine("Enter product id");
              int id = int.Parse(Console.ReadLine());
-
-             Product product = BusinessManager.getProductById(id);
+            
+             Product product = BusinessManagerForDisConnected.getProductById(id);
              Console.WriteLine(product.Id+"  "+product.Tittle+"  "+product.Discription+"  "+product.UnitPrice+"  "+product.Quantity);
-            */
+            
 
 
          /*   Console.WriteLine("\nUpdate existing products by its id: ");

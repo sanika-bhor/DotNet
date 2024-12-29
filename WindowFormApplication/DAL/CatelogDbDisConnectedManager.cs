@@ -230,13 +230,15 @@ namespace DAL
                         UnitPrice = price,
                         Quantity = quantity
                     };
+
+
                 }
                 else
                 {
                     Console.WriteLine("Product not found");
                 }
 
-
+                da.Update(ds);
             }
             catch(SqlException exp)
             {
@@ -276,7 +278,7 @@ namespace DAL
                 conn.Close();
 
             }
-            catch (SqlException exp)
+            catch (MySqlException exp)
             {
                 string msg = exp.Message;
                 Console.WriteLine(msg);

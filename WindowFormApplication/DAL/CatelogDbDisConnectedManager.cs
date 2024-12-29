@@ -191,47 +191,59 @@ namespace DAL
 
         Product ICatelogDbManager.getProductById(int id)
         {
-            Product product = null;
-            IDbConnection conn = CatelogDbConnectedManager.dbConnection();
+           Product product = null;
+
+            IDbConnection conn = new MySqlConnection();
             IDbCommand cmd = new MySqlCommand();
-            string query = "select * from product where ProductId= @id";
-            cmd.Parameters.Add(new MySqlParameter("@id", id));
-            cmd.CommandText = query;
             cmd.Connection = conn;
-            IDataReader reader = null;
+            string query = "select * from product";
+            cmd.CommandText= query;
+
             try
             {
-                conn.Open();
-                reader = cmd.ExecuteReader();
-                reader.Read();
-                int pid = int.Parse(reader["ProductId"].ToString());
-                string title = reader["Title"].ToString();
-                string description = reader["Description"].ToString();
-                int unitPrice = int.Parse(reader["UnitPrice"].ToString());
-                int quntity = int.Parse(reader["Quantity"].ToString());
+                DataSet ds=new DataSet();
+                MySqlDataAdapter da=new MySqlDataAdapter(cmd as MySqlCommand);
+                da.Fill(ds);
 
-                product = new Product
+                DataTable dt = ds.Tables[0];
+
+                DataColumn[] dc = new DataColumn[1];
+                dc[0]=ds.Tables[0].Columns["ProductId"];
+                ds.Tables[0].PrimaryKey = dc;
+
+                //use dt --try 
+
+                DataRow dr = dt.Rows.Find(id);
+                if (dr != null)
                 {
-                    Id = pid,
-                    Tittle = title,
-                    Discription = description,
-                    UnitPrice = unitPrice,
-                    Quantity = quntity
-                };
+                    int pid = int.Parse(dr["ProductId"].ToString());
+                    string title=dr["Title"].ToString();
+                    string desciption=dr["Description"].ToString();
+                    int price = int.Parse(dr["UnitPrice"].ToString());
+                    int quantity = int.Parse(dr["Quantity"].ToString());
+
+                    product = new Product
+                    {
+                        Id = pid,
+                        Tittle = title,
+                        Discription = desciption,
+                        UnitPrice = price,
+                        Quantity = quantity
+                    };
+                }
+                else
+                {
+                    Console.WriteLine("Product not found");
+                }
+
+
             }
-            catch (SqlException exp)
+            catch(SqlException exp)
             {
-                string msg = exp.Message;
+                string msg=exp.Message;
                 Console.WriteLine(msg);
             }
-            finally
-            {
-                if (conn.State == ConnectionState.Open)
-                {
-                    conn.Close();
 
-                }
-            }
             return product;
 
         }

@@ -1,17 +1,16 @@
-﻿using System;
+﻿using Catalog;
+using DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Catalog;
-using DAL;
 
 namespace BLL
 {
-    public static class BusinessManager
+    public class BusinessManagerForDisConnected
     {
-       
-        
+
         public static List<Product> getAllProducts()
         {
             List<Product> allProducts = new List<Product>();
@@ -33,17 +32,17 @@ namespace BLL
 
         public static IEnumerable<Product> getSoldProducts()
         {
-            List<Product> allProduct = BusinessManager.getAllProducts();
-            IEnumerable<Product> soldProducts= (IEnumerable<Product>) from product in allProduct
-                                        where product.Quantity==0
-                                        select product;
+            List<Product> allProduct = BusinessManagerForConnected.getAllProducts();
+            IEnumerable<Product> soldProducts = (IEnumerable<Product>)from product in allProduct
+                                                                      where product.Quantity == 0
+                                                                      select product;
             return soldProducts;
         }
 
         //using ADO.net
         public static List<Product> getAllDbProducts()
         {
-            ICatelogDbManager manager =new CatelogDbConnectedManager();
+            ICatelogDbManager manager = new CatelogDbDisConnectedManager();
 
             List<Product> allProducts = (List<Product>)manager.getAllProductFromDB();
             return allProducts;
@@ -74,7 +73,7 @@ namespace BLL
 
         public static Product getProductById(int id)
         {
-            ICatelogDbManager manager = new CatelogDbConnectedManager();
+            ICatelogDbManager manager = new CatelogDbDisConnectedManager();
             Product product = manager.getProductById(id);
             return product;
         }

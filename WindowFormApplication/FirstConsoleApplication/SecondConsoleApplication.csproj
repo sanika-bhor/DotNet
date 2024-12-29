@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>FirstConsoleApplication.BusinessManagerDbTest</StartupObject>
+    <StartupObject>FirstConsoleApplication.DisConnectedDbTest</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -78,6 +78,7 @@
   <ItemGroup>
     <Compile Include="BusinessManagerDbTest.cs" />
     <Compile Include="DbConnectionTest.cs" />
+    <Compile Include="DisConnectedDbTest.cs" />
     <Compile Include="GCTest.cs" />
     <Compile Include="LINQTest.cs" />
     <Compile Include="SingleToneTest.cs" />

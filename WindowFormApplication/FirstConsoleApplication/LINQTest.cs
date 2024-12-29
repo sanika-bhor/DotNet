@@ -12,14 +12,14 @@ namespace FirstConsoleApplication
     {
         public static void Main(string[] args)
         {
-            List<Product> allProduct = BusinessManager.getAllProducts();
+            List<Product> allProduct = BusinessManagerForConnected.getAllProducts();
             Console.WriteLine("All Products: ");
             foreach(Product p in allProduct)
             {
                 Console.WriteLine(p.Tittle);
             }
 
-            IEnumerable<Product> soldProduct = BusinessManager.getSoldProducts();
+            IEnumerable<Product> soldProduct = BusinessManagerForConnected.getSoldProducts();
             Console.WriteLine("\nSold Products: ");
             foreach (Product p in soldProduct)
             {

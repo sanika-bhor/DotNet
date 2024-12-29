@@ -1,30 +1,30 @@
 ﻿using BLL;
+using Catalog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Catalog;
 
 namespace FirstConsoleApplication
 {
-    public class BusinessManagerDbTest
+    public class DisConnectedDbTest
     {
         public static void Main(string[] args)
         {
             Console.WriteLine("product data");
-            List<Product> all = BusinessManagerForConnected.getAllDbProducts();
+            List<Product> all = BusinessManagerForDisConnected.getAllDbProducts();
             foreach (Product p in all)
             {
-                Console.WriteLine(p.Id+"  "+p.Tittle);
+                Console.WriteLine(p.Id + "  " + p.Tittle);
             }
 
-            Console.WriteLine("\nsold products: ");
+           /* Console.WriteLine("\nsold products: ");
             List<Product> soldProducts = BusinessManagerForConnected.getSoldProductsFromDb();
             foreach (Product p in soldProducts)
             {
                 Console.WriteLine(p.Id + "  " + p.Tittle);
-            }
+            }*/
 
 
             /*  Console.WriteLine("\ninsert new products: ");
@@ -85,7 +85,7 @@ namespace FirstConsoleApplication
             */
 
 
-            Console.WriteLine("\nUpdate existing products by its id: ");
+         /*   Console.WriteLine("\nUpdate existing products by its id: ");
             Console.WriteLine("Enter product id");
             int id = int.Parse(Console.ReadLine());
 
@@ -118,7 +118,7 @@ namespace FirstConsoleApplication
             else
             {
                 Console.WriteLine("Product not update");
-            }
+            }*/
         }
     }
 }

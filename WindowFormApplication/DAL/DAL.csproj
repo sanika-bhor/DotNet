@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CatelogDbConnectedManager.cs" />
+    <Compile Include="CatelogDbDisConnectedManager.cs" />
     <Compile Include="ICatelogDbManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

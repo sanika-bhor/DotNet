@@ -12,12 +12,14 @@ namespace FirstConsoleApplication
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("product data");
+           Console.WriteLine("product data");
             List<Product> all = BusinessManagerForDisConnected.getAllDbProducts();
             foreach (Product p in all)
             {
                 Console.WriteLine(p.Id + "  " + p.Tittle);
             }
+
+
 
            /* Console.WriteLine("\nsold products: ");
             List<Product> soldProducts = BusinessManagerForConnected.getSoldProductsFromDb();
@@ -62,11 +64,14 @@ namespace FirstConsoleApplication
                   Console.WriteLine("Product not inserted successfully");
               }*/
 
-            /*  Console.WriteLine("\ndelete existing products: ");
+            
+            
+            
+              /* Console.WriteLine("\ndelete existing products: ");
               Console.WriteLine("Enter product id");
-              int id = int.Parse(Console.ReadLine());
+              int Productid = int.Parse(Console.ReadLine());
 
-              bool deleteResult = BusinessManager.deleteFromProduct(id);
+              bool deleteResult = BusinessManagerForDisConnected.deleteFromProduct(Productid);
               if(deleteResult)
               {
                   Console.WriteLine("Product deleted successfully");
@@ -74,19 +79,22 @@ namespace FirstConsoleApplication
               else
               {
                   Console.WriteLine("Product not deleted ");
-              }*/
-
+              }
+              */
             
             
             
             
-            Console.WriteLine("\nget products by id: ");
+            /*Console.WriteLine("\nget products by id: ");
              Console.WriteLine("Enter product id");
              int id = int.Parse(Console.ReadLine());
             
              Product product = BusinessManagerForDisConnected.getProductById(id);
              Console.WriteLine(product.Id+"  "+product.Tittle+"  "+product.Discription+"  "+product.UnitPrice+"  "+product.Quantity);
-            
+            */
+
+
+
 
 
          /*   Console.WriteLine("\nUpdate existing products by its id: ");

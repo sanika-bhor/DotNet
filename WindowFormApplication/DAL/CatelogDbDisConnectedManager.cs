@@ -160,32 +160,37 @@ namespace DAL
             bool status = false;
             IDbConnection conn = CatelogDbConnectedManager.dbConnection();
             IDbCommand cmd = new MySqlCommand();
-            string query = "delete from product where ProductId =@Id";
+            string query = "select * from product";
             cmd.Parameters.Add(new MySqlParameter("@Id", id));
             cmd.Connection = conn;
             cmd.CommandText = query;
             try
             {
-                conn.Open();
-                if (conn.State == ConnectionState.Open)
+                DataSet ds=new DataSet();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd as MySqlCommand);
+                da.Fill(ds);
+
+                DataTable dt = ds.Tables[0];
+
+                DataColumn[] col = new DataColumn[1];
+                col[0]=ds.Tables[0].Columns["ProductId"];
+                ds.Tables[0].PrimaryKey = col;
+
+                DataRow dr= dt.Rows.Find(id);
+                if (dr != null)
                 {
-                    cmd.ExecuteNonQuery();
+                    dr.Delete();
                     status = true;
-                }
-                conn.Close();
+                }     
+            da.Update(ds);
+
             }
             catch (SqlException exp)
             {
                 string msg = exp.Message;
                 Console.WriteLine(msg);
             }
-            finally
-            {
-                if (conn.State == ConnectionState.Open)
-                {
-                    conn.Close();
-                }
-            }
+
             return status;
         }
 
@@ -193,11 +198,13 @@ namespace DAL
         {
            Product product = null;
 
-            IDbConnection conn = new MySqlConnection();
+            IDbConnection conn = CatelogDbDisConnectedManager.dbConnection();
             IDbCommand cmd = new MySqlCommand();
-            cmd.Connection = conn;
             string query = "select * from product";
+
+            cmd.Connection = conn;
             cmd.CommandText= query;
+
 
             try
             {

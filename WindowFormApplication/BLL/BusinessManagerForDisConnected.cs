@@ -66,7 +66,7 @@ namespace BLL
         public static bool deleteFromProduct(int id)
         {
             bool status = false;
-            ICatelogDbManager manager = new CatelogDbConnectedManager();
+            ICatelogDbManager manager = new CatelogDbDisConnectedManager();
             status = manager.deleteProduct(id);
             return status;
         }

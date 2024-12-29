@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using Catalog;
 using MySql.Data.MySqlClient;
@@ -9,7 +10,7 @@ using MySql.Data.MySqlClient;
 
 namespace DAL
 {
-    public class CatelogDbManager
+    public class CatelogDbConnectedManager:ICatelogDbManager
     {
         public static IDbConnection dbConnection()
         {
@@ -18,10 +19,10 @@ namespace DAL
             return conn;
         }
 
-        public static List<Product> getAllProductFromDB()
-        {
+         List<Product> ICatelogDbManager.getAllProductFromDB()
+         {
             List<Product> products = new List<Product>();
-            IDbConnection conn=CatelogDbManager.dbConnection();
+            IDbConnection conn = CatelogDbConnectedManager.dbConnection();
             IDbCommand cmd = new MySqlCommand();
             string query = "select * from product";
             cmd.CommandText = query;
@@ -69,10 +70,10 @@ namespace DAL
             return products;
         }
 
-        public static List<Product> getSoldProductsFromDb()
+         List<Product> ICatelogDbManager.getSoldProductsFromDb()
         {
             List<Product> SoldProduct = new List<Product>();
-            IDbConnection conn = CatelogDbManager.dbConnection();
+            IDbConnection conn = CatelogDbConnectedManager.dbConnection();
 
             IDbCommand cmd = new MySqlCommand();
             string query = "select * from product where Quantity = 0";
@@ -117,10 +118,10 @@ namespace DAL
             return SoldProduct;
         }
 
-        public static bool insertProduct(Product p)
+        bool ICatelogDbManager.insertProduct(Product p)
         {
             bool status = false;
-            IDbConnection conn = CatelogDbManager.dbConnection();
+            IDbConnection conn = CatelogDbConnectedManager.dbConnection();
             IDbCommand cmd = new MySqlCommand();
             string query = "insert into product(ProductId,Title,Description,UnitPrice,Quantity) values(@id,@title,@Discription, @UnitPrice,@Quantity)";
             cmd.Connection = conn;
@@ -160,10 +161,10 @@ namespace DAL
             return status;
         }
 
-        public static bool deleteProduct(int id)
+        bool ICatelogDbManager.deleteProduct(int id)
         {
             bool status = false;
-            IDbConnection conn = CatelogDbManager.dbConnection();
+            IDbConnection conn = CatelogDbConnectedManager.dbConnection();
             IDbCommand cmd = new MySqlCommand();
             string query = "delete from product where ProductId =@Id";
             cmd.Parameters.Add(new MySqlParameter("@Id", id));
@@ -194,10 +195,10 @@ namespace DAL
             return status;
         }
 
-        public static Product getProductById(int id)
+        Product ICatelogDbManager.getProductById(int id)
         {
             Product product = null;
-            IDbConnection conn = CatelogDbManager.dbConnection();
+            IDbConnection conn = CatelogDbConnectedManager.dbConnection();
             IDbCommand cmd=new MySqlCommand();
             string query = "select * from product where ProductId= @id";
             cmd.Parameters.Add(new MySqlParameter("@id", id));
@@ -241,10 +242,10 @@ namespace DAL
 
         }
 
-        public static bool UpdateProduct(Product p)
+         bool ICatelogDbManager.UpdateProduct(Product p)
         {
             bool status = false;
-            IDbConnection conn = CatelogDbManager.dbConnection();
+            IDbConnection conn = CatelogDbConnectedManager.dbConnection();
             IDbCommand cmd = new MySqlCommand();
             //string query = "insert into product(ProductId,Title,Description,UnitPrice,Quantity) values(@id,@title,@Discription, @UnitPrice,@Quantity)";
             string query = "update product set Title=@title, Description=@description, UnitPrice=@unitPrice, Quantity=@quantity where ProductId=@id";

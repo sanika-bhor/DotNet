@@ -43,42 +43,47 @@ namespace BLL
         //using ADO.net
         public static List<Product> getAllDbProducts()
         {
-            List<Product> allProducts = (List<Product>)CatelogDbManager.getAllProductFromDB();
+            ICatelogDbManager manager =new CatelogDbConnectedManager();
+
+            List<Product> allProducts = (List<Product>)manager.getAllProductFromDB();
             return allProducts;
         }
 
         public static List<Product> getSoldProductsFromDb()
         {
-            List<Product> soldProduct = CatelogDbManager.getSoldProductsFromDb();
+            ICatelogDbManager manager = new CatelogDbConnectedManager();
+            List<Product> soldProduct = manager.getSoldProductsFromDb();
             return soldProduct;
         }
 
         public static bool insertProductInDb(Product p)
         {
             bool status = false;
-
-            status = CatelogDbManager.insertProduct(p);
+            ICatelogDbManager manager = new CatelogDbConnectedManager();
+            status = manager.insertProduct(p);
             return status;
         }
 
         public static bool deleteFromProduct(int id)
         {
             bool status = false;
-            status=CatelogDbManager.deleteProduct(id);
+            ICatelogDbManager manager = new CatelogDbConnectedManager();
+            status = manager.deleteProduct(id);
             return status;
         }
 
         public static Product getProductById(int id)
         {
-            Product product = CatelogDbManager.getProductById(id);
+            ICatelogDbManager manager = new CatelogDbConnectedManager();
+            Product product = manager.getProductById(id);
             return product;
         }
 
         public static bool UpdateProductById(Product p)
         {
             bool status = false;
-
-            status = CatelogDbManager.UpdateProduct(p);
+            ICatelogDbManager manager = new CatelogDbConnectedManager();
+            status = manager.UpdateProduct(p);
             return status;
         }
     }

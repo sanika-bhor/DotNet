@@ -29,7 +29,8 @@ namespace FirstConsoleApplication
             }*/
 
 
-            /*  Console.WriteLine("\ninsert new products: ");
+
+              Console.WriteLine("\ninsert new products: ");
               Console.WriteLine("Enter product id");
               int id = int.Parse(Console.ReadLine());
 
@@ -54,7 +55,7 @@ namespace FirstConsoleApplication
                   Quantity = quantity
               };
 
-              bool insertStatus = BusinessManager.insertProductInDb(product);
+              bool insertStatus = BusinessManagerForDisConnected.insertProductInDb(product);
               if(insertStatus)
               {
                   Console.WriteLine("Product inserted successfully");
@@ -62,7 +63,7 @@ namespace FirstConsoleApplication
               else
               {
                   Console.WriteLine("Product not inserted successfully");
-              }*/
+              }
 
             
             

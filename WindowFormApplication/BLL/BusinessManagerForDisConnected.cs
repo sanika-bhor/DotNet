@@ -58,7 +58,7 @@ namespace BLL
         public static bool insertProductInDb(Product p)
         {
             bool status = false;
-            ICatelogDbManager manager = new CatelogDbConnectedManager();
+            ICatelogDbManager manager = new CatelogDbDisConnectedManager();
             status = manager.insertProduct(p);
             return status;
         }

@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|solutionrelative:dal\\catelogdbdisconnectedmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\bll\\businessmanagerfordisconnected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\bll\\businessmanagerfordisconnected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|solutionrelative:bll\\businessmanagerfordisconnected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "BLL\\BusinessManagerForDisConnected.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\BLL\\BusinessManagerForDisConnected.cs",
               "RelativeToolTip": "BLL\\BusinessManagerForDisConnected.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAADwv0YAAAAaAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAADsAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-29T19:15:21.226Z",
               "EditorCaption": ""
@@ -57,7 +57,7 @@
               "RelativeDocumentMoniker": "FirstConsoleApplication\\DisConnectedDbTest.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\DisConnectedDbTest.cs",
               "RelativeToolTip": "FirstConsoleApplication\\DisConnectedDbTest.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAA8AAABMAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAADkAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-29T18:34:10.919Z",
               "EditorCaption": ""
@@ -70,7 +70,7 @@
               "RelativeDocumentMoniker": "DAL\\CatelogDbDisConnectedManager.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\CatelogDbDisConnectedManager.cs",
               "RelativeToolTip": "DAL\\CatelogDbDisConnectedManager.cs",
-              "ViewState": "AQIAAOwAAAAAAAAAAAAAALkAAAAAAAAA",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAwwIYAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-29T13:25:47.717Z",
               "EditorCaption": ""
@@ -85,8 +85,7 @@
               "RelativeToolTip": "FirstConsoleApplication\\BusinessManagerDbTest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAHAAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T14:31:14.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T14:31:14.71Z"
             },
             {
               "$type": "Document",

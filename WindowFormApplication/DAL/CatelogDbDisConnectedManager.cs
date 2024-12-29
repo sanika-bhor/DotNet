@@ -117,27 +117,29 @@ namespace DAL
             bool status = false;
             IDbConnection conn = CatelogDbConnectedManager.dbConnection();
             IDbCommand cmd = new MySqlCommand();
-            string query = "insert into product(ProductId,Title,Description,UnitPrice,Quantity) values(@id,@title,@Discription, @UnitPrice,@Quantity)";
+            string query = "select * from product";
             cmd.Connection = conn;
             cmd.CommandText = query;
-
-            cmd.Parameters.Add(new MySqlParameter("@id", p.Id));
-            cmd.Parameters.Add(new MySqlParameter("@title", p.Tittle));
-            cmd.Parameters.Add(new MySqlParameter("@Discription", p.Discription));
-            cmd.Parameters.Add(new MySqlParameter("@UnitPrice", p.UnitPrice));
-            cmd.Parameters.Add(new MySqlParameter("@Quantity", p.Quantity));
-
-
-
             try
             {
-                conn.Open();
-                if (conn.State == ConnectionState.Open)
-                {
-                    cmd.ExecuteNonQuery();
-                    status = true;
-                }
-                conn.Close();
+                DataSet ds = new DataSet();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd as MySqlCommand);
+                MySqlCommandBuilder mySqlCommandBuilder = new MySqlCommandBuilder();
+                da.Fill(ds);
+
+
+                DataRow dr = ds.Tables[0].NewRow();
+                dr["ProductId"]=p.Id;
+                dr["Title"] = p.Tittle;
+                dr["Description"] = p.Discription;
+                dr["UnitPrice"]=p.UnitPrice;
+                dr["Quantity"]=p.Quantity;
+
+                ds.Tables[0].Rows.Add(dr);
+
+                da.Update(ds);
+                status = true;
+                
 
             }
             catch (SqlException exp)
@@ -145,13 +147,7 @@ namespace DAL
                 string msg = exp.Message;
                 Console.WriteLine(msg);
             }
-            finally
-            {
-                if (conn.State == ConnectionState.Open)
-                {
-                    conn.Close();
-                }
-            }
+
             return status;
         }
 

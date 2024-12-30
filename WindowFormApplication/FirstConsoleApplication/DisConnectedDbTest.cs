@@ -12,6 +12,7 @@ namespace FirstConsoleApplication
     {
         public static void Main(string[] args)
         {
+
            Console.WriteLine("product data");
             List<Product> all = BusinessManagerForDisConnected.getAllDbProducts();
             foreach (Product p in all)
@@ -30,7 +31,9 @@ namespace FirstConsoleApplication
 
 
 
-            /*  Console.WriteLine("\ninsert new products: ");
+
+
+            /* Console.WriteLine("\ninsert new products: ");
               Console.WriteLine("Enter product id");
               int id = int.Parse(Console.ReadLine());
 
@@ -63,8 +66,8 @@ namespace FirstConsoleApplication
               else
               {
                   Console.WriteLine("Product not inserted successfully");
-              }*/
-
+              }
+            */
             
             
             
@@ -96,9 +99,7 @@ namespace FirstConsoleApplication
 
 
 
-
-
-           Console.WriteLine("\nUpdate existing products by its id: ");
+          /* Console.WriteLine("\nUpdate existing products by its id: ");
             Console.WriteLine("Enter product id");
             int id = int.Parse(Console.ReadLine());
 
@@ -131,7 +132,7 @@ namespace FirstConsoleApplication
             else
             {
                 Console.WriteLine("Product not update");
-            }
+            }*/
         }
     }
 }

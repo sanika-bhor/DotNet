@@ -82,7 +82,7 @@ namespace DAL
             {
                 DataSet ds = new DataSet();
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd as MySqlCommand);
-                MySqlCommandBuilder mySqlCommandBuilder = new MySqlCommandBuilder();
+                MySqlCommandBuilder mySqlCommandBuilder = new MySqlCommandBuilder(da);
                 da.Fill(ds);
 
 
@@ -223,7 +223,7 @@ namespace DAL
             {
                 DataSet ds = new DataSet();
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd as MySqlCommand);
-                MySqlCommandBuilder mySqlCommandBuilder = new MySqlCommandBuilder();
+                MySqlCommandBuilder mySqlCommandBuilder = new MySqlCommandBuilder(da);
                 da.Fill(ds);
 
 

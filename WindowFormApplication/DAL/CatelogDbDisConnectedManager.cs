@@ -67,48 +67,6 @@ namespace DAL
         List<Product> ICatelogDbManager.getSoldProductsFromDb()
         {
             List<Product> SoldProduct = new List<Product>();
-            IDbConnection conn = CatelogDbConnectedManager.dbConnection();
-
-            IDbCommand cmd = new MySqlCommand();
-            string query = "select * from product where Quantity = 0";
-            cmd.Connection = conn;
-            cmd.CommandText = query;
-
-            IDataReader reader = null;
-            try
-            {
-                conn.Open();
-                if (conn.State == ConnectionState.Open)
-                {
-                    reader = cmd.ExecuteReader();
-                    while (reader.Read())
-                    {
-                        int id = int.Parse(reader["ProductId"].ToString());
-                        string title = reader["Title"].ToString();
-                        string description = reader["description"].ToString();
-                        int unitPrice = int.Parse(reader["UnitPrice"].ToString());
-                        int quantity = int.Parse(reader["Quantity"].ToString());
-
-                        Product product = new Product(id, title, description, quantity, unitPrice);
-
-                        SoldProduct.Add(product);
-                    }
-                }
-                conn.Close();
-
-            }
-            catch (SqlException exp)
-            {
-                string msg = exp.Message;
-                Console.WriteLine(msg);
-            }
-            finally
-            {
-                if (conn.State == ConnectionState.Open)
-                {
-                    conn.Close();
-                }
-            }
             return SoldProduct;
         }
 

@@ -30,7 +30,7 @@ namespace FirstConsoleApplication
 
 
 
-              Console.WriteLine("\ninsert new products: ");
+            /*  Console.WriteLine("\ninsert new products: ");
               Console.WriteLine("Enter product id");
               int id = int.Parse(Console.ReadLine());
 
@@ -63,7 +63,7 @@ namespace FirstConsoleApplication
               else
               {
                   Console.WriteLine("Product not inserted successfully");
-              }
+              }*/
 
             
             
@@ -98,7 +98,7 @@ namespace FirstConsoleApplication
 
 
 
-         /*   Console.WriteLine("\nUpdate existing products by its id: ");
+           Console.WriteLine("\nUpdate existing products by its id: ");
             Console.WriteLine("Enter product id");
             int id = int.Parse(Console.ReadLine());
 
@@ -123,7 +123,7 @@ namespace FirstConsoleApplication
                 Quantity = quantity
             };
 
-            bool insertStatus = BusinessManagerForConnected.UpdateProductById(product);
+            bool insertStatus = BusinessManagerForDisConnected.UpdateProductById(product);
             if (insertStatus)
             {
                 Console.WriteLine("Product update successfully");
@@ -131,7 +131,7 @@ namespace FirstConsoleApplication
             else
             {
                 Console.WriteLine("Product not update");
-            }*/
+            }
         }
     }
 }

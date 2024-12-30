@@ -216,41 +216,46 @@ namespace DAL
             bool status = false;
             IDbConnection conn = CatelogDbConnectedManager.dbConnection();
             IDbCommand cmd = new MySqlCommand();
-            //string query = "insert into product(ProductId,Title,Description,UnitPrice,Quantity) values(@id,@title,@Discription, @UnitPrice,@Quantity)";
-            string query = "update product set Title=@title, Description=@description, UnitPrice=@unitPrice, Quantity=@quantity where ProductId=@id";
+            string query = "select * from product";
             cmd.Connection = conn;
             cmd.CommandText = query;
-
-            cmd.Parameters.Add(new MySqlParameter("@id", p.Id));
-            cmd.Parameters.Add(new MySqlParameter("@title", p.Tittle));
-            cmd.Parameters.Add(new MySqlParameter("@description", p.Discription));
-            cmd.Parameters.Add(new MySqlParameter("@unitPrice", p.UnitPrice));
-            cmd.Parameters.Add(new MySqlParameter("@quantity", p.Quantity));
-
-
             try
             {
-                conn.Open();
-                if (conn.State == ConnectionState.Open)
+                DataSet ds = new DataSet();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd as MySqlCommand);
+                MySqlCommandBuilder mySqlCommandBuilder = new MySqlCommandBuilder();
+                da.Fill(ds);
+
+
+                DataColumn[] col = new DataColumn[1];
+                col[0] = ds.Tables[0].Columns["ProductId"];
+                ds.Tables[0].PrimaryKey = col;
+
+                DataRow Existingdr = ds.Tables[0].Rows.Find(p.Id);
+                if (Existingdr != null)
                 {
-                    cmd.ExecuteNonQuery();
+                    Existingdr.Delete();
+                    DataRow dr = ds.Tables[0].NewRow();
+                    dr["ProductId"] = p.Id;
+                    dr["Title"] = p.Tittle;
+                    dr["Description"] = p.Discription;
+                    dr["UnitPrice"] = p.UnitPrice;
+                    dr["Quantity"] = p.Quantity;
+
+                    ds.Tables[0].Rows.Add(dr);
+
+                    da.Update(ds);
                     status = true;
                 }
-                conn.Close();
+              
 
             }
-            catch (MySqlException exp)
+            catch (SqlException exp)
             {
                 string msg = exp.Message;
                 Console.WriteLine(msg);
             }
-            finally
-            {
-                if (conn.State == ConnectionState.Open)
-                {
-                    conn.Close();
-                }
-            }
+
             return status;
         }
     }

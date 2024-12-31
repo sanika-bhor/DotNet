@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BusinessManagerForConnected.cs" />
     <Compile Include="BusinessManagerForDisConnected.cs" />
+    <Compile Include="MangooDBBusinessManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +55,9 @@
       <Project>{04c488dc-9b23-40db-b1fd-c0ae4a5b2fb0}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

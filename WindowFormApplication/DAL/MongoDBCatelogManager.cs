@@ -72,7 +72,6 @@ namespace DAL
         public bool UpdateCustomer(Customer customer)
         {
             bool status = false;
-            Customer existingCustomer;
             var collection = MongoDBCatelogManager.getCollection();
 
             if (customer != null)
@@ -91,9 +90,16 @@ namespace DAL
             return status;
         }
 
-        public bool deleteProduct(int id)
+        public bool deleteProduct(string id)
         {
-            throw new NotImplementedException();
+            bool status = false;
+            var collection = MongoDBCatelogManager.getCollection();
+            if (collection != null)
+            {
+                collection.DeleteOne(Builders<Customer>.Filter.Eq("LoginId", id));
+                status = true;
+            }
+            return status;
         }
     }
 }

@@ -49,6 +49,14 @@ namespace BLL
             }
             return status;
         }
+
+        public static bool deleteCustomer(string id)
+        {
+            bool status = false;
+            MongoDBCatelogManager mgr = new MongoDBCatelogManager();
+            status = mgr.deleteProduct(id);
+            return status;
+        }
     }
 
 }

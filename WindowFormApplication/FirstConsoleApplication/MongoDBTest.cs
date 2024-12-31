@@ -23,6 +23,8 @@ namespace FirstConsoleApplication
                 Console.WriteLine("2.get customer by their name");
                 Console.WriteLine("3.insert new customer");
                 Console.WriteLine("4.Update customer");
+                Console.WriteLine("5.Delete customer");
+
                 ch=int.Parse(Console.ReadLine());
                 Console.WriteLine();
                 switch(ch)
@@ -122,6 +124,21 @@ namespace FirstConsoleApplication
                         else
                         {
                             Console.WriteLine("Product not updated");
+                        }
+                        break;
+
+                    case 5:
+                        Console.WriteLine("enter loginid:");
+                        string deletedLoginID=Console.ReadLine();
+
+                        bool status = MongooDBBusinessManager.deleteCustomer(deletedLoginID);
+                        if(status)
+                        {
+                            Console.WriteLine("Customer deleted successfully");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Customer not deleted");
                         }
                         break;
 

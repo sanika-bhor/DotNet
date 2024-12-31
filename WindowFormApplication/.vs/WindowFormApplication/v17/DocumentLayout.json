@@ -43,7 +43,7 @@
               "RelativeDocumentMoniker": "FirstConsoleApplication\\MongoDBTest.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\MongoDBTest.cs",
               "RelativeToolTip": "FirstConsoleApplication\\MongoDBTest.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAYwFQAAAAeAAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAnwIwAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-31T11:23:37.222Z",
               "EditorCaption": ""
@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "DAL\\MongoDBCatelogManager.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\MongoDBCatelogManager.cs",
               "RelativeToolTip": "DAL\\MongoDBCatelogManager.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAYwEcAAAAhAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAnwFwAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-31T10:51:30.359Z",
               "EditorCaption": ""
@@ -69,7 +69,7 @@
               "RelativeDocumentMoniker": "BLL\\MongooDBBusinessManager.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\BLL\\MongooDBBusinessManager.cs",
               "RelativeToolTip": "BLL\\MongooDBBusinessManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAAAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAYwDQAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-31T10:50:39.198Z",
               "EditorCaption": ""
@@ -84,8 +84,7 @@
               "RelativeToolTip": "FirstConsoleApplication\\BusinessManagerDbTest.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAYwDoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T14:31:14.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T14:31:14.71Z"
             },
             {
               "$type": "Document",

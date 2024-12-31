@@ -13,12 +13,45 @@ namespace FirstConsoleApplication
     {
         public static void Main(string[] args)
         {
-            List<Customer> custmer= new List<Customer>();
-            custmer = MongooDBBusinessManager.getAllDbProducts();
-            foreach (Customer product in custmer)
+            int ch;
+            char choice;
+            do
             {
-                Console.WriteLine(product.LoginId+"  "+product.Password);
-            }
+
+                Console.WriteLine("please enter your choice: ");
+                Console.WriteLine("1.get all customers");
+                Console.WriteLine("2.get customer by their name");
+                ch=int.Parse(Console.ReadLine());
+                Console.WriteLine();
+                switch(ch)
+                {
+                    case 1:
+                        List<Customer> custmer = new List<Customer>();
+                        custmer = MongooDBBusinessManager.getAllDbProducts();
+                        foreach (Customer product in custmer)
+                        {
+                            Console.WriteLine(product.LoginId + "  " + product.Email);
+                        }
+                        break;
+
+                    case 2:
+                        Console.WriteLine("Enter customer details to get password");
+                        string pass=Console.ReadLine();
+                        Customer customer = MongooDBBusinessManager.getCustomerByName(pass);
+                        Console.WriteLine("customer password:{0}",customer.Password);
+                        break;
+
+                    case 3:
+                        break;
+
+                }
+                Console.WriteLine("---------------------------------------------------------------------------");
+                Console.WriteLine("please enter y to continue");
+                choice=char.Parse(Console.ReadLine());
+               
+            } while (choice == 'Y' || choice == 'y');
+
+
         }
     }
 

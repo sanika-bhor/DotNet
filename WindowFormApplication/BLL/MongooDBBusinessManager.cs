@@ -15,9 +15,17 @@ namespace BLL
         {
             MongoDBCatelogManager manager = new  MongoDBCatelogManager();
 
-            List<Customer> allProducts = (List<Customer>)manager.getAllProductFromDB();
+            List<Customer> allProducts = (List<Customer>)manager.getAllCustomerFromDB();
             return allProducts;
         }
+
+        public static Customer getCustomerByName(string name)
+        {
+            MongoDBCatelogManager manger = new MongoDBCatelogManager();
+            Customer customer = manger.getCutomerByName(name);
+            return customer;
+        }
+
 
     }
 }

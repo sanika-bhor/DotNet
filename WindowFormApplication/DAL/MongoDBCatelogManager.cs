@@ -8,21 +8,28 @@ namespace DAL
 {
     public class MongoDBCatelogManager
     {
+        
         public static MongoClient dbConnection()
         {
             return new MongoClient("mongodb://localhost:27017/");
         }
-        public bool deleteProduct(int id)
+        
+        public static IMongoDatabase getDatabase()
         {
-            throw new NotImplementedException();
+            var _dbClient=MongoDBCatelogManager.dbConnection();
+            return _dbClient.GetDatabase("ECommerce");
         }
 
-        public List<Customer> getAllProductFromDB()
+        public static IMongoCollection<Customer> getCollection()
+        {
+            var db=MongoDBCatelogManager.getDatabase();
+            return db.GetCollection<Customer>("Customer");
+        }
+
+        public List<Customer> getAllCustomerFromDB()
         {
             List<Customer> customers = new List<Customer>();
-            var _dbClient=MongoDBCatelogManager.dbConnection();
-            var db = _dbClient.GetDatabase("ECommerce");
-            var collection = db.GetCollection<Customer>("Customer");
+            var collection = MongoDBCatelogManager.getCollection();
 
             collection.Find(_ => true).ToList().ForEach(
                 cust =>
@@ -33,14 +40,26 @@ namespace DAL
 
         }
 
-        public Product getProductById(int id)
+        public Customer getCutomerByName(string name)
         {
-            throw new NotImplementedException();
+            var collection=MongoDBCatelogManager.getCollection();
+            Customer cust = new Customer();
+            collection.Find<Customer>(_ => true).ToList().ForEach
+                (
+                customer => 
+                    { 
+                        if(customer.Name==name)
+                        {
+                            cust = customer;
+                        }
+                    }
+                );
+            return cust;
         }
 
         public List<Product> getSoldProductsFromDb()
         {
-            throw new NotImplementedException();
+           
         }
 
         public bool insertProduct(Product p)
@@ -49,6 +68,11 @@ namespace DAL
         }
 
         public bool UpdateProduct(Product p)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool deleteProduct(int id)
         {
             throw new NotImplementedException();
         }

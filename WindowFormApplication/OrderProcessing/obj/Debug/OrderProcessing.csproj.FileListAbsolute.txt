@@ -24,3 +24,17 @@ A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\obj\Debug\OrderProces
 A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\obj\Debug\OrderPro.3C1BC4D2.Up2Date
 A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\obj\Debug\OrderProcessing.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\obj\Debug\OrderProcessing.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\bin\Debug\OrderProcessing.dll.config
+A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\bin\Debug\ShoppingCart.dll.config
+A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\bin\Debug\Catelog.dll.config
+A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\bin\Debug\MongoDB.Bson.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\bin\Debug\System.Memory.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\bin\Debug\System.Numerics.Vectors.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\bin\Debug\System.Buffers.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\bin\Debug\MongoDB.Bson.xml
+A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\bin\Debug\System.Memory.xml
+A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\bin\Debug\System.Numerics.Vectors.xml
+A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\bin\Debug\System.Buffers.xml
+A:\TAP\GitHub\DotNet\WindowFormApplication\OrderProcessing\bin\Debug\CRM.dll.config

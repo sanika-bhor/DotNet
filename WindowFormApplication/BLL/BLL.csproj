@@ -43,13 +43,17 @@
   <ItemGroup>
     <Compile Include="BusinessManagerForConnected.cs" />
     <Compile Include="BusinessManagerForDisConnected.cs" />
-    <Compile Include="MangooDBBusinessManager.cs" />
+    <Compile Include="MongooDBBusinessManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Catelog\Catelog.csproj">
       <Project>{b7921e0e-c84a-4480-b031-ca264c0f9025}</Project>
       <Name>Catelog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CRM\CRM.csproj">
+      <Project>{11c278a3-d464-4cd1-a3a2-e72b1847852b}</Project>
+      <Name>CRM</Name>
     </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{04c488dc-9b23-40db-b1fd-c0ae4a5b2fb0}</Project>

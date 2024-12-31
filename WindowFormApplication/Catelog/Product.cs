@@ -1,11 +1,14 @@
 ﻿
 using System;
 
+
 namespace Catalog
 {
-    [Serializable]
+   
     public class Product:IDisposable
     {
+       
+
         private int id;
         private string tittle;
         private string discription;

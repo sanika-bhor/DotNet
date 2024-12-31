@@ -16,3 +16,5 @@ A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\obj\Debug\ShoppingCart.c
 A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\obj\Debug\Shopping.CB5956BC.Up2Date
 A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\obj\Debug\ShoppingCart.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\obj\Debug\ShoppingCart.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\bin\Debug\ShoppingCart.dll.config
+A:\TAP\GitHub\DotNet\WindowFormApplication\ShoppingCart\bin\Debug\Catelog.dll.config

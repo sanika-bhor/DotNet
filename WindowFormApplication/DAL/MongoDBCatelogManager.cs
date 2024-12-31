@@ -57,14 +57,16 @@ namespace DAL
             return cust;
         }
 
-        public List<Product> getSoldProductsFromDb()
+        public bool insertCustomer(Customer customer)
         {
-           
-        }
-
-        public bool insertProduct(Product p)
-        {
-            throw new NotImplementedException();
+            bool status = false;
+           var collection= MongoDBCatelogManager.getCollection();
+            if (customer != null)
+            {
+                collection.InsertOne(customer);
+                status = true;
+            }
+            return status;
         }
 
         public bool UpdateProduct(Product p)

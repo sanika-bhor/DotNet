@@ -26,6 +26,17 @@ namespace BLL
             return customer;
         }
 
+        public static bool insertNewCustomer(Customer customer)
+        {
+            bool status = false;
+            MongoDBCatelogManager manger = new MongoDBCatelogManager();
+            if (customer != null)
+            {
+                manger.insertCustomer(customer);
+                status = true;
+            }
+            return status;
 
+        }
     }
 }

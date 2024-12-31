@@ -21,6 +21,7 @@ namespace FirstConsoleApplication
                 Console.WriteLine("please enter your choice: ");
                 Console.WriteLine("1.get all customers");
                 Console.WriteLine("2.get customer by their name");
+                Console.WriteLine("3.insert new customer");
                 ch=int.Parse(Console.ReadLine());
                 Console.WriteLine();
                 switch(ch)
@@ -42,6 +43,44 @@ namespace FirstConsoleApplication
                         break;
 
                     case 3:
+                        Console.WriteLine("LoginID: ");
+                        string loginid=Console.ReadLine();
+
+                        Console.WriteLine("Password: ");
+                        string password = Console.ReadLine();
+
+
+                        Console.WriteLine("Name: ");
+                        string name = Console.ReadLine();
+
+                        Console.WriteLine("Email: ");
+                        string email = Console.ReadLine();
+
+                        Console.WriteLine("Contact No: ");
+                        string contactno = Console.ReadLine();
+
+                        Console.WriteLine("location: ");
+                        string location = Console.ReadLine();
+
+                        Customer newCustomer = new Customer
+                        {
+                            LoginId = loginid,
+                            Password = password,
+                            Name = name,
+                            Email = email,
+                            ContactNo = contactno,
+                            Location = location
+                        };
+
+                      bool insertStatus=MongooDBBusinessManager.insertNewCustomer(newCustomer);
+                        if (insertStatus)
+                        {
+                            Console.WriteLine("Product inserted Successfully ");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Product not inserted");
+                        }
                         break;
 
                 }

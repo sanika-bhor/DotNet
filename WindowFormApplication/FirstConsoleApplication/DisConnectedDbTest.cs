@@ -13,6 +13,7 @@ namespace FirstConsoleApplication
         public static void Main(string[] args)
         {
             int ch;
+            char choice;
             do
             {
                 Console.WriteLine("Enter your choice: ");
@@ -149,8 +150,11 @@ namespace FirstConsoleApplication
                         break;
 
                 }
+                Console.WriteLine("------------------------------------------------------------------------------");
+                Console.WriteLine("please enter 'y' to continue");
+                 choice=char.Parse(Console.ReadLine());
 
-            } while (ch != 'Y' || ch != 'y');        
+            } while (choice == 'Y' || choice == 'y');        
         }
     }
 }

@@ -12,113 +12,151 @@ namespace FirstConsoleApplication
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("product data");
-            List<Product> all = BusinessManagerForConnected.getAllDbProducts();
-            foreach (Product p in all)
+           
+
+            int ch;
+            char choice;
+            do
             {
-                Console.WriteLine(p.Id+"  "+p.Tittle);
-            }
+                Console.WriteLine("Enter your choice: ");
+                Console.WriteLine("1.Get All Products");
+                Console.WriteLine("2.Get All Sold Products");
+                Console.WriteLine("3.Get Products by id");
+                Console.WriteLine("4.Insert");
+                Console.WriteLine("5.Update");
+                Console.WriteLine("6.Delete");
+                ch = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("\nsold products: ");
-            List<Product> soldProducts = BusinessManagerForConnected.getSoldProductsFromDb();
-            foreach (Product p in soldProducts)
-            {
-                Console.WriteLine(p.Id + "  " + p.Tittle);
-            }
+                switch (ch)
+                {
+                    case 1:
+                        Console.WriteLine("product data");
+                        List<Product> all = BusinessManagerForConnected.getAllDbProducts();
+                        foreach (Product p in all)
+                        {
+                            Console.WriteLine(p.Id + "  " + p.Tittle);
+                        }
+                        break;
 
+                    case 2:
+                        Console.WriteLine("\nsold products: ");
+                        List<Product> soldProducts = BusinessManagerForConnected.getSoldProductsFromDb();
+                        foreach (Product p in soldProducts)
+                        {
+                            Console.WriteLine(p.Id + "  " + p.Tittle);
+                        }
+                        break;
 
-            /*  Console.WriteLine("\ninsert new products: ");
-              Console.WriteLine("Enter product id");
-              int id = int.Parse(Console.ReadLine());
+                    case 3:
+                        Console.WriteLine("\nget products by id: ");
+                        Console.WriteLine("Enter product id");
+                        int id = int.Parse(Console.ReadLine());
 
-              Console.WriteLine("Enter product Title");
-              string title = Console.ReadLine();
+                        Product product = BusinessManagerForConnected.getProductById(id);
+                        Console.WriteLine(product.Id + "  " + product.Tittle + "  " + product.Discription + "  " + product.UnitPrice + "  " + product.Quantity);
 
-              Console.WriteLine("Enter product description");
-              string description = Console.ReadLine();
+                        break;
 
-              Console.WriteLine("Enter product Quantity");
-              int quantity = int.Parse(Console.ReadLine());
+                    case 4:
+                        Console.WriteLine("\ninsert new products: ");
+                        Console.WriteLine("Enter product id");
+                        int Newid = int.Parse(Console.ReadLine());
 
-              Console.WriteLine("Enter product unit Price");
-              int unitPrice = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Enter product Title");
+                        string Newtitle = Console.ReadLine();
 
-              Product product = new Product
-              {
-                  Id = id,
-                  Tittle = title,
-                  Discription = description,
-                  UnitPrice = unitPrice,
-                  Quantity = quantity
-              };
+                        Console.WriteLine("Enter product description");
+                        string Newdescription = Console.ReadLine();
 
-              bool insertStatus = BusinessManager.insertProductInDb(product);
-              if(insertStatus)
-              {
-                  Console.WriteLine("Product inserted successfully");
-              }
-              else
-              {
-                  Console.WriteLine("Product not inserted successfully");
-              }*/
+                        Console.WriteLine("Enter product Quantity");
+                        int Newquantity = int.Parse(Console.ReadLine());
 
-            /*  Console.WriteLine("\ndelete existing products: ");
-              Console.WriteLine("Enter product id");
-              int id = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Enter product unit Price");
+                        int NewunitPrice = int.Parse(Console.ReadLine());
 
-              bool deleteResult = BusinessManager.deleteFromProduct(id);
-              if(deleteResult)
-              {
-                  Console.WriteLine("Product deleted successfully");
-              }
-              else
-              {
-                  Console.WriteLine("Product not deleted ");
-              }*/
+                        Product Newproduct = new Product
+                        {
+                            Id = Newid,
+                            Tittle = Newtitle,
+                            Discription = Newdescription,
+                            UnitPrice = NewunitPrice,
+                            Quantity = Newquantity
+                        };
 
-            /* Console.WriteLine("\nget products by id: ");
-             Console.WriteLine("Enter product id");
-             int id = int.Parse(Console.ReadLine());
+                        bool insertStatus = BusinessManagerForConnected.insertProductInDb(Newproduct);
+                        if (insertStatus)
+                        {
+                            Console.WriteLine("Product inserted successfully");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Product not inserted successfully");
+                        }
+                        break;
 
-             Product product = BusinessManager.getProductById(id);
-             Console.WriteLine(product.Id+"  "+product.Tittle+"  "+product.Discription+"  "+product.UnitPrice+"  "+product.Quantity);
-            */
+                    case 5:
+                        Console.WriteLine("\nUpdate existing products by its id: ");
+                        Console.WriteLine("Enter product id");
+                        int Updatedid = int.Parse(Console.ReadLine());
 
+                        Console.WriteLine("Enter product Title");
+                        string Updatedtitle = Console.ReadLine();
 
-            Console.WriteLine("\nUpdate existing products by its id: ");
-            Console.WriteLine("Enter product id");
-            int id = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Enter product description");
+                        string Updateddescription = Console.ReadLine();
 
-            Console.WriteLine("Enter product Title");
-            string title = Console.ReadLine();
+                        Console.WriteLine("Enter product Quantity");
+                        int Updatedquantity = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter product description");
-            string description = Console.ReadLine();
+                        Console.WriteLine("Enter product unit Price");
+                        int UpdatedunitPrice = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter product Quantity");
-            int quantity = int.Parse(Console.ReadLine());
+                        Product Updatedproduct = new Product
+                        {
+                            Id = Updatedid,
+                            Tittle = Updatedtitle,
+                            Discription = Updateddescription,
+                            UnitPrice = UpdatedunitPrice,
+                            Quantity = Updatedquantity
+                        };
 
-            Console.WriteLine("Enter product unit Price");
-            int unitPrice = int.Parse(Console.ReadLine());
+                        bool UpdatedStatus = BusinessManagerForConnected.UpdateProductById(Updatedproduct);
+                        if (UpdatedStatus)
+                        {
+                            Console.WriteLine("Product update successfully");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Product not update");
+                        }
+                        break;
 
-            Product product = new Product
-            {
-                Id = id,
-                Tittle = title,
-                Discription = description,
-                UnitPrice = unitPrice,
-                Quantity = quantity
-            };
+                    case 6:
+                        Console.WriteLine("\ndelete existing products: ");
+                        Console.WriteLine("Enter product id");
+                        int Productid = int.Parse(Console.ReadLine());
 
-            bool insertStatus = BusinessManagerForConnected.UpdateProductById(product);
-            if (insertStatus)
-            {
-                Console.WriteLine("Product update successfully");
-            }
-            else
-            {
-                Console.WriteLine("Product not update");
-            }
+                        bool deleteResult = BusinessManagerForConnected.deleteFromProduct(Productid);
+                        if (deleteResult)
+                        {
+                            Console.WriteLine("Product deleted successfully");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Product not deleted ");
+                        }
+                        break;
+
+                    default:
+                        Console.WriteLine("THANK YOU!!");
+                        break;
+
+                }
+                Console.WriteLine("------------------------------------------------------------------------------");
+                Console.WriteLine("please enter 'y' to continue");
+                choice = char.Parse(Console.ReadLine());
+
+            } while (choice == 'Y' || choice == 'y');
         }
     }
 }

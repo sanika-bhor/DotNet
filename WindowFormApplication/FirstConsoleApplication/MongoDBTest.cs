@@ -22,6 +22,7 @@ namespace FirstConsoleApplication
                 Console.WriteLine("1.get all customers");
                 Console.WriteLine("2.get customer by their name");
                 Console.WriteLine("3.insert new customer");
+                Console.WriteLine("4.Update customer");
                 ch=int.Parse(Console.ReadLine());
                 Console.WriteLine();
                 switch(ch)
@@ -82,6 +83,48 @@ namespace FirstConsoleApplication
                             Console.WriteLine("Product not inserted");
                         }
                         break;
+
+                    case 4:
+                        Console.WriteLine("LoginID: ");
+                        string updatedloginid = Console.ReadLine();
+
+                        Console.WriteLine("Password: ");
+                        string updatedpassword = Console.ReadLine();
+
+
+                        Console.WriteLine("Name: ");
+                        string updatedname = Console.ReadLine();
+
+                        Console.WriteLine("Email: ");
+                        string updatedemail = Console.ReadLine();
+
+                        Console.WriteLine("Contact No: ");
+                        string updatedcontactno = Console.ReadLine();
+
+                        Console.WriteLine("location: ");
+                        string updatedlocation = Console.ReadLine();
+
+                        Customer updatedCustomer = new Customer
+                        {
+                            LoginId = updatedloginid,
+                            Password = updatedpassword,
+                            Name = updatedname,
+                            Email = updatedemail,
+                            ContactNo = updatedcontactno,
+                            Location = updatedlocation
+                        };
+
+                        bool updatedStatus = MongooDBBusinessManager.updateCustomer(updatedCustomer);
+                        if (updatedStatus)
+                        {
+                            Console.WriteLine("Product updated Successfully ");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Product not updated");
+                        }
+                        break;
+
 
                 }
                 Console.WriteLine("---------------------------------------------------------------------------");

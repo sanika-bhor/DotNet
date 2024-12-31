@@ -38,5 +38,17 @@ namespace BLL
             return status;
 
         }
+
+        public static bool updateCustomer(Customer customer)
+        {
+            bool status = false;
+            MongoDBCatelogManager manager = new MongoDBCatelogManager();
+            if (customer != null)
+            {
+                status= manager.UpdateCustomer(customer);
+            }
+            return status;
+        }
     }
+
 }

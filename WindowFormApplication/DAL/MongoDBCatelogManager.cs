@@ -69,9 +69,26 @@ namespace DAL
             return status;
         }
 
-        public bool UpdateProduct(Product p)
+        public bool UpdateCustomer(Customer customer)
         {
-            throw new NotImplementedException();
+            bool status = false;
+            Customer existingCustomer;
+            var collection = MongoDBCatelogManager.getCollection();
+
+            if (customer != null)
+            {
+                
+
+                collection.FindOneAndUpdate<Customer>(Builders<Customer>.Filter.Eq("LoginId",customer.LoginId),
+                                                     Builders<Customer>.Update.Set("Password",customer.Password)
+                                                                              .Set("Email",customer.Email)
+                                                                               .Set("Name",customer.Name)
+                                                                               .Set("ContactNo",customer.ContactNo)
+                                                                               .Set("Location",customer.Location));
+
+                status= true;
+            }
+            return status;
         }
 
         public bool deleteProduct(int id)

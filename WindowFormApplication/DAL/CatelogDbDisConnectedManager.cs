@@ -115,7 +115,6 @@ namespace DAL
             IDbConnection conn = CatelogDbConnectedManager.dbConnection();
             IDbCommand cmd = new MySqlCommand();
             string query = "select * from product";
-            cmd.Parameters.Add(new MySqlParameter("@Id", id));
             cmd.Connection = conn;
             cmd.CommandText = query;
             try

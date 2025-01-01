@@ -70,6 +70,7 @@ namespace DAL
         }
 
         public bool UpdateCustomer(Customer customer)
+
         {
             bool status = false;
             var collection = MongoDBCatelogManager.getCollection();

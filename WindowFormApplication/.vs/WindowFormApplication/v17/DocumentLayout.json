@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\firstconsoleapplication\\mongodbtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|solutionrelative:firstconsoleapplication\\mongodbtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\bll\\mongoodbbusinessmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|solutionrelative:bll\\mongoodbbusinessmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\dal\\mongodbcatelogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|solutionrelative:dal\\mongodbcatelogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\firstconsoleapplication\\businessmanagerdbtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|solutionrelative:firstconsoleapplication\\businessmanagerdbtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\dal\\catelogdbdisconnectedmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|solutionrelative:dal\\catelogdbdisconnectedmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SecondConsoleApplication||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
@@ -38,57 +30,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MongoDBTest.cs",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\MongoDBTest.cs",
-              "RelativeDocumentMoniker": "FirstConsoleApplication\\MongoDBTest.cs",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\MongoDBTest.cs",
-              "RelativeToolTip": "FirstConsoleApplication\\MongoDBTest.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAnwIwAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T11:23:37.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "MongoDBCatelogManager.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\MongoDBCatelogManager.cs",
               "RelativeDocumentMoniker": "DAL\\MongoDBCatelogManager.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\MongoDBCatelogManager.cs",
               "RelativeToolTip": "DAL\\MongoDBCatelogManager.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAnwFwAAAAoAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAABYAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T10:51:30.359Z",
+              "WhenOpened": "2024-12-31T17:10:20.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MongooDBBusinessManager.cs",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\BLL\\MongooDBBusinessManager.cs",
-              "RelativeDocumentMoniker": "BLL\\MongooDBBusinessManager.cs",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\BLL\\MongooDBBusinessManager.cs",
-              "RelativeToolTip": "BLL\\MongooDBBusinessManager.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAYwDQAAAAwAAAA",
+              "Title": "CatelogDbDisConnectedManager.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\CatelogDbDisConnectedManager.cs",
+              "RelativeDocumentMoniker": "DAL\\CatelogDbDisConnectedManager.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\CatelogDbDisConnectedManager.cs",
+              "RelativeToolTip": "DAL\\CatelogDbDisConnectedManager.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAYwN8AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T10:50:39.198Z",
+              "WhenOpened": "2024-12-31T15:29:06.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BusinessManagerDbTest.cs",
-              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\BusinessManagerDbTest.cs",
-              "RelativeDocumentMoniker": "FirstConsoleApplication\\BusinessManagerDbTest.cs",
-              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\BusinessManagerDbTest.cs",
-              "RelativeToolTip": "FirstConsoleApplication\\BusinessManagerDbTest.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAYwDoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T14:31:14.71Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "SecondConsoleApplication",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\SecondConsoleApplication.csproj",
               "RelativeDocumentMoniker": "FirstConsoleApplication\\SecondConsoleApplication.csproj",

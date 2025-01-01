@@ -7,7 +7,6 @@ A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\obj\Debug\DAL.csproj.CoreCompileI
 A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\obj\Debug\DAL.csproj.Up2Date
 A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\obj\Debug\DAL.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\obj\Debug\DAL.pdb
-A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\MySql.Data.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\Google.Protobuf.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\ZstdNet.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\K4os.Compression.LZ4.Streams.dll

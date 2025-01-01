@@ -1,0 +1,15 @@
+A:\TAP\GitHub\DotNet\RecuitmentApp\bin\Debug\net8.0\RecuitmentApp.exe
+A:\TAP\GitHub\DotNet\RecuitmentApp\bin\Debug\net8.0\RecuitmentApp.deps.json
+A:\TAP\GitHub\DotNet\RecuitmentApp\bin\Debug\net8.0\RecuitmentApp.runtimeconfig.json
+A:\TAP\GitHub\DotNet\RecuitmentApp\bin\Debug\net8.0\RecuitmentApp.dll
+A:\TAP\GitHub\DotNet\RecuitmentApp\bin\Debug\net8.0\RecuitmentApp.pdb
+A:\TAP\GitHub\DotNet\RecuitmentApp\obj\Debug\net8.0\RecuitmentApp.GeneratedMSBuildEditorConfig.editorconfig
+A:\TAP\GitHub\DotNet\RecuitmentApp\obj\Debug\net8.0\RecuitmentApp.AssemblyInfoInputs.cache
+A:\TAP\GitHub\DotNet\RecuitmentApp\obj\Debug\net8.0\RecuitmentApp.AssemblyInfo.cs
+A:\TAP\GitHub\DotNet\RecuitmentApp\obj\Debug\net8.0\RecuitmentApp.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\RecuitmentApp\obj\Debug\net8.0\RecuitmentApp.sourcelink.json
+A:\TAP\GitHub\DotNet\RecuitmentApp\obj\Debug\net8.0\RecuitmentApp.dll
+A:\TAP\GitHub\DotNet\RecuitmentApp\obj\Debug\net8.0\refint\RecuitmentApp.dll
+A:\TAP\GitHub\DotNet\RecuitmentApp\obj\Debug\net8.0\RecuitmentApp.pdb
+A:\TAP\GitHub\DotNet\RecuitmentApp\obj\Debug\net8.0\RecuitmentApp.genruntimeconfig.cache
+A:\TAP\GitHub\DotNet\RecuitmentApp\obj\Debug\net8.0\ref\RecuitmentApp.dll

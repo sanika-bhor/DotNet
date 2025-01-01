@@ -25,7 +25,6 @@ A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\obj\Debug\Fir
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
-A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\MySql.Data.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\System.Buffers.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\System.Memory.dll

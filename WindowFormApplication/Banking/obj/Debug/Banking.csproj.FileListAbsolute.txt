@@ -4,3 +4,9 @@ A:\TAP\GitHub\DotNet\FirstConsoleApplication\Banking\obj\Debug\Banking.csproj.As
 A:\TAP\GitHub\DotNet\FirstConsoleApplication\Banking\obj\Debug\Banking.csproj.CoreCompileInputs.cache
 A:\TAP\GitHub\DotNet\FirstConsoleApplication\Banking\obj\Debug\Banking.dll
 A:\TAP\GitHub\DotNet\FirstConsoleApplication\Banking\obj\Debug\Banking.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\Banking\bin\Debug\Banking.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\Banking\bin\Debug\Banking.pdb
+A:\TAP\GitHub\DotNet\WindowFormApplication\Banking\obj\Debug\Banking.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\WindowFormApplication\Banking\obj\Debug\Banking.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\WindowFormApplication\Banking\obj\Debug\Banking.dll
+A:\TAP\GitHub\DotNet\WindowFormApplication\Banking\obj\Debug\Banking.pdb

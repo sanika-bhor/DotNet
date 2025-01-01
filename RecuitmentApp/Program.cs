@@ -1,6 +1,7 @@
 ﻿using Recuitment;
 
-// See https://aka.ms/new-console-template for more information
+
+//HollyWood principle
 Console.WriteLine("Hello, World!");
 
 JobPortal.get().uploadContent("sanika","bhorsanika0239@gmail.com",".NET developer");

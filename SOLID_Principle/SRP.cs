@@ -13,18 +13,39 @@ namespace SRP
         void IServerUtility.GetMessage()
         {
             //get message
-            Console.WriteLine("getting your message....");
+            Console.WriteLine("getting your message service....");
         }
         void IServerUtility.TranslateMessage()
         {
             //Translating message
-            Console.WriteLine("Translating message......");
+            Console.WriteLine("Translating message service......");
 
         }
         void IServerUtility.Dispatch()
         {
             //disposal of that message
-            Console.WriteLine("dispatch message......");
+            Console.WriteLine("dispatch message service......");
+
+        }
+    }
+
+   public class NotificationUtility:IServerUtility
+    {
+        void IServerUtility.GetMessage()
+        {
+            //get message
+            Console.WriteLine("getting your message notification....");
+        }
+        void IServerUtility.TranslateMessage()
+        {
+            //Translating message
+            Console.WriteLine("Translating message notification......");
+
+        }
+        void IServerUtility.Dispatch()
+        {
+            //disposal of that message
+            Console.WriteLine("dispatch message notification......");
 
         }
     }

@@ -1,13 +1,13 @@
 //OCP(Open Closed Principle)
 namespace OCP
 {
-    public interface IAccount
+    public interface IBankAccount
     {
         public double Balance{get; set;}
         public void CalculateInterest();
     }
 
-    public class RegularSavingAccount:IAccount
+    public class RegularSavingAccount:IBankAccount
     {
         public double Balance{get; set;}=0;
         public void CalculateInterest()
@@ -30,7 +30,7 @@ namespace OCP
         }
     }
 
-    public class SalarySavingAccount:IAccount
+    public class SalarySavingAccount:IBankAccount
     {
         public double Balance{get; set;}=0;
         public void CalculateInterest()
@@ -43,7 +43,7 @@ namespace OCP
         }
     }
 
-    public class CorporateSavingAccount:IAccount
+    public class CorporateSavingAccount:IBankAccount
     {
         public double Balance{get; set;}=0;
         public void CalculateInterest()

@@ -2,6 +2,7 @@
 using OCP;
 using LSP;
 using ISP;
+using DIP;
 
 Console.WriteLine("Hello, World!");
 
@@ -36,13 +37,14 @@ Console.WriteLine();
 // Open for extension but closed for modification
 // open for extension means we can add new functionality without modifying existing code
 // closed for modification means we can modify existing code without affezsecting other functionality
-IAccount regularAccount=new RegularSavingAccount();
+
+IBankAccount regularAccount=new RegularSavingAccount();
 regularAccount.CalculateInterest();
 
-IAccount salaryAccount=new SalarySavingAccount();
+IBankAccount salaryAccount=new SalarySavingAccount();
 salaryAccount.CalculateInterest();
 
-IAccount corporateAccount=new CorporateSavingAccount();
+IBankAccount corporateAccount=new CorporateSavingAccount();
 corporateAccount.CalculateInterest();
 
 Console.WriteLine();
@@ -67,4 +69,16 @@ onlineOrder.PayOnline();
 IOrder oflineOrder=new OflineOrder();
 oflineOrder.AddToCart();
 
+Console.WriteLine();
+Console.WriteLine();
 
+//**********************DCP(Dependency inversion principle) Test**********************
+IAccount account= new Admin();
+AccountController controller=new AccountController(account);
+controller.Login();
+controller.Register();
+
+account=new User();
+AccountController controller1=new AccountController(account);
+controller1.Login();
+controller1.Register();

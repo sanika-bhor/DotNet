@@ -1,9 +1,10 @@
 ﻿using SRP;
 using OCP;
+using ISP;
 
 Console.WriteLine("Hello, World!");
 
-//SRP (Single responsibilty principle) test
+//**************SRP (Single responsibilty principle) test**********************
 //object of serverUtility
 IServerUtility utility = new ServiceUtility();
 
@@ -28,11 +29,12 @@ notifyServer.DispatchService();
 
 Console.WriteLine();
 Console.WriteLine();
-//OCP(Open Closed Principle) Test
-//Open for extension but closed for modification
-//open for extension means we can add new functionality without modifying existing code
-//closed for modification means we can modify existing code without affecting other functionality
 
+
+//**********************OCP(Open Closed Principle) Test**********************
+Open for extension but closed for modification
+open for extension means we can add new functionality without modifying existing code
+closed for modification means we can modify existing code without affezsecting other functionality
 IAccount regularAccount=new RegularSavingAccount();
 regularAccount.CalculateInterest();
 
@@ -41,3 +43,15 @@ salaryAccount.CalculateInterest();
 
 IAccount corporateAccount=new CorporateSavingAccount();
 corporateAccount.CalculateInterest();
+
+Console.WriteLine();
+Console.WriteLine();
+
+//**********************ISP(Interface segragation principle) Test**********************
+IOrder order=new OnlineOrder();
+order.AddToCart();
+IOnlineOrder onlineOrder=new OnlineOrder();
+onlineOrder.PayOnline();
+
+IOrder oflineOrder=new OflineOrder();
+oflineOrder.AddToCart();

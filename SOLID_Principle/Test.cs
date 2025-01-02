@@ -1,5 +1,6 @@
 ﻿using SRP;
 using OCP;
+using LSP;
 using ISP;
 
 Console.WriteLine("Hello, World!");
@@ -32,9 +33,9 @@ Console.WriteLine();
 
 
 //**********************OCP(Open Closed Principle) Test**********************
-Open for extension but closed for modification
-open for extension means we can add new functionality without modifying existing code
-closed for modification means we can modify existing code without affezsecting other functionality
+// Open for extension but closed for modification
+// open for extension means we can add new functionality without modifying existing code
+// closed for modification means we can modify existing code without affezsecting other functionality
 IAccount regularAccount=new RegularSavingAccount();
 regularAccount.CalculateInterest();
 
@@ -47,6 +48,16 @@ corporateAccount.CalculateInterest();
 Console.WriteLine();
 Console.WriteLine();
 
+//**********************LSP(Liskov's substitution principle) Test**********************
+Triangle triangle=new Triangle();
+triangle.Draw();
+
+Circle circle=new Circle();
+circle.Draw();
+
+Console.WriteLine();
+Console.WriteLine();
+
 //**********************ISP(Interface segragation principle) Test**********************
 IOrder order=new OnlineOrder();
 order.AddToCart();
@@ -55,3 +66,5 @@ onlineOrder.PayOnline();
 
 IOrder oflineOrder=new OflineOrder();
 oflineOrder.AddToCart();
+
+

@@ -1,0 +1,15 @@
+A:\TAP\GitHub\DotNet\SOLID_Principle\bin\Debug\net8.0\SOLID_Principle.exe
+A:\TAP\GitHub\DotNet\SOLID_Principle\bin\Debug\net8.0\SOLID_Principle.deps.json
+A:\TAP\GitHub\DotNet\SOLID_Principle\bin\Debug\net8.0\SOLID_Principle.runtimeconfig.json
+A:\TAP\GitHub\DotNet\SOLID_Principle\bin\Debug\net8.0\SOLID_Principle.dll
+A:\TAP\GitHub\DotNet\SOLID_Principle\bin\Debug\net8.0\SOLID_Principle.pdb
+A:\TAP\GitHub\DotNet\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.GeneratedMSBuildEditorConfig.editorconfig
+A:\TAP\GitHub\DotNet\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.AssemblyInfoInputs.cache
+A:\TAP\GitHub\DotNet\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.AssemblyInfo.cs
+A:\TAP\GitHub\DotNet\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.sourcelink.json
+A:\TAP\GitHub\DotNet\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.dll
+A:\TAP\GitHub\DotNet\SOLID_Principle\obj\Debug\net8.0\refint\SOLID_Principle.dll
+A:\TAP\GitHub\DotNet\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.pdb
+A:\TAP\GitHub\DotNet\SOLID_Principle\obj\Debug\net8.0\SOLID_Principle.genruntimeconfig.cache
+A:\TAP\GitHub\DotNet\SOLID_Principle\obj\Debug\net8.0\ref\SOLID_Principle.dll

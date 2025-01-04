@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Login Page";
+}
+ <link rel="stylesheet" href="~/css/Style.css" />
+
+<center>
+<div class="data">
+<h1>Login</h1>
+    <table>
+    <tr>
+    <td>UserName:</td>
+    <td><input type="text" name="user" placeholder="UserName"/></td>
+    </tr>
+
+     <tr>
+    <td>Password:</td>
+    <td><input type="password" name="pass" placeholder="Password"/></td>
+    </tr>
+
+     <tr>
+    <td><input type="button" name="btn" value=" Login "/></td>
+    <td><a href="/Account/ForgotPassword">Forgot Password</a></td>
+    </tr>
+    </table>
+        <a href="/Account/Register">Register new User</a>
+    
+</div>
+</center>

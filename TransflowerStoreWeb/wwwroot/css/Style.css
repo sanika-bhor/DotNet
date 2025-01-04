@@ -30,6 +30,14 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 /* Buttons styling */
 input[type="button"] {
     padding: 10px 20px;

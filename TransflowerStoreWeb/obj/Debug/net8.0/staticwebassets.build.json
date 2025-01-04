@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JmLdTlUpIdm6Mt/mvMPWsFl70luUGzWw7of+x07z1Gs=",
+  "Hash": "X1vy8pFnl+H5Zz1lJovo4bQQhJqwE5C0zAGHPSd+oD4=",
   "Source": "TransflowerStoreWeb",
   "BasePath": "_content/TransflowerStoreWeb",
   "Mode": "Default",
@@ -55,25 +55,6 @@
       "OriginalItemSpec": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreWeb\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TransflowerStoreWeb.bundle.scp.css"
     },
     {
-      "Identity": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreWeb\\wwwroot\\css\\Products\\index.css",
-      "SourceId": "TransflowerStoreWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreWeb\\wwwroot\\",
-      "BasePath": "_content/TransflowerStoreWeb",
-      "RelativePath": "css/Products/index.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Products\\index.css"
-    },
-    {
       "Identity": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreWeb\\wwwroot\\css\\site.css",
       "SourceId": "TransflowerStoreWeb",
       "SourceType": "Discovered",
@@ -91,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreWeb\\wwwroot\\css\\Style.css",
+      "SourceId": "TransflowerStoreWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreWeb\\wwwroot\\",
+      "BasePath": "_content/TransflowerStoreWeb",
+      "RelativePath": "css/Style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Style.css"
     },
     {
       "Identity": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreWeb\\wwwroot\\favicon.ico",

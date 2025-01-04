@@ -18,6 +18,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = A:\TAP\GitHub\DotNet\TransflowerStoreWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[A:/TAP/GitHub/DotNet/TransflowerStoreWeb/Views/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[A:/TAP/GitHub/DotNet/TransflowerStoreWeb/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[A:/TAP/GitHub/DotNet/TransflowerStoreWeb/Views/Account/LogOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dPdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[A:/TAP/GitHub/DotNet/TransflowerStoreWeb/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [A:/TAP/GitHub/DotNet/TransflowerStoreWeb/Views/Home/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

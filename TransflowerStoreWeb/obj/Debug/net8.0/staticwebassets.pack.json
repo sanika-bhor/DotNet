@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\TransflowerStoreWeb.bundle.scp.css"
     },
     {
+      "Id": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreWeb\\wwwroot\\css\\Products\\index.css",
+      "PackagePath": "staticwebassets\\css\\Products\\index.css"
+    },
+    {
       "Id": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreWeb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

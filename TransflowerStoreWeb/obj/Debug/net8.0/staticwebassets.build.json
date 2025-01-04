@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fTG8j+Yr0Zghs/U6zr31b1MY/fI+u5I+L5Fej6YnDgY=",
+  "Hash": "JmLdTlUpIdm6Mt/mvMPWsFl70luUGzWw7of+x07z1Gs=",
   "Source": "TransflowerStoreWeb",
   "BasePath": "_content/TransflowerStoreWeb",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreWeb\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TransflowerStoreWeb.bundle.scp.css"
+    },
+    {
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreWeb\\wwwroot\\css\\Products\\index.css",
+      "SourceId": "TransflowerStoreWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreWeb\\wwwroot\\",
+      "BasePath": "_content/TransflowerStoreWeb",
+      "RelativePath": "css/Products/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Products\\index.css"
     },
     {
       "Identity": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreWeb\\wwwroot\\css\\site.css",

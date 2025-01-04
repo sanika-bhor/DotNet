@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TransflowerStoreWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b0fc0d9c532ef16847cd22a555e7a58dc510cfe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca037f2dd86a3eec7177b150ba1c5e1b435d695f")]
 [assembly: System.Reflection.AssemblyProductAttribute("TransflowerStoreWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TransflowerStoreWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

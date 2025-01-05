@@ -68,15 +68,16 @@ input::placeholder {
 
 .container
 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* Creates 5 equal-width columns */
+    gap: 40px;
   
 }
 
-.container .cart
+ .cart
 {
     padding: 20px;
-    width:600px;
+    width:100%;
     margin: 5px;
     box-shadow:  0 8px 16px rgba(0, 0, 0, 0.1) ;
     border-radius: 20px;
@@ -91,8 +92,8 @@ input::placeholder {
 }
 img
 {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1) ;
     margin-bottom: 10px;
 }
@@ -126,4 +127,21 @@ img
 .main h1
 {
     text-align: center;
+}
+
+
+/* details page */
+.details 
+{
+    margin-left: 400px;
+    text-align: center;
+
+}
+.details .cart{
+   width:600px;
+}
+
+.details .cart p
+{
+   margin-bottom: 5px;
 }

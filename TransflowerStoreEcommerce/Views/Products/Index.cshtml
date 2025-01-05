@@ -16,11 +16,11 @@
                 <div class="cart">
                     <h2>@product.ProductName</h2>
                     <img src="@product.Image" width="100" height="100" />
-                    <p><b>ProductId:</b> @product.ProductId</p>
+                    @* <p><b>ProductId:</b> @product.ProductId</p> *@
                     <p><b>Title: </b>@product.ProductName</p>
-                    <p><b>Description:</b> @product.Description</p>
+                    @* <p><b>Description:</b> @product.Description</p> *@
                     <p><b>Price:</b> @product.UnitPrice</p>
-                    <p><b>Available stock:</b> @product.Quantity</p>
+                    @* <p><b>Available stock:</b> @product.Quantity</p> *@
                     <a href="/Products/Details"> <button>Details</button></a>
 
                 </div>
@@ -32,6 +32,6 @@
     <hr>
     <hr>
     <a href="/Products/Insert"><button value="details">Insert</button></a>
-    <a href="/Products/Update"><button value="details">Update</button></a>
+
 
 </div>

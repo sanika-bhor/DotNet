@@ -99,7 +99,15 @@ public class ProductDALManager
                 string image = reader["Image"].ToString();
 
 
-                Product product = new Product(id, title, description, quntity, unitPrice,image);
+                Product product = new Product
+                {
+                    ProductId=id,
+                    ProductName=title,
+                    Description=description,
+                    UnitPrice=unitPrice,
+                    Quantity=quntity,
+                    Image=image
+                };
 
                 products.Add(product);
             }
@@ -124,4 +132,62 @@ public class ProductDALManager
         return products;
     }
 
+
+public static Product getProductById(int pid)
+{
+       
+        Product product = null;
+        IDbConnection conn = ProductDALManager.dbConnection();
+        IDbCommand cmd = new MySqlCommand();
+        string query = "select * from product where ProductId=@pid";
+        cmd.Parameters.Add(new MySqlParameter("@pid",pid));
+        cmd.CommandText = query;
+        cmd.Connection = conn;
+
+        IDataReader reader = null;
+
+
+        try
+        {
+            conn.Open();
+            reader = cmd.ExecuteReader();
+            reader.Read();
+                int id = int.Parse(reader["ProductId"].ToString());
+                string title = reader["Title"].ToString();
+                string description = reader["Description"].ToString();
+                int unitPrice = int.Parse(reader["UnitPrice"].ToString());
+                int quntity = int.Parse(reader["Quantity"].ToString());
+                string image = reader["Image"].ToString();
+
+
+                 product = new Product
+                {
+                    ProductId = id,
+                    ProductName = title,
+                    Description = description,
+                    UnitPrice = unitPrice,
+                    Quantity = quntity,
+                    Image = image
+                };
+            conn.Close();
+
+
+        }
+        catch (MySqlException exp)
+        {
+            string msg = exp.Message;
+            Console.WriteLine(msg);
+        }
+        finally
+        {
+            if (conn.State == ConnectionState.Open)
+            {
+                conn.Close();
+            }
+
+        }
+
+        return product;
+
+    }
 }

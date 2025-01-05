@@ -26,6 +26,8 @@ public class ProductsController : Controller
 
     public IActionResult Details()
     {
+        Product product=ProductBLLManager.getProductByID(103);
+        ViewData["productById"]=product;
         return View();
     }
 

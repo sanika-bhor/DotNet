@@ -14,4 +14,9 @@ public class ProductBLLManager
         return allProducts;
 
     }
+    public static Product getProductByID(int id)
+    {
+        Product product=ProductDALManager.getProductById(id);
+        return product;
+    }
 }

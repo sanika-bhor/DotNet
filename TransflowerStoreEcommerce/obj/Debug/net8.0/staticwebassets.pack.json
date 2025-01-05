@@ -37,6 +37,14 @@
       "PackagePath": "staticwebassets\\images\\flowers\\aster.png"
     },
     {
+      "Id": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreEcommerce\\wwwroot\\images\\flowers\\hibiscus.png",
+      "PackagePath": "staticwebassets\\images\\flowers\\hibiscus.png"
+    },
+    {
+      "Id": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreEcommerce\\wwwroot\\images\\flowers\\lily.png",
+      "PackagePath": "staticwebassets\\images\\flowers\\lily.png"
+    },
+    {
       "Id": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreEcommerce\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

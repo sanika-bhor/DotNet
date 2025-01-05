@@ -24,9 +24,9 @@ public class ProductsController : Controller
     }
 
 
-    public IActionResult Details()
+    public IActionResult Details(int id)
     {
-        Product product=ProductBLLManager.getProductByID(103);
+        Product product=ProductBLLManager.getProductByID(id);
         ViewData["productById"]=product;
         return View();
     }
@@ -41,10 +41,16 @@ public class ProductsController : Controller
         return View();
     }
 
-    public IActionResult Delete()
+    public IActionResult Delete(int id)
     {
-        return View();
+        bool status=ProductBLLManager.deleteProductById(id);
+        if(status)
+        {
+            Console.WriteLine("Product delete succesfully");
+        }
+        return RedirectToAction("index");
     }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

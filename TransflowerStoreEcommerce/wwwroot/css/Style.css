@@ -106,10 +106,10 @@ img
     font-weight: 400;
 }
 
-.cart button
+button
 {
-      padding: 8px 16px;
-      font-size: 1rem;
+    padding: 8px 16px;
+    font-size: 1rem;
     margin: 5px;
     background-color: #4CAF50;
     color: #ffffff;
@@ -120,7 +120,7 @@ img
 
 }
 
-.cart button:hover {
+ button:hover {
     background-color: #45a049;
 }
 
@@ -144,4 +144,18 @@ img
 .details .cart p
 {
    margin-bottom: 5px;
+}
+
+.btn
+{
+    margin-left:90%;
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+.btn:hover
+{
+    margin-left:90%;
+    background-color: #4CAF50;
+    color: #ffffff;
 }

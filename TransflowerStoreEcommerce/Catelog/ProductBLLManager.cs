@@ -19,4 +19,10 @@ public class ProductBLLManager
         Product product=ProductDALManager.getProductById(id);
         return product;
     }
+
+    public static bool deleteProductById(int id)
+    {
+        bool status=ProductDALManager.deleteProductById(id);
+        return status;
+    }
 }

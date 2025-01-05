@@ -8,6 +8,8 @@
 
 <div class="main">
     <h1 >Products Catelog</h1>
+    <a href="/Products/Insert"><button class="btn">Insert new Flower</button></a>
+
     @{
         List<Product> products = (List<Product>)ViewData["allProducts"];
         <div class="container">
@@ -21,7 +23,7 @@
                     @* <p><b>Description:</b> @product.Description</p> *@
                     <p><b>Price:</b> @product.UnitPrice</p>
                     @* <p><b>Available stock:</b> @product.Quantity</p> *@
-                    <a href="/Products/Details"> <button>Details</button></a>
+                    <a href="/Products/Details/@product.ProductId"> <button>Details</button></a>
 
                 </div>
             }
@@ -31,7 +33,6 @@
     }
     <hr>
     <hr>
-    <a href="/Products/Insert"><button value="details">Insert</button></a>
-
+  
 
 </div>

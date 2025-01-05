@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\bll\\businessmanagerforconnected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\bll\\businessmanagerforconnected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|solutionrelative:bll\\businessmanagerforconnected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -16,9 +16,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\dal\\catelogdbdisconnectedmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|solutionrelative:dal\\catelogdbdisconnectedmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\firstconsoleapplication\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +39,7 @@
               "RelativeDocumentMoniker": "BLL\\BusinessManagerForConnected.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\BLL\\BusinessManagerForConnected.cs",
               "RelativeToolTip": "BLL\\BusinessManagerForConnected.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACsAAAACAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACsAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-05T11:06:54.125Z",
               "EditorCaption": ""
@@ -80,8 +77,7 @@
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\SecondConsoleApplication.csproj",
               "RelativeToolTip": "FirstConsoleApplication\\SecondConsoleApplication.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-31T11:32:42.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T11:32:42.135Z"
             }
           ]
         }

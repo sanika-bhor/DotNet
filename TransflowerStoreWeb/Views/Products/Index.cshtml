@@ -1,16 +1,22 @@
+
+@using System.Collections.Generic;
+@using Catelog;
 @{
     ViewData["Title"] = "Product Home Page";
 }
- 
+
 <div>
     <h1>Products Catelog</h1>
    <ul>
-   <li>Rose</li>
-   <li>Gerbera</li>
-   <li>Lotus</li>
-   <li>Auster</li>
-   <li>Hibiscus</li>
-   </ul>
+   @{
+            List<Product> products = (List<Product>)ViewData["allProducts"];
+         @foreach(Product product in products)
+            {
+               <li>@product.ProductName</li>
+            }
+       
+    }
+    </ul>
    <hr>
    <hr>
     <a  href="/Products/Details"> <button value="details">Details</button></a>

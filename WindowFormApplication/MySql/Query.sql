@@ -11,12 +11,13 @@ Quantity int
 );
 
 
-insert into  product values (101,"rose","valentineFlower" ,20,452);
+insert into  product values (101,"rose","valentine Flower" ,20,452);
 insert into  product values (102,"lotus","unique flower" ,50,62);
 insert into  product values (103,"gerbera","wedding Flower" ,15,4563);
 insert into  product values (104,"aster","festival Flower" ,6,5000);
 insert into  product values (105,"hibiscus","beautiful Flower" ,10,0);
 insert into  product values (107,"lily","cute and small" ,6,57240);
+
 
 set SQL_SAFE_UPDATES=0;
 

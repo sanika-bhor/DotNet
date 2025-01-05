@@ -69,12 +69,61 @@ input::placeholder {
 .container
 {
     display: flex;
-    background-color: #fff;
-    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1) ;
+    flex-direction: row;
+  
 }
 
 .container .cart
 {
     padding: 20px;
-    margin: 50px;
+    width:600px;
+    margin: 5px;
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.1) ;
+    border-radius: 20px;
+     display: flex;              /* Enable flexbox on .cart */
+    flex-direction: column;     /* Stack children vertically */
+    align-items: center;        /* Center horizontally */
+    justify-content: flex-start;
+}
+
+.cart h2{
+    text-align: center;
+}
+img
+{
+    width: 200px;
+    height: 200px;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1) ;
+    margin-bottom: 10px;
+}
+
+.cart p
+{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.cart button
+{
+      padding: 8px 16px;
+      font-size: 1rem;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.cart button:hover {
+    background-color: #45a049;
+}
+
+.main h1
+{
+    text-align: center;
 }

@@ -3,15 +3,22 @@
   "WorkspaceRootPath": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SecondConsoleApplication||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\bll\\businessmanagerforconnected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|solutionrelative:bll\\businessmanagerforconnected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\dal\\mongodbcatelogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|solutionrelative:dal\\mongodbcatelogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\dal\\catelogdbdisconnectedmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\dal\\catelogdbdisconnectedmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|solutionrelative:dal\\catelogdbdisconnectedmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SecondConsoleApplication||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{1A0697EF-76BB-492A-B5D3-F9DE5C965898}|FirstConsoleApplication\\SecondConsoleApplication.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\firstconsoleapplication\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +28,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -29,7 +36,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "BusinessManagerForConnected.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\BLL\\BusinessManagerForConnected.cs",
+              "RelativeDocumentMoniker": "BLL\\BusinessManagerForConnected.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\BLL\\BusinessManagerForConnected.cs",
+              "RelativeToolTip": "BLL\\BusinessManagerForConnected.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T11:06:54.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MongoDBCatelogManager.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\MongoDBCatelogManager.cs",
               "RelativeDocumentMoniker": "DAL\\MongoDBCatelogManager.cs",
@@ -37,12 +57,11 @@
               "RelativeToolTip": "DAL\\MongoDBCatelogManager.cs",
               "ViewState": "AQIAAEUAAAAAAAAAAAAAABYAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T17:10:20.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T17:10:20.302Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CatelogDbDisConnectedManager.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\CatelogDbDisConnectedManager.cs",
               "RelativeDocumentMoniker": "DAL\\CatelogDbDisConnectedManager.cs",
@@ -50,19 +69,19 @@
               "RelativeToolTip": "DAL\\CatelogDbDisConnectedManager.cs",
               "ViewState": "AQIAAEcAAAAAAAAAAAAYwN8AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T15:29:06.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T15:29:06.436Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "SecondConsoleApplication",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\SecondConsoleApplication.csproj",
               "RelativeDocumentMoniker": "FirstConsoleApplication\\SecondConsoleApplication.csproj",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\SecondConsoleApplication.csproj",
               "RelativeToolTip": "FirstConsoleApplication\\SecondConsoleApplication.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-31T11:32:42.135Z"
+              "WhenOpened": "2024-12-31T11:32:42.135Z",
+              "EditorCaption": ""
             }
           ]
         }

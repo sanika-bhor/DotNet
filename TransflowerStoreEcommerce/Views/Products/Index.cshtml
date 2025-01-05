@@ -1,27 +1,37 @@
-
 @using System.Collections.Generic;
 @using Catelog;
 @using BLL;
 @{
     ViewData["Title"] = "Product Home Page";
 }
+<link rel="stylesheet" href="~/css/Style.css" />
 
-<div>
+<div class="page">
     <h1>Products Catelog</h1>
-   <ul>
-   @{
-        List<Product> products = (List<Product>)ViewData["allProducts"];
-         @foreach(Product product in products)
-            {
-                <li>@product.ProductName</li>
-            }
-       
-    }
-    </ul>
-   <hr>
-   <hr>
-    <a  href="/Products/Details"> <button value="details">Details</button></a>
-    <a href="/Products/Insert"><button value="details" >Insert</button></a>
-    <a   href="/Products/Update"><button value="details">Update</button></a>
+        @{
+            List<Product> products = (List<Product>)ViewData["allProducts"];
+            <div class="container">
+                @foreach (Product product in products)
+                {
+                    <div class="cart">
+                        <h2>@product.ProductName</h2>
+                        <img src="@product.Image" width="100" height="100" />
+                         <p>ProductId: @product.ProductId</p>
+                         <p>Title: @product.ProductName</p>
+                        <p>Description: @product.Description</p>
+                         <p>Price: @product.UnitPrice</p>
+                         <p>Available stock: @product.Quantity</p>
+                        <p></p>
+                    </div>
+                }
+            </div>
+
+
+        }
+    <hr>
+    <hr>
+    <a href="/Products/Details"> <button value="details">Details</button></a>
+    <a href="/Products/Insert"><button value="details">Insert</button></a>
+    <a href="/Products/Update"><button value="details">Update</button></a>
 
 </div>

@@ -72,10 +72,7 @@ public class ProductDALManager
     {
         Console.WriteLine("Starting");
         List<Product> products = new List<Product>();
-        // IDbConnection conn = ProductDALManager.dbConnection();
-        IDbConnection conn = new MySqlConnection();
-        conn.ConnectionString = @"server=localhost;port=3306;user=root;password=root123;database=ecommerce";
-
+        IDbConnection conn = ProductDALManager.dbConnection();
         IDbCommand cmd = new MySqlCommand();
         string query = "select * from product";
         cmd.CommandText = query;

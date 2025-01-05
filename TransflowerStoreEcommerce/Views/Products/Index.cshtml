@@ -1,0 +1,27 @@
+
+@using System.Collections.Generic;
+@using Catelog;
+@using BLL;
+@{
+    ViewData["Title"] = "Product Home Page";
+}
+
+<div>
+    <h1>Products Catelog</h1>
+   <ul>
+   @{
+        List<Product> products = (List<Product>)ViewData["allProducts"];
+         @foreach(Product product in products)
+            {
+                <li>@product.ProductName</li>
+            }
+       
+    }
+    </ul>
+   <hr>
+   <hr>
+    <a  href="/Products/Details"> <button value="details">Details</button></a>
+    <a href="/Products/Insert"><button value="details" >Insert</button></a>
+    <a   href="/Products/Update"><button value="details">Update</button></a>
+
+</div>

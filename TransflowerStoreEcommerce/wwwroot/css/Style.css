@@ -1,0 +1,66 @@
+
+/* Styling the container div */
+.data{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* Styling the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Styling table rows and cells */
+table tr td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+/* Input fields styling */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Buttons styling */
+input[type="button"] {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+/* Specific styling for button alignment */
+table tr:last-child td {
+    text-align: center;
+}
+
+/* Placeholder text styling */
+input::placeholder {
+    color: #888;
+    font-style: italic;
+}

@@ -13,7 +13,7 @@ public class CustomerDALManager
         return conn;
     }
 
-    public static List<Customer> getAllProductFromDB()
+    public static List<Customer> getAllCustomerFromDB()
     {
         List<Customer> customers = new List<Customer>();
         IDbConnection conn = CustomerDALManager.dbConnection();
@@ -75,7 +75,7 @@ public class CustomerDALManager
         return customers;
     }
 
-    public static Customer getProductById(int customerid)
+    public static Customer getCustomerById(int customerid)
     {
 
         Customer customer = null;

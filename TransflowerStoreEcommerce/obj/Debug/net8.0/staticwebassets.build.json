@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lWVfI45imvXM+PxBpXFllBlCyHH7QwVRcnOwCaZhfY4=",
+  "Hash": "bTpsl2vVa6gfGrXhFaLv1Cz/CP0hvVlFWl1Q1pRUTco=",
   "Source": "TransflowerStoreWeb",
   "BasePath": "_content/TransflowerStoreWeb",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreEcommerce\\wwwroot\\images\\Customers\\user.png",
+      "SourceId": "TransflowerStoreWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreEcommerce\\wwwroot\\",
+      "BasePath": "_content/TransflowerStoreWeb",
+      "RelativePath": "images/Customers/user.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Customers\\user.png"
     },
     {
       "Identity": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreEcommerce\\wwwroot\\images\\flowers\\aster.png",

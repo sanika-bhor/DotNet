@@ -18,14 +18,14 @@ public class CustomerController : Controller
 
     public IActionResult Index()
     {
-        List<Customer> customer = CustomerBLLManager.getAllProducts();
+        List<Customer> customer = CustomerBLLManager.getAllCustomers();
         ViewData["allCustomers"] = customer;
         return View();
     }
 
     public IActionResult Details(int id)
     {
-        Customer customer = CustomerBLLManager.getProductByID(id);
+        Customer customer = CustomerBLLManager.getCustomerByID(id);
         ViewData["customerById"] = customer;
         return View();
     }

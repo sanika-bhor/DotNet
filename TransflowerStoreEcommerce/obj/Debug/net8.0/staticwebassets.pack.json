@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreEcommerce\\wwwroot\\images\\Customers\\user.png",
+      "PackagePath": "staticwebassets\\images\\Customers\\user.png"
+    },
+    {
       "Id": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreEcommerce\\wwwroot\\images\\flowers\\Gerbera.png",
       "PackagePath": "staticwebassets\\images\\flowers\\Gerbera.png"
     },

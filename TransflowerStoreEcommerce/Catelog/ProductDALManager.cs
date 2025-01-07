@@ -203,4 +203,42 @@ public class ProductDALManager
         }
         return status;
     }
+
+
+    public static bool UpdateProduct(Product product)
+    {
+        bool status = false;
+        IDbConnection conn = ProductDALManager.dbConnection();
+        IDbCommand cmd = new MySqlCommand();
+        string query = "update product set  Title=@title,Description=@description,  UnitPrice=@unitprice, Quantity=@quantity,Image=@image where ProductId=@productid";
+        cmd.Parameters.Add(new MySqlParameter("@productid", product.ProductId));
+        cmd.Parameters.Add(new MySqlParameter("@title", product.ProductName));
+        cmd.Parameters.Add(new MySqlParameter("@descriptpion", product.Description));
+        cmd.Parameters.Add(new MySqlParameter("@unitprice", product.UnitPrice));
+        cmd.Parameters.Add(new MySqlParameter("@quantity", product.Quantity));
+        cmd.Parameters.Add(new MySqlParameter("@image", product.Image));
+
+        cmd.CommandText = query;
+        cmd.Connection = conn;
+
+        try
+        {
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            status = true;
+        }
+        catch (MySqlException exp)
+        {
+            string msg = exp.Message;
+            Console.WriteLine(msg);
+        }
+        finally
+        {
+            if (conn.State == ConnectionState.Open)
+            {
+                conn.Close();
+            }
+        }
+        return status;
+    }
 }

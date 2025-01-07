@@ -30,4 +30,9 @@ public class ProductBLLManager
     {
         return ProductDALManager.insertProduct(p);
     }
+
+    public static bool updateProduct(Product p)
+    {
+        return ProductDALManager.insertProduct(p);
+    }
 }

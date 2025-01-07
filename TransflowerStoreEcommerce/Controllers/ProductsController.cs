@@ -53,7 +53,7 @@ public class ProductsController : Controller
         bool status=ProductBLLManager.insertProduct(product);
         if(status)
         {
-            return RedirectToAction("Index","Product");
+            return RedirectToAction("Index","Products");
         }
         else
         {

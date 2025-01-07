@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PW9HRwtULEuwxlGCIWFf87TyojYUistHHYM87gqE8tw=",
+  "Hash": "lWVfI45imvXM+PxBpXFllBlCyHH7QwVRcnOwCaZhfY4=",
   "Source": "TransflowerStoreWeb",
   "BasePath": "_content/TransflowerStoreWeb",
   "Mode": "Default",
@@ -243,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\flowers\\Rose.png"
+    },
+    {
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreEcommerce\\wwwroot\\images\\flowers\\tulip.png",
+      "SourceId": "TransflowerStoreWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreEcommerce\\wwwroot\\",
+      "BasePath": "_content/TransflowerStoreWeb",
+      "RelativePath": "images/flowers/tulip.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\flowers\\tulip.png"
     },
     {
       "Identity": "A:\\TAP\\GitHub\\DotNet\\TransflowerStoreEcommerce\\wwwroot\\js\\site.js",

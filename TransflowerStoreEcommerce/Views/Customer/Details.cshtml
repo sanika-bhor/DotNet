@@ -1,0 +1,75 @@
+@using CRM;
+
+@{
+    ViewData["Title"] = "customer details Page";
+}
+<link rel="stylesheet" href="~/css/Style.css" />
+
+<div class="details">
+    <h1>Product details</h1>
+    @{
+
+        Customer customer = (Customer)ViewData["customerById"];
+        <div class="cart">
+            <table>
+                <tr>
+                    <td> 
+                        <table>
+                               <tr>
+                                    <h2>@customer.CustomerName</h2>
+                                </tr>
+                            <tr>
+                                <td>
+                                    <img src="/images/Customers/user.png" width="100" height="100" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <p><b>ProductId:</b> @customer.CustomerId</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><b>Title: </b>@customer.CustomerName</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><b>Login ID:</b> @customer.LoginId</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><b>Password:</b> @customer.Password</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><b>Email:</b> @customer.Email</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><b>Location:</b> @customer.Location</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/Products/Update/@customer.CustomerId"><button>Update</button></a> 
+                                    <a href="/Products/Delete/@product.ProductId"><button value="details">Delete</button></a> *
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    }
+</div>

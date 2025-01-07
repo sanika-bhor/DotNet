@@ -114,3 +114,5 @@ A:\TAP\GitHub\DotNet\TransflowerStoreEcommerce\bin\Debug\net8.0\runtimes\win-x64
 A:\TAP\GitHub\DotNet\TransflowerStoreEcommerce\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
 A:\TAP\GitHub\DotNet\TransflowerStoreEcommerce\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
 A:\TAP\GitHub\DotNet\TransflowerStoreEcommerce\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+A:\TAP\GitHub\DotNet\TransflowerStoreEcommerce\bin\Debug\net8.0\CRM\obj\CRM.csproj.nuget.dgspec.json
+A:\TAP\GitHub\DotNet\TransflowerStoreEcommerce\bin\Debug\net8.0\CRM\obj\project.assets.json

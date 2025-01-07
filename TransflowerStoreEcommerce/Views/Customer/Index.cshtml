@@ -1,0 +1,30 @@
+@using System.Collections.Generic;
+@using CRM;
+@using BLL;
+@{
+    ViewData["Title"] = "Customer Home Page";
+}
+
+<div>
+    <h1 >Customer Catelog</h1>
+
+    @{
+        List<Customer> customers = (List<Customer>)ViewData["allCustomers"];
+        <div>
+            @foreach (Customer customer in customers)
+            {
+                <div>
+                    <h4><b>Name:</b>@customer.CustomerName</h4>
+                    <p><b>Contact:</b> @customer.ContactNo</p>
+                    <a href="/Products/Details/@customer.CustomerId"> <button>Details</button></a>
+                </div>
+            }
+        </div>
+
+
+    }
+    <hr>
+    <hr>
+  
+
+</div>

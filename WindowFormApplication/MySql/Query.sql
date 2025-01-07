@@ -24,3 +24,19 @@ set SQL_SAFE_UPDATES=0;
 
 delete from product where ProductId=10;
 select * from product;
+
+
+create table Customer
+(
+CustomerId int not null,
+LoginId varchar(50),
+Password varchar(10),
+CustomerName varchar(30),
+Email varchar(20),
+ContactNo varchar(10),
+Location varchar(50)
+);
+
+insert into  Customer values (1,"sanika12","SB27" ,"sanika bhor", "sb@gmail.com","7896400000","pune");
+insert into  Customer values (2,"sumitBhor","sumit13" ,"sumit bhor", "sumit@gmail.com","1456327889","pune");
+insert into  Customer values (3,"Transflower","tflPortal" ,"Ravi Sir", "sumit@gmail.com","1456327889","pune");

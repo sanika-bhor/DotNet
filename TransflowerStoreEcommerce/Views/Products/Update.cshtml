@@ -1,41 +1,53 @@
+@using Catelog;
+@model Product;
+
 @{
-    ViewData["Title"] = "Product update Page";
+    ViewBag.Title = "Product update Page";
 }
  <link rel="stylesheet" href="~/css/Style.css" />
 
 
 <div class="data">
 <h1>Update Product</h1>
+<form action="/Products/Update" method="post">
+        <center>
     <table>
     <tr>
     <td>Product id:</td>
-    <td><input type="text" name="pid" placeholder="Product existing id"/></td>
+    <td><input type="text" name="id" placeholder="Product existing id" value="@Model.ProductId"/></td>
     </tr>
 
      <tr>
     <td>Name:</td>
-    <td><input type="text" name="name" placeholder="Product Name"/></td>
+    <td><input type="text" name="title" placeholder="Product Name" value="@Model.ProductName"/></td>
     </tr>
 
      <tr>
     <td>Description:</td>
-    <td><input type="text" name="description" placeholder="Product Description"/></td>
+    <td><input type="text" name="description" placeholder="Product Description" value="@Model.Description"/></td>
     </tr>
 
      <tr>
     <td>UnitPrice:</td>
-    <td><input type="text" name="unitprice" placeholder="Product unitprice"/></td>
+    <td><input type="text" name="unitprice" placeholder="Product unitprice"value="@Model.UnitPrice"/></td>
     </tr>
 
      <tr>
     <td>Quantity:</td>
-    <td><input type="text" name="quantity" placeholder="Product quantity"/></td>
+    <td><input type="text" name="quantity" placeholder="Product quantity" value="@Model.Quantity"/></td>
+    </tr>
+
+    <tr>
+    <td>Image:</td>
+    <td><input type="text" name="image" placeholder="Product quantity" value="@Model.Image"/></td>
     </tr>
 
      <tr>
     <td></td>
-    <td><input type="button" name="btn" value=" Update "/></td>
+    <td><input type="submit" class="submitButton" name="btn" value=" Update " /></td>
     </tr>
 
     </table>
+ </center>
+    </form>
 </div>

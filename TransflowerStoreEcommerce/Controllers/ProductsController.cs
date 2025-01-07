@@ -57,16 +57,36 @@ public class ProductsController : Controller
         }
         else
         {
-            return View();
+            return RedirectToAction("Insert", "Products");
         }
       
     }
 
-    public IActionResult Update()
+    [HttpGet]
+    public IActionResult Update(int id)
     {
-        return View();
+        Product product=ProductBLLManager.getProductByID(id);
+        return View(product);
     }
-    
+
+    [HttpPost]
+    public IActionResult Update(int id, string title, string description, double unitPrice, int quantity, string image)
+    {
+        Product product = new Product
+        {
+            ProductId=id,
+            ProductName=title,
+            Description=description,
+            UnitPrice=unitPrice,
+            Quantity=quantity,
+            Image=image
+        };
+
+         ProductBLLManager.updateProduct(product);
+        return RedirectToAction("Index", "Products");
+        
+  }
+
 
     public IActionResult Delete(int id)
     {

@@ -33,6 +33,6 @@ public class ProductBLLManager
 
     public static bool updateProduct(Product p)
     {
-        return ProductDALManager.insertProduct(p);
+        return ProductDALManager.UpdateProduct(p);
     }
 }

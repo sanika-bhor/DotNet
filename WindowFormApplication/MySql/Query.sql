@@ -17,7 +17,7 @@ insert into  product values (103,"gerbera","wedding Flower" ,15,4563);
 insert into  product values (104,"aster","festival Flower" ,6,5000);
 insert into  product values (105,"hibiscus","beautiful Flower" ,10,0);
 insert into  product values (106,"lily","cute and small" ,6,57240,"/images/flowers/lily.png");
-insert into  product values (107,"hibiscus","cute and small" ,6,57240,"/images/flowers/lily.png");
+insert into  product values (107,"hibiscus","perfect flower" ,20,853,"/images/flowers/Hibiscus.png");
 
 
 set SQL_SAFE_UPDATES=0;

@@ -39,6 +39,17 @@ input[type="password"] {
     box-sizing: border-box;
 }
 /* Buttons styling */
+input[type="submit"] {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
 input[type="button"] {
     padding: 10px 20px;
     margin: 5px;

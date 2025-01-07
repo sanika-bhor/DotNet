@@ -25,4 +25,9 @@ public class ProductBLLManager
         bool status=ProductDALManager.deleteProductById(id);
         return status;
     }
+
+    public static bool insertProduct(Product p)
+    {
+        return ProductDALManager.insertProduct(p);
+    }
 }

@@ -6,8 +6,9 @@
 
 
 <div class="data">
-<h1>Insert Product</h1>
-
+<h1>Insert Product</h1
+<center>
+<form target="/products/insert" method="post">
     <table>
     <tr>
     <td>Product id:</td>
@@ -35,9 +36,16 @@
     </tr>
 
      <tr>
+    <td>Image:</td>
+    <td><input type="text" name="image" placeholder="Product image"/></td>
+    </tr>
+
+     <tr>
     <td></td>
-    <td><input type="button" name="btn" value=" Insert "/></td>
+    <td><input type="submit" name="btn" value=" Insert "/></td>
     </tr>
 
     </table>
+    </form>
+    </center>
 </div>

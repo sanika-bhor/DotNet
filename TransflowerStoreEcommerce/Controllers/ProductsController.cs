@@ -31,15 +31,42 @@ public class ProductsController : Controller
         return View();
     }
 
+    [HttpGet]
     public IActionResult Insert()
     {
         return View();
+    }
+
+    [HttpPost]
+    public IActionResult Insert(int id, string title,string description,double unitPrice, int quantity,string image)
+    {
+        Product product = new Product
+        {
+            ProductId=id,
+            ProductName=title,
+            Description=description,
+            UnitPrice=unitPrice,
+            Quantity=quantity,
+            Image=image
+        };
+
+        bool status=ProductBLLManager.insertProduct(product);
+        if(status)
+        {
+            return RedirectToAction("Index","Product");
+        }
+        else
+        {
+            return View();
+        }
+      
     }
 
     public IActionResult Update()
     {
         return View();
     }
+    
 
     public IActionResult Delete(int id)
     {

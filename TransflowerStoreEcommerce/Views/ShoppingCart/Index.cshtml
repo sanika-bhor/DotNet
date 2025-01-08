@@ -1,0 +1,37 @@
+@using System.Collections.Generic;
+@using ShoppingCart;
+@using BLL;
+@using Catelog;
+@{
+    ViewData["Title"] = "Cart Home Page";
+}
+<link rel="stylesheet" href="~/css/Style.css" />
+
+<div class="main">
+    <h1 >Shapping cart</h1>
+
+    @{
+       
+        List<Item> items = (List<Item>)ViewData["allItems"];
+        <div class="container">
+            @foreach (Item item in items)
+            {
+                 var product = item.product;
+                <div class="cart">
+                    <h2>@product.ProductName</h2>
+                    <p><b>ProductId:</b> @product.ProductId</p>
+                    <p><b>CustomerId:</b> @item.CustomerId</p>
+                    <p><b>Title: </b>@product.ProductName</p>
+                    <p><b>Price:</b> @product.UnitPrice</p>
+                    <p><b>Quantity:</b> @item.Quantity</p>
+                </div>
+            }
+        </div>
+
+
+    }
+    <hr>
+    <hr>
+  
+
+</div>

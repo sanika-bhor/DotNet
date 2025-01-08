@@ -40,3 +40,20 @@ Location varchar(50)
 insert into  Customer values (1,"sanika12","SB27" ,"sanika bhor", "sb@gmail.com","7896400000","pune");
 insert into  Customer values (2,"sumitBhor","sumit13" ,"sumit bhor", "sumit@gmail.com","1456327889","pune");
 insert into  Customer values (3,"Transflower","tflPortal" ,"Ravi Sir", "Tfl@gmail.com","7853697124","Swarget");
+
+select * from Customer;
+
+
+
+
+create table ShoppingCart
+(
+ProductId int not null,
+CustomerId int,
+Title varchar(50),
+UnitPrice int,
+Quantity int
+);
+
+insert into  shoppingcart values (1,"sanika12","SB27" ,"sanika bhor", "sb@gmail.com","7896400000","pune");
+insert into  Customer values (2,"sumitBhor","sumit13" ,"sumit bhor", "sumit@gmail.com","1456327889","pune");

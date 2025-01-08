@@ -58,6 +58,7 @@
     <h1 >Customer Catelog</h1>
     <a href="/Customer/Insert"><button class="btn">Insert new Customer</button></a>
 
+
     @{
         List<Customer> customers = (List<Customer>)ViewData["allCustomers"];
         <div class="customerList">
@@ -74,7 +75,7 @@
         </table>
         </div>
 
-
+    <a href="/ShoppingCart/Index/"><button value="details">All Customer Cart</button></a>
     }
     <hr>
     <hr>

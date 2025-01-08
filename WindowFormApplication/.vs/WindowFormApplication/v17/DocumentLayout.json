@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\dal\\catelogdbconnectedmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C488DC-9B23-40DB-B1FD-C0AE4A5B2FB0}|DAL\\DAL.csproj|solutionrelative:dal\\catelogdbconnectedmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|a:\\tap\\github\\dotnet\\windowformapplication\\bll\\businessmanagerforconnected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9804060-523D-4E6A-A2A8-16AB9A37B5B4}|BLL\\BLL.csproj|solutionrelative:bll\\businessmanagerforconnected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,28 +29,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CatelogDbConnectedManager.cs",
+              "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\CatelogDbConnectedManager.cs",
+              "RelativeDocumentMoniker": "DAL\\CatelogDbConnectedManager.cs",
+              "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\CatelogDbConnectedManager.cs",
+              "RelativeToolTip": "DAL\\CatelogDbConnectedManager.cs",
+              "ViewState": "AQIAAPwAAAAAAAAAAAAAAAMBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T18:22:06.861Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BusinessManagerForConnected.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\BLL\\BusinessManagerForConnected.cs",
               "RelativeDocumentMoniker": "BLL\\BusinessManagerForConnected.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\BLL\\BusinessManagerForConnected.cs",
               "RelativeToolTip": "BLL\\BusinessManagerForConnected.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACsAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-05T11:06:54.125Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MongoDBCatelogManager.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\MongoDBCatelogManager.cs",
               "RelativeDocumentMoniker": "DAL\\MongoDBCatelogManager.cs",
@@ -58,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CatelogDbDisConnectedManager.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\DAL\\CatelogDbDisConnectedManager.cs",
               "RelativeDocumentMoniker": "DAL\\CatelogDbDisConnectedManager.cs",
@@ -70,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SecondConsoleApplication",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\WindowFormApplication\\FirstConsoleApplication\\SecondConsoleApplication.csproj",
               "RelativeDocumentMoniker": "FirstConsoleApplication\\SecondConsoleApplication.csproj",

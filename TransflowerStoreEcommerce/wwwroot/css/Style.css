@@ -103,7 +103,7 @@ input::placeholder {
 .cart h2{
     text-align: center;
 }
-img
+.cart img
 {
     width: 230px;
     height: 230px;
@@ -172,3 +172,4 @@ button
     background-color: #4CAF50;
     color: #ffffff;
 }
+

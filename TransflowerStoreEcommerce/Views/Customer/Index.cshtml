@@ -4,21 +4,79 @@
 @{
     ViewData["Title"] = "Customer Home Page";
 }
+<style>
+    .customerList {
+        padding: 20px;
+        width: 500px;
+        margin: 5px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .customerList img {
+        width: 70px;
+        height: 70px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        margin-left: 30%;
+        background-color: #4CAF50;
+        color: #ffffff;
+    }
+
+    .btn:hover {
+        margin-left: 90%;
+        background-color: #4CAF50;
+        color: #ffffff;
+    }
+
+    table tr td {
+        padding: 10px;
+        vertical-align: middle;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 1rem;
+        margin: 5px;
+        background-color: #4CAF50;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
 
 <div>
     <h1 >Customer Catelog</h1>
+    <a href="/Customer/Insert"><button class="btn">Insert new Flower</button></a>
 
     @{
         List<Customer> customers = (List<Customer>)ViewData["allCustomers"];
-        <div>
+        <div class="customerList">
+        <table>
             @foreach (Customer customer in customers)
             {
-                <div>
-                    <h4><b>Name:</b>@customer.CustomerName</h4>
-                    <p><b>Contact:</b> @customer.ContactNo</p>
-                    <a href="/Customer/Details/@customer.CustomerId"> <button>Details</button></a>
-                </div>
+                  <tr>
+                    <td><img src="/images/customers/user.png" width="20" height="20"/></td>
+                    <td><h5>@customer.CustomerName</h5>
+                    <p> @customer.ContactNo</p></td>
+                    <td><a href="/Customer/Details/@customer.CustomerId"> <button>Details</button></a></td>
+                </tr>
             }
+        </table>
         </div>
 
 

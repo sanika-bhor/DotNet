@@ -24,4 +24,15 @@ public class CustomerBLLManager
     {
         return CustomerDALManager.insertCustomer(c);
     }
+
+    public static bool UpdateCustomer(Customer c)
+    {
+        return CustomerDALManager.UpdateCustomer(c);
+    }
+
+    public static bool deleteCustomerById(int id)
+    {
+        bool status = CustomerDALManager.deleteCustomerById(id);
+        return status;
+    }
 }

@@ -174,4 +174,79 @@ public class CustomerDALManager
         return status;
     }
 
+
+    public static bool UpdateCustomer(Customer customer)
+    {
+        bool status = false;
+        IDbConnection conn = CustomerDALManager.dbConnection();
+        IDbCommand cmd = new MySqlCommand();
+        string query = "update Customer set LoginId=@loginid, Password=@password, CustomerName=@name, Email=@email, ContactNo=@contact,Location=@location where CustomerId=@id";
+        cmd.Connection = conn;
+        cmd.CommandText = query;
+
+        cmd.Parameters.Add(new MySqlParameter("@id", customer.CustomerId));
+        cmd.Parameters.Add(new MySqlParameter("@loginid", customer.LoginId));
+        cmd.Parameters.Add(new MySqlParameter("@password", customer.Password));
+        cmd.Parameters.Add(new MySqlParameter("@name", customer.CustomerName));
+        cmd.Parameters.Add(new MySqlParameter("@email", customer.Email));
+        cmd.Parameters.Add(new MySqlParameter("@contact", customer.ContactNo));
+        cmd.Parameters.Add(new MySqlParameter("@location", customer.Location));
+
+
+        try
+        {
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            status = true;
+        }
+        catch (MySqlException exp)
+        {
+            string msg = exp.Message;
+            Console.WriteLine(msg);
+        }
+        finally
+        {
+            if (conn.State == ConnectionState.Open)
+            {
+                conn.Close();
+            }
+        }
+        return status;
+    }
+
+
+
+    public static bool deleteCustomerById(int id)
+    {
+        bool status = false;
+        IDbConnection conn = CustomerDALManager.dbConnection();
+        IDbCommand cmd = new MySqlCommand();
+        string query = "delete from Customer where CustomerId=@id";
+        cmd.Parameters.Add(new MySqlParameter("@id", id));
+        cmd.CommandText = query;
+        cmd.Connection = conn;
+
+        try
+        {
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            status = true;
+        }
+        catch (MySqlException exp)
+        {
+            string msg = exp.Message;
+            Console.WriteLine(msg);
+        }
+        finally
+        {
+            if (conn.State == ConnectionState.Open)
+            {
+                conn.Close();
+            }
+        }
+        return status;
+    }
+
+
+
 }

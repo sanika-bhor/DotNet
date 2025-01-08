@@ -30,11 +30,11 @@ public class CustomerController : Controller
     }
 
     [HttpPost]
-    public IActionResult Insert(int id, string loginid, string password, string name, string email, string contact, string location)
+    public IActionResult Insert(int Customerid, string loginid, string password, string name, string email, string contact, string location)
     {
         Customer customer = new Customer
         {
-           CustomerId=id,
+           CustomerId= Customerid,
            LoginId = loginid,
            Password = password,
            CustomerName = name,
@@ -59,6 +59,41 @@ public class CustomerController : Controller
         Customer customer = CustomerBLLManager.getCustomerByID(id);
         ViewData["customerById"] = customer;
         return View();
+    }
+
+    [HttpGet]
+    public IActionResult Update(int id)
+    {
+        Customer customer = CustomerBLLManager.getCustomerByID(id);
+        return View(customer);
+    }
+
+    [HttpPost]
+    public IActionResult Update(int id, string loginid, string password, string name, string email, string contact, string location)
+    {
+        Customer customer = new Customer
+        {
+            CustomerId = id,
+            LoginId = loginid,
+            Password = password,
+            CustomerName = name,
+            Email = email,
+            ContactNo = contact,
+            Location = location
+        };
+        CustomerBLLManager.UpdateCustomer(customer);
+        return RedirectToAction("Index", "Customer");
+
+    }
+
+    public IActionResult Delete(int id)
+    {
+        bool status = CustomerBLLManager.deleteCustomerById(id);
+        if (status)
+        {
+            Console.WriteLine("Customer delete succesfully");
+        }
+        return RedirectToAction("index");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

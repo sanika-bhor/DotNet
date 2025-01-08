@@ -1,0 +1,56 @@
+@{
+    ViewData["Title"] = "Product Insert Page";
+}
+
+<link rel="stylesheet" href="~/css/Style.css" />
+
+
+<div class="data">
+    <h1>Insert Customer</h1 
+    
+<form action="/Customer/insert" method="post">
+    <table>
+        <tr>
+            <td>Customer id:</td>
+            <td><input type="text" name="Customerid" placeholder="Customer id" /></td>
+        </tr>
+
+        <tr>
+            <td>Login id:</td>
+            <td><input type="text" name="loginid" placeholder="Customer loginid id" /></td>
+        </tr>
+
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" placeholder="Password" /></td>
+        </tr>
+
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name" placeholder="Customer Name" /></td>
+        </tr>
+
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" name="email" placeholder="Customer Email" /></td>
+        </tr>
+
+        <tr>
+            <td>Contact number:</td>
+            <td><input type="text" name="contact" placeholder="Contact number:" /></td>
+        </tr>
+
+        <tr>
+            <td>Location:</td>
+            <td><input type="text" name="location" placeholder="Location" /></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit" class="submitButton" name="btn" value=" Insert " /></td>
+        </tr>
+
+    </table>
+    </form>
+
+</div>

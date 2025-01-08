@@ -23,6 +23,37 @@ public class CustomerController : Controller
         return View();
     }
 
+    [HttpGet]
+    public IActionResult Insert()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Insert(int id, string loginid, string password, string name, string email, string contact, string location)
+    {
+        Customer customer = new Customer
+        {
+           CustomerId=id,
+           LoginId = loginid,
+           Password = password,
+           CustomerName = name,
+           Email = email,
+           ContactNo = contact,
+           Location = location
+        };
+
+        bool status = CustomerBLLManager.insertCustomer(customer);
+        if (status)
+        {
+            return RedirectToAction("Index", "Customer");
+        }
+        else
+        {
+            return RedirectToAction("Insert", "Customer");
+        }
+
+    }
     public IActionResult Details(int id)
     {
         Customer customer = CustomerBLLManager.getCustomerByID(id);

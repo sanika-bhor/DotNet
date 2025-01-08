@@ -136,4 +136,42 @@ public class CustomerDALManager
 
     }
 
+
+    public static bool insertCustomer(Customer customer)
+    {
+        bool status = false;
+        IDbConnection conn = CustomerDALManager.dbConnection();
+        IDbCommand cmd = new MySqlCommand();
+        string query = "insert into Customer values(@customertid, @loginId, @password, @CustomerName, @Email, @Contact, @loction)";
+        cmd.Parameters.Add(new MySqlParameter("@customertid", customer.CustomerId));
+        cmd.Parameters.Add(new MySqlParameter("@loginId", customer.LoginId));
+        cmd.Parameters.Add(new MySqlParameter("@password", customer.Password));
+        cmd.Parameters.Add(new MySqlParameter("@CustomerName", customer.CustomerName));
+        cmd.Parameters.Add(new MySqlParameter("@Email", customer.Email));
+        cmd.Parameters.Add(new MySqlParameter("@Contact", customer.Location));
+
+        cmd.CommandText = query;
+        cmd.Connection = conn;
+
+        try
+        {
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            status = true;
+        }
+        catch (MySqlException exp)
+        {
+            string msg = exp.Message;
+            Console.WriteLine(msg);
+        }
+        finally
+        {
+            if (conn.State == ConnectionState.Open)
+            {
+                conn.Close();
+            }
+        }
+        return status;
+    }
+
 }

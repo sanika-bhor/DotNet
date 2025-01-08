@@ -19,4 +19,9 @@ public class CustomerBLLManager
         Customer customer = CustomerDALManager.getCustomerById(id);
         return customer;
     }
+
+    public static bool insertCustomer(Customer c)
+    {
+        return CustomerDALManager.insertCustomer(c);
+    }
 }

@@ -30,11 +30,6 @@
         color: #ffffff;
     }
 
-    .btn:hover {
-        margin-left: 90%;
-        background-color: #4CAF50;
-        color: #ffffff;
-    }
 
     table tr td {
         padding: 10px;
@@ -61,7 +56,7 @@
 
 <div>
     <h1 >Customer Catelog</h1>
-    <a href="/Customer/Insert"><button class="btn">Insert new Flower</button></a>
+    <a href="/Customer/Insert"><button class="btn">Insert new Customer</button></a>
 
     @{
         List<Customer> customers = (List<Customer>)ViewData["allCustomers"];

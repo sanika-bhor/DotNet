@@ -6,9 +6,14 @@
     ViewData["Title"] = "Cart Home Page";
 }
 <link rel="stylesheet" href="~/css/Style.css" />
-
+<style>
+.cartItem
+{
+    width:200px;
+}
+</style>
 <div class="main">
-    <h1 >Shapping cart</h1>
+    <h1 >Shopping cart</h1>
 
     @{
        
@@ -17,7 +22,7 @@
             @foreach (Item item in items)
             {
                  var product = item.product;
-                <div class="cart">
+                <div class="cart cartItem">
                     <h2>@product.ProductName</h2>
                     <p><b>ProductId:</b> @product.ProductId</p>
                     <p><b>CustomerId:</b> @item.CustomerId</p>

@@ -70,4 +70,60 @@ public class CartDALManager
 
         return items;
     }
+
+     public static Item getItemById(int cid)
+    {
+        Item item=null; 
+        IDbConnection conn = CartDALManager.dbConnection();
+        IDbCommand cmd = new MySqlCommand();
+        string query = "select * from ShoppingCart where CustomerId=@cid";
+        cmd.Parameters.Add(new MySqlParameter("@cid", cid));
+        cmd.CommandText = query;
+        cmd.Connection = conn;
+
+        IDataReader reader = null;
+
+
+        try
+        {
+            conn.Open();
+            reader = cmd.ExecuteReader();
+            reader.Read();
+             int Productid = int.Parse(reader["ProductId"].ToString());
+                int Customerid = int.Parse(reader["CustomerId"].ToString());
+                string title = reader["Title"].ToString();
+                int unitprice = int.Parse(reader["UnitPrice"].ToString());
+                int quantity = int.Parse(reader["Quantity"].ToString());
+              
+
+                Product product =new Product{
+                    ProductId=Productid,
+                    ProductName=title,
+                    UnitPrice=unitprice
+                };
+
+                 item = new Item(product,quantity,Customerid);
+
+            conn.Close();
+
+
+        }
+        catch (MySqlException exp)
+        {
+            string msg = exp.Message;
+            Console.WriteLine(msg);
+        }
+        finally
+        {
+            if (conn.State == ConnectionState.Open)
+            {
+                conn.Close();
+            }
+
+        }
+
+        return item;
+
+    }
+
 }

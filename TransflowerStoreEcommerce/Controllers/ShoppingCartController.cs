@@ -23,6 +23,14 @@ public class ShoppingCartController : Controller
         return View();
     }
 
+    public IActionResult Details(int id)
+    {
+        Item item=CartBLLManager.getItemById(id);
+        ViewData["ItemById"]=item;
+        return View();
+    }
+
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

@@ -11,4 +11,10 @@ public class CartBLLManager
         return allItems;
 
     }
+
+     public static Item getItemById(int id)
+    {
+        Item item=CartDALManager.getItemById(id);
+        return item;
+    }
 }

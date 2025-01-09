@@ -194,5 +194,39 @@ public class CartDALManager
         return status;
     }
 
- 
+    public static bool UpdateItem(Item item)
+    {
+        bool status = false;
+        IDbConnection conn = CartDALManager.dbConnection();
+        IDbCommand cmd = new MySqlCommand();
+        string query = "update shoppingcart set Title=@title, UnitPrice=@unitPrice, Quantity=@quantity where CustomerId=@id";
+        cmd.Connection = conn;
+        cmd.CommandText = query;
+
+        cmd.Parameters.Add(new MySqlParameter("@id", item.CustomerId));
+        cmd.Parameters.Add(new MySqlParameter("@title", item.product.ProductName));
+        cmd.Parameters.Add(new MySqlParameter("@unitPrice", item.product.UnitPrice));
+        cmd.Parameters.Add(new MySqlParameter("@quantity", item.product.Quantity));
+
+
+        try
+        {
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            status = true;
+        }
+        catch (MySqlException exp)
+        {
+            string msg = exp.Message;
+            Console.WriteLine(msg);
+        }
+        finally
+        {
+            if (conn.State == ConnectionState.Open)
+            {
+                conn.Close();
+            }
+        }
+        return status;
+    }
 }

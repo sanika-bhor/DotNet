@@ -61,6 +61,28 @@ public class ShoppingCartController : Controller
     }
 
 
+    public IActionResult Update(int id)
+    {
+        Item item = CartBLLManager.getItemById(id);
+        return View(item);
+    }
+
+    [HttpPost]
+    public IActionResult Update(int id, string title, int customerid, double unitPrice, int quantity)
+    {
+        Product product = new Product
+        {
+            ProductId = id,
+            ProductName = title,
+            UnitPrice = unitPrice
+        };
+
+        Item item=new Item(product,quantity,customerid);
+        CartBLLManager.updateItem(item);
+        return RedirectToAction("Index", "shoppingcart");
+
+    }
+
     public IActionResult Delete(int id)
     {
         bool status = CartBLLManager.deleteItemById(id);
@@ -68,7 +90,7 @@ public class ShoppingCartController : Controller
         {
             Console.WriteLine("cart item delete succesfully");
         }
-        return RedirectToAction("Index","ShoppingCart");
+        return RedirectToAction("Index");
     }
 
 

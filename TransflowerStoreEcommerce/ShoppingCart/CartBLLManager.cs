@@ -28,4 +28,9 @@ public class CartBLLManager
         bool status = CartDALManager.deleteItemById(id);
         return status;
     }
+
+    public static bool updateItem(Item item)
+    {
+        return CartDALManager.UpdateItem(item);
+    }
 }

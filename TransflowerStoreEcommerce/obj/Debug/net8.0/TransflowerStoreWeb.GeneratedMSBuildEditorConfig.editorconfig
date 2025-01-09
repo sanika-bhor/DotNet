@@ -106,6 +106,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XEluc2VydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[A:/TAP/GitHub/DotNet/TransflowerStoreEcommerce/Views/ShoppingCart/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [A:/TAP/GitHub/DotNet/TransflowerStoreEcommerce/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

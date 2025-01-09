@@ -4,6 +4,7 @@ using ShoppingCart;
 using Microsoft.AspNetCore.Mvc;
 using TransflowerStoreWeb.Models;
 using BLL;
+using Catelog;
 
 namespace TransflowerStoreWeb.Controllers;
 
@@ -28,6 +29,35 @@ public class ShoppingCartController : Controller
         Item item=CartBLLManager.getItemById(id);
         ViewData["ItemById"]=item;
         return View();
+    }
+
+    public IActionResult Insert(int productId)
+    {
+        Product product=ProductBLLManager.getProductByID(productId);
+        return View(product);
+    }
+
+    [HttpPost]
+    public IActionResult Insert(int id, string title, int customerid, double unitPrice, int quantity)
+    {
+        
+        Product product=new Product
+        {
+            ProductId=id,
+            ProductName=title,
+            UnitPrice=unitPrice
+        };
+        Item item = new Item(product,quantity,customerid);
+        bool status = CartBLLManager.insertCart(item);
+        if (status)
+        {
+            return RedirectToAction("Index", "Products");
+        }
+        else
+        {
+            return RedirectToAction("Insert", "customer");
+        }
+
     }
 
 

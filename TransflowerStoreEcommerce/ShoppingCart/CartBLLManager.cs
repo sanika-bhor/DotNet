@@ -17,4 +17,9 @@ public class CartBLLManager
         Item item=CartDALManager.getItemById(id);
         return item;
     }
+
+    public static bool insertCart(Item item)
+    {
+        return CartDALManager.insertCart(item);
+    }
 }

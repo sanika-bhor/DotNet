@@ -1,0 +1,50 @@
+@model Product;
+@using Catelog
+@{
+    ViewBag.Title = "Product update Page";
+}
+
+ <link rel="stylesheet" href="~/css/Style.css" />
+
+
+<div class="data">
+<h1>Add to Cart</h1
+
+<form action="/ShoppingCart/insert" method="post">
+
+    <table>
+    <tr>
+    <td>Product id:</td>
+    <td><input type="text" name="id" placeholder="Product id" value="@Model.ProductId"/></td>
+    </tr>
+
+    <tr>
+        <td>Customer Id :</td>
+        <td><input type="text" name="customerid" placeholder="Customer Id" /></td>
+    </tr>
+
+     <tr>
+    <td>Name:</td>
+            <td><input type="text" name="title" placeholder="Product Name" value="@Model.ProductName" /></td>
+    </tr>
+
+
+     <tr>
+    <td>UnitPrice:</td>
+            <td><input type="text" name="unitprice" placeholder="Product unitprice" value="@Model.UnitPrice"/></td>
+    </tr>
+
+     <tr>
+    <td>Quantity:</td>
+    <td><input type="text" name="quantity" placeholder="Product quantity"/></td>
+    </tr>
+
+     <tr>
+    <td></td>
+    <td><input type="submit" class="submitButton" name="btn" value=" Insert "/></td>
+    </tr>
+
+    </table>
+    </form>
+
+</div>

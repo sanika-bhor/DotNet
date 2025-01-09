@@ -123,7 +123,44 @@ public class CartDALManager
         }
 
         return item;
-
     }
+
+    public static bool insertCart(Item item)
+    {
+        bool status = false;
+
+        IDbConnection conn = CartDALManager.dbConnection();
+        IDbCommand cmd = new MySqlCommand();
+        string query = "insert into Customer values(@productid, @customerId, @title, @unitprice, @quantity)";
+        cmd.Parameters.Add(new MySqlParameter("@productid", item.product.ProductId));
+        cmd.Parameters.Add(new MySqlParameter("@customerId", item.CustomerId));
+        cmd.Parameters.Add(new MySqlParameter("@title", item.product.ProductName));
+        cmd.Parameters.Add(new MySqlParameter("@unitprice", item.product.UnitPrice));
+        cmd.Parameters.Add(new MySqlParameter("@quantity", item.Quantity));
+
+        cmd.CommandText = query;
+        cmd.Connection = conn;
+
+        try
+        {
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            status = true;
+        }
+        catch (MySqlException exp)
+        {
+            string msg = exp.Message;
+            Console.WriteLine(msg);
+        }
+        finally
+        {
+            if (conn.State == ConnectionState.Open)
+            {
+                conn.Close();
+            }
+        }
+        return status;
+    }
+
 
 }

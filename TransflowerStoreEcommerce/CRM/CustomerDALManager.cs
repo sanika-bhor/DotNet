@@ -142,13 +142,14 @@ public class CustomerDALManager
         bool status = false;
         IDbConnection conn = CustomerDALManager.dbConnection();
         IDbCommand cmd = new MySqlCommand();
-        string query = "insert into Customer values(@customertid, @loginId, @password, @CustomerName, @Email, @Contact, @loction)";
+        string query = "insert into Customer values(@customertid, @loginId, @password, @CustomerName, @Email, @Contact, @location)";
         cmd.Parameters.Add(new MySqlParameter("@customertid", customer.CustomerId));
         cmd.Parameters.Add(new MySqlParameter("@loginId", customer.LoginId));
         cmd.Parameters.Add(new MySqlParameter("@password", customer.Password));
         cmd.Parameters.Add(new MySqlParameter("@CustomerName", customer.CustomerName));
         cmd.Parameters.Add(new MySqlParameter("@Email", customer.Email));
-        cmd.Parameters.Add(new MySqlParameter("@Contact", customer.Location));
+        cmd.Parameters.Add(new MySqlParameter("@Contact", customer.ContactNo));
+        cmd.Parameters.Add(new MySqlParameter("@location", customer.Location));
 
         cmd.CommandText = query;
         cmd.Connection = conn;

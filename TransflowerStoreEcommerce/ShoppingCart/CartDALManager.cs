@@ -131,7 +131,7 @@ public class CartDALManager
 
         IDbConnection conn = CartDALManager.dbConnection();
         IDbCommand cmd = new MySqlCommand();
-        string query = "insert into Customer values(@productid, @customerId, @title, @unitprice, @quantity)";
+        string query = "insert into shoppingcart values(@productid, @customerId, @title, @unitprice, @quantity)";
         cmd.Parameters.Add(new MySqlParameter("@productid", item.product.ProductId));
         cmd.Parameters.Add(new MySqlParameter("@customerId", item.CustomerId));
         cmd.Parameters.Add(new MySqlParameter("@title", item.product.ProductName));
@@ -163,4 +163,36 @@ public class CartDALManager
     }
 
 
+    public static bool deleteItemById(int id)
+    {
+        bool status = false;
+        IDbConnection conn = CartDALManager.dbConnection();
+        IDbCommand cmd = new MySqlCommand();
+        string query = "delete from shoppingcart where CustomerId=@id";
+        cmd.Parameters.Add(new MySqlParameter("@id", id));
+        cmd.CommandText = query;
+        cmd.Connection = conn;
+
+        try
+        {
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            status = true;
+        }
+        catch (MySqlException exp)
+        {
+            string msg = exp.Message;
+            Console.WriteLine(msg);
+        }
+        finally
+        {
+            if (conn.State == ConnectionState.Open)
+            {
+                conn.Close();
+            }
+        }
+        return status;
+    }
+
+ 
 }

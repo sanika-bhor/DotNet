@@ -22,4 +22,10 @@ public class CartBLLManager
     {
         return CartDALManager.insertCart(item);
     }
+
+    public static bool deleteItemById(int id)
+    {
+        bool status = CartDALManager.deleteItemById(id);
+        return status;
+    }
 }

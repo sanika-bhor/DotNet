@@ -31,9 +31,9 @@ public class ShoppingCartController : Controller
         return View();
     }
 
-    public IActionResult Insert(int productId)
+    public IActionResult Insert(int id)
     {
-        Product product=ProductBLLManager.getProductByID(productId);
+        Product product=ProductBLLManager.getProductByID(id);
         return View(product);
     }
 
@@ -58,6 +58,17 @@ public class ShoppingCartController : Controller
             return RedirectToAction("Insert", "customer");
         }
 
+    }
+
+
+    public IActionResult Delete(int id)
+    {
+        bool status = CartBLLManager.deleteItemById(id);
+        if (status)
+        {
+            Console.WriteLine("cart item delete succesfully");
+        }
+        return RedirectToAction("Index","ShoppingCart");
     }
 
 

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\TAP\\GitHub\\DotNet\\SimpleConsoleApplication\\SimpleConsoleApplication.csproj",
+      "projectUniqueName": "A:\\TAP\\GitHub\\DotNet\\MultiThreadingApplication\\SimpleConsoleApplication.csproj",
       "projectName": "SimpleConsoleApplication",
-      "projectPath": "A:\\TAP\\GitHub\\DotNet\\SimpleConsoleApplication\\SimpleConsoleApplication.csproj",
+      "projectPath": "A:\\TAP\\GitHub\\DotNet\\MultiThreadingApplication\\SimpleConsoleApplication.csproj",
       "packagesPath": "C:\\Users\\91997\\.nuget\\packages\\",
-      "outputPath": "A:\\TAP\\GitHub\\DotNet\\SimpleConsoleApplication\\obj\\",
+      "outputPath": "A:\\TAP\\GitHub\\DotNet\\MultiThreadingApplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\91997\\AppData\\Roaming\\NuGet\\NuGet.Config",

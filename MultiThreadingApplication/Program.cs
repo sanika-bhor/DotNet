@@ -40,6 +40,3 @@ ThreadStart startedThread2 =new ThreadStart(RestoreData);
 Thread RestoreDataThread=new Thread(startedThread2);
 RestoreDataThread.Start();
 Console.WriteLine("displayThread function thread id: "+RestoreDataThread.ManagedThreadId);
-
-
-

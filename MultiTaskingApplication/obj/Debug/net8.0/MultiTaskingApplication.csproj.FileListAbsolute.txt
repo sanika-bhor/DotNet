@@ -1,0 +1,15 @@
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\bin\Debug\net8.0\MultiTaskingApplication.exe
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\bin\Debug\net8.0\MultiTaskingApplication.deps.json
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\bin\Debug\net8.0\MultiTaskingApplication.runtimeconfig.json
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\bin\Debug\net8.0\MultiTaskingApplication.dll
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\bin\Debug\net8.0\MultiTaskingApplication.pdb
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\obj\Debug\net8.0\MultiTaskingApplication.GeneratedMSBuildEditorConfig.editorconfig
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\obj\Debug\net8.0\MultiTaskingApplication.AssemblyInfoInputs.cache
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\obj\Debug\net8.0\MultiTaskingApplication.AssemblyInfo.cs
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\obj\Debug\net8.0\MultiTaskingApplication.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\obj\Debug\net8.0\MultiTaskingApplication.sourcelink.json
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\obj\Debug\net8.0\MultiTaskingApplication.dll
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\obj\Debug\net8.0\refint\MultiTaskingApplication.dll
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\obj\Debug\net8.0\MultiTaskingApplication.pdb
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\obj\Debug\net8.0\MultiTaskingApplication.genruntimeconfig.cache
+A:\TAP\GitHub\DotNet\MultiTaskingApplication\obj\Debug\net8.0\ref\MultiTaskingApplication.dll

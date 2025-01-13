@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\TAP\\GitHub\\DotNet\\MultiTaskingApplication\\MultiTaskingApplication.csproj": {}
+    "a:\\TAP\\GitHub\\DotNet\\MultiTaskingApplication\\MultiTaskingApplication.csproj": {}
   },
   "projects": {
-    "A:\\TAP\\GitHub\\DotNet\\MultiTaskingApplication\\MultiTaskingApplication.csproj": {
+    "a:\\TAP\\GitHub\\DotNet\\MultiTaskingApplication\\MultiTaskingApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\TAP\\GitHub\\DotNet\\MultiTaskingApplication\\MultiTaskingApplication.csproj",
+        "projectUniqueName": "a:\\TAP\\GitHub\\DotNet\\MultiTaskingApplication\\MultiTaskingApplication.csproj",
         "projectName": "MultiTaskingApplication",
-        "projectPath": "A:\\TAP\\GitHub\\DotNet\\MultiTaskingApplication\\MultiTaskingApplication.csproj",
+        "projectPath": "a:\\TAP\\GitHub\\DotNet\\MultiTaskingApplication\\MultiTaskingApplication.csproj",
         "packagesPath": "C:\\Users\\91997\\.nuget\\packages\\",
-        "outputPath": "A:\\TAP\\GitHub\\DotNet\\MultiTaskingApplication\\obj\\",
+        "outputPath": "a:\\TAP\\GitHub\\DotNet\\MultiTaskingApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\91997\\AppData\\Roaming\\NuGet\\NuGet.Config",

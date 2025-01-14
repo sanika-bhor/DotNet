@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using customRouteApp.Models;
+using System.Runtime.CompilerServices;
 
 namespace customRouteApp.Controllers;
 
@@ -13,13 +14,18 @@ public class FarmController : Controller
         _logger = logger;
     }
 
-    public IActionResult getGreenHouseDetails()
+    public IActionResult getGreenHouseDetails(string FarmName, string FarmNo)
     {
+        Console.WriteLine("Farm Name: "+FarmName);
+        Console.WriteLine("Farm No: "+FarmNo);
         return View();
     }
 
-    public IActionResult getCropDetails()
+    public IActionResult getCropDetails(string FarmName, string FarmNo,string cropId)
     {
+        Console.WriteLine("Farm Name: " + FarmName);
+        Console.WriteLine("Farm No: " + FarmNo);
+        Console.WriteLine("Crop id: " + cropId);
         return View();
     }
 

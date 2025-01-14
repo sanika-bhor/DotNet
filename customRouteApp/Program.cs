@@ -21,6 +21,19 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
+    name: "GreenHouseDetails",
+    pattern: "farm/{farmname}/greenhouse/{farmno}",
+    defaults: new{Controller= "Farm", Action= "getGreenHouseDetails" }
+);
+
+app.MapControllerRoute(
+    name: "CropDetails",
+    pattern: "farm/{farmname}/greenhouse/{farmno}/crop/{cropid}",
+    defaults: new { Controller = "Farm", Action = "getCropDetails" }
+);
+
+
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 

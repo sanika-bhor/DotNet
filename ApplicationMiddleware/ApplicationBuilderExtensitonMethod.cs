@@ -2,6 +2,23 @@ using Microsoft.AspNetCore.Builder;
 namespace ApplicationMiddleware;
 public static class ApplicationBuilderExtensionMethod
 {
+
+    public static void requstMapping(this IApplicationBuilder app)
+    {
+        app.Use(async (context, next) =>
+         {
+            if(context.Request.Path=="/hello")
+            {
+             await context.Response.WriteAsync("Hello World....");
+            }
+            else
+            {
+                await context.Response.WriteAsync("processing...");
+            }
+            await next();
+
+         });
+    }
     public static void firstMiddleWare(this IApplicationBuilder app)
     {
        app.Use( async (context, next) =>

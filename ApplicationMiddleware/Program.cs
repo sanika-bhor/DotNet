@@ -3,4 +3,17 @@ var app = builder.Build();
 
 app.MapGet("/", () => "Hello World!");
 
+app.Use( async(context, next)=>{
+    await context.Response.WriteAsync("\nfirst middleware....");
+    await next();
+});
+
+app.Use( async(context, next)=>{
+    await context.Response.WriteAsync("\nsecond middleware....");
+    await next();
+});
+app.Run(async context=>{
+    await context.Response.WriteAsync("\nLast middleware!");
+});
+
 app.Run();

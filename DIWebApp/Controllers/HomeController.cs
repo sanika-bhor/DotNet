@@ -1,20 +1,28 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using DIWebApp.Models;
+using DIWebApp.Services;
 
 namespace DIWebApp.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IHomeControllerService _service;
 
-    public HomeController(ILogger<HomeController> logger)
+    // public HomeController(ILogger<HomeController> logger)
+    // {
+    //     _logger = logger;
+    // }
+    public HomeController(IHomeControllerService service)
     {
-        _logger = logger;
+        this._service=service;
     }
 
     public IActionResult Index()
     {
+        string msg=_service.sayHello();
+        ViewData["message"]=msg;
         return View();
     }
 

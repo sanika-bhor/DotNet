@@ -1,0 +1,8 @@
+A:\TAP\GitHub\DotNet\RepositorySolution\WebApp\obj\Debug\net8.0\WebApp.GeneratedMSBuildEditorConfig.editorconfig
+A:\TAP\GitHub\DotNet\RepositorySolution\WebApp\obj\Debug\net8.0\WebApp.AssemblyInfoInputs.cache
+A:\TAP\GitHub\DotNet\RepositorySolution\WebApp\obj\Debug\net8.0\WebApp.AssemblyInfo.cs
+A:\TAP\GitHub\DotNet\RepositorySolution\WebApp\obj\Debug\net8.0\WebApp.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\RepositorySolution\WebApp\obj\Debug\net8.0\WebApp.MvcApplicationPartsAssemblyInfo.cache
+A:\TAP\GitHub\DotNet\RepositorySolution\WebApp\obj\Debug\net8.0\WebApp.RazorAssemblyInfo.cache
+A:\TAP\GitHub\DotNet\RepositorySolution\WebApp\obj\Debug\net8.0\WebApp.RazorAssemblyInfo.cs
+A:\TAP\GitHub\DotNet\RepositorySolution\WebApp\obj\Debug\net8.0\WebApp.sourcelink.json

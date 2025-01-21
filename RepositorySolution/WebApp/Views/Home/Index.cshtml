@@ -1,8 +1,24 @@
-﻿@{
+﻿@using core.Model.Flower;
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+   @{
+    List<Flower> flowers= (List<Flower>) ViewData["allFlower"];
+    <table>
+        <tr>
+            <th>Flower Id</th>
+            <th>Flower Name</th>
+            <th>Discription</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>/td>
+        </tr>
+    </table>
+    }
 </div>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\TAP\\GitHub\\DotNet\\RepositorySolution\\core\\Core.csproj": {}
+    "A:\\TAP\\GitHub\\DotNet\\RepositorySolution\\Core\\Core.csproj": {}
   },
   "projects": {
-    "A:\\TAP\\GitHub\\DotNet\\RepositorySolution\\core\\Core.csproj": {
+    "A:\\TAP\\GitHub\\DotNet\\RepositorySolution\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\TAP\\GitHub\\DotNet\\RepositorySolution\\core\\Core.csproj",
+        "projectUniqueName": "A:\\TAP\\GitHub\\DotNet\\RepositorySolution\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "A:\\TAP\\GitHub\\DotNet\\RepositorySolution\\core\\Core.csproj",
+        "projectPath": "A:\\TAP\\GitHub\\DotNet\\RepositorySolution\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\91997\\.nuget\\packages\\",
-        "outputPath": "A:\\TAP\\GitHub\\DotNet\\RepositorySolution\\core\\obj\\",
+        "outputPath": "A:\\TAP\\GitHub\\DotNet\\RepositorySolution\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\91997\\AppData\\Roaming\\NuGet\\NuGet.Config",

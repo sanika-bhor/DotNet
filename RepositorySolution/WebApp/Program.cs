@@ -1,10 +1,14 @@
-using Core.services.Interface;
-using Microsoft.Extensions.Hosting;
+using Core.Services.Interface;
+using Core.Repository.Interface;
+using Core.Repository;
+using Core.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddTransient<IFlowerSerivice, FlowerService>();
+builder.Services.AddScoped<IFlowerRepository, FlowerRepository>();
+builder.Services.AddScoped<IFlowerService, FlowerService>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

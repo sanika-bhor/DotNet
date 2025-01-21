@@ -1,0 +1,12 @@
+A:\TAP\GitHub\DotNet\RepositorySolution\Core\bin\Debug\net8.0\Core.deps.json
+A:\TAP\GitHub\DotNet\RepositorySolution\Core\bin\Debug\net8.0\Core.dll
+A:\TAP\GitHub\DotNet\RepositorySolution\Core\bin\Debug\net8.0\Core.pdb
+A:\TAP\GitHub\DotNet\RepositorySolution\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+A:\TAP\GitHub\DotNet\RepositorySolution\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+A:\TAP\GitHub\DotNet\RepositorySolution\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+A:\TAP\GitHub\DotNet\RepositorySolution\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\RepositorySolution\Core\obj\Debug\net8.0\Core.sourcelink.json
+A:\TAP\GitHub\DotNet\RepositorySolution\Core\obj\Debug\net8.0\Core.dll
+A:\TAP\GitHub\DotNet\RepositorySolution\Core\obj\Debug\net8.0\refint\Core.dll
+A:\TAP\GitHub\DotNet\RepositorySolution\Core\obj\Debug\net8.0\Core.pdb
+A:\TAP\GitHub\DotNet\RepositorySolution\Core\obj\Debug\net8.0\ref\Core.dll

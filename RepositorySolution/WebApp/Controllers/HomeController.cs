@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Core.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 using WebApp.Models;
 
@@ -6,15 +7,23 @@ namespace WebApp.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    // private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    private readonly IFlowerService _flowerService;
+
+    // public HomeController(ILogger<HomeController> logger)
+    // {
+    //     _logger = logger;
+    // }
+
+    public HomeController(IFlowerService flowerService)
     {
-        _logger = logger;
+        this._flowerService=flowerService;
     }
 
     public IActionResult Index()
     {
+        ViewData["allFlowers"]=_flowerService.GetAllFlowers();
         return View();
     }
 

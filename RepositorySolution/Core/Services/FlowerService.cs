@@ -11,10 +11,10 @@ public class FlowerService:IFlowerService
     {
         this._flowerRepo=flowerRepository;
     }
-    List<Flower> GetAllFlowers()=> _flowerRepo.GetAllFlowers();
+    public List<Flower> GetAllFlowers()=> _flowerRepo.GetAllFlowers();
 
-    List<Flower> IFlowerRepository.GetAllFlowers()
-    {
-        return GetAllFlowers();
-    }
+    // public List<Flower> GetAllFlowers()
+    // {
+    //     return GetAllFlowers();
+    // }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "a:\\TAP\\GitHub\\DotNet\\DIWebApp\\DIWebApp.csproj": {}
+    "A:\\TAP\\GitHub\\DotNet\\DIWebApp\\DIWebApp.csproj": {}
   },
   "projects": {
-    "a:\\TAP\\GitHub\\DotNet\\DIWebApp\\DIWebApp.csproj": {
+    "A:\\TAP\\GitHub\\DotNet\\DIWebApp\\DIWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "a:\\TAP\\GitHub\\DotNet\\DIWebApp\\DIWebApp.csproj",
+        "projectUniqueName": "A:\\TAP\\GitHub\\DotNet\\DIWebApp\\DIWebApp.csproj",
         "projectName": "DIWebApp",
-        "projectPath": "a:\\TAP\\GitHub\\DotNet\\DIWebApp\\DIWebApp.csproj",
+        "projectPath": "A:\\TAP\\GitHub\\DotNet\\DIWebApp\\DIWebApp.csproj",
         "packagesPath": "C:\\Users\\91997\\.nuget\\packages\\",
-        "outputPath": "a:\\TAP\\GitHub\\DotNet\\DIWebApp\\obj\\",
+        "outputPath": "A:\\TAP\\GitHub\\DotNet\\DIWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\91997\\AppData\\Roaming\\NuGet\\NuGet.Config",

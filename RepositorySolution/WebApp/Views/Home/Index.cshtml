@@ -5,20 +5,27 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
    @{
-    List<Flower> flowers= (List<Flower>) ViewData["allFlower"];
-    <table>
+        List<Flower> AllFlowers = (List<Flower>)ViewData["allFlowers"];
+    <table border="2">
         <tr>
-            <th>Flower Id</th>
-            <th>Flower Name</th>
-            <th>Discription</th>
-            <th>Unit Price</th>
-            <th>Quantity</th>
+                <th style="padding: 20px;">Flower Id</th>
+                <th style="padding: 20px;">Flower Name</th>
+                <th style="padding: 20px;">Discription</th>
+                <th style="padding: 20px;">Unit Price</th>
+                <th style="padding: 20px;">Quantity</th>
         </tr>
-        <tr>
-            <td>/td>
-        </tr>
+        @foreach(Flower flower in AllFlowers)
+        {
+            <tr>
+                    <td style="padding: 20px;">@flower.FlowerId</td>
+                    <td style="padding: 20px;">@flower.FlowerName</td>
+                    <td style="padding: 20px;">@flower.Discription</td>
+                    <td style="padding: 20px;">@flower.UnitPrice</td>
+                    <td style="padding: 20px;">@flower.Quantity</td>
+            </tr>
+        }
+       
     </table>
     }
 </div>

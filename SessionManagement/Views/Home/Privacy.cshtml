@@ -1,6 +1,17 @@
-﻿@{
+﻿@using System.Text.Json;
+@{
     ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
 
+<h1>@ViewBag.data</h1>
+
+@{
+    List<string> items = ViewData["cartItems"] as List<string>;
+        foreach(string item in items)
+        {
+            <p>@items</p>
+        }
+}
 <p>Use this page to detail your site's privacy policy.</p>
+    using System.Text.Json;

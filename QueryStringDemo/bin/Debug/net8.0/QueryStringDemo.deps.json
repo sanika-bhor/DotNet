@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "QueryStringDemo/1.0.0": {
+        "runtime": {
+          "QueryStringDemo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "QueryStringDemo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

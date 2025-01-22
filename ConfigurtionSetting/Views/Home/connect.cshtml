@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Connect Data ";
+}
+
+<div>
+    @{
+       <h1>Diffrent connection strings are:</h1>
+        List<string> allconnection = ViewData["connstring"] as List<string>;
+            foreach(string conn in allconnection)
+            {
+            <p>@conn</p>
+            }
+    }
+</div>

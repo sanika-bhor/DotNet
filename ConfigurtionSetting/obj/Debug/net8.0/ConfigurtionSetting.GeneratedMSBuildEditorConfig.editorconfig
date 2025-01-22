@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = A:\TAP\GitHub\DotNet\ConfigurtionSetting
 build_property._RazorSourceGeneratorDebug = 
 
+[A:/TAP/GitHub/DotNet/ConfigurtionSetting/Views/Home/connect.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjb25uZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [A:/TAP/GitHub/DotNet/ConfigurtionSetting/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

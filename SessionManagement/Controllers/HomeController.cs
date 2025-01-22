@@ -2,6 +2,7 @@ using System.Diagnostics;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualBasic;
 using SessionManagement.Models;
 
 namespace SessionManagement.Controllers;
@@ -47,9 +48,11 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
-        ViewBag.data=HttpContext.Session.GetString("product");
+       string product=HttpContext.Session.GetString("product");
+        ViewBag.data=product;
+
         var dataItems=HttpContext.Session.GetString("cart");
-       var AllItems= JsonSerializer.Deserialize<Cart>(dataItems);
+       var AllItems=JsonSerializer.Deserialize<List<string>>(dataItems);
         ViewData["cartItems"]=AllItems;
         return View();
     }

@@ -9,13 +9,11 @@ namespace StateMAnagement.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
     private readonly IFlowerService _flowerService;
 
-    public HomeController(ILogger<HomeController> logger, IFlowerService flowerService)
+    public HomeController(IFlowerService flowerService)
     {
-        _logger = logger;
-        this._flowerService=flowerService;
+       _flowerService=flowerService;
     }
 
     public IActionResult Index()

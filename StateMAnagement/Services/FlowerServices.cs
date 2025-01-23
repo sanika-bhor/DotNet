@@ -2,7 +2,7 @@ using Model.Flower;
 using Repository.Interface;
 using Service.Interface;
 
-namespace Service.FlowerServices;
+namespace Service.FlowerService;
 
 public class FlowerServices : IFlowerService
 {
@@ -10,7 +10,7 @@ public class FlowerServices : IFlowerService
 
     public FlowerServices(IFlowerRepository repository)
     {
-        this._repository=repository;
+        _repository=repository;
     }
 
     public  List<Flower> getAllFlowers()

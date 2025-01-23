@@ -4,6 +4,6 @@ namespace Repository.Interface;
 
 public interface IFlowerRepository
 {
-    public List<Flower> getAllFlowers();
-    public Flower getFlowerById(int id);
+ List<Flower> getAllFlowers();
+     Flower getFlowerById(int id);
 }

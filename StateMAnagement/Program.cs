@@ -1,6 +1,6 @@
 using Repository.FlowerRepository;
 using Repository.Interface;
-using Service.FlowerServices;
+using Service.FlowerService;
 using Service.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,8 +15,8 @@ builder.Services.AddSession(options=>{
 });
 
 //definnig services
-builder.Services.AddTransient<IFlowerRepository, FlowerRepository>();
-builder.Services.AddTransient<IFlowerService, FlowerServices>();
+builder.Services.AddScoped<IFlowerRepository, FlowerRepository>();
+builder.Services.AddScoped<IFlowerService, FlowerServices>();
 
 builder.Services.AddControllersWithViews();
 

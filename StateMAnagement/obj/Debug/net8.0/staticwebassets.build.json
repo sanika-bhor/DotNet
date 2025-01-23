@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9SLU0DRDaQlT4acXwzvNk+VW3KYkdWFpABOzdZsw8VQ=",
+  "Hash": "0tSorji++HTR83uCWMXzcY6pI4/zabGNrisn1o53BQ4=",
   "Source": "StateMAnagement",
   "BasePath": "_content/StateMAnagement",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "StateMAnagement\\wwwroot",
       "Source": "StateMAnagement",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StateMAnagement.styles.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StateMAnagement.styles.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Computed",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "StateMAnagement.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StateMAnagement.styles.css"
+      "OriginalItemSpec": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StateMAnagement.styles.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StateMAnagement.bundle.scp.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StateMAnagement.bundle.scp.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Computed",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "StateMAnagement.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StateMAnagement.bundle.scp.css"
+      "OriginalItemSpec": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StateMAnagement.bundle.scp.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\css\\site.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\css\\site.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\favicon.ico",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\favicon.ico",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\js\\site.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\js\\site.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "StateMAnagement",
       "SourceType": "Discovered",
-      "ContentRoot": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\wwwroot\\",
       "BasePath": "_content/StateMAnagement",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

@@ -3,7 +3,7 @@ using Repository.Interface;
 
 namespace Repository.FlowerRepository;
 
-public interface FlowerRepository:IFlowerRepository
+public class FlowerRepository:IFlowerRepository
 {
     public List<Flower> getAllFlowers()
     {

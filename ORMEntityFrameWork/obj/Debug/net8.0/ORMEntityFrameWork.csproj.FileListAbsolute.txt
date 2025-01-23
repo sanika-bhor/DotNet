@@ -1,0 +1,15 @@
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\bin\Debug\net8.0\ORMEntityFrameWork.exe
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\bin\Debug\net8.0\ORMEntityFrameWork.deps.json
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\bin\Debug\net8.0\ORMEntityFrameWork.runtimeconfig.json
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\bin\Debug\net8.0\ORMEntityFrameWork.dll
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\bin\Debug\net8.0\ORMEntityFrameWork.pdb
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\obj\Debug\net8.0\ORMEntityFrameWork.GeneratedMSBuildEditorConfig.editorconfig
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\obj\Debug\net8.0\ORMEntityFrameWork.AssemblyInfoInputs.cache
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\obj\Debug\net8.0\ORMEntityFrameWork.AssemblyInfo.cs
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\obj\Debug\net8.0\ORMEntityFrameWork.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\obj\Debug\net8.0\ORMEntityFrameWork.sourcelink.json
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\obj\Debug\net8.0\ORMEntityFrameWork.dll
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\obj\Debug\net8.0\refint\ORMEntityFrameWork.dll
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\obj\Debug\net8.0\ORMEntityFrameWork.pdb
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\obj\Debug\net8.0\ORMEntityFrameWork.genruntimeconfig.cache
+A:\TAP\GitHub\DotNet\ORMEntityFrameWork\obj\Debug\net8.0\ref\ORMEntityFrameWork.dll

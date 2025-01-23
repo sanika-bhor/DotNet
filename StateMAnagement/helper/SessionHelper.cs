@@ -5,7 +5,7 @@ namespace SessionHelpers
 {
     public static class SessionHelper
     {
-        public static void SetJsonObject(this ISession session, string key, object value)
+        public static void SetJsonObject(this ISession session, string key, object value, List<Model.Flower.Flower> flowers)
         {
             session.SetString(key,JsonSerializer.Serialize(value));
         }

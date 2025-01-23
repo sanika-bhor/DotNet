@@ -1,3 +1,8 @@
+using Repository.FlowerRepository;
+using Repository.Interface;
+using Service.FlowerServices;
+using Service.Interface;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -8,6 +13,11 @@ builder.Services.AddSession(options=>{
     options.Cookie.HttpOnly=true;
     options.Cookie.IsEssential=true;
 });
+
+//definnig services
+builder.Services.AddTransient<IFlowerRepository, FlowerRepository>();
+builder.Services.AddTransient<IFlowerService, FlowerServices>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

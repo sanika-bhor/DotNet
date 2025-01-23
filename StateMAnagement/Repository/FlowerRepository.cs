@@ -1,8 +1,9 @@
 using Model.Flower;
+using Repository.Interface;
 
 namespace Repository.FlowerRepository;
 
-public interface FlowerRepository
+public interface FlowerRepository:IFlowerRepository
 {
     public List<Flower> getAllFlowers()
     {
@@ -38,5 +39,10 @@ public interface FlowerRepository
 
         return allFlower;
     }
-    public Flower getFlowerById(int id);
+    public Flower getFlowerById(int id)
+    {
+        List<Flower> flowers=getAllFlowers();
+        Flower flowerData=flowers.Find(flower=>flower.FlowerId==id);
+        return flowerData;
+    }
 }

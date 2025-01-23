@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\StateMAnagement.csproj": {}
+    "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\StateMAnagement.csproj": {}
   },
   "projects": {
-    "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\StateMAnagement.csproj": {
+    "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\StateMAnagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\StateMAnagement.csproj",
+        "projectUniqueName": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\StateMAnagement.csproj",
         "projectName": "StateMAnagement",
-        "projectPath": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\StateMAnagement.csproj",
+        "projectPath": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\StateMAnagement.csproj",
         "packagesPath": "C:\\Users\\91997\\.nuget\\packages\\",
-        "outputPath": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\obj\\",
+        "outputPath": "a:\\TAP\\GitHub\\DotNet\\StateMAnagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\91997\\AppData\\Roaming\\NuGet\\NuGet.Config",

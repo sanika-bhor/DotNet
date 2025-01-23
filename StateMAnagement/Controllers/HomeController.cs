@@ -1,5 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Model.Flower;
+using Service.Interface;
+using SessionHelpers;
 using StateMAnagement.Models;
 
 namespace StateMAnagement.Controllers;
@@ -7,14 +10,18 @@ namespace StateMAnagement.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IFlowerService _flowerService;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IFlowerService flowerService)
     {
         _logger = logger;
+        this._flowerService=flowerService;
     }
 
     public IActionResult Index()
     {
+        List<Flower> flowers=_flowerService.getAllFlowers();
+        ViewData["allFlowers"]=flowers;
         return View();
     }
 

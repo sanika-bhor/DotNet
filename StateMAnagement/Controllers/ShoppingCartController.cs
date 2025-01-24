@@ -38,11 +38,17 @@ public class ShoppingCartController : Controller
     }
 
     [HttpPost]
-    public IActionResult Add(int id,string flowerName, int quantity)
+    public IActionResult Add(int flowerId,string flowerName, int quantity)
     {
-        // Flower flower = _flowerService.getFlowerById(id);
-        // ViewData["FolwerById"] = flower;
-        return View();
+        Cart cart=new Cart
+        {
+            FlowerId= flowerId,
+            FlowerName=flowerName,
+            Quantity=quantity
+        };
+
+        SessionHelper.SetJsonObject(HttpContext.Session,"cart",cart);
+        return RedirectToAction("Index", "Shoppingcart");
     }
 
 

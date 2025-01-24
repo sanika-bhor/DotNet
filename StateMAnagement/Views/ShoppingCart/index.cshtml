@@ -7,20 +7,18 @@
     <h1>Cart Items...</h1>
     <hr />
     @{
-        List<Cart> cartitems = ViewData["CartItems"] as List<Cart>;
+      var cart = ViewData["CartItems"] as Cart;
         <table class="table">
             <thead>
                 <tr>
                     <th>@Html.DisplayName("Flower ID")</th>
                     <th>@Html.DisplayName("Flower Name")</th>
-                    <th>@Html.DisplayName("Discription")</th>
-                    <th>@Html.DisplayName("Unit Price")</th>
                     <th>@Html.DisplayName("Quantity")</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
-                @foreach (Cart cart in cartitems)
+                @* @foreach (var cart in cartitems) *@
                 {
                     <tr>
 

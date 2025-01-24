@@ -1,8 +1,16 @@
-namespace Model.Flower;
+using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.SignalR;
+using Microsoft.Net.Http.Headers;
 
+namespace Model.Cart;
+
+[Serializable]
 public class Cart
 {
-    public int FlowerId { get; set; }
-    public string FlowerName { get; set; }
-    public int Quantity { get; set; }
+
+  public List<Item> Items = new List<Item>();
+  public Cart()
+  {
+  }
+
 }

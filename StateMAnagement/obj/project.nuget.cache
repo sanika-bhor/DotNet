@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bjIiKl/hFyU=",
+  "dgSpecHash": "6MJrcABceJw=",
   "success": true,
   "projectFilePath": "A:\\TAP\\GitHub\\DotNet\\StateMAnagement\\StateMAnagement.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\91997\\.nuget\\packages\\json.net\\1.0.33\\json.net.1.0.33.nupkg.sha512"
+  ],
   "logs": []
 }

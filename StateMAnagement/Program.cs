@@ -15,8 +15,8 @@ builder.Services.AddSession(options=>{
 });
 
 //definnig services
-builder.Services.AddScoped<IFlowerRepository, FlowerRepository>();
-builder.Services.AddScoped<IFlowerService, FlowerServices>();
+builder.Services.AddSingleton<IFlowerRepository, FlowerRepository>();
+builder.Services.AddSingleton<IFlowerService, FlowerServices>();
 
 builder.Services.AddControllersWithViews();
 

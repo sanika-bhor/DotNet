@@ -44,6 +44,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Json.NET": {
+              "target": "Package",
+              "version": "[1.0.33, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

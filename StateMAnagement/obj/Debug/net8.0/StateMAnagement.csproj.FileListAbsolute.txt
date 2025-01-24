@@ -29,3 +29,6 @@ A:\TAP\GitHub\DotNet\StateMAnagement\obj\Debug\net8.0\refint\StateMAnagement.dll
 A:\TAP\GitHub\DotNet\StateMAnagement\obj\Debug\net8.0\StateMAnagement.pdb
 A:\TAP\GitHub\DotNet\StateMAnagement\obj\Debug\net8.0\StateMAnagement.genruntimeconfig.cache
 A:\TAP\GitHub\DotNet\StateMAnagement\obj\Debug\net8.0\ref\StateMAnagement.dll
+A:\TAP\GitHub\DotNet\StateMAnagement\obj\Debug\net8.0\StateMAnagement.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\StateMAnagement\bin\Debug\net8.0\Json.Net.dll
+A:\TAP\GitHub\DotNet\StateMAnagement\obj\Debug\net8.0\StateMAn.61FFC01B.Up2Date

@@ -7,6 +7,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Model.Flower;
+using Model.Cart;
 using Service.Interface;
 using SessionHelpers;
 using StateMAnagement.Models;
@@ -24,9 +25,14 @@ public class ShoppingCartController : Controller
 
     public IActionResult Index()
     {
-       Cart cart=SessionHelper.GetObjectFromSession<Cart>(HttpContext.Session,"cart");
-       ViewData["CartItems"]=cart;
-       return View();
+          var cart=SessionHelper.GetObjectFromSession<Cart>(HttpContext.Session,"cart");
+          ViewData["CartItems"] =cart;
+          return View();
+
+// for item
+        // var item = SessionHelper.GetObjectFromSession<Item>(HttpContext.Session, "cart");
+        // ViewData["CartItems"] = item;
+        // return View();
     }
 
     [HttpGet]
@@ -40,14 +46,33 @@ public class ShoppingCartController : Controller
     [HttpPost]
     public IActionResult Add(int flowerId,string flowerName, int quantity)
     {
-        Cart cart=new Cart
+        Item item=new Item
         {
             FlowerId= flowerId,
             FlowerName=flowerName,
             Quantity=quantity
         };
 
-        SessionHelper.SetJsonObject(HttpContext.Session,"cart",cart);
+        //SessionHelper.SetJsonObject(HttpContext.Session,"cart",item);
+
+
+        Cart cart=SessionHelper.GetObjectFromSession<Cart>(HttpContext.Session,"cart");
+        cart.Items.Add(item);
+        SessionHelper.SetJsonObject(HttpContext.Session, "cart", cart);
+
+
+
+
+
+
+
+
+
+
+
+        // for item
+        // SessionHelper.SetJsonObject(HttpContext.Session, "cart", item);
+
         return RedirectToAction("Index", "Shoppingcart");
     }
 

@@ -1,0 +1,26 @@
+@using Model.Flower;
+@{
+    ViewData["Title"] = "Shopping Cart Page";
+}
+
+<div class="text-center">
+    @{
+       Flower flower = ViewData["FolwerById"] as Flower;
+        <form method="post" action="/ShoppingCart/Add">
+            <table>
+                <tr>
+                    <td><label>FLower ID</label></td>
+                    <td> <input type="text" value="@flower.FlowerId"/></td>
+                </tr>
+                <tr>
+                    <td><label>FLower Name</label></td>
+                    <td> <input type="text" value="@flower.FlowerName" /></td>
+                </tr>
+                <tr>
+                    <td><label>Flower Quantity</label></td>
+                    <td> <input type="text" value="@flower.Quantity" /></td>
+                </tr>
+            </table>
+            </form>
+    }
+</div>

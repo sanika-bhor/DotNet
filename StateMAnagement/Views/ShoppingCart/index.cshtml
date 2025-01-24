@@ -1,0 +1,37 @@
+@using Model.Flower;
+@{
+    ViewData["Title"] = "Shopping Cart Page";
+}
+
+<div class="text-center">
+    <h1>Cart Items...</h1>
+    <hr />
+    @{
+        List<Cart> cartitems = ViewData["CartItems"] as List<Cart>;
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayName("Flower ID")</th>
+                    <th>@Html.DisplayName("Flower Name")</th>
+                    <th>@Html.DisplayName("Discription")</th>
+                    <th>@Html.DisplayName("Unit Price")</th>
+                    <th>@Html.DisplayName("Quantity")</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Cart cart in cartitems)
+                {
+                    <tr>
+
+                        <td>@Html.DisplayFor(flowerData => cart.FlowerId)</td>
+                        <td>@Html.DisplayFor(flowerData => cart.FlowerName)</td>
+                        <td>@Html.DisplayFor(flowerData => cart.Quantity)</td>
+                        <td><a href="/ShoppingCart/index/?id">Add To Cart</a></td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    }
+</div>

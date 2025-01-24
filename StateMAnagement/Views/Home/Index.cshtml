@@ -7,7 +7,7 @@
     <h1>Todays Products for sale...</h1>
     <hr />
     @{
-        List<Flower>flowers=ViewData["allflowers"] as List<Flower>;
+        List<Flower> flowers=ViewData["allflowers"] as List<Flower>;
         <table class="table">
             <thead>
                 <tr>
@@ -29,7 +29,7 @@
                         <td>@Html.DisplayFor(flowerData=>flower.Discription)</td>
                         <td>@Html.DisplayFor(flowerData=>flower.UnitPrice)</td>
                         <td>@Html.DisplayFor(flowerData=>flower.Quantity)</td>
-                        <td><a href="/ShoppingCart/index/id">Add To Cart</a></td>
+                        <td><a href="/ShoppingCart/Add/@flower.FlowerId">Add To Cart</a></td>
                 </tr>
                 }
 

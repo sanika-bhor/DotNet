@@ -28,15 +28,6 @@ public class ShoppingCartController : Controller
         ViewData["CartItems"] =cart.Items;
           return View();
 
-// for List of item
-// var items=SessionHelper.GetObjectFromSession<List<Item>>(HttpContext.Session,"cart");
-// ViewData["CartItems"] = items;
-// return View();
-
-// for item
-        // var item = SessionHelper.GetObjectFromSession<Item>(HttpContext.Session, "cart");
-        // ViewData["CartItems"] = item;
-        // return View();
     }
 
     [HttpGet]
@@ -63,7 +54,6 @@ public class ShoppingCartController : Controller
                 Quantity=quantity
             };
 
-
     // for cart
             Cart  cart =SessionHelper.GetObjectFromSession<Cart>(HttpContext.Session,"cart");
             if(cart==null)
@@ -74,57 +64,8 @@ public class ShoppingCartController : Controller
             cart.Items.Add(item);
             SessionHelper.SetJsonObject(HttpContext.Session, "cart", cart);
 
-
-
-    // for list of item
-            // List<Item> items = new List<Item>();
-            //  items = SessionHelper.GetObjectFromSession<List<Item>>(HttpContext.Session, "cart");
-            // items.Add(item);
-            //  SessionHelper.SetJsonObject(HttpContext.Session, "cart", items);
-
-
-    // for item
-             //SessionHelper.SetJsonObject(HttpContext.Session, "cart", item);
-
             return RedirectToAction("Index", "Shoppingcart");
         }
-
-    // [HttpPost]
-    // public IActionResult Add(int flowerId, string flowerName, int quantity)
-    // {
-    //     if (quantity <= 0)
-    //     {
-    //         ModelState.AddModelError("Quantity", "Quantity must be greater than zero.");
-    //         return RedirectToAction("Add", new { id = flowerId });
-    //     }
-
-    //     var cart = SessionHelper.GetObjectFromSession<Cart>(HttpContext.Session, "cart") ?? new Cart
-    //     {
-    //         Items = new List<Item>()
-    //     };
-
-    //     var existingItem = cart.Items.FirstOrDefault(item => item.FlowerId == flowerId);
-
-    //     if (existingItem != null)
-    //     {
-    //         existingItem.Quantity += quantity;
-    //     }
-    //     else
-    //     {
-    //         cart.Items.Add(new Item
-    //         {
-    //             FlowerId = flowerId,
-    //             FlowerName = flowerName,
-    //             Quantity = quantity
-    //         });
-    //     }
-
-    //     SessionHelper.SetJsonObject(HttpContext.Session, "cart", cart);
-
-    //     return RedirectToAction("Index");
-    // }
-
-
 
      public IActionResult Privacy()
     {

@@ -67,6 +67,18 @@ public class ShoppingCartController : Controller
             return RedirectToAction("Index", "Shoppingcart");
         }
 
+    public IActionResult remove(int id)
+    {
+        Cart cart = SessionHelper.GetObjectFromSession<Cart>(HttpContext.Session, "cart");
+        var found = cart.Items.Find(x => x.FlowerId == id);
+        if (found != null)
+        {
+            cart.Items.Remove(found);
+        }
+        SessionHelper.SetJsonObject(HttpContext.Session, "cart", cart);
+        return RedirectToAction("Index", "Shoppingcart");
+
+    }
      public IActionResult Privacy()
     {
         return View();

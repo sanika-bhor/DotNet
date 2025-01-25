@@ -25,7 +25,7 @@
                         <td>@Html.DisplayFor(flowerData => item.FlowerId)</td>
                         <td>@Html.DisplayFor(flowerData => item.FlowerName)</td>
                         <td>@Html.DisplayFor(flowerData => item.Quantity)</td>
-                        <td><a href="/ShoppingCart/index/?id">remove</a></td>
+                        <td><a href="/ShoppingCart/remove/@item.FlowerId">remove</a></td>
                     </tr>
                 }
 

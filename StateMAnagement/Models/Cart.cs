@@ -7,10 +7,7 @@ namespace Model.Cart;
 [Serializable]
 public class Cart
 {
-
-  public List<Item> Items = new List<Item>();
-  public Cart()
-  {
-  }
+  public List<Item> Items {get;set;}
+  
 
 }

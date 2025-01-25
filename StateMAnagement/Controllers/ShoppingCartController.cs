@@ -1,9 +1,3 @@
-//  we have to create index method to create session
-//add method of get to get flower by id return view
-//at http post menthod open form to get new quantity
-//set session for add method
-//get session data at index call
-
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Model.Flower;
@@ -25,9 +19,19 @@ public class ShoppingCartController : Controller
 
     public IActionResult Index()
     {
-          var cart=SessionHelper.GetObjectFromSession<Cart>(HttpContext.Session,"cart");
-          ViewData["CartItems"] =cart;
+          Cart cart=SessionHelper.GetObjectFromSession<Cart>(HttpContext.Session,"cart");
+            if (cart == null)
+            {
+                cart = new Cart();
+                cart.Items = new List<Item>();
+            }
+        ViewData["CartItems"] =cart.Items;
           return View();
+
+// for List of item
+// var items=SessionHelper.GetObjectFromSession<List<Item>>(HttpContext.Session,"cart");
+// ViewData["CartItems"] = items;
+// return View();
 
 // for item
         // var item = SessionHelper.GetObjectFromSession<Item>(HttpContext.Session, "cart");
@@ -38,46 +42,91 @@ public class ShoppingCartController : Controller
     [HttpGet]
     public IActionResult Add(int id)
     {
-        Flower flower=  _flowerService.getFlowerById(id);
-        ViewData["FolwerById"]=flower;
+
+        var flower = _flowerService.getFlowerById(id);
+        if (flower == null)
+        {
+            return NotFound("Flower not found.");
+        }
+
+        ViewData["FlowerById"] = flower;
         return View();
     }
 
     [HttpPost]
-    public IActionResult Add(int flowerId,string flowerName, int quantity)
-    {
-        Item item=new Item
+        public IActionResult Add(int flowerId,string flowerName, int quantity)
         {
-            FlowerId= flowerId,
-            FlowerName=flowerName,
-            Quantity=quantity
-        };
-
-        //SessionHelper.SetJsonObject(HttpContext.Session,"cart",item);
-
-
-        Cart cart=SessionHelper.GetObjectFromSession<Cart>(HttpContext.Session,"cart");
-        cart.Items.Add(item);
-        SessionHelper.SetJsonObject(HttpContext.Session, "cart", cart);
+            Item item=new Item
+            {
+                FlowerId= flowerId,
+                FlowerName=flowerName,
+                Quantity=quantity
+            };
 
 
-
-
-
-
-
-
+    // for cart
+            Cart  cart =SessionHelper.GetObjectFromSession<Cart>(HttpContext.Session,"cart");
+            if(cart==null)
+            {
+                cart=new Cart();
+                cart.Items=new List<Item>();
+            }
+            cart.Items.Add(item);
+            SessionHelper.SetJsonObject(HttpContext.Session, "cart", cart);
 
 
 
-        // for item
-        // SessionHelper.SetJsonObject(HttpContext.Session, "cart", item);
+    // for list of item
+            // List<Item> items = new List<Item>();
+            //  items = SessionHelper.GetObjectFromSession<List<Item>>(HttpContext.Session, "cart");
+            // items.Add(item);
+            //  SessionHelper.SetJsonObject(HttpContext.Session, "cart", items);
 
-        return RedirectToAction("Index", "Shoppingcart");
-    }
+
+    // for item
+             //SessionHelper.SetJsonObject(HttpContext.Session, "cart", item);
+
+            return RedirectToAction("Index", "Shoppingcart");
+        }
+
+    // [HttpPost]
+    // public IActionResult Add(int flowerId, string flowerName, int quantity)
+    // {
+    //     if (quantity <= 0)
+    //     {
+    //         ModelState.AddModelError("Quantity", "Quantity must be greater than zero.");
+    //         return RedirectToAction("Add", new { id = flowerId });
+    //     }
+
+    //     var cart = SessionHelper.GetObjectFromSession<Cart>(HttpContext.Session, "cart") ?? new Cart
+    //     {
+    //         Items = new List<Item>()
+    //     };
+
+    //     var existingItem = cart.Items.FirstOrDefault(item => item.FlowerId == flowerId);
+
+    //     if (existingItem != null)
+    //     {
+    //         existingItem.Quantity += quantity;
+    //     }
+    //     else
+    //     {
+    //         cart.Items.Add(new Item
+    //         {
+    //             FlowerId = flowerId,
+    //             FlowerName = flowerName,
+    //             Quantity = quantity
+    //         });
+    //     }
+
+    //     SessionHelper.SetJsonObject(HttpContext.Session, "cart", cart);
+
+    //     return RedirectToAction("Index");
+    // }
 
 
-    public IActionResult Privacy()
+
+     public IActionResult Privacy()
     {
         return View();
     }

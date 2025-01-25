@@ -1,5 +1,6 @@
 namespace Model.Cart;
 
+[Serializable]
 public class Item
 {
     public int FlowerId { get; set; }

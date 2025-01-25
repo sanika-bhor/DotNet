@@ -1,5 +1,5 @@
 @using Model.Flower;
-@using Model.Cart
+@using Model.Cart;
 @{
     ViewData["Title"] = "Shopping Cart Page";
 }
@@ -8,7 +8,7 @@
     <h1>Cart Items...</h1>
     <hr />
     @{
-        var cartitems = ViewData["CartItems"] as Cart;
+        var cartitems = ViewData["CartItems"] as List<Item>;
         <table class="table">
             <thead>
                 <tr>
@@ -19,7 +19,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var item in cartitems.Items)
+                @foreach (var item in cartitems)
                 {
                     <tr>
                         <td>@Html.DisplayFor(flowerData => item.FlowerId)</td>
@@ -31,6 +31,32 @@
 
             </tbody>
         </table>
+
+ @* for Item list *@
+        @* List<Item> items = ViewData["CartItems"] as List<Item>;
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayName("Flower ID")</th>
+                    <th>@Html.DisplayName("Flower Name")</th>
+                    <th>@Html.DisplayName("Quantity")</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in items)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(flowerData => item.FlowerId)</td>
+                        <td>@Html.DisplayFor(flowerData => item.FlowerName)</td>
+                        <td>@Html.DisplayFor(flowerData => item.Quantity)</td>
+                        <td><a href="/ShoppingCart/index/?id">remove</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table> *@
+
+
 
 
 @* for Item *@

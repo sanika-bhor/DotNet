@@ -11,4 +11,4 @@ Console.WriteLine("Hello, World!");
 
 //dotnet add package Microsoft.EntityFrameworkCore
 //dotnet add package Microsoft.EntityFrameworkCore.Design
-//dotnet add package Microsoft.EntityFrameworkCore --version 8.0.20
+//dotnet add package Mysql.Data.EntityFrameworkCore --version 8.0.20

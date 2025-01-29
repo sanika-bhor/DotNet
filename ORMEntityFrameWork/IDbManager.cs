@@ -6,6 +6,6 @@ namespace ORMEntityFramework
         Product GetById(int id);
         bool Insert(Product product);
         bool Update(Product product);
-        void Delete();
+        bool Delete(int id);
     }
 }

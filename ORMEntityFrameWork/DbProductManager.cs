@@ -34,13 +34,7 @@ namespace ORMEntityFramework
             }
             return status;
         }
-        public void Delete()
-        {
-            throw new NotImplementedException();
-        }
-
-
-
+      
         public bool Update(Product product)
         {
             bool status=false;
@@ -57,6 +51,17 @@ namespace ORMEntityFramework
             return status;
         }
 
-        
+        public bool Delete(int id)
+        {
+            bool status=false;
+           using(var context=new CollectionContext())
+           {
+            var product=context.Product.Remove(context.Product.Find(id));
+            context.SaveChanges();
+            status=true;
+           }
+           return status;
+        }
+
     }
 }

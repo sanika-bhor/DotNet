@@ -112,7 +112,20 @@ while(status)
 
             break;
 
+        case 5:
+            Console.WriteLine("Enter id of product to find");
+            int Deleteid = int.Parse(Console.ReadLine());
+           bool status3= dbm.Delete(Deleteid);
 
+            if (status3 != null)
+            {
+                Console.WriteLine("Product deleted successfully");
+            }
+            else
+            {
+                Console.WriteLine("Product not found");
+            }
+            break;
 
         case 6:
             status=false;

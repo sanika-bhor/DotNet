@@ -1,17 +1,37 @@
-using ORMEntityFramework;
-
-namespace DbProductManager
+using System.Linq;
+namespace ORMEntityFramework
 {
-    public class DbProductManager
+    public class DbProductManager:IDbManager
     {
-        List<Product> GetAll()
+        public List<Product> GetAll()
         {
-            using(var context=new CollectionContext())
+            using (var context = new CollectionContext())
             {
-                var products=context.Products;
+                var products = from prod in context.Product select prod;
                 return products.ToList<Product>();
-
             }
+
         }
+        public void Delete()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Product GetById()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Insert()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update()
+        {
+            throw new NotImplementedException();
+        }
+
+        
     }
 }

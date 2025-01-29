@@ -3,15 +3,15 @@ namespace ORMEntityFramework
 {
     public class CollectionContext : DbContext
     {
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Product> Product { get; set; }
 
-        public void onConfiguration(DbContextOptionsBuilder option)
+        protected override void OnConfiguring(DbContextOptionsBuilder option)
         {
-            string conn = "@server=localhost;user=root;password=root123;database=ecommerce";
-            option.UseMySQL(conn);
+            string conn = "server=localhost;port=3306;user=root;password=root123;database=ecommerce";
+            option.UseMySql(conn,ServerVersion.AutoDetect(conn));
         }
 
-        public void onModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
             base.OnModelCreating(modelBuilder);
@@ -19,9 +19,9 @@ namespace ORMEntityFramework
             {
                 entity.HasKey(p => p.ProductId);
                 entity.Property(p => p.Title).IsRequired();
-                entity.Property(p => p.Discription).IsRequired();
+                entity.Property(p => p.Description).IsRequired();
                 entity.Property(p => p.Unitprice).IsRequired();
-                entity.Property(p => p.Quantity);
+                entity.Property(p => p.Quantity).IsRequired();
             });
         }
     }

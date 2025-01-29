@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ORMEntityFrameWork")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e688512163952d2b2f7cb82ecb01946ffc66a68")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd043e49cec52d6b5766f43f1b3eb27b247265f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ORMEntityFrameWork")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ORMEntityFrameWork")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

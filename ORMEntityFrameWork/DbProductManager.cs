@@ -17,9 +17,13 @@ namespace ORMEntityFramework
             throw new NotImplementedException();
         }
 
-        public Product GetById()
+        public Product GetById(int id)
         {
-            throw new NotImplementedException();
+            using(var context=new CollectionContext())
+            {
+                var product=context.Product.Find(id);
+                return product;
+            }
         }
 
         public void Insert()

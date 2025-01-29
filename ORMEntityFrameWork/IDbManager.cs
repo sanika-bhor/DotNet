@@ -4,8 +4,8 @@ namespace ORMEntityFramework
     {
         List<Product> GetAll();
         Product GetById(int id);
-        void Insert();
-        void Update();
+        bool Insert(Product product);
+        bool Update(Product product);
         void Delete();
     }
 }

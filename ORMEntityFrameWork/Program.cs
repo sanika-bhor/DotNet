@@ -44,6 +44,76 @@ while(status)
             }
             break;
 
+        case 3:
+        Console.WriteLine("Enter product id");
+        int pid=int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter product title");
+        string title=Console.ReadLine();
+        Console.WriteLine("Enter product description");
+        string desc=Console.ReadLine();
+        Console.WriteLine("Enter product unit price");
+        int up=int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter product quantity");
+        int quan=int.Parse(Console.ReadLine());
+
+            Product product1=new Product
+            {
+                ProductId=pid,
+                Title=title,
+                Description=desc,
+                Unitprice=up,
+                Quantity=quan
+            };
+
+          bool statusInsert=  dbm.Insert(product1);
+
+          if(statusInsert)
+          {
+            Console.WriteLine("Product inserted successfully");
+          }
+          else
+          {
+            Console.WriteLine("Product not inserted");
+          }
+
+            break;
+
+        case 4:
+            Console.WriteLine("Enter product id");
+            int updateProductId = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter product title");
+            string updateProducttitle = Console.ReadLine();
+            Console.WriteLine("Enter product description");
+            string updateProductdesc = Console.ReadLine();
+            Console.WriteLine("Enter product unit price");
+            int updateProductup = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter product quantity");
+            int updateProductquan = int.Parse(Console.ReadLine());
+
+            Product product2 = new Product
+            {
+                ProductId = updateProductId,
+                Title = updateProducttitle,
+                Description = updateProductdesc,
+                Unitprice = updateProductup,
+                Quantity = updateProductquan
+            };
+
+            bool statusUpdate = dbm.Update(product2);
+
+            if (statusUpdate)
+            {
+                Console.WriteLine("Product update successfully");
+            }
+            else
+            {
+                Console.WriteLine("Product not update");
+            }
+
+            break;
+
+
+
         case 6:
             status=false;
             break;

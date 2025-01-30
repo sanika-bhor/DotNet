@@ -1,0 +1,12 @@
+@model string;
+@{
+    ViewData["title"] = "about us page";
+}
+
+<div>
+    <h1>Contact</h1>
+    @{
+        var Contact = ViewData["Contact"];
+            <h2>@Contact</h2>
+    }
+</div>

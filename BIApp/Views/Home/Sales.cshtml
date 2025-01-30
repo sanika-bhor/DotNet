@@ -1,0 +1,10 @@
+@model Sales;
+@using BIApp.Models;
+@{
+    ViewData["title"] = "about us page";
+}
+
+<div>
+    @Html.Partial("productSales",@Model.products);
+    @Html.Partial("CustomerSale",@Model.customers);
+</div>

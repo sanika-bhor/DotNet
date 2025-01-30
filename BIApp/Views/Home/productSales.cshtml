@@ -1,0 +1,12 @@
+@model string;
+@{
+    ViewData["title"] = "about us page";
+}
+
+<div>
+    <h1>Services</h1>
+    @{
+        var servicesAvailble = TempData["servicesAvailble"];
+            <h2>@servicesAvailble</h2>
+    }
+</div>

@@ -1,0 +1,35 @@
+@model List<BIApp.Models.Customer>
+
+<style>
+    td,th{
+        padding-right: 30px;
+        padding-top: 10px;
+    }
+</style>
+<div>
+    <h2>Customers</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Customer Id</th>
+        <th>Customer Name</th>
+        <th>Address</th>
+        <th>age</th>
+    </tr>
+        </thead>
+        <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@customer.CustomerId</td>
+                <td>@customer.CustomerName</td>
+                <td>@customer.Address</td>
+                <td>@customer.Age</td>
+            </tr>
+        }
+        </tbody>
+</table>
+    
+
+</div>

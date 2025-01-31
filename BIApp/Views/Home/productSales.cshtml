@@ -1,12 +1,31 @@
-@model string;
-@{
-    ViewData["title"] = "about us page";
-}
+@model List<BIApp.Models.Product>
 
-<div>
-    <h1>Services</h1>
-    @{
-        var servicesAvailble = TempData["servicesAvailble"];
-            <h2>@servicesAvailble</h2>
+<style>
+    td,
+    th {
+        padding-right: 30px;
+        padding-top: 10px;
     }
-</div>
+</style>
+<div>
+    <h2>Product</h2>
+
+    <table>
+        <tr>
+            <th>Prodouct Id</th>
+            <th>Title</th>
+            <th>Discription</th>
+            <th>UnitPrice</th>
+            <th>Quantity</th>
+        </tr>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.ProductId</td>
+                <td>@product.ProductTitle</td>
+                <td>@product.Discription</td>
+                <td>@product.UnitPrice</td>
+                <td>@product.Quantity</td>
+            </tr>
+        }
+    </table>

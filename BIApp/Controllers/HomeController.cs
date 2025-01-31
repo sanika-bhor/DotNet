@@ -39,8 +39,8 @@ public class HomeController : Controller
 
     public IActionResult Sales()
     {
-        Sales sales=new Sales();
-        return View();
+        SalesRevenueAcessLayer sales=new SalesRevenueAcessLayer();
+        return View(sales);
     }
 
     public IActionResult Privacy()

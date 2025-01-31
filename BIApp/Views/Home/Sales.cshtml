@@ -1,10 +1,16 @@
-@model Sales;
+@model SalesRevenueAcessLayer;
 @using BIApp.Models;
 @{
-    ViewData["title"] = "about us page";
+    ViewData["title"] = "sales page";
 }
 
 <div>
-    @Html.Partial("productSales",@Model.products);
-    @Html.Partial("CustomerSale",@Model.customers);
+    <h1>Marketing Dashboard</h1>
+    <hr/>
+    <div>
+    @Html.Partial("productSales",@Model.FillProduct());
+    </div>
+<div>
+    @Html.Partial("customerSale",@Model.FillCustomer());
+</div>
 </div>

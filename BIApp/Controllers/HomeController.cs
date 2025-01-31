@@ -48,6 +48,20 @@ public class HomeController : Controller
         return View();
     }
 
+public IActionResult ListProduct()
+{
+    SalesRevenueAcessLayer srl=new SalesRevenueAcessLayer();
+    var product=srl.FillProduct().ToArray();
+    return new JsonResult(product);
+}
+
+
+    public IActionResult ListCustomer()
+    {
+        SalesRevenueAcessLayer srl = new SalesRevenueAcessLayer();
+        var customer = srl.FillCustomer().ToArray();
+        return new JsonResult(customer);
+    }
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

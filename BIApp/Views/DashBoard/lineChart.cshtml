@@ -1,8 +1,73 @@
 @{
     ViewData["title"]="linechart";
 }
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <div>
     <a href="/dashboard/linechart"> Linechart</a>   |
     <a href="/dashboard/barChart"> barChart</a>    |
     <a href="/dashboard/pieChart"> pieChart</a>    |
+
+
+    <div id="chart_div" style="height:350px"></div>
 </div>
+
+<script type="text/javascript">
+//require
+    google.charts.load('current', { packages: ['corechart', 'bar'] });
+    google.charts.setOnLoadCallback(loadData);
+
+
+function loadData()
+{
+    $.ajax(
+        {
+            url:"/dashboard/cityRevenue",
+            dataType:"json",
+            type:"GET",
+            error:function(xhr,status,error)
+            {
+                var err=eval("("+xhr.responseText+")");
+                toastr.error(err.message)
+            },
+            success:function(data)
+            {
+                revenueChart(data);
+                return false;
+            }
+        }
+    );
+    return false;
+}
+
+    function revenueChart(data) {
+    var dataArray=[
+        ["city","revenueYear2025","revenueYear2020","revenueYear2015","revenueYear2010","revenueYear2005"]
+    ];
+
+    $.each(data,function(i,item){
+            dataArray.push([item.name, item.revenueYear2025, item.revenueYear2020,item.revenueYear2015,item.revenueYear2010,item.revenueYear2005]);
+    });
+
+    var data=google.visualization.arrayToDataTable(dataArray);
+    var options={
+        title:"linechart ",
+        chartArea:{
+            width:"50%"
+        },
+        hAxis:{
+            title:"city",
+            minValue:0
+        },
+        vAxis:{
+            title:"total revenue"
+        },
+        colors: ['#b0120a', '#7b1fa2', '#ffab91', '#d95f02', '#00ffff']
+    };
+
+    var chart= new google.visualization.LineChart(document.getElementById("chart_div"));
+    chart.draw(data,options);
+    return false;
+}
+</script>

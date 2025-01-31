@@ -25,7 +25,7 @@ namespace BIApp.Models
         public static List<RevenueModel> getCityRevenue()
         {
             List<RevenueModel> city =new List<RevenueModel>();
-            city.Add(new RevenueModel("pune",2562,4560,4560,4564,7890));
+            city.Add(new RevenueModel("pune",2562,4560,9999,5632,7890));
             city.Add(new RevenueModel("nashik",4562,789,7863,9856,5478));
             city.Add(new RevenueModel("manchar",785,7563,7854,6523,963));
             city.Add(new RevenueModel("mumbai",1236,1456,3256,2145,1478));

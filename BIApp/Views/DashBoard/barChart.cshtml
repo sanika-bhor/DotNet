@@ -27,7 +27,7 @@ function loadData()
        type:"GET",
         error:function(xhr,status,error)
         {
-            var error=eval("("+xhr.responseText+")");
+            var err=eval("("+xhr.responseText+")");
             toastr.error(err.message);
         },
         success:function(data)

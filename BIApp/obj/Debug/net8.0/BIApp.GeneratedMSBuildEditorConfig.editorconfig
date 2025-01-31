@@ -18,6 +18,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = A:\TAP\GitHub\DotNet\BIApp
 build_property._RazorSourceGeneratorDebug = 
 
+[A:/TAP/GitHub/DotNet/BIApp/Views/DashBoard/barChart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaEJvYXJkXGJhckNoYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[A:/TAP/GitHub/DotNet/BIApp/Views/DashBoard/lineChart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaEJvYXJkXGxpbmVDaGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[A:/TAP/GitHub/DotNet/BIApp/Views/DashBoard/pieChart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaEJvYXJkXHBpZUNoYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [A:/TAP/GitHub/DotNet/BIApp/Views/Home/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

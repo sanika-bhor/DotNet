@@ -6,6 +6,7 @@ namespace paymentProcessingDemo.Manager
 {
     public class CollectionContext:DbContext
     {
+        public DbSet<Payment> Payments { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString="server=localhost; user=root; password=root123; database=Ecommerce";

@@ -27,6 +27,41 @@ public class HomeController : Controller
         ViewData["getPayment"]=pay;
         return View();
     }
+    [HttpGet]
+    public IActionResult Insert()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Insert(int Id,int OrderId,double Amount, DateTime PaymentDate, string PaymentMode)
+    {
+        Payment payment=new Payment
+        {
+            Id=Id,
+            OrderId=OrderId,
+            Amount=Amount,
+            PaymentDate=PaymentDate,
+            PaymentMode=PaymentMode
+        };
+
+        bool status=_paymentService.Insert(payment);
+        if(status)
+        {
+           return RedirectToAction("index");
+        }
+        return View();
+    }
+
+    public IActionResult delete(int id)
+    {
+        bool status = _paymentService.Delete(id);
+        if (status)
+        {
+            return RedirectToAction("index");
+        }
+        return View();
+    }
 
     public IActionResult Privacy()
     {

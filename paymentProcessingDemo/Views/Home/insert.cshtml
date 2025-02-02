@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Product Insert Page";
+}
+
+
+
+<div class="data">
+    <h1>Insert Product</h1>
+
+    <form action="/home/insert" method="post">
+
+        <table>
+            <tr>
+                <td>Payment id:</td>
+                <td><input type="text" name="Id" placeholder="Payment id" /></td>
+            </tr>
+
+            <tr>
+                <td>Order Id:</td>
+                <td><input type="text" name="OrderId" placeholder="Order id" /></td>
+            </tr>
+
+            <tr>
+                <td>Total Amount:</td>
+                <td><input type="text" name="Amount" placeholder="Payment Amount" /></td>
+            </tr>
+
+            <tr>
+                <td>Payment date:</td>
+                <td><input type="date" name="PaymentDate" placeholder="Payment Date" /></td>
+            </tr>
+
+            <tr>
+                <td>PaymentMode:</td>
+                <td><input type="text" name="PaymentMode" placeholder="Payment Mode" /></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" class="submitButton" name="btn" value=" Insert " /></td>
+            </tr>
+
+        </table>
+    </form>
+
+</div>

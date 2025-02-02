@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+            @{
+                Payment payment = ViewData["getPayment"]as Payment;
+                        <h4> Id: @payment.Id</h4>
+                        <h4>OrderId Id: @payment.OrderId</h4>
+                        <h4>Amount: @payment.Amount</h4>
+                        <h4>PaymentDate: @payment.PaymentDate</h4>
+                        <h4>PaymentMode: @payment.PaymentMode</h4>
+                }
+            
+    </table>
+</div>

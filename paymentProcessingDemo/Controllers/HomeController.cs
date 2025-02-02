@@ -1,20 +1,30 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using paymentProcessingDemo.Models;
+using paymentProcessingDemo.Service.Interface;
 
 namespace paymentProcessingDemo.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly IPaymentService _paymentService;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(IPaymentService service)
     {
-        _logger = logger;
+       _paymentService=service;
     }
 
     public IActionResult Index()
     {
+        List<Payment> payments=_paymentService.GetAllPayment();
+        ViewData["AllPayment"]=payments;
+        return View();
+    }
+
+    public IActionResult GetById(int id)
+    {
+        Payment pay=_paymentService.GetElementById(id);
+        ViewData["getPayment"]=pay;
         return View();
     }
 

@@ -9,8 +9,8 @@ namespace paymentProcessingDemo.Manager
         public DbSet<Payment> Payments { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString="server=localhost; user=root; password=root123; database=Ecommerce";
-            optionsBuilder.UseMySQL(connectionString);
+            string conn = "server=localhost;port=3306;user=root;password=root123;database=ecommerce";
+            optionsBuilder.UseMySql(conn, ServerVersion.AutoDetect(conn));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

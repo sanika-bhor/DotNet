@@ -1,0 +1,50 @@
+@{
+    ViewData["Title"] = "update Page";
+}
+@using paymentProcessingDemo.Models;
+
+
+<div class="data">
+    <h1>Insert Product</h1>
+
+    <form action="/home/update" method="post">
+@{
+            Payment payment = ViewData["getPayment"] as Payment;
+
+        <table>
+            <tr>
+            <td>Payment id:</td>
+                <td><input type="text" name="Id" value="@payment.Id" /></td>
+            </tr>
+
+            <tr>
+                <td>Order Id:</td>
+                    <td><input type="text" name="OrderId" value="@payment.OrderId" /></td>
+            </tr>
+
+            <tr>
+                <td>Total Amount:</td>
+                    <td><input type="text" name="Amount" value="@payment.Amount" /></td>
+            </tr>
+
+            <tr>
+                <td>Payment date:</td>
+                    <td><input type="date" name="PaymentDate" value="@payment.PaymentDate" /></td>
+            </tr>
+
+            <tr>
+                <td>PaymentMode:</td>
+                    <td><input type="text" name="PaymentMode" value="@payment.PaymentMode" /></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" class="submitButton" name="btn" value=" Update " /></td>
+            </tr>
+
+        </table>
+
+        }
+    </form>
+
+</div>

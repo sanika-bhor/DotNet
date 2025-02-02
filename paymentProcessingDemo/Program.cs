@@ -1,6 +1,14 @@
+using paymentProcessingDemo.Repository;
+using paymentProcessingDemo.Repository.Interface;
+using paymentProcessingDemo.Service;
+using paymentProcessingDemo.Service.Interface;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddTransient<IPaymentRepo,PaymentRepo>();
+builder.Services.AddTransient<IPaymentService, PaymentService>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

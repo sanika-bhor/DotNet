@@ -5,9 +5,9 @@ namespace paymentProcessingDemo.Repository.Interface
     public interface IPaymentRepo
     {
         List<Payment> GetAllPayment();
-        Payment GetElementById();
-        bool Insert();
-        bool Update();
-        bool Delete();
+        Payment GetElementById(int id);
+        bool Insert(Payment payment);
+        bool Update(Payment payment);
+        bool Delete(int id);
     }
 }

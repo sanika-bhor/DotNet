@@ -1,0 +1,39 @@
+using ProductWebApi.Model;
+using ProductWebApi.Repository;
+
+namespace ProductWebApi.Service
+{
+    public class ProductService : IProductService
+    {
+        IProductRepo _productRepo;
+        public ProductService(IProductRepo repo)
+        {
+            this._productRepo=repo;
+        }
+        public bool Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Product GetProductById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Product> GetProducts()
+        {
+           List<Product> products=_productRepo.GetProducts();
+           return products;
+        }
+
+        public bool Insert(Product product)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Update(Product product)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

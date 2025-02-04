@@ -1,8 +1,13 @@
+using ProductWebApi.Repository;
+using ProductWebApi.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddTransient<IProductRepo ,ProductRepo>();
+builder.Services.AddTransient<IProductService ,ProductService>();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();

@@ -10,6 +10,8 @@ UnitPrice int,
 Quantity int
 );
 
+desc product;
+
 update product set Description="valentine flower" where ProductId=101;
 insert into  product values (101,"rose","valentine Flower" ,20,452);
 insert into  product values (102,"lotus","unique flower" ,50,62);
@@ -55,5 +57,23 @@ UnitPrice int,
 Quantity int
 );
 
-insert into  shoppingcart values (1,"sanika12","SB27" ,"sanika bhor", "sb@gmail.com","7896400000","pune");
-insert into  Customer values (2,"sumitBhor","sumit13" ,"sumit bhor", "sumit@gmail.com","1456327889","pune");
+insert into  shoppingcart values (101,1,"Rose",5 ,2);
+insert into  shoppingcart values (103,1,"Gerbera",7 ,15);
+ update shoppingcart set CustomerId=2 where ProductId=103;
+select * from shoppingcart;
+
+
+create table Payments
+(
+Id int,
+OrderId int,
+Amount decimal,
+PaymentDate datetime,
+PaymentMode varchar(20)
+);
+
+drop table Payments;
+insert into  Payments values (1,25,45,"2020-1-10 10.30.23","online");
+insert into  Payments values (3,78,96,"2020-1-10 5.15.20","online");
+insert into  Payments values (4,6,12,"2020-1-10 8.32.31","offline");
+insert into  Payments values (2,96,26,"2020-1-10 12.08.56","online");

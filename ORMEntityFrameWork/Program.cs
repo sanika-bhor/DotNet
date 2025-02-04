@@ -140,3 +140,5 @@ while(status)
 //dotnet add package Microsoft.EntityFrameworkCore
 //dotnet add package Microsoft.EntityFrameworkCore.Design
 //dotnet add package Mysql.Data.EntityFrameworkCore --version 8.0.20
+//dotnet add package Pomelo.EntityFrameworkCore.MySql
+//dotnet add package MySqlConnector

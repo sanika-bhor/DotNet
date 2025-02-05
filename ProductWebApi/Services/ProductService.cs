@@ -5,7 +5,7 @@ namespace ProductWebApi.Service
 {
     public class ProductService : IProductService
     {
-        IProductRepo _productRepo;
+        private readonly IProductRepo _productRepo;
         public ProductService(IProductRepo repo)
         {
             this._productRepo=repo;

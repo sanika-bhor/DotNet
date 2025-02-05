@@ -10,7 +10,7 @@ namespace ProductWebApi.Manager
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string conn="server:localhost; user:root; password:root123; database:ECommerece";
+            string conn= "server=localhost;port=3306;user=root;password=root123;database=ecommerce";
             optionsBuilder.UseMySql(conn, ServerVersion.AutoDetect(conn));
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using ProductWebApi.Service;
 
-namespace ProductWebApi.Contoller
+namespace ProductWebApi.Controller
 {
     [ApiController]
     public class ProductController:ControllerBase
     {
-        IProductService _srv;
+        private readonly IProductService _srv;
 
         public ProductController(IProductService srv)
         {
@@ -14,8 +14,7 @@ namespace ProductWebApi.Contoller
         }
 
         [HttpGet]
-        
-        [Route("/api/product")]
+        [Route("api/products")]
         public IActionResult GetProduct()
         {
             try{

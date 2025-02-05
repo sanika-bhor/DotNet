@@ -19,7 +19,7 @@ namespace ProductWebApi.Manager
             using(var context=new CollectionContext())
             {
                 var product =from p in context.Product select p;
-                return product as List<Product>;
+                return product.ToList();
 
             }
         }

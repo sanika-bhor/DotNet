@@ -18,8 +18,8 @@ namespace ProductWebApi.Manager
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Product>(Options=>{
                 Options.HasKey(product=>product.ProductId);
-                Options.Property(product=>product.ProductName).IsRequired();
-                Options.Property(product=>product.Discription).IsRequired();
+                Options.Property(product=>product.Title).IsRequired();
+                Options.Property(product=>product.Description).IsRequired();
                 Options.Property(product=>product.UnitPrice).IsRequired();
                 Options.Property(product=>product.Quantity).IsRequired();
             });

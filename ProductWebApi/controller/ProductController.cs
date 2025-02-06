@@ -71,6 +71,24 @@ namespace ProductWebApi.Controller
                 return BadRequest();
             }
         }
+
+        [HttpDelete("api/deleteProduct/{id}")]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                bool status=_srv.Delete(id);
+                if(status)
+                {
+                    return Ok("product deleted ");
+                }
+                return BadRequest();
+            }
+            catch(Exception e)
+            {
+                return BadRequest();
+            }
+        }
     }
 
 

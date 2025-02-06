@@ -12,7 +12,8 @@ namespace ProductWebApi.Service
         }
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            bool status = _productRepo.Delete(id);
+            return status;
         }
 
         public Product GetProductById(int id)

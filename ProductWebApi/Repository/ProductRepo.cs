@@ -8,7 +8,9 @@ namespace ProductWebApi.Repository
     {
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            ProductManager pm = new ProductManager();
+            bool status = pm.Delete(id);
+            return status;
         }
 
         public Product GetProductById(int id)

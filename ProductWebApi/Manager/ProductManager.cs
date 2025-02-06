@@ -6,7 +6,14 @@ namespace ProductWebApi.Manager
     {
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            bool status=false;
+           using(var context=new CollectionContext())
+           {
+            context.Product.Remove(context.Product.Find(id));
+            context.SaveChanges();
+            status=true;
+           }
+           return status;
         }
 
         public Product GetProductById(int id)

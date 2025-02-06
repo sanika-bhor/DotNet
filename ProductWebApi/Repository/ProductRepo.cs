@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using ProductWebApi.Manager;
 using ProductWebApi.Model;
 
@@ -24,7 +25,9 @@ namespace ProductWebApi.Repository
 
         public bool Insert(Product product)
         {
-            throw new NotImplementedException();
+            ProductManager pm = new ProductManager();
+            bool status=pm.Insert(product);
+            return status;
         }
 
         public bool Update(Product product)

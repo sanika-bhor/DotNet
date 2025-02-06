@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using ProductWebApi.Model;
 using ProductWebApi.Service;
 
 namespace ProductWebApi.Controller
@@ -13,9 +14,8 @@ namespace ProductWebApi.Controller
             this._srv = srv;
         }
 
-        [HttpGet]
+    [HttpGet]
     [Route("api/products")]
-
         public IActionResult GetProduct()
         {
             try
@@ -32,5 +32,27 @@ namespace ProductWebApi.Controller
                 return BadRequest();
             }
         }
+
+
+        [HttpPost("api/addProduct")]
+        public IActionResult Insert([FromBody] Product p)
+        {
+            try
+            {
+                bool status=_srv.Insert(p);
+                if(status)
+                {
+                    return Ok("product inserted");
+                }
+                return BadRequest();
+            }
+            catch(Exception e)
+            {
+                return BadRequest();
+            }
+        }
     }
+
+
+   
 }

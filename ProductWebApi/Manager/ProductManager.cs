@@ -26,7 +26,14 @@ namespace ProductWebApi.Manager
 
         public bool Insert(Product product)
         {
-            throw new NotImplementedException();
+            bool status=false;
+            using(var context=new CollectionContext())
+            {
+                context.Product.Add(product);
+                context.SaveChanges();
+                status=true;
+            }
+            return status;
         }
 
         public bool Update(Product product)

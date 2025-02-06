@@ -28,7 +28,8 @@ namespace ProductWebApi.Service
 
         public bool Insert(Product product)
         {
-            throw new NotImplementedException();
+            bool status = _productRepo.Insert(product);
+            return status;
         }
 
         public bool Update(Product product)

@@ -34,7 +34,8 @@ namespace ProductWebApi.Service
 
         public bool Update(Product product)
         {
-            throw new NotImplementedException();
+            bool status = _productRepo.Update(product);
+            return status;
         }
     }
 }

@@ -32,7 +32,9 @@ namespace ProductWebApi.Repository
 
         public bool Update(Product product)
         {
-            throw new NotImplementedException();
+            ProductManager pm = new ProductManager();
+            bool status = pm.Update(product);
+            return status;
         }
     }
 }

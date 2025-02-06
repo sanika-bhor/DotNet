@@ -38,7 +38,18 @@ namespace ProductWebApi.Manager
 
         public bool Update(Product product)
         {
-            throw new NotImplementedException();
+            bool status = false;
+            using (var context = new CollectionContext())
+            {
+                var p=context.Product.Find(product.ProductId);
+                p.Title=product.Title;
+                p.UnitPrice=product.UnitPrice;
+                p.Description=product.Description;
+                p.Quantity=product.Quantity;
+                context.SaveChanges();
+                status=true;
+            }
+            return status;
         }
     }
 }

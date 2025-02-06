@@ -51,6 +51,26 @@ namespace ProductWebApi.Controller
                 return BadRequest();
             }
         }
+
+
+
+        [HttpPut("api/updateProduct")]
+        public IActionResult Update([FromBody] Product p)
+        {
+            try
+            {
+                bool status = _srv.Update(p);
+                if (status)
+                {
+                    return Ok("product updated");
+                }
+                return BadRequest();
+            }
+            catch (Exception e)
+            {
+                return BadRequest();
+            }
+        }
     }
 
 

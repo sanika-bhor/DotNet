@@ -15,7 +15,9 @@ namespace ProductWebApi.Repository
 
         public Product GetProductById(int id)
         {
-            throw new NotImplementedException();
+            ProductManager pm = new ProductManager();
+            Product p=pm.GetProductById(id);
+            return p;
         }
 
         public List<Product> GetProducts()

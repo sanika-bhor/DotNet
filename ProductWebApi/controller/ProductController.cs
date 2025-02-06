@@ -15,7 +15,7 @@ namespace ProductWebApi.Controller
         }
 
     [HttpGet]
-    [Route("api/products")]
+    [Route("api/getProduct")]
         public IActionResult GetProduct()
         {
             try
@@ -87,6 +87,28 @@ namespace ProductWebApi.Controller
             catch(Exception e)
             {
                 return BadRequest();
+            }
+        }
+
+        [HttpGet("api/getProduct/{id}")]
+        public IActionResult GetProductById(int id)
+        {
+            try
+            {
+                Product p=_srv.GetProductById(id);
+                if(p!=null)
+                {
+                    return Ok(p);
+                }
+                else
+                {
+                    return Ok("Product not found");
+                }
+            }
+            catch(Exception e)
+            {
+                return BadRequest();
+
             }
         }
     }

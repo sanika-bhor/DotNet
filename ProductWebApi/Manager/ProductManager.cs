@@ -18,7 +18,11 @@ namespace ProductWebApi.Manager
 
         public Product GetProductById(int id)
         {
-            throw new NotImplementedException();
+            using(var context=new CollectionContext())
+            {
+                Product p=context.Product.Find(id);
+                return p;
+            }
         }
 
         public List<Product> GetProducts()

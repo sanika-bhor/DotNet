@@ -14,8 +14,8 @@ namespace ProductWebApi.Controller
             this._srv = srv;
         }
 
-    [HttpGet]
-    [Route("api/getProduct")]
+        [HttpGet]
+        [Route("api/getProduct")]
         public IActionResult GetProduct()
         {
             try

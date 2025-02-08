@@ -7,6 +7,7 @@ namespace ProductWebApi.Manager
     public class CollectionContext:DbContext
     {
         public DbSet<Product> Product{get;set;}
+        public DbSet<Payment> Payments{get;set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -22,6 +23,15 @@ namespace ProductWebApi.Manager
                 Options.Property(product=>product.Description).IsRequired();
                 Options.Property(product=>product.UnitPrice).IsRequired();
                 Options.Property(product=>product.Quantity).IsRequired();
+            });
+
+
+            modelBuilder.Entity<Payment>(Options=>{
+                Options.HasKey(payment=>payment.Id);
+                Options.Property(Payment=>Payment.OrderId).IsRequired();
+                Options.Property(Payment=>Payment.Amount).IsRequired();
+                Options.Property(Payment=>Payment.PaymentDate).IsRequired();
+                Options.Property(Payment=>Payment.PaymentMode).IsRequired();
             });
         }
     }

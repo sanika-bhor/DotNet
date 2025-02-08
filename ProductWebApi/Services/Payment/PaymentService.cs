@@ -6,6 +6,10 @@ namespace ProductWebApi.Service
     public class PaymentService : IPaymentSevice
     {
         private readonly IPaymentRepo _paymentRepo;
+        public PaymentService(IPaymentRepo repo)
+        {
+            this._paymentRepo=repo;
+        }
         public bool Delete(int id)
         {
             throw new NotImplementedException();

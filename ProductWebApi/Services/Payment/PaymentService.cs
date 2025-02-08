@@ -1,10 +1,11 @@
-using ProductWebApi.Manager;
 using ProductWebApi.Model;
+using ProductWebApi.Repository;
 
-namespace ProductWebApi.Repository
+namespace ProductWebApi.Service
 {
-    public class PaymentRepo : IPaymentRepo
+    public class PaymentService : IPaymentSevice
     {
+        private readonly IPaymentRepo _paymentRepo;
         public bool Delete(int id)
         {
             throw new NotImplementedException();
@@ -17,9 +18,8 @@ namespace ProductWebApi.Repository
 
         public List<Payment> GetPayments()
         {
-           PaymentManager pm=new PaymentManager();
-           List<Payment> payments=pm.GetPayments();
-           return payments;
+            List<Payment> payments=_paymentRepo.GetPayments();
+            return payments;
         }
 
         public bool Insert(Payment payment)

@@ -9,6 +9,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<IProductRepo, ProductRepo>();
+builder.Services.AddTransient<IPaymentRepo, PaymentRepo>();
+builder.Services.AddTransient<IPaymentSevice, PaymentService>();
 builder.Services.AddTransient<IProductService, ProductService>();
 
 var app = builder.Build();

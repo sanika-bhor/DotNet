@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\TAP\\GitHub\\DotNet\\ProductWebApi\\ProductWebApi.csproj": {}
+    "a:\\TAP\\GitHub\\DotNet\\ProductWebApi\\ProductWebApi.csproj": {}
   },
   "projects": {
-    "A:\\TAP\\GitHub\\DotNet\\ProductWebApi\\ProductWebApi.csproj": {
+    "a:\\TAP\\GitHub\\DotNet\\ProductWebApi\\ProductWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\TAP\\GitHub\\DotNet\\ProductWebApi\\ProductWebApi.csproj",
+        "projectUniqueName": "a:\\TAP\\GitHub\\DotNet\\ProductWebApi\\ProductWebApi.csproj",
         "projectName": "ProductWebApi",
-        "projectPath": "A:\\TAP\\GitHub\\DotNet\\ProductWebApi\\ProductWebApi.csproj",
+        "projectPath": "a:\\TAP\\GitHub\\DotNet\\ProductWebApi\\ProductWebApi.csproj",
         "packagesPath": "C:\\Users\\91997\\.nuget\\packages\\",
-        "outputPath": "A:\\TAP\\GitHub\\DotNet\\ProductWebApi\\obj\\",
+        "outputPath": "a:\\TAP\\GitHub\\DotNet\\ProductWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\91997\\AppData\\Roaming\\NuGet\\NuGet.Config",

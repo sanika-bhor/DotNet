@@ -1,6 +1,6 @@
 create database ECommerce;
-
 use ECommerce;
+
 create table product
 (
 ProductId int not null,

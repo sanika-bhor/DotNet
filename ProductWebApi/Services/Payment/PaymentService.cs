@@ -12,12 +12,14 @@ namespace ProductWebApi.Service
         }
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            bool status=_paymentRepo.Delete(id);
+            return status;
         }
 
         public Payment GetPaymentById(int id)
         {
-            throw new NotImplementedException();
+            Payment payment=_paymentRepo.GetPaymentById(id);
+            return payment;
         }
 
         public List<Payment> GetPayments()
@@ -28,12 +30,14 @@ namespace ProductWebApi.Service
 
         public bool Insert(Payment payment)
         {
-            throw new NotImplementedException();
+            bool status=_paymentRepo.Insert(payment);
+            return status;
         }
 
         public bool Update(Payment payment)
         {
-            throw new NotImplementedException();
+            bool status=_paymentRepo.Update(payment);
+            return status;
         }
     }
 }

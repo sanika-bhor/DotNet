@@ -7,12 +7,16 @@ namespace ProductWebApi.Repository
     {
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            PaymentManager pm = new PaymentManager();
+            bool status=pm.Delete(id);
+            return status;
         }
 
         public Payment GetPaymentById(int id)
         {
-            throw new NotImplementedException();
+           PaymentManager pm=new PaymentManager();
+           Payment payment=pm.GetPaymentById(id);
+           return payment;
         }
 
         public List<Payment> GetPayments()
@@ -24,12 +28,16 @@ namespace ProductWebApi.Repository
 
         public bool Insert(Payment payment)
         {
-            throw new NotImplementedException();
+            PaymentManager pm = new PaymentManager();
+            bool status=pm.Insert(payment);
+            return status;
         }
 
         public bool Update(Payment payment)
         {
-            throw new NotImplementedException();
+            PaymentManager pm = new PaymentManager();
+            bool status=pm.Update(payment);
+            return status;
         }
     }
 }

@@ -50,15 +50,22 @@ namespace ProductWebApi.Manager
             bool status = false;
             using (var context = new CollectionContext())
             {
-                Payment payment1=context.Payments.Find(payment.Id);
-                payment1.OrderId=payment.OrderId;
-                payment1.Amount=payment.Amount;
-                payment1.PaymentDate=payment.PaymentDate;
-                payment1.PaymentMode=payment.PaymentMode;
+                var existingPayment = context.Payments.Find(payment.Id);
+                if (existingPayment == null)
+                {
+                    return false; // Return false if payment does not exist
+                }
+
+                // Update fields
+                existingPayment.OrderId = payment.OrderId;
+                existingPayment.Amount = payment.Amount;
+                existingPayment.PaymentDate = payment.PaymentDate;
+                existingPayment.PaymentMode = payment.PaymentMode;
+
                 context.SaveChanges();
                 status = true;
-            }
-            return status;
+                return status;
+           }  
         }
     }
 

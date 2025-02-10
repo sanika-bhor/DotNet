@@ -73,6 +73,52 @@ namespace ProductWebApi.Controller
 
         }
 
+
+        [HttpPost("api/insert")]
+        public IActionResult Insert([FromBody] Payment payment)
+        {
+            try
+            {
+                bool status = _srv.Insert(payment);
+                if (status)
+                {
+                    return Ok("Insert sucessfully");
+                }
+                else
+                {
+                    return BadRequest();
+                }
+            }
+            catch (Exception e)
+            {
+                return BadRequest();
+            }
+        }
+
+
+        [HttpPut("api/update")]
+        public IActionResult Update([FromBody] Payment payment)
+        {
+            try
+            {
+                bool status = _srv.Update(payment);
+                if (status)
+                {
+                    return Ok("update sucessfully");
+                }
+                else
+                {
+                    return BadRequest();
+                }
+            }
+            catch (Exception e)
+            {
+                return BadRequest();
+            }
+        }
+
+
+        
     }
 
 

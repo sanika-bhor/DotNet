@@ -8,6 +8,6 @@ namespace ProductWebApi.Manager.Interface
         Payment GetPaymentById(int id);
         bool Insert(Payment payment);
         bool Update(Payment payment);
-        bool Delete(Payment payment);
+        bool Delete(int id);
     }
 }

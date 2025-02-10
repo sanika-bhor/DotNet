@@ -33,6 +33,46 @@ namespace ProductWebApi.Controller
             }
         }
 
+        [HttpGet("api/getPaymentById/{id}")]
+        public IActionResult GetPaymentById(int id)
+        {
+            try
+            {
+                var payment=_srv.GetPaymentById(id);
+                if(payment==null)
+                {
+                    return BadRequest();
+                }
+                return Ok(payment);
+            }
+            catch(Exception e)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpDelete("api/delete/{id}")]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                 bool status=_srv.Delete(id);
+                 if(status)
+                 {
+                    return Ok("delete sucessfully");
+                 }
+                 else
+                 {
+                    return BadRequest();
+                 }
+            }
+            catch(Exception e)
+            {
+                 return BadRequest();
+            }
+
+        }
+
     }
 
 

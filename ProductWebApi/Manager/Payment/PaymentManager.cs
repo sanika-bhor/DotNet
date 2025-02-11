@@ -50,7 +50,7 @@ namespace ProductWebApi.Manager
             bool status = false;
             using (var context = new CollectionContext())
             {
-                var existingPayment = context.Payments.Find(payment.Id);
+                Payment existingPayment = context.Payments.Find(payment.Id);
                 if (existingPayment == null)
                 {
                     return false; // Return false if payment does not exist

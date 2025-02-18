@@ -7,6 +7,6 @@ namespace JWTAuthentication.Services.Interface
     {
         AuthenticationResponse Authenticate(AuthenticationRequest request);
         List<User> GetAllUsers();
-        User GetUser();
+        User GetUser(int id);
     }
 }

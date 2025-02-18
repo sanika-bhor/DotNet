@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NhhzQRmCwuU=",
+  "dgSpecHash": "FiTTYXSOxrM=",
   "success": true,
-  "projectFilePath": "A:\\TAP\\GitHub\\DotNet\\JWTAuthentication\\JWTAuthentication.csproj",
+  "projectFilePath": "a:\\TAP\\GitHub\\DotNet\\JWTAuthentication\\JWTAuthentication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\91997\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.5\\microsoft.aspnetcore.openapi.8.0.5.nupkg.sha512",
     "C:\\Users\\91997\\.nuget\\packages\\microsoft.bcl.memory\\9.0.0\\microsoft.bcl.memory.9.0.0.nupkg.sha512",

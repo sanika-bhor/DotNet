@@ -6,9 +6,10 @@ using Microsoft.Extensions.Options;
 using System;
 using System.Linq;
 using System.Text;
-using WebApi.Services;
+using JWTAuthentication.Helpers;
+using JWTAuthentication.Services.Interface;
 
-namespace WebApi.Helpers
+namespace JWTAuthentication.Helpers
 {
     public class JwtMiddleware
     {
@@ -51,7 +52,7 @@ namespace WebApi.Helpers
                 var userId = int.Parse(jwtToken.Claims.First(x => x.Type == "id").Value);
 
                 // attach user to context on successful jwt validation
-                context.Items["User"] = userService.GetById(userId);
+                context.Items["User"] = userService.GetUser(userId);
             }
             catch
             {

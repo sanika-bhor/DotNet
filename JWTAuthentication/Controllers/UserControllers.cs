@@ -4,29 +4,29 @@ using JWTAuthentication.Services.Interface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace JWTAuthentication.Controllers // Updated namespace to Controllers
+namespace JWTAuthentication.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")] // This should NOT be commented out
-    public class UserController : ControllerBase // Updated to PascalCase
+    [Route("[controller]")] 
+    public class UserControllers : ControllerBase 
     {
         private readonly IUserService _userService;
 
-        public UserController(IUserService userService) // Meaningful parameter name
+        public UserControllers(IUserService userService) 
         {
             _userService = userService;
         }
 
-        [HttpPost("authenticate")] // Use "authenticate" for consistency
-        public IActionResult Authentication([FromBody] AuthenticationRequest model) // Added [FromBody]
+        [HttpPost("authenticate")]
+        public IActionResult Authentication([FromBody] AuthenticationRequest model) 
         {
             var token = _userService.Authenticate(model);
 
-            if (token == null) // Check token, not Response
+            if (token == null) 
             {
                 return BadRequest(new { message = "Incorrect username or password" });
             }
-            return Ok(new { token });
+            return Ok( token );
         }
 
         [Authorize]

@@ -1,19 +1,18 @@
 using JWTAuthentication.Helpers;
 using JWTAuthentication.Services;
 using JWTAuthentication.Services.Interface;
-
-
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
 builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
-
 builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddSwaggerGen();
 
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -44,7 +43,10 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
-
+app.UseMiddleware<JwtMiddleware>();
+app.UseAuthentication();
+app.UseAuthorization();
+app.MapControllers();
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

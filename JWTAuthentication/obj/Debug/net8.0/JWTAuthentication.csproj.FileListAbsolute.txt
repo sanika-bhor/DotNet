@@ -38,3 +38,6 @@ A:\TAP\GitHub\DotNet\JWTAuthentication\obj\Debug\net8.0\refint\JWTAuthentication
 A:\TAP\GitHub\DotNet\JWTAuthentication\obj\Debug\net8.0\JWTAuthentication.pdb
 A:\TAP\GitHub\DotNet\JWTAuthentication\obj\Debug\net8.0\JWTAuthentication.genruntimeconfig.cache
 A:\TAP\GitHub\DotNet\JWTAuthentication\obj\Debug\net8.0\ref\JWTAuthentication.dll
+A:\TAP\GitHub\DotNet\JWTAuthentication\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+A:\TAP\GitHub\DotNet\JWTAuthentication\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+A:\TAP\GitHub\DotNet\JWTAuthentication\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

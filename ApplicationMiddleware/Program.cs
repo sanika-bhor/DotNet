@@ -17,10 +17,10 @@ app.MapGet("/", () => "Hello World!");
 //     await context.Response.WriteAsync("\nLast middleware!");
 // });
 
-app.UseWelcomePage();
-// app.requstMapping();
-// app.firstMiddleWare();
-// app.secondMiddleWare();
-// app.thirdMiddleWare();
-// app.lastMiddleWare();
+// app.UseWelcomePage();
+app.requstMapping();
+app.firstMiddleWare();
+app.secondMiddleWare();
+app.thirdMiddleWare();
+app.lastMiddleWare();
 app.Run();

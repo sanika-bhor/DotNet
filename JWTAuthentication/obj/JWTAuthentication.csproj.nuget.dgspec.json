@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "a:\\TAP\\GitHub\\DotNet\\JWTAuthentication\\JWTAuthentication.csproj": {}
+    "A:\\TAP\\GitHub\\DotNet\\JWTAuthentication\\JWTAuthentication.csproj": {}
   },
   "projects": {
-    "a:\\TAP\\GitHub\\DotNet\\JWTAuthentication\\JWTAuthentication.csproj": {
+    "A:\\TAP\\GitHub\\DotNet\\JWTAuthentication\\JWTAuthentication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "a:\\TAP\\GitHub\\DotNet\\JWTAuthentication\\JWTAuthentication.csproj",
+        "projectUniqueName": "A:\\TAP\\GitHub\\DotNet\\JWTAuthentication\\JWTAuthentication.csproj",
         "projectName": "JWTAuthentication",
-        "projectPath": "a:\\TAP\\GitHub\\DotNet\\JWTAuthentication\\JWTAuthentication.csproj",
+        "projectPath": "A:\\TAP\\GitHub\\DotNet\\JWTAuthentication\\JWTAuthentication.csproj",
         "packagesPath": "C:\\Users\\91997\\.nuget\\packages\\",
-        "outputPath": "a:\\TAP\\GitHub\\DotNet\\JWTAuthentication\\obj\\",
+        "outputPath": "A:\\TAP\\GitHub\\DotNet\\JWTAuthentication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\91997\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.5, )"

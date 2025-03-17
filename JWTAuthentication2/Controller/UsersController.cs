@@ -26,7 +26,10 @@ namespace UsersController.UsersController{
                 return Ok(users);
             }
             catch(Exception)
-            return Ok(_userService.GetAll());
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
+            // return Ok(_userService.GetAll());
         }
     }
 }

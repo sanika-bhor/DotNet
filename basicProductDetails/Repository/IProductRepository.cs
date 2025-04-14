@@ -1,12 +1,12 @@
-using Catalog;
+using Model.Catalog;
 
 namespace Repository.ProductRepository.Interface
 {
     public interface IProductRepository
     {
-        void insert(Product product);
-        void update(Product product);
-        void delete(int id);
-        void getAll();
+        bool insert(Product product);
+        bool update(Product product);
+        bool delete(int id);
+        List<Product> getAll();
     }
 }

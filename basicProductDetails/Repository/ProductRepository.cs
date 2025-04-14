@@ -1,4 +1,4 @@
-using Catalog;
+using Model.Catalog;
 using Repository.ProductRepository.Interface;
 
 namespace Repository.ProductRepository

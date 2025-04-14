@@ -1,4 +1,4 @@
-namespace Catalog
+namespace Model.Catalog
 {
     public class Product
     {

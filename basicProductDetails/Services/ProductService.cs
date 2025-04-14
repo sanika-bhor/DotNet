@@ -1,13 +1,16 @@
 using Services.ProductService.Interface;
+using Repository.ProductRepository;
+using Repository.ProductRepository.Interface;
+using Model.Catalog;
 namespace Services.ProductService
 {
-    public interface IProductService:IProductService
+    public class ProductService:IProductService
     {
-          void insert(Product product)
+        private readonly IProductRepository _productRepository=new ProductRepository();
+
+        public  void insert(Product product)
           {
-            using(ProductRepository repo=new ProductRepository())
-            {
-                bool status=repo.insert(product);
+                bool status=_productRepository.insert(product);
                 if(status==true)
                 {
                     Console.WriteLine("Product inserted successfully...");
@@ -16,13 +19,10 @@ namespace Services.ProductService
                 {
                     Console.WriteLine("Failed to insert product");
                 }
-            }
           }
-        void update(Product product)
+        public void update(Product product)
         {
-             using(ProductRepository repo=new ProductRepository())
-            {
-                bool status=repo.update(product);
+                bool status=_productRepository.update(product);
                 if(status==true)
                 {
                     Console.WriteLine("Product updated successfully...");
@@ -31,13 +31,11 @@ namespace Services.ProductService
                 {
                     Console.WriteLine("Failed to update product");
                 }
-            }
         }
-        bool delete(int id)
+        public void delete(int id)
         {
-            using(ProductRepository repo=new ProductRepository())
-            {
-                bool status=repo.delete(id);
+           
+                bool status=_productRepository.delete(id);
                 if(status==true)
                 {
                     Console.WriteLine("Product deleted successfully...");
@@ -46,12 +44,11 @@ namespace Services.ProductService
                 {
                     Console.WriteLine("Failed to delete product");
                 }
-            }
+            
         }
-        void getAll(){
-            using(ProductRepository repo=new ProductRepository())
-            {
-                List<Product> allProducts = repo.getAll();
+        public void getAll(){
+           
+                List<Product> allProducts = _productRepository.getAll();
             if (allProducts != null)
             {
                 foreach (Product p in allProducts)
@@ -64,7 +61,7 @@ namespace Services.ProductService
             {
                 Console.WriteLine("no product available");
             }
-            }
+            
         }
     }
     

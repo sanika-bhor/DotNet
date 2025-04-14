@@ -1,5 +1,6 @@
-﻿using Catalog;
+﻿using Model.Catalog;
 using Repository.ProductRepository;
+using Services.ProductService;
 
 // Product marigold = new Product();
 // marigold.display();
@@ -38,7 +39,7 @@ using Repository.ProductRepository;
 
 
 
-ProductRepository repo = new ProductRepository();
+ProductService srv = new ProductService();
 
 Console.WriteLine("***********Product details***********************");
 Console.WriteLine("1.Insert new Product");
@@ -64,24 +65,13 @@ do
             double price = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Enter Product Quantity");
             int quantity = Convert.ToInt32(Console.ReadLine());
+
             Product newProduct = new Product(id, name, description, price, quantity);
-            repo.insert(newProduct);
+            srv.insert(newProduct);
             break;
 
         case 2:
-            List<Product> allProducts = repo.getAll();
-            if (allProducts != null)
-            {
-                foreach (Product p in allProducts)
-                {
-                    p.display();
-                    Console.WriteLine("------------------------------------------------");
-                }
-            }
-            else
-            {
-                Console.WriteLine("no product available");
-            }
+             srv.getAll();
             break;
 
         case 3:
@@ -95,14 +85,15 @@ do
             double priceToUpdate = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Enter new Product Quantity");
             int quantityToUpdate = Convert.ToInt32(Console.ReadLine());
+
             Product updateProduct = new Product(idToUpdate, nameToUpdate, descriptionToUpdate, priceToUpdate, quantityToUpdate);
-            repo.update(updateProduct);
+            srv.update(updateProduct);
             break;
 
         case 4:
             Console.WriteLine("Enter Product Id to delete:");
             int idToDelete = Convert.ToInt32(Console.ReadLine());
-            repo.delete(idToDelete);
+            srv.delete(idToDelete);
             break;
 
         case 5:

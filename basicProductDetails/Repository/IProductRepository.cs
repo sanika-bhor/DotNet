@@ -4,9 +4,9 @@ namespace Repository.ProductRepository.Interface
 {
     public interface IProductRepository
     {
-        bool insert(Product product);
-        bool update(Product product);
-        bool delete(int id);
-        List<Product> getAll();
+        void insert(Product product);
+        void update(Product product);
+        void delete(int id);
+        void getAll();
     }
 }

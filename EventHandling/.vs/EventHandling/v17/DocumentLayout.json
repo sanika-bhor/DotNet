@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{1A9B5BB9-772F-4301-AC37-F5C982AAD195}|EventHandling\\EventHandling.csproj|solutionrelative:eventhandling\\eventhandlingtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1A9B5BB9-772F-4301-AC37-F5C982AAD195}|EventHandling\\EventHandling.csproj|A:\\TAP\\GitHub\\DotNet\\EventHandling\\eventhandling\\bankpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A9B5BB9-772F-4301-AC37-F5C982AAD195}|EventHandling\\EventHandling.csproj|solutionrelative:eventhandling\\bankpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1A9B5BB9-772F-4301-AC37-F5C982AAD195}|EventHandling\\EventHandling.csproj|A:\\TAP\\GitHub\\DotNet\\EventHandling\\eventhandling\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A9B5BB9-772F-4301-AC37-F5C982AAD195}|EventHandling\\EventHandling.csproj|solutionrelative:eventhandling\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A9B5BB9-772F-4301-AC37-F5C982AAD195}|EventHandling\\EventHandling.csproj|A:\\TAP\\GitHub\\DotNet\\EventHandling\\eventhandling\\governmentpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A9B5BB9-772F-4301-AC37-F5C982AAD195}|EventHandling\\EventHandling.csproj|solutionrelative:eventhandling\\governmentpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A9B5BB9-772F-4301-AC37-F5C982AAD195}|EventHandling\\EventHandling.csproj|A:\\TAP\\GitHub\\DotNet\\EventHandling\\eventhandling\\bankpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A9B5BB9-772F-4301-AC37-F5C982AAD195}|EventHandling\\EventHandling.csproj|solutionrelative:eventhandling\\bankpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "BankPolicy.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\EventHandling\\EventHandling\\BankPolicy.cs",
               "RelativeDocumentMoniker": "EventHandling\\BankPolicy.cs",
@@ -47,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GovernmentPolicy.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\EventHandling\\EventHandling\\GovernmentPolicy.cs",
               "RelativeDocumentMoniker": "EventHandling\\GovernmentPolicy.cs",
@@ -60,13 +60,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Account.cs",
               "DocumentMoniker": "A:\\TAP\\GitHub\\DotNet\\EventHandling\\EventHandling\\Account.cs",
               "RelativeDocumentMoniker": "EventHandling\\Account.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\EventHandling\\EventHandling\\Account.cs",
               "RelativeToolTip": "EventHandling\\Account.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACgAAAAJAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T09:12:39.903Z",
               "EditorCaption": ""
@@ -79,7 +79,7 @@
               "RelativeDocumentMoniker": "EventHandling\\EventHandlingTest.cs",
               "ToolTip": "A:\\TAP\\GitHub\\DotNet\\EventHandling\\EventHandling\\EventHandlingTest.cs",
               "RelativeToolTip": "EventHandling\\EventHandlingTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABSAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABoAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T08:14:20.676Z",
               "EditorCaption": ""

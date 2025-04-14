@@ -22,6 +22,7 @@ static async Task RestoreData()
     });
 }
 
-Console.WriteLine("Hello, World!");
 GetData();
 RestoreData();
+Console.WriteLine("Hello, World!");
+

@@ -1,0 +1,15 @@
+A:\TAP\GitHub\DotNet\basicProductDetails\bin\Debug\net8.0\basicProductDetails.exe
+A:\TAP\GitHub\DotNet\basicProductDetails\bin\Debug\net8.0\basicProductDetails.deps.json
+A:\TAP\GitHub\DotNet\basicProductDetails\bin\Debug\net8.0\basicProductDetails.runtimeconfig.json
+A:\TAP\GitHub\DotNet\basicProductDetails\bin\Debug\net8.0\basicProductDetails.dll
+A:\TAP\GitHub\DotNet\basicProductDetails\bin\Debug\net8.0\basicProductDetails.pdb
+A:\TAP\GitHub\DotNet\basicProductDetails\obj\Debug\net8.0\basicProductDetails.GeneratedMSBuildEditorConfig.editorconfig
+A:\TAP\GitHub\DotNet\basicProductDetails\obj\Debug\net8.0\basicProductDetails.AssemblyInfoInputs.cache
+A:\TAP\GitHub\DotNet\basicProductDetails\obj\Debug\net8.0\basicProductDetails.AssemblyInfo.cs
+A:\TAP\GitHub\DotNet\basicProductDetails\obj\Debug\net8.0\basicProductDetails.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\basicProductDetails\obj\Debug\net8.0\basicProductDetails.sourcelink.json
+A:\TAP\GitHub\DotNet\basicProductDetails\obj\Debug\net8.0\basicProductDetails.dll
+A:\TAP\GitHub\DotNet\basicProductDetails\obj\Debug\net8.0\refint\basicProductDetails.dll
+A:\TAP\GitHub\DotNet\basicProductDetails\obj\Debug\net8.0\basicProductDetails.pdb
+A:\TAP\GitHub\DotNet\basicProductDetails\obj\Debug\net8.0\basicProductDetails.genruntimeconfig.cache
+A:\TAP\GitHub\DotNet\basicProductDetails\obj\Debug\net8.0\ref\basicProductDetails.dll

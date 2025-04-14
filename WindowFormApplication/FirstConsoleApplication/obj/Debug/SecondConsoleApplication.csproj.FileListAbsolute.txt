@@ -67,3 +67,4 @@ A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\Sna
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\Catelog.dll.config
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\CRM.dll.config
 A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\MemberShip.dll.config
+A:\TAP\GitHub\DotNet\WindowFormApplication\FirstConsoleApplication\bin\Debug\MySql.Data.dll

@@ -52,3 +52,4 @@ A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\Catelog.dll.config
 A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\CRM.dll
 A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\CRM.pdb
 A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\CRM.dll.config
+A:\TAP\GitHub\DotNet\WindowFormApplication\DAL\bin\Debug\MySql.Data.dll

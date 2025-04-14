@@ -6,13 +6,16 @@ namespace Repository.ProductRepository
     public class ProductRepository : IProductRepository
     {
         public List<Product> products = new List<Product>();
-        public bool delete(Product product)
+        public bool delete(int id)
         {
             bool status = false;
-            if (product != null)
+            if (id != null)
             {
-                products.Remove(product);
-                status = true;
+                Product p = products.Find(p => p.getId() == id);
+                if (p != null)
+                {
+                    products.Remove(p);
+                }
             }
             return status;
         }

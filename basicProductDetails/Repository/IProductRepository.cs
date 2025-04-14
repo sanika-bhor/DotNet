@@ -6,7 +6,7 @@ namespace Repository.ProductRepository.Interface
     {
         bool insert(Product product);
         bool update(Product product);
-        bool delete(Product product);
+        bool delete(int id);
         List<Product> getAll();
     }
 }

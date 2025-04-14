@@ -1,4 +1,5 @@
 ﻿using Catalog;
+using Repository.ProductRepository;
 
 Product marigold = new Product();
 marigold.display();
@@ -11,26 +12,38 @@ gerbera.display();
 
 
 
-int id;
-string name;
-string description;
-double price;
-int quantity;
+// int id;
+// string name;
+// string description;
+// double price;
+// int quantity;
 
-Console.WriteLine("Enter Product Id:");
-id = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter Product Id:");
+// id = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Enter Product Title:");
-name = Console.ReadLine();
+// Console.WriteLine("Enter Product Title:");
+// name = Console.ReadLine();
 
-Console.WriteLine("Enter Product Description:");
-description = Console.ReadLine();
+// Console.WriteLine("Enter Product Description:");
+// description = Console.ReadLine();
 
-Console.WriteLine("Enter Product UnitPrice");
-price = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Enter Product UnitPrice");
+// price = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine("Enter ProductQuantity");
-quantity = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter ProductQuantity");
+// quantity = Convert.ToInt32(Console.ReadLine());
 
-Product newFlower = new Product(id, name, description, price, quantity);
-newFlower.display();
+// Product newFlower = new Product(id, name, description, price, quantity);
+// newFlower.display();
+
+
+
+ProductRepository repo=new ProductRepository();
+repo.insert(marigold);
+repo.insert(gerbera);
+
+List<Product> allProducts=repo.getAll();
+foreach(Product p in allProducts)
+{
+    p.display();
+}

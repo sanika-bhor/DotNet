@@ -56,7 +56,7 @@ namespace Catalog
             return this.description;
         }
 
-        public void setUnitPrice(double p)
+        public void setPrice(double p)
         {
             this.unitPrice = p;
         }
@@ -71,7 +71,7 @@ namespace Catalog
             this.quantity = quantity;
         }
 
-        public double getQuantity()
+        public int getQuantity()
         {
             return this.quantity;
         }

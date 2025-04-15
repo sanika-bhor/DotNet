@@ -1,68 +1,63 @@
-using Services.ProductService.Interface;
-using Repository.ProductRepository;
-using Repository.ProductRepository.Interface;
 using Model.Catalog;
+using Repository.ProductRepository;
+using Services.ProductService.Interface;
 namespace Services.ProductService
 {
-    public class ProductService:IProductService
+    public class ProductService : IProductService
     {
-        private readonly IProductRepository _productRepository=new ProductRepository();
+        public ProductRepository repo; // Reference to the ProductRepository
 
-        public  void insert(Product product)
-          {
-                bool status=_productRepository.insert(product);
-                if(status==true)
-                {
-                    Console.WriteLine("Product inserted successfully...");
-                }
-                else
-                {
-                    Console.WriteLine("Failed to insert product");
-                }
-          }
-        public void update(Product product)
+        public ProductService(ProductRepository r)
         {
-                bool status=_productRepository.update(product);
-                if(status==true)
-                {
-                    Console.WriteLine("Product updated successfully...");
-                }
-                else
-                {
-                    Console.WriteLine("Failed to update product");
-                }
+            this.repo = r;
         }
-        public void delete(int id)
+
+        public void applyDiscount(int productId, double discount)
         {
-           
-                bool status=_productRepository.delete(id);
-                if(status==true)
-                {
-                    Console.WriteLine("Product deleted successfully...");
-                }
-                else
-                {
-                    Console.WriteLine("Failed to delete product");
-                }
-            
-        }
-        public void getAll(){
-           
-                List<Product> allProducts = _productRepository.getAll();
-            if (allProducts != null)
+            Product product = repo.GetProductById(productId);
+            if (product != null)
             {
-                foreach (Product p in allProducts)
-                {
-                    p.display();
-                    Console.WriteLine("------------------------------------------------");
-                }
+                double discountedPrice = product.getDiscountedPrice(discount);
+                product.setPrice(discountedPrice);
             }
             else
             {
-                Console.WriteLine("no product available");
+                Console.WriteLine("Product not found!");
             }
-            
+        }
+
+
+        public void calculateTotalPrice(int productId)
+        {
+            Product product = repo.GetProductById(productId);
+            if (product != null)
+            {
+                double totalPrice = product.getTotalPrice();
+                Console.WriteLine("Total Price for " + product.getTitle() + ": $" + totalPrice);
+            }
+            else
+            {
+                Console.WriteLine("Product not found!");
+            }
+        }
+
+        void IProductService.calculateTotalPrice(int productId)
+        {
+            calculateTotalPrice(productId);
+        }
+
+        public void searchProductByTitle(string title)
+        {
+            Product product = repo.GetProductByTitle(title);
+            if (product != null)
+            {
+                product.display();
+            }
+            else
+            {
+                Console.WriteLine("Product not found!");
+            }
         }
     }
-    
+
 }

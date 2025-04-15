@@ -56,5 +56,32 @@ namespace Repository.ProductRepository
             }
             return status;
         }
+
+       public Product GetProductById(int id)
+        {
+            if (id != null)
+            {
+                Product p = products.Find(p => p.getId() == id);
+                if (p != null)
+                {
+                   return p;
+                }
+            }
+            return null;
+        }
+
+        public Product GetProductByTitle(string title)
+        {
+            if (title != null)
+            {
+                Product p = products.Find(p => p.getTitle() == title);
+                if (p != null)
+                {
+                    return p;
+                }
+            }
+            return null;
+        }
+
     }
 }

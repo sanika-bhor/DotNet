@@ -28,7 +28,7 @@ namespace Model.Catalog
         }
         public void setId(int id)
         {
-            this.id=id;
+            this.id = id;
         }
 
         public int getId()
@@ -76,7 +76,11 @@ namespace Model.Catalog
             return this.quantity;
         }
 
-        public void display()
+        public double getTotalPrice() { return quantity * unitPrice; }
+        public double getDiscountedPrice(double discount)  { return unitPrice- (unitPrice * discount / 100); }
+
+
+public void display()
         {
             Console.WriteLine("-----------PRODUCT DETAILS------------");
             Console.WriteLine("Id:" + id);

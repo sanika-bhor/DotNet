@@ -8,5 +8,9 @@ namespace Repository.ProductRepository.Interface
         bool update(Product product);
         bool delete(int id);
         List<Product> getAll();
+        
+        Product GetProductById(int id);
+
+        Product GetProductByTitle(string title);
     }
 }

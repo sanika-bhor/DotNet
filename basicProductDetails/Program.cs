@@ -1,5 +1,6 @@
 ﻿using Model.Catalog;
 using Repository.ProductRepository;
+using Controller.ProductController;
 using Services.ProductService;
 
 // Product marigold = new Product();
@@ -39,14 +40,19 @@ using Services.ProductService;
 
 
 
-ProductService srv = new ProductService();
+ProductRepository repo=new ProductRepository();
+ProductService srv=new ProductService(repo);
+ProductController cont = new ProductController(repo,srv);
 
 Console.WriteLine("***********Product details***********************");
 Console.WriteLine("1.Insert new Product");
 Console.WriteLine("2.Display all Products");
 Console.WriteLine("3.Update Existing Product");
 Console.WriteLine("4.Delete Existing Product");
-Console.WriteLine("5.Exit");
+Console.WriteLine("5.Apply discount for product");
+Console.WriteLine("6.Calculate totalprice");
+Console.WriteLine("7.get Product by Title");
+Console.WriteLine("8.Exit");
 int choice;
 do
 {
@@ -67,11 +73,11 @@ do
             int quantity = Convert.ToInt32(Console.ReadLine());
 
             Product newProduct = new Product(id, name, description, price, quantity);
-            srv.insert(newProduct);
+            cont.insert(newProduct);
             break;
 
         case 2:
-             srv.getAll();
+            cont.getAll();
             break;
 
         case 3:
@@ -87,16 +93,35 @@ do
             int quantityToUpdate = Convert.ToInt32(Console.ReadLine());
 
             Product updateProduct = new Product(idToUpdate, nameToUpdate, descriptionToUpdate, priceToUpdate, quantityToUpdate);
-            srv.update(updateProduct);
+            cont.update(updateProduct);
             break;
 
         case 4:
             Console.WriteLine("Enter Product Id to delete:");
             int idToDelete = Convert.ToInt32(Console.ReadLine());
-            srv.delete(idToDelete);
+            cont.delete(idToDelete);
             break;
 
         case 5:
+            Console.WriteLine("Enter Product Id to apply discount:");
+            int idToDiscount = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter total discount percentage:");
+            double discountPercentage = Convert.ToDouble(Console.ReadLine());
+            srv.applyDiscount(idToDiscount, discountPercentage);
+        break;
+
+        case 6:
+            Console.WriteLine("Enter Product Id to calculate total price:");
+            int idToCalculateTotalPrice = Convert.ToInt32(Console.ReadLine());
+            srv.calculateTotalPrice(idToCalculateTotalPrice);
+        break;
+
+        case 7:
+            Console.WriteLine("Enter Product title to search product:");
+            string titleToSearch = Console.ReadLine();
+            srv.searchProductByTitle(titleToSearch);
+            break;
+        case 8:
             Console.WriteLine("Exiting...");
             break;
 
@@ -105,4 +130,4 @@ do
             break;
 
     }
-} while (choice != 5);
+} while (choice != 8);

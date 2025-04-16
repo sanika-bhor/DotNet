@@ -1,5 +1,5 @@
 using Model.Catalog;
-using Repository.ProductRepository;
+using Repositories.ProductRepository;
 using Services.ProductService.Interface;
 namespace Services.ProductService
 {

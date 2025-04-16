@@ -1,7 +1,7 @@
 using Model.Catalog;
-using Repository.ProductRepository.Interface;
+using Repositories.ProductRepository.Interface;
 
-namespace Repository.ProductRepository
+namespace Repositories.ProductRepository
 {
     public class ProductRepository : IProductRepository
     {

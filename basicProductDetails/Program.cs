@@ -1,133 +1,54 @@
-﻿using Model.Catalog;
-using Repository.ProductRepository;
+﻿using Repositories.ProductRepository;
 using Controller.ProductController;
 using Services.ProductService;
-
-// Product marigold = new Product();
-// marigold.display();
-// marigold.setTitle("Marigold");
-// marigold.setDescription("festival flowers");
-// marigold.display();
-
-// Product gerbera = new Product(2, "gerbera", "beautiful flower", 6, 13);
-// gerbera.display();
-
-
-
-// // int id;
-// // string name;
-// // string description;
-// // double price;
-// // int quantity;
-
-// // Console.WriteLine("Enter Product Id:");
-// // id = Convert.ToInt32(Console.ReadLine());
-
-// // Console.WriteLine("Enter Product Title:");
-// // name = Console.ReadLine();
-
-// // Console.WriteLine("Enter Product Description:");
-// // description = Console.ReadLine();
-
-// // Console.WriteLine("Enter Product UnitPrice");
-// // price = Convert.ToDouble(Console.ReadLine());
-
-// // Console.WriteLine("Enter ProductQuantity");
-// // quantity = Convert.ToInt32(Console.ReadLine());
-
-// // Product newFlower = new Product(id, name, description, price, quantity);
-// // newFlower.display();
-
-
+using UI.UiManager;
+using Model.Catalog;
 
 ProductRepository repo=new ProductRepository();
-ProductService srv=new ProductService(repo);
-ProductController cont = new ProductController(repo,srv);
 
-Console.WriteLine("***********Product details***********************");
-Console.WriteLine("1.Insert new Product");
-Console.WriteLine("2.Display all Products");
-Console.WriteLine("3.Update Existing Product");
-Console.WriteLine("4.Delete Existing Product");
-Console.WriteLine("5.Apply discount for product");
-Console.WriteLine("6.Calculate totalprice");
-Console.WriteLine("7.get Product by Title");
-Console.WriteLine("8.Exit");
-int choice;
-do
-{
-    Console.WriteLine("Enter your choice:");
-    choice = Convert.ToInt32(Console.ReadLine());
-    switch (choice)
-    {
-        case 1:
-            Console.WriteLine("Enter Product Id:");
-            int id = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Product Title:");
-            string name = Console.ReadLine();
-            Console.WriteLine("Enter Product Description:");
-            string description = Console.ReadLine();
-            Console.WriteLine("Enter Product UnitPrice");
-            double price = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Enter Product Quantity");
-            int quantity = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Welcome to Transflower Store!\n");
 
-            Product newProduct = new Product(id, name, description, price, quantity);
-            cont.insert(newProduct);
-            break;
+// Create a ProductRepository and add some products
 
-        case 2:
-            cont.getAll();
-            break;
+Product product1 = new Product(1, "Gerbera", "Wedding Flower", 19.99,10);
+Product product2 = new Product(2, "Rose", "Valentine Flower", 29.99,5);
+Product product3 = new Product(3, "Jasmine", "Smelling Flower" , 39.99,20);
+Product product4 = new Product(4, "Mango", " Devgad Alphanso", 49.99,15);
 
-        case 3:
-            Console.WriteLine("Enter Product Id to update:");
-            int idToUpdate = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter new Product Title:");
-            string nameToUpdate = Console.ReadLine();
-            Console.WriteLine("Enter new Product Description:");
-            string descriptionToUpdate = Console.ReadLine();
-            Console.WriteLine("Enter new Product UnitPrice");
-            double priceToUpdate = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Enter new Product Quantity");
-            int quantityToUpdate = Convert.ToInt32(Console.ReadLine());
+repo.insert(product1);
+repo.insert(product2);
+repo.insert(product3);
+repo.insert(product4);
 
-            Product updateProduct = new Product(idToUpdate, nameToUpdate, descriptionToUpdate, priceToUpdate, quantityToUpdate);
-            cont.update(updateProduct);
-            break;
+repo.getAll();
 
-        case 4:
-            Console.WriteLine("Enter Product Id to delete:");
-            int idToDelete = Convert.ToInt32(Console.ReadLine());
-            cont.delete(idToDelete);
-            break;
+Console.WriteLine("Apply Discount and Calculate Total Price\n");
 
-        case 5:
-            Console.WriteLine("Enter Product Id to apply discount:");
-            int idToDiscount = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter total discount percentage:");
-            double discountPercentage = Convert.ToDouble(Console.ReadLine());
-            srv.applyDiscount(idToDiscount, discountPercentage);
-        break;
 
-        case 6:
-            Console.WriteLine("Enter Product Id to calculate total price:");
-            int idToCalculateTotalPrice = Convert.ToInt32(Console.ReadLine());
-            srv.calculateTotalPrice(idToCalculateTotalPrice);
-        break;
+ProductService srv = new ProductService(repo);
+srv.applyDiscount(1, 10); // Apply 10% discount to product with ID 1
+srv.calculateTotalPrice(1); // Calculate total price for product with ID 1
+srv.searchProductByTitle("Rose"); // Search for product by title
+Console.WriteLine("Adding a new product...\n");
 
-        case 7:
-            Console.WriteLine("Enter Product title to search product:");
-            string titleToSearch = Console.ReadLine();
-            srv.searchProductByTitle(titleToSearch);
-            break;
-        case 8:
-            Console.WriteLine("Exiting...");
-            break;
 
-        default:
-            Console.WriteLine("Invalid choice");
-            break;
+ProductController controller = new ProductController(repo, srv);
 
-    }
-} while (choice != 8);
+controller.insert(product1);
+controller.getAll(); // Display all products after adding a new one
+
+Console.WriteLine("Updating product at index 1...\n");
+
+controller.update(new Product(2, "Lily", "Summer Flower", 25.99,12)); // Update product at index 1
+controller.getAll(); // Display all products after update
+
+
+
+UiManager uiManager=new UiManager();
+uiManager.displayWelcomeMessage();
+uiManager.handleUserInput(controller,srv); // Handle user input through the UIManager
+uiManager.displayGoodbyeMessage();
+
+
+Console.WriteLine("Thank you for visiting Transflower Store!\n");
+return 0;

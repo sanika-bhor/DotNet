@@ -1,6 +1,6 @@
 using Model.Catalog;
 
-namespace Repository.ProductRepository.Interface
+namespace Repositories.ProductRepository.Interface
 {
     public interface IProductRepository
     {

@@ -1,5 +1,8 @@
+using System.Text.Json.Serialization;
+
 namespace Model.Catalog
 {
+    [Serializable]
     public class Product
     {
 

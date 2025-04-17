@@ -3,6 +3,7 @@ using Controller.ProductController;
 using Services.ProductService;
 using UI.UiManager;
 using Model.Catalog;
+using FileManager.FileOperation;
 
 ProductRepository repo=new ProductRepository();
 
@@ -51,4 +52,4 @@ uiManager.displayGoodbyeMessage();
 
 
 Console.WriteLine("Thank you for visiting Transflower Store!\n");
-return 0;
+

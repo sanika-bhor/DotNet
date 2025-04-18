@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Model.Catalog
 {
-    [Serializable]
+    // [Serializable]
     public class Product
     {
 

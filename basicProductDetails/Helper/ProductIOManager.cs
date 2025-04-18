@@ -5,65 +5,31 @@ using System.IO;
 using System.Linq.Expressions;
 using Model.Catalog;
 using System.Text.Json;
+using Helper.ProductIoOperation.Interface;
 
 namespace Helper.ProductIoOperation
 {
-    public class ProductIOManager
+    public class ProductIOManager:IProductIOManager
     {
         public List<Product> products=new List<Product>();
     // Save products to a file
-    public void saveProductsToFile(string filename, List<Product> products)
+    public  void saveProductsToFile(string filename, List<Product> p)
     {
-        // Open the file in write mode
-        // std::ofstream file(filename);
-        // if (!file.is_open())
-        // {
-        //     std::cerr << "Error opening file for writing: " << filename << std::endl;
-        //     return;
-        // }
-        // // Write the products to the file
-        // for (const auto&product : products) {
-        //     file << product.getProductId() << ","
-        //         << product.getTitle() << ","
-        //         << product.getDescription() << ","
-        //         << product.getPrice() << ","
-        //         << product.getQuantity() << "\n";
-        // }
-        // // Close the file
-        // file.close();
-        // std::cout << "Products saved to file: " << filename << std::endl;
+       FileStream fst=new FileStream(filename,FileMode.OpenOrCreate);
+       JsonSerializer.Serialize(fst,p);
+       Console.WriteLine("data serialize and saved");
+       fst.Close();
     }
 
     // Load products from a file
     public List<Product> loadProductsFromFile(string filename)
     {
-        // std::vector<Product> products;
-        // // Open the file in read mode
-        // std::ifstream file(filename);
-        // if (!file.is_open())
-        // {
-        //     std::cerr << "Error opening file for reading: " << filename << std::endl;
-        //     return products;
-        // }
-        // // Read the products from the file
-        // std::string line;
-        // while (std::getline(file, line))
-        // {
-        //     std::istringstream iss(line);
-        //     int id, quantity;
-        //     std::string title, description;
-        //     double price;
-        //     if (iss >> id && iss.ignore() && std::getline(iss, title, ',') &&
-        //         std::getline(iss, description, ',') &&
-        //         iss >> price && iss.ignore() &&
-        //         iss >> quantity)
-        //     {
-        //         Product product(id, title, description, price, quantity);
-        //         products.push_back(product);
-        //     }
-        return null;
-        
-        // Close the fil
+            FileStream fst = new FileStream(filename, FileMode.Open);
+            products = JsonSerializer.Deserialize<List<Product>>(fst);
+            Console.WriteLine("Data deserialized from file.");
+            fst.Close();
+            return products;
+ 
     }
 
     // Display products in the console

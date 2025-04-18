@@ -3,7 +3,7 @@ using Controller.ProductController;
 using Services.ProductService;
 using UI.UiManager;
 using Model.Catalog;
-using FileManager.FileOperation;
+using Helper.ProductIoOperation;
 
 ProductRepository repo=new ProductRepository();
 
@@ -47,9 +47,26 @@ controller.getAll(); // Display all products after update
 
 UiManager uiManager=new UiManager();
 uiManager.displayWelcomeMessage();
-uiManager.handleUserInput(controller,srv); // Handle user input through the UIManager
-uiManager.displayGoodbyeMessage();
-
+// uiManager.handleUserInput(controller,srv); // Handle user input through the UIManager
+// uiManager.displayGoodbyeMessage();
 
 Console.WriteLine("Thank you for visiting Transflower Store!\n");
+
+
+List<Product> products=new List<Product>();
+//     new Product(1, "Gerbera", "Wedding Flower", 19.99, 10),
+//     new Product(2, "Rose", "Valentine Flower", 29.99,5)
+// ];
+ProductIOManager pm=new ProductIOManager();
+
+pm.addProduct(products,product1);
+pm.addProduct(products,product2);
+pm.displayProducts(products);
+
+
+pm.saveProductsToFile("products.json", products);
+
+List<Product> p=pm.loadProductsFromFile("products.json");
+pm.displayProducts(p);
+
 

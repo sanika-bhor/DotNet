@@ -2,15 +2,15 @@ using System.Text.Json.Serialization;
 
 namespace Model.Catalog
 {
-    // [Serializable]
+    // [JsonSerializable]
     public class Product
     {
 
-        private int id;
-        private string title;
-        private string description;
-        private double unitPrice;
-        private int quantity;
+        public int id { get; set; }
+        public string title { get; set; }
+        public string description { get; set; }
+        public double unitPrice { get; set; }
+        public int quantity { get; set; }
 
         public Product()
         {

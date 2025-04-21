@@ -9,12 +9,20 @@ namespace Controller.ProductController
     {
         private readonly IProductRepository _productRepository;
         private readonly IProductService _productService;
+        // private readonly ProductIOManager _productIOManager;
+
         public ProductController(ProductRepository repo, ProductService srv)
         {
             _productRepository = repo;
             _productService = srv;
         }
 
+    //  public ProductController(ProductRepository repo, ProductService srv,ProductIOManager pm)
+    //     {
+    //         _productRepository = repo;
+    //         _productService = srv;
+    //         _productIOManager=pm;
+    //     }
         public void insert(Product product)
         {
             bool status = _productRepository.insert(product);

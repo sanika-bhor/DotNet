@@ -53,7 +53,7 @@ ProductService srv = new ProductService(repo);
 // Console.WriteLine("Thank you for visiting Transflower Store!\n");
 
 
-List<Product> products=new List<Product>();
+// List<Product> products=new List<Product>();
 
 ProductIOManager pm=new ProductIOManager();
 
@@ -74,14 +74,9 @@ ProductIOManager pm=new ProductIOManager();
 
 // pm.saveProductsToFile("products.json", products);
 
-products = pm.loadProductsFromFile("products.json");
 
 ProductController controller = new ProductController(repo, srv);
 
-foreach (Product p in products)
-{
-    controller.insert(p);
-}
 controller.getAll(); // Display all products after adding a new one
 
 // Console.WriteLine("Updating product at index 1...\n");
@@ -91,3 +86,7 @@ controller.getAll(); // Display all products after adding a new one
 
 
 
+UiManager uiManager=new UiManager();
+uiManager.displayWelcomeMessage();
+uiManager.handleUserInput(controller,srv,pm); // Handle user input through the UIManager
+uiManager.displayGoodbyeMessage();

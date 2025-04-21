@@ -12,5 +12,12 @@
     "description": "Smelling Flower",
     "unitPrice": 39.99,
     "quantity": 20
+  },
+  {
+    "id": 3,
+    "title": "RTY",
+    "description": "TY",
+    "unitPrice": 7,
+    "quantity": 45
   }
 ]

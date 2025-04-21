@@ -2,6 +2,7 @@ using Controller.ProductController;
 using Model.Catalog;
 using Repositories.ProductRepository;
 using Services.ProductService;
+using Helper.ProductIoOperation;
 
 namespace UI.UiManager
 {
@@ -56,7 +57,9 @@ namespace UI.UiManager
             Console.WriteLine("5.Apply discount");
             Console.WriteLine("6.Calculate total price");
             Console.WriteLine("7.Search Product by Title");
-            Console.WriteLine("8.Exit");
+            Console.WriteLine("8.Save data in File");
+            Console.WriteLine("9.load Existing data from File");
+            Console.WriteLine("10.Exit");
         }
 
 
@@ -112,7 +115,7 @@ namespace UI.UiManager
 
 
 
-       public void handleUserInput(ProductController controller, ProductService srv)
+       public void handleUserInput(ProductController controller, ProductService srv, ProductIOManager pm)
         {
             int choice;
             do
@@ -152,7 +155,20 @@ namespace UI.UiManager
                             break;
                         }
                     case 4:
-                        controller.getAll();
+                        List<Product> allProducts=controller.getAll();
+                        if (allProducts != null)
+                        {
+
+                         foreach (Product p in allProducts)
+                        {
+                            p.display();
+                            Console.WriteLine("------------------------------------------------");
+                         }
+                         }
+                        else
+                        {
+                            Console.WriteLine("no product available");
+                        }
                         break;
                     case 5:
                         {
@@ -176,7 +192,25 @@ namespace UI.UiManager
                             // controller.searchProductByTitle(title);
                             break;
                         }
+                    
                     case 8:
+                    {
+                        List<Product> allP=controller.getAll();
+                        pm.saveProductsToFile("products.json",allP);
+                        break;
+                    }
+
+                    case 9:
+                    {
+                        Console.WriteLine("Loading products from file...");
+                        List<Product> pr=pm.loadProductsFromFile("products.json");
+                        foreach (Product p in pr)
+                        {
+                            controller.insert(p);
+                        }
+                        break;
+                    }
+                    case 10:
                        Console.WriteLine("Exiting...");
                         break;
 
@@ -184,7 +218,7 @@ namespace UI.UiManager
                         Console.WriteLine("Invalid choice! Please try again.");
                         break;
                 }
-            } while (choice != 8);
+            } while (choice != 10);
         }
 
     }

@@ -61,23 +61,15 @@ namespace Controller.ProductController
             }
 
         }
-        public void getAll()
+        public List<Product> getAll()
         {
 
             List<Product> allProducts = _productRepository.getAll();
             if (allProducts != null)
             {
-                foreach (Product p in allProducts)
-                {
-                    p.display();
-                    Console.WriteLine("------------------------------------------------");
-                }
+                return allProducts;
             }
-            else
-            {
-                Console.WriteLine("no product available");
-            }
-
+            return null;
         }
     }
 

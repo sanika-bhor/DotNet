@@ -58,6 +58,7 @@
             this.label2.Size = new System.Drawing.Size(158, 40);
             this.label2.TabIndex = 2;
             this.label2.Text = "UserName";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -74,7 +75,7 @@
             this.textBox1.Font = new System.Drawing.Font("Modern No. 20", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(568, 135);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 36);
+            this.textBox1.Size = new System.Drawing.Size(186, 31);
             this.textBox1.TabIndex = 6;
             // 
             // textBox2
@@ -82,7 +83,7 @@
             this.textBox2.Font = new System.Drawing.Font("Modern No. 20", 12.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(568, 194);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(186, 36);
+            this.textBox2.Size = new System.Drawing.Size(186, 29);
             this.textBox2.TabIndex = 6;
             this.textBox2.UseSystemPasswordChar = true;
             // 

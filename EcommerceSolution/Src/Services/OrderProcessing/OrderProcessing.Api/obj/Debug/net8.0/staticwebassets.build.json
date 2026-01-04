@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "onRuc7/QOBHcOTbv3fBdqzzxXIvIfGE3z6bScej9S6w=",
+  "Source": "OrderProcessing.Api",
+  "BasePath": "_content/OrderProcessing.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

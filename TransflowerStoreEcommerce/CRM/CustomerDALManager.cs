@@ -9,7 +9,7 @@ public class CustomerDALManager
     public static IDbConnection dbConnection()
     {
         IDbConnection conn = new MySqlConnection();
-        conn.ConnectionString = @"server=localhost;port=3306;user=root;password=root123;database=ecommerce";
+        conn.ConnectionString = @"server=localhost;port=3306;user=root;password=password;database=ecommerce";
         return conn;
     }
 

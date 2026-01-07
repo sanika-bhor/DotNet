@@ -6,33 +6,67 @@ namespace CSVFileIo.Repository.Implementation
     {
 
         public List<Question> questions = new List<Question>();
-        string _file = "data.csv";
-        public List<Question> ReadDataFromCSV()
-        {
-            using (StreamReader streamReader = new StreamReader(_file))
-            {
-                string line;
-                while ((line = streamReader.ReadLine()) != null)
-                {
-                    string[] column = line.Split(',');
-                    Question question = new Question();
-                    question.Id = int.Parse(column[0]);
-                    question.Concept = column[1];
-                    question.Subject = column[2];
-                    question.Title = column[3];
-                    question.A = column[4];
-                    question.B = column[5];
-                    question.C = column[6];
-                    question.D = column[7];
-                    question.AnswerKey = column[8];
-                    question.DifficultyLevel = column[9];
-                    question.CreatedBy = column[10];
+        string _file = "data.csv";public List<Question> ReadDataFromCSV()
+{
+    questions.Clear(); // start fresh
+    using (StreamReader streamReader = new StreamReader(_file))
+    {
+        string line;
 
-                    questions.Add(question);
+       
+     
+        while ((line = streamReader.ReadLine()) != null)
+        {
+            if (string.IsNullOrWhiteSpace(line))
+                continue;
+
+            // Split on comma, but handle Title in quotes
+            List<string> columns = new List<string>();
+            bool insideQuotes = false;
+            string current = "";
+
+            foreach (char c in line)
+            {
+                if (c == '"')
+                {
+                    insideQuotes = !insideQuotes; // toggle
+                }
+                else if (c == ',' && !insideQuotes)
+                {
+                    columns.Add(current);
+                    current = "";
+                }
+                else
+                {
+                    current += c;
                 }
             }
-            return questions;
+            columns.Add(current); // add last column
+
+            if (columns.Count < 11)
+                continue; // skip malformed lines
+
+            Question question = new Question
+            {
+                Id = int.Parse(columns[0]),
+                Concept = columns[1],
+                Subject = columns[2],
+                Title = columns[3], // Title without quotes
+                A = columns[4],
+                B = columns[5],
+                C = columns[6],
+                D = columns[7],
+                AnswerKey = columns[8],
+                DifficultyLevel = columns[9],
+                CreatedBy = columns[10]
+            };
+
+            questions.Add(question);
         }
+    }
+
+    return questions;
+}
         public bool WriteDataToCSV(List<Question> NewQuestions)
         {
             bool status = false;
@@ -42,7 +76,7 @@ namespace CSVFileIo.Repository.Implementation
                 {
                     foreach (Question question in NewQuestions)
                     {
-                        streamWriter.WriteLine(question.Id + "," + question.Concept + "," + question.Subject + "," + question.Title + "," + question.A + "," + question.B + "," + question.C + "," + question.D + "," + question.AnswerKey + "," + question.DifficultyLevel + "," + question.CreatedBy);
+                        streamWriter.WriteLine(question.Id + "," + question.Concept + "," + question.Subject + "," + "\"" + question.Title + "\"," + question.A + "," + question.B + "," + question.C + "," + question.D + "," + question.AnswerKey + "," + question.DifficultyLevel + "," + question.CreatedBy);
                         status=true;
                     }
                 }

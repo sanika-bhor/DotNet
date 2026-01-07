@@ -15,7 +15,7 @@ foreach(Question question in questions)
 Console.WriteLine("");
 
 List<Question> newQuestions = new List<Question>();
-newQuestions.Add(new Question(16, "MainMethod", "C#", "Main method, is", "Optional", "Entry point", "Abstract", "Overloaded", "B", "Easy", "Admin"));
+newQuestions.Add(new Question(16, "MainMethod", "C#", "Main method is", "Optional", "Entry point", "Abstract", "Overloaded", "B", "Easy", "Admin"));
 newQuestions.Add(new Question(17, "MainMethod", "C#", "Main method is", "Optional", "Entry point", "Abstract", "Overloaded", "B", "Easy", "Admin"));
 
 bool status =fileIoService.WriteDataToCSV(newQuestions);

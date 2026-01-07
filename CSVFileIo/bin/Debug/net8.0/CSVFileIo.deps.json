@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CSVFileIo/1.0.0": {
+        "runtime": {
+          "CSVFileIo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CSVFileIo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

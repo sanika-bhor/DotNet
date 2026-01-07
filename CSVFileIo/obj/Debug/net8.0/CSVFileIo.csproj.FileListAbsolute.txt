@@ -1,0 +1,15 @@
+A:\TAP\GitHub\DotNet\CSVFileIo\bin\Debug\net8.0\CSVFileIo.exe
+A:\TAP\GitHub\DotNet\CSVFileIo\bin\Debug\net8.0\CSVFileIo.deps.json
+A:\TAP\GitHub\DotNet\CSVFileIo\bin\Debug\net8.0\CSVFileIo.runtimeconfig.json
+A:\TAP\GitHub\DotNet\CSVFileIo\bin\Debug\net8.0\CSVFileIo.dll
+A:\TAP\GitHub\DotNet\CSVFileIo\bin\Debug\net8.0\CSVFileIo.pdb
+A:\TAP\GitHub\DotNet\CSVFileIo\obj\Debug\net8.0\CSVFileIo.GeneratedMSBuildEditorConfig.editorconfig
+A:\TAP\GitHub\DotNet\CSVFileIo\obj\Debug\net8.0\CSVFileIo.AssemblyInfoInputs.cache
+A:\TAP\GitHub\DotNet\CSVFileIo\obj\Debug\net8.0\CSVFileIo.AssemblyInfo.cs
+A:\TAP\GitHub\DotNet\CSVFileIo\obj\Debug\net8.0\CSVFileIo.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\CSVFileIo\obj\Debug\net8.0\CSVFileIo.sourcelink.json
+A:\TAP\GitHub\DotNet\CSVFileIo\obj\Debug\net8.0\CSVFileIo.dll
+A:\TAP\GitHub\DotNet\CSVFileIo\obj\Debug\net8.0\refint\CSVFileIo.dll
+A:\TAP\GitHub\DotNet\CSVFileIo\obj\Debug\net8.0\CSVFileIo.pdb
+A:\TAP\GitHub\DotNet\CSVFileIo\obj\Debug\net8.0\CSVFileIo.genruntimeconfig.cache
+A:\TAP\GitHub\DotNet\CSVFileIo\obj\Debug\net8.0\ref\CSVFileIo.dll

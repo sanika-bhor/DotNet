@@ -1,0 +1,15 @@
+1,Loops,C#,For loop usage,Runs once,Runs multiple times,Runs forever,Does nothing,B,Easy,Admin
+2,Variables,C#,Variable declaration,int x,string x,var x,declare x,B,Easy,Admin
+3,Datatypes,C#,Value type example,string,array,class,int,D,Easy,Admin
+4,Conditionals,C#,If statement purpose,Looping,Decision making,Compilation,Execution,B,Easy,Admin
+5,Arrays,C#,Array index starts from,1,0,-1,Any number,B,Easy,Admin
+6,Methods,C#,Method return type,void only,int only,Any type,None,C,Easy,Admin
+7,OOP,C#,Inheritance means,Code duplication,Code reuse,Memory leak,Compilation error,B,Medium,Admin
+8,OOP,C#,Encapsulation means,Hide data,Show data,Delete data,Copy data,A,Medium,Admin
+9,Classes,C#,Class is,Method,Variable,Blueprint,Namespace,C,Easy,Admin
+10,Strings,C#,String is,Value type,Reference type,Pointer,Struct,B,Medium,Admin
+11,Collections,C#,List allows,Fixed size,Dynamic size,No elements,Only int,B,Easy,Admin
+12,Exception,C#,Try block is used for,Handling errors,Writing code,Looping,Condition checking,A,Medium,Admin
+13,Keywords,C#,Static keyword means,Instance based,Shared,Virtual,Hidden,B,Medium,Admin
+14,AccessSpecifiers,C#,Private members are accessible,Everywhere,Same class only,Same assembly,Derived class,B,Easy,Admin
+15,MainMethod,C#,Main method is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin

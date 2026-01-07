@@ -4,9 +4,9 @@ namespace CSVFileIo.Repository.Interface
 {
     public interface IFileIoRepository
     {
-       
+
         public List<Question> ReadDataFromCSV();
-        public void WriteDataToCSV(List<Question> questions);
+        public bool WriteDataToCSV(List<Question> questions);
         
     }
 }

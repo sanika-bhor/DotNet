@@ -1,4 +1,4 @@
-1,Loops,C#,For loop usage,Runs once,Runs multiple times,Runs forever,Does nothing,B,Easy,Admin
+1,Loops,C#,"For loop, usage",Runs once,Runs multiple times,Runs forever,Does nothing,B,Easy,Admin
 2,Variables,C#,Variable declaration,int x,string x,var x,declare x,B,Easy,Admin
 3,Datatypes,C#,Value type example,string,array,class,int,D,Easy,Admin
 4,Conditionals,C#,If statement purpose,Looping,Decision making,Compilation,Execution,B,Easy,Admin
@@ -13,3 +13,19 @@
 13,Keywords,C#,Static keyword means,Instance based,Shared,Virtual,Hidden,B,Medium,Admin
 14,AccessSpecifiers,C#,Private members are accessible,Everywhere,Same class only,Same assembly,Derived class,B,Easy,Admin
 15,MainMethod,C#,Main method is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+16,MainMethod,C#,Main method, is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+17,MainMethod,C#,Main method is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+16,MainMethod,C#,Main method, is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+17,MainMethod,C#,Main method is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+16,MainMethod,C#,Main method, is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+17,MainMethod,C#,Main method is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+16,MainMethod,C#,Main method, is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+17,MainMethod,C#,Main method is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+16,MainMethod,C#,Main method, is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+17,MainMethod,C#,Main method is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+16,MainMethod,C#,Main method, is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+17,MainMethod,C#,Main method is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+16,MainMethod,C#,Main method, is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+17,MainMethod,C#,Main method is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+16,MainMethod,C#,Main method, is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin
+17,MainMethod,C#,Main method is,Optional,Entry point,Abstract,Overloaded,B,Easy,Admin

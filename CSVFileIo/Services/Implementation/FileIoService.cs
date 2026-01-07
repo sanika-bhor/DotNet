@@ -3,7 +3,7 @@ using CSVFileIo.Repository.Interface;
 
 namespace CSVFileIo.Repository.Implementation
 {
-    public class FileIoService
+    public class FileIoService :IFileIoService
     {
         private readonly FileIoRepository _repository;
         public FileIoService(FileIoRepository repository)
@@ -14,10 +14,11 @@ namespace CSVFileIo.Repository.Implementation
         {
            return _repository.ReadDataFromCSV();
         }
-        public void WriteDataToCSV(List<Question> questions)
+        public bool WriteDataToCSV(List<Question> questions)
         {
-            _repository.ReadDataFromCSV();
+           return _repository.WriteDataToCSV(questions);
         }
 
+       
     }
 }

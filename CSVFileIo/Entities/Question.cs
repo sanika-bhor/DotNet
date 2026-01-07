@@ -19,7 +19,7 @@ public class Question
         {
             
         }
-    public Question(int id, string concept, string subject,string title,string a,string b, string c, string d, string answerKey,string difficultyLevel,string createdBy,DateTime createdOn)
+    public Question(int id, string concept, string subject,string title,string a,string b, string c, string d, string answerKey,string difficultyLevel,string createdBy)
     {
         this.Id = id;
         this.Concept = concept;

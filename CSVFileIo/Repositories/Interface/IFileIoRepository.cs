@@ -11,8 +11,8 @@ namespace CSVFileIo.Repository.Interface
 
         public int GetSubjectId(string subjectName);
 
-        public int GetConceptId(String conceptName);
+        public int GetConceptId(string conceptName);
 
-      
+        public int GetSubjectConceptId(string subjectName,string conceptName);
     }
 }

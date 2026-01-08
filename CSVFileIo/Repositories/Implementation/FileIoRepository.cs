@@ -143,12 +143,43 @@ namespace CSVFileIo.Repository.Implementation
             return conceptId;
         }
 
-        
+        public int GetSubjectConceptId(string subjectName, string conceptName)
+        {
+            int subjectConceptId = 0;
+            string connectionCommand = @"server=localhost;port=3306;user=root;password=password;database=AssessmentDB";
+            MySqlConnection dbConnection = new MySqlConnection();
+            MySqlCommand dbCommandcmd = new MySqlCommand();
+            dbConnection.ConnectionString = connectionCommand;
+            dbCommandcmd.Connection = dbConnection;
+            dbConnection.Open();
+
+            //conceptid
+            dbCommandcmd.Parameters.Clear();
+            string conceptIdQuery = @"
+                                    select subject_concept_id  from subject_concepts sc
+                                    join subjects s on s.id = sc.subject_id
+                                    join concepts c on c.id = sc.concept_id
+                                    where s.title = @subjectName and c.title = @conceptName; ";
+
+            dbCommandcmd.CommandText = conceptIdQuery;
+            dbCommandcmd.Parameters.AddWithValue("subjectName", subjectName);
+            dbCommandcmd.Parameters.AddWithValue("conceptName", conceptName);
+            using (IDataReader idReader = dbCommandcmd.ExecuteReader())
+            {
+                idReader.Read();
+                subjectConceptId = int.Parse(idReader["subject_concept_id"].ToString());
+                if (subjectConceptId <= 0)
+                {
+                    throw new Exception("Concept not found");
+                }
+            }
+            return subjectConceptId;
+        }
+
+
         public bool InsertDataInDB()
         {
-
-            int subjectId = 0;
-            int conceptId = 0;
+            int subjectConceptId = 0;
             bool status = false;
             try
             {
@@ -162,12 +193,29 @@ namespace CSVFileIo.Repository.Implementation
 
                 foreach (Question insertquestion in questions)
                 {
-                    subjectId=GetSubjectId(insertquestion.Subject);
-                    conceptId=GetConceptId(insertquestion.Concept);
+                    subjectConceptId= GetSubjectConceptId(insertquestion.Subject,insertquestion.Concept);
+                    dbCommandcmd.Parameters.Clear();
+                    string conceptIdQuery = @"
+                                    INSERT INTO questionbank 
+                                    (subject_concept_id, title, a, b, c, d, answerkey, difficulty_level, created_by) 
+                                    VALUES
+                                    (@subject_concept_id,@title,@a,@b,@c,@d,@answerKey,@dificultylevel,@createdby); ";
 
-                    Console.WriteLine("" + insertquestion.Title);
-                    Console.WriteLine("subject id: " + subjectId);
-                    Console.WriteLine("Concept id: " + conceptId);
+                    dbCommandcmd.CommandText = conceptIdQuery;
+                    dbCommandcmd.Parameters.AddWithValue("subject_concept_id", subjectConceptId);
+                    dbCommandcmd.Parameters.AddWithValue("title", insertquestion.Title);
+                    dbCommandcmd.Parameters.AddWithValue("a", insertquestion.A);
+                    dbCommandcmd.Parameters.AddWithValue("b", insertquestion.B);
+                    dbCommandcmd.Parameters.AddWithValue("c", insertquestion.C);
+                    dbCommandcmd.Parameters.AddWithValue("d", insertquestion.D);
+                    dbCommandcmd.Parameters.AddWithValue("answerKey", insertquestion.AnswerKey);
+                    dbCommandcmd.Parameters.AddWithValue("dificultylevel", insertquestion.DifficultyLevel);
+                    dbCommandcmd.Parameters.AddWithValue("createdby", insertquestion.CreatedBy);
+                     int success=dbCommandcmd.ExecuteNonQuery();
+                    if (success > 0)
+                    {
+                        status=true;
+                    }
                 }
 
             }
@@ -178,5 +226,8 @@ namespace CSVFileIo.Repository.Implementation
 
             return status;
         }
+
+
+
     }
 }

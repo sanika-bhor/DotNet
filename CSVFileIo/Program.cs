@@ -30,4 +30,11 @@ Console.WriteLine("");
 
 
 Console.WriteLine("");
-fileIoService.InsertDataInDB();
+if(fileIoService.InsertDataInDB())
+{
+    Console.WriteLine("data inserted into the database");
+}
+else
+{
+    Console.WriteLine("something went wrong");
+}

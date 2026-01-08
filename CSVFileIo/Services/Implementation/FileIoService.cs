@@ -19,6 +19,22 @@ namespace CSVFileIo.Repository.Implementation
            return _repository.WriteDataToCSV(questions);
         }
 
-       
+
+        public int GetSubjectId(string subjectName)
+        {
+            return _repository.GetSubjectId(subjectName);
+        }
+
+        public int GetConceptId(String conceptName)
+        {
+            return _repository.GetConceptId(conceptName);
+        }
+        public bool InsertDataInDB()
+        {
+            return _repository.InsertDataInDB();
+        }
+
+
+
     }
 }

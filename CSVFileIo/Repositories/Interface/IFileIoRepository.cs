@@ -7,6 +7,12 @@ namespace CSVFileIo.Repository.Interface
 
         public List<Question> ReadDataFromCSV();
         public bool WriteDataToCSV(List<Question> questions);
-        
+        public bool InsertDataInDB();
+
+        public int GetSubjectId(string subjectName);
+
+        public int GetConceptId(String conceptName);
+
+      
     }
 }

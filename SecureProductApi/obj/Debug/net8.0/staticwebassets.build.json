@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KQT7MCgLGXfiDwsNJnccn9f2WForvHdl/1zPcdgAvz0=",
+  "Source": "SecureProductApi",
+  "BasePath": "_content/SecureProductApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,15 @@
+A:\TAP\GitHub\DotNet\HR_Domain\bin\Debug\net8.0\HR_Domain.exe
+A:\TAP\GitHub\DotNet\HR_Domain\bin\Debug\net8.0\HR_Domain.deps.json
+A:\TAP\GitHub\DotNet\HR_Domain\bin\Debug\net8.0\HR_Domain.runtimeconfig.json
+A:\TAP\GitHub\DotNet\HR_Domain\bin\Debug\net8.0\HR_Domain.dll
+A:\TAP\GitHub\DotNet\HR_Domain\bin\Debug\net8.0\HR_Domain.pdb
+A:\TAP\GitHub\DotNet\HR_Domain\obj\Debug\net8.0\HR_Domain.GeneratedMSBuildEditorConfig.editorconfig
+A:\TAP\GitHub\DotNet\HR_Domain\obj\Debug\net8.0\HR_Domain.AssemblyInfoInputs.cache
+A:\TAP\GitHub\DotNet\HR_Domain\obj\Debug\net8.0\HR_Domain.AssemblyInfo.cs
+A:\TAP\GitHub\DotNet\HR_Domain\obj\Debug\net8.0\HR_Domain.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\HR_Domain\obj\Debug\net8.0\HR_Domain.sourcelink.json
+A:\TAP\GitHub\DotNet\HR_Domain\obj\Debug\net8.0\HR_Domain.dll
+A:\TAP\GitHub\DotNet\HR_Domain\obj\Debug\net8.0\refint\HR_Domain.dll
+A:\TAP\GitHub\DotNet\HR_Domain\obj\Debug\net8.0\HR_Domain.pdb
+A:\TAP\GitHub\DotNet\HR_Domain\obj\Debug\net8.0\HR_Domain.genruntimeconfig.cache
+A:\TAP\GitHub\DotNet\HR_Domain\obj\Debug\net8.0\ref\HR_Domain.dll

@@ -1,6 +1,8 @@
+using HR_Domin.HR.Interfaces;
+
 namespace HR_Domin.HR
 {
-    public class SalesManager : SalesEmployee
+    public class SalesManager : SalesEmployee,IManagerBenefits,IInterviewPanel,ITrainer,IAppraisable
     {
         public double Bonus{get;set;}
         public SalesManager():base()
@@ -32,6 +34,31 @@ namespace HR_Domin.HR
             }
             Console.WriteLine("SalesManager Salary: "+salary);
 
+        }
+
+        public double CalculateBonus()
+        {
+            return Bonus;
+        }
+
+        public void ConductAppraisal()
+        {
+            Console.WriteLine("Manager Appraisal Completed.");
+        }
+
+        public void ApproveLeave()
+        {
+           Console.WriteLine("Leave Approved By Sales Manager.");
+        }
+
+        public void TakeInterview()
+        {
+            Console.WriteLine("Sales Manager Conducting interview.");
+        }
+
+        public void Train()
+        {
+            Console.WriteLine("Sales Manager Trainign Sales team");
         }
     }
 }

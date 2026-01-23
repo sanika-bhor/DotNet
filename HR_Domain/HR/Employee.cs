@@ -28,6 +28,11 @@ namespace HR_Domin.HR
         {
             return "Id: "+Id+"\nName: "+Name+"\nAge: "+Age;
         }
+
+        public override bool Equals(Object o)
+        {
+            return base.Equals(o);
+        }
         public abstract void DoWork();
         public abstract void ComputePay();
     }

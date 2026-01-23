@@ -1,10 +1,10 @@
-using HR_Domin;
+using HR_Domin.HR.Interfaces;
 namespace HR_Domin.HR
 {
-    public class SalesEmployee : Employee
+    public class SalesEmployee : Employee,IAppraisable
     {
         public int Target{ get; set; }
-
+        
         public double Incentive{ get; set; }
 
         public SalesEmployee():base()
@@ -33,11 +33,17 @@ namespace HR_Domin.HR
         public override void ComputePay()
         {
             double salary=BaseSalary;
-            if (Target>=1000)
+            int achirevedTarge=1000;
+            if (Target>= achirevedTarge)
             {
                  salary=BaseSalary+Incentive;
             }
             Console.WriteLine("SalesEmployee salary: "+salary);
+        }
+
+        public void ConductAppraisal()
+        {
+            Console.WriteLine("Sales Employee Appraisal Completed..");
         }
     }
 }

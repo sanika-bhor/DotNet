@@ -14,10 +14,10 @@ namespace SecureWebApp.Services
 
         private List<User> _users = new List<User>
         {
-            new User { Id = 1, FirstName = "Ganesh", LastName = "Shinde", Username = "ganesh", Password = "test" },
-            new User { Id = 2, FirstName = "Ankur", LastName = "Prasad", Username = "ankur", Password = "test" },
-            new User { Id = 3, FirstName = "Neha", LastName = "Bhor",    Username = "neha", Password = "test" },
-            new User { Id = 4, FirstName = "Vishwambhar", LastName = "Kapre",Username = "vishwambhar", Password = "test" }
+            new User { Id = 1, FirstName = "Ganesh", LastName = "Shinde", UserName = "ganesh", Password = "test" },
+            new User { Id = 2, FirstName = "Ankur", LastName = "Prasad", UserName = "ankur", Password = "test" },
+            new User { Id = 3, FirstName = "Neha", LastName = "Bhor",    UserName = "neha", Password = "test" },
+            new User { Id = 4, FirstName = "Vishwambhar", LastName = "Kapre",UserName = "vishwambhar", Password = "test" }
         };
          
          private readonly AppSettings _appSettings ;

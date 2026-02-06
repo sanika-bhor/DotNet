@@ -11,31 +11,49 @@ namespace ClientServer
         {
             try
             {
-                TcpClient client=new TcpClient("localhost",5000);
+                TcpClient client = new TcpClient("localhost", 5000);
 
-                Console.WriteLine("connected to srever");
+                Console.WriteLine("connected to server");
 
-                NetworkStream stream=client.GetStream();
+                NetworkStream stream = client.GetStream();
 
-                string msg="Hello Server!";
+                string msg = "Hello Server!";
 
-                byte[] data=Encoding.UTF8.GetBytes(msg);
+                byte[] data = Encoding.UTF8.GetBytes(msg);
 
-                stream.Write(data,0,data.Length);
+                stream.Write(data, 0, data.Length);
 
-                byte[] buffer=new byte[1024];
+                byte[] buffer = new byte[1024];
 
-                int byteRead=stream.Read(buffer,0,buffer.Length);
+                int byteRead = stream.Read(buffer, 0, buffer.Length);
 
-                string response=Encoding.UTF8.GetString(buffer,0,byteRead);
+                string response = Encoding.UTF8.GetString(buffer, 0, byteRead);
 
-                Console.WriteLine("Server Say: "+response);
+                Console.WriteLine("Server Say: " + response);
+
+                Console.WriteLine("!!!!!...........Start Conversation.............!!!!!  ");
+
+             
+                string m;
+                do
+                {
+                      m= Console.ReadLine().ToString();
+                      byte[] clientmsg=Encoding.UTF8.GetBytes(m);
+                      stream.Write(clientmsg, 0, clientmsg.Length);
+                    
+                    
+                    byte[] buff = new byte[1024];
+                    int byteR = stream.Read(buff, 0, buffer.Length);
+                    string message = Encoding.UTF8.GetString(buff, 0, byteR);
+                    Console.WriteLine("\nServer Say's: " + message);
+
+                } while (m!="bye");
 
                 client.Close();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                Console.WriteLine("Error::  ",e.Message);
+                Console.WriteLine("Error::  ", e.Message);
             }
         }
     }

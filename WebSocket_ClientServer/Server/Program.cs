@@ -16,7 +16,7 @@ namespace ClientServer
 
 
                 Console.WriteLine("Server started.........");
-                Console.Write("Waiting for client.....");
+                Console.WriteLine("Waiting for client.....");
 
                 TcpClient client =server.AcceptTcpClient();
                 Console.WriteLine("Client connected!!!!");
@@ -35,6 +35,27 @@ namespace ClientServer
                 byte[] data=Encoding.UTF8.GetBytes(reply);
 
                 stream.Write(data,0,data.Length);
+
+
+                Console.WriteLine("!!!!!........... Conversation Started .............!!!!!  ");
+
+                
+                string m;
+                string clientmsg;
+                do
+                {
+                    byte[] buff = new byte[1024];
+                    int byteR = stream.Read(buff, 0, buffer.Length);
+                     clientmsg = Encoding.UTF8.GetString(buff, 0, byteR);
+                    Console.WriteLine("\nClient Say's: " + clientmsg);
+                
+                      m = Console.ReadLine().ToString();
+                      byte[] serverMsg=Encoding.UTF8.GetBytes(m);
+                    stream.Write(serverMsg, 0, serverMsg.Length);
+
+
+
+                } while (clientmsg != "bye");
 
                 client.Close();
                 server.Stop();

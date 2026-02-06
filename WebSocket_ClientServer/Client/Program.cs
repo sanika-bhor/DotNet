@@ -1,0 +1,42 @@
+﻿using System;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+
+namespace ClientServer
+{
+    public class Client
+    {
+        public static void Main(string[] args)
+        {
+            try
+            {
+                TcpClient client=new TcpClient("localhost",5000);
+
+                Console.WriteLine("connected to srever");
+
+                NetworkStream stream=client.GetStream();
+
+                string msg="Hello Server!";
+
+                byte[] data=Encoding.UTF8.GetBytes(msg);
+
+                stream.Write(data,0,data.Length);
+
+                byte[] buffer=new byte[1024];
+
+                int byteRead=stream.Read(buffer,0,buffer.Length);
+
+                string response=Encoding.UTF8.GetString(buffer,0,byteRead);
+
+                Console.WriteLine("Server Say: "+response);
+
+                client.Close();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Error::  ",e.Message);
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\bin\Debug\net8.0\Client.exe
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\bin\Debug\net8.0\Client.deps.json
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\bin\Debug\net8.0\Client.runtimeconfig.json
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\bin\Debug\net8.0\Client.dll
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\bin\Debug\net8.0\Client.pdb
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\obj\Debug\net8.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\obj\Debug\net8.0\Client.AssemblyInfoInputs.cache
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\obj\Debug\net8.0\Client.AssemblyInfo.cs
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\obj\Debug\net8.0\Client.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\obj\Debug\net8.0\Client.sourcelink.json
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\obj\Debug\net8.0\Client.dll
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\obj\Debug\net8.0\refint\Client.dll
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\obj\Debug\net8.0\Client.pdb
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\obj\Debug\net8.0\Client.genruntimeconfig.cache
+A:\TAP\GitHub\DotNet\WebSocket_ClientServer\Client\obj\Debug\net8.0\ref\Client.dll

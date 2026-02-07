@@ -11,24 +11,19 @@ namespace ClientServer
         {
             try
             {
-                TcpClient client = new TcpClient("localhost", 5000);
-
+                TcpClient client = new TcpClient("localhost", 5002);
                 Console.WriteLine("connected to server");
 
                 NetworkStream stream = client.GetStream();
 
                 string msg = "Hello Server!";
-
                 byte[] data = Encoding.UTF8.GetBytes(msg);
-
                 stream.Write(data, 0, data.Length);
 
+
                 byte[] buffer = new byte[1024];
-
                 int byteRead = stream.Read(buffer, 0, buffer.Length);
-
                 string response = Encoding.UTF8.GetString(buffer, 0, byteRead);
-
                 Console.WriteLine("Server Say: " + response);
 
                 Console.WriteLine("!!!!!...........Start Conversation.............!!!!!  ");
@@ -53,7 +48,7 @@ namespace ClientServer
             }
             catch (Exception e)
             {
-                Console.WriteLine("Error::  ", e.Message);
+                Console.WriteLine("Error::  "+ e.Message);
             }
         }
     }

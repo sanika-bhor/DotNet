@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RIkgCAYteRBBUBFT3BmM+xpkWC94mjuH+/G3gv8vp8Q=",
+  "Source": "HospitalMonitor",
+  "BasePath": "_content/HospitalMonitor",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

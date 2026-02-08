@@ -1,0 +1,15 @@
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\bin\Debug\net8.0\MonitorClient.exe
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\bin\Debug\net8.0\MonitorClient.deps.json
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\bin\Debug\net8.0\MonitorClient.runtimeconfig.json
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\bin\Debug\net8.0\MonitorClient.dll
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\bin\Debug\net8.0\MonitorClient.pdb
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\obj\Debug\net8.0\MonitorClient.GeneratedMSBuildEditorConfig.editorconfig
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\obj\Debug\net8.0\MonitorClient.AssemblyInfoInputs.cache
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\obj\Debug\net8.0\MonitorClient.AssemblyInfo.cs
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\obj\Debug\net8.0\MonitorClient.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\obj\Debug\net8.0\MonitorClient.sourcelink.json
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\obj\Debug\net8.0\MonitorClient.dll
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\obj\Debug\net8.0\refint\MonitorClient.dll
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\obj\Debug\net8.0\MonitorClient.pdb
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\obj\Debug\net8.0\MonitorClient.genruntimeconfig.cache
+A:\TAP\GitHub\DotNet\serverSocket\MonitorClient\obj\Debug\net8.0\ref\MonitorClient.dll

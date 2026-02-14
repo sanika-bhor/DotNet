@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "A:\\TAP\\GitHub\\DotNet\\SignalRDemo\\wwwroot\\chat.html",
+      "PackagePath": "staticwebassets\\chat.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SignalRDemo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SignalRDemo.props",
+      "PackagePath": "build\\SignalRDemo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SignalRDemo.props",
+      "PackagePath": "buildMultiTargeting\\SignalRDemo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SignalRDemo.props",
+      "PackagePath": "buildTransitive\\SignalRDemo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

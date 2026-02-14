@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "TWxDhEGF4r0CijIto/Th7o5fuHGw0ToRcn+ZGuDxsOA=",
+  "Source": "SignalRDemo",
+  "BasePath": "_content/SignalRDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SignalRDemo\\wwwroot",
+      "Source": "SignalRDemo",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\SignalRDemo\\wwwroot\\",
+      "BasePath": "_content/SignalRDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "A:\\TAP\\GitHub\\DotNet\\SignalRDemo\\wwwroot\\chat.html",
+      "SourceId": "SignalRDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "A:\\TAP\\GitHub\\DotNet\\SignalRDemo\\wwwroot\\",
+      "BasePath": "_content/SignalRDemo",
+      "RelativePath": "chat.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\chat.html"
+    }
+  ]
+}

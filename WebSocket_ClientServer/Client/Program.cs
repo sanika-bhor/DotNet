@@ -11,9 +11,8 @@ namespace ClientServer
         {
             try
             {
-                TcpClient client = new TcpClient("localhost", 5002);
+                TcpClient client = new TcpClient("192.168.1.57", 5002);
                 Console.WriteLine("connected to server");
-
                 NetworkStream stream = client.GetStream();
 
                 string msg = "Hello Server!";

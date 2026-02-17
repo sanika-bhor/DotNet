@@ -9,8 +9,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 app.UseHttpsRedirection();
-
-
+ 
 app.UseMiddleware<JwtMiddleware>();
 
 app.UseAuthentication();

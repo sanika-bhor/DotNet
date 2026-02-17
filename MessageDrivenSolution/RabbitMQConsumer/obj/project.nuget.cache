@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "G8AHe0brcyg=",
+  "success": true,
+  "projectFilePath": "A:\\TAP\\GitHub\\DotNet\\MessageDrivenSolution\\RabbitMQConsumer\\RabbitMQConsumer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\91997\\.nuget\\packages\\rabbitmq.client\\6.1.0\\rabbitmq.client.6.1.0.nupkg.sha512",
+    "C:\\Users\\91997\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\91997\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "RabbitMQConsumer depends on RabbitMQ.Client (>= 6.0.1) but RabbitMQ.Client 6.0.1 was not found. An approximate best match of RabbitMQ.Client 6.1.0 was resolved.",
+      "libraryId": "RabbitMQ.Client",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

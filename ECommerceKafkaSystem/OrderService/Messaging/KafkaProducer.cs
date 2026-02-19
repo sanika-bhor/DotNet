@@ -16,7 +16,6 @@ namespace Messaging
 
             _producer = new ProducerBuilder<Null, string>(config).Build();
         }
-
         public async Task PublishAsync(string topic, object data)
         {
             var json = JsonSerializer.Serialize(data);

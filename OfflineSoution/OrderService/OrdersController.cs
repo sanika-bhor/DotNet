@@ -17,7 +17,7 @@ namespace OrderService
         [HttpPost("place")]
         public IActionResult PlaceOrder([FromBody] Order order)
         {
-            var factory=new ConnectionFactory(){ HostName = "localhost", UserName = "guest", Password = "guest" };
+            var factory=new ConnectionFactory(){ HostName = "localhost" };
             using var connection=factory.CreateConnection();
             using var channel=connection.CreateModel();
 

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LtU/tEUS9zlQ9Fw0worXaF3kO5alhShM1UFoOlRISKs=",
+  "Source": "OtpVerificationApp",
+  "BasePath": "_content/OtpVerificationApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,7 +1,5 @@
-namespace OtpVerificationApp.Models;
-
-public class VerifyOtpRequest
+public class OtpVerifyRequest
 {
-    public string PhoneNumber { get; set; }
+    public string Email { get; set; }
     public string Otp { get; set; }
 }

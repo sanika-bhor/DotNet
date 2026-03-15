@@ -1,44 +1,35 @@
 using Microsoft.AspNetCore.Mvc;
-using OtpVerificationApp.Helpers;
-using OtpVerificationApp.Models;
-using OtpVerificationApp.Services;
-
-namespace OtpVerificationApp.Controllers;
 
 [ApiController]
-[Route("api/otp")]
-public class OtpController : ControllerBase
+[Route("api/auth")]
+public class AuthController : ControllerBase
 {
     private readonly OtpService _otpService;
-    private readonly SmsService _smsService;
+    private readonly EmailService _emailService;
 
-    public OtpController(OtpService otpService, SmsService smsService)
+    public AuthController(OtpService otpService, EmailService emailService)
     {
         _otpService = otpService;
-        _smsService = smsService;
+        _emailService = emailService;
     }
 
-    [HttpPost("send")]
-    public IActionResult SendOtp([FromBody] SendOtpRequest request)
+    [HttpPost("send-otp")]
+    public IActionResult SendOtp(OtpRequest request)
     {
-        var otp = OtpGenerator.Generate();
-        _otpService.SaveOtp(request.PhoneNumber, otp);
-        _smsService.SendOtp(request.PhoneNumber, otp);
+        var otp = _otpService.GenerateOtp(request.Email);
+        _emailService.SendEmail(request.Email, otp);
 
-        return Ok("OTP sent via SMS");
+        return Ok(new { message = "OTP sent successfully" });
     }
 
-    [HttpPost("verify")]
-    public IActionResult VerifyOtp([FromBody] VerifyOtpRequest request)
+    [HttpPost("verify-otp")]
+    public IActionResult VerifyOtp(OtpVerifyRequest request)
     {
-        var isValid = _otpService.VerifyOtp(
-            request.PhoneNumber,
-            request.Otp
-        );
+        var result = _otpService.VerifyOtp(request.Email, request.Otp);
 
-        if (!isValid)
-            return Unauthorized("Invalid or expired OTP");
+        if (!result)
+            return BadRequest("Invalid or Expired OTP");
 
-        return Ok("OTP verified successfully");
+        return Ok("OTP Verified Successfully");
     }
 }

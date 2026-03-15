@@ -1,24 +1,40 @@
-using Microsoft.Extensions.Caching.Memory;
-
-namespace OtpVerificationApp.Services;
-
 public class OtpService
 {
-    private readonly IMemoryCache _cache;
+    private static Dictionary<string, OtpEntry> otpStore = new();
 
-    public OtpService(IMemoryCache cache)
+    public string GenerateOtp(string email)
     {
-        _cache = cache;
-    }
+        var otp = new Random().Next(100000, 999999).ToString();
 
-    public void SaveOtp(string email, string otp)
-    {
-        _cache.Set(email, otp, TimeSpan.FromMinutes(5));
+        otpStore[email] = new OtpEntry
+        {
+            Otp = otp,
+            ExpiryTime = DateTime.UtcNow.AddMinutes(5) // OTP valid for 5 minutes
+        };
+
+        return otp;
     }
 
     public bool VerifyOtp(string email, string otp)
     {
-        return _cache.TryGetValue(email, out string storedOtp)
-               && storedOtp == otp;
+        if (!otpStore.ContainsKey(email))
+            return false;
+
+        var entry = otpStore[email];
+
+        // Check expiry
+        if (DateTime.UtcNow > entry.ExpiryTime)
+        {
+            otpStore.Remove(email);
+            return false;
+        }
+
+        if (entry.Otp == otp)
+        {
+            otpStore.Remove(email);
+            return true;
+        }
+
+        return false;
     }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OtpVerificationApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b98c369b25d7dcf2067940188c90521c1284ff05")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ce141d969a70008e662a0153e0fc6b062002fec")]
 [assembly: System.Reflection.AssemblyProductAttribute("OtpVerificationApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OtpVerificationApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

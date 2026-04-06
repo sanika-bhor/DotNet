@@ -1,0 +1,6 @@
+A:\TAP\GitHub\DotNet\MessageDrivenSolution\RabbitMQConsumer\obj\Debug\net8.0\RabbitMQConsumer.csproj.AssemblyReference.cache
+A:\TAP\GitHub\DotNet\MessageDrivenSolution\RabbitMQConsumer\obj\Debug\net8.0\RabbitMQConsumer.GeneratedMSBuildEditorConfig.editorconfig
+A:\TAP\GitHub\DotNet\MessageDrivenSolution\RabbitMQConsumer\obj\Debug\net8.0\RabbitMQConsumer.AssemblyInfoInputs.cache
+A:\TAP\GitHub\DotNet\MessageDrivenSolution\RabbitMQConsumer\obj\Debug\net8.0\RabbitMQConsumer.AssemblyInfo.cs
+A:\TAP\GitHub\DotNet\MessageDrivenSolution\RabbitMQConsumer\obj\Debug\net8.0\RabbitMQConsumer.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\MessageDrivenSolution\RabbitMQConsumer\obj\Debug\net8.0\RabbitMQConsumer.sourcelink.json

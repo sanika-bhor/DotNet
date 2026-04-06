@@ -1,0 +1,37 @@
+<h2>Checkout</h2>
+
+<a href="/Payment/CreateOrder">
+    <button>Create Order</button>
+</a>
+
+<form method="post" action="/Payment/Verify">
+    <button type="button" id="payBtn">Pay ₹1000</button>
+
+    <input type="hidden" name="razorpay_payment_id" id="paymentId" />
+    <input type="hidden" name="razorpay_order_id" id="orderId" />
+</form>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<script>
+    document.getElementById('payBtn').onclick = function () {
+
+    var options = {
+    "key": "@ViewBag.Key",
+    "amount": "1000",
+    "currency": "INR",
+    "name": "ADO Payment App",
+    "description": "Test Payment",
+    "order_id": "@ViewBag.OrderId",
+
+    "handler": function (response) {
+    document.getElementById('paymentId').value = response.razorpay_payment_id;
+    document.getElementById('orderId').value = response.razorpay_order_id;
+    document.forms[0].submit();
+    }
+    };
+
+    var rzp = new Razorpay(options);
+    rzp.open();
+    }
+</script>

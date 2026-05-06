@@ -1,0 +1,13 @@
+A:\TAP\GitHub\DotNet\notification\NotificationManager\bin\Debug\net8.0\NotificationManager.deps.json
+A:\TAP\GitHub\DotNet\notification\NotificationManager\bin\Debug\net8.0\NotificationManager.dll
+A:\TAP\GitHub\DotNet\notification\NotificationManager\bin\Debug\net8.0\NotificationManager.pdb
+A:\TAP\GitHub\DotNet\notification\NotificationManager\obj\Debug\net8.0\NotificationManager.GeneratedMSBuildEditorConfig.editorconfig
+A:\TAP\GitHub\DotNet\notification\NotificationManager\obj\Debug\net8.0\NotificationManager.AssemblyInfoInputs.cache
+A:\TAP\GitHub\DotNet\notification\NotificationManager\obj\Debug\net8.0\NotificationManager.AssemblyInfo.cs
+A:\TAP\GitHub\DotNet\notification\NotificationManager\obj\Debug\net8.0\NotificationManager.csproj.CoreCompileInputs.cache
+A:\TAP\GitHub\DotNet\notification\NotificationManager\obj\Debug\net8.0\NotificationManager.sourcelink.json
+A:\TAP\GitHub\DotNet\notification\NotificationManager\obj\Debug\net8.0\NotificationManager.dll
+A:\TAP\GitHub\DotNet\notification\NotificationManager\obj\Debug\net8.0\refint\NotificationManager.dll
+A:\TAP\GitHub\DotNet\notification\NotificationManager\obj\Debug\net8.0\NotificationManager.pdb
+A:\TAP\GitHub\DotNet\notification\NotificationManager\obj\Debug\net8.0\ref\NotificationManager.dll
+A:\TAP\GitHub\DotNet\notification\NotificationManager\obj\Debug\net8.0\NotificationManager.csproj.AssemblyReference.cache

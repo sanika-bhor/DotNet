@@ -31,7 +31,7 @@ public class ClaimsRepository
     public bool SaveRegisterClaim(List<Claim> claims)
     {
         bool status = false;
-        string fileName = @"C:\TAP\MygitRepo\.NET\InsuranceRestAPIApp\InsuranceRestAPIApp\Data\registerclaim.json";
+        string fileName = @"A:\TAP\GitHub\DotNet\InsuranceRestAPIApp\Data\registerclaim.json";
         var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
         string jsonString = JsonSerializer.Serialize(claims, options);
         File.WriteAllText(fileName, jsonString);
@@ -41,7 +41,7 @@ public class ClaimsRepository
 
     public List<Claim> GetAllRegisterClaim()
     {
-        string fileName = @"C:\TAP\MygitRepo\.NET\InsuranceRestAPIApp\InsuranceRestAPIApp\Data\registerclaim.json";
+        string fileName = @"A:\TAP\GitHub\DotNet\InsuranceRestAPIApp\Data\registerclaim.json";
         string jsonString = File.ReadAllText(fileName);
         var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
         List<Claim>? RegisterClaims = JsonSerializer.Deserialize<List<Claim>>(jsonString, options);

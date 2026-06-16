@@ -19,9 +19,7 @@ public class InsurancePolicyManager
 
     public void RegisterClaim(Claim claim)
     {
-        Policy thePolicy = new Policy { CustomerName = "Ravi Tambade", IsRenewed = true };
-        double theClaimAmount = 89000;
-        claimRegistered?.Invoke(thePolicy, 9000);
+        claimRegistered?.Invoke(claim);
     }
 
     public bool RenewPolicy(string policyNumber)

@@ -42,18 +42,9 @@ app.MapPost("/api/policies/registerclaim", (Claim claim) =>
 {
   
         InsurancePolicyManager insruanceManager=new InsurancePolicyManager();
-        AccountsDepartment accounts=new AccountsDepartment();
-        SalesDepartment sales=new SalesDepartment();
         ClaimDepartment claims=new ClaimDepartment();
-        RenewalDepartment renewals=new RenewalDepartment();
 
-        EmailNotificationService emailSvc=new EmailNotificationService();
-        insruanceManager.policyPurchased+=sales.OnPolicyPurchased;
-        insruanceManager.policyPurchased+=emailSvc.SendMessage;
-
-        insruanceManager.premiumPaid+=accounts.RecordPayment;
-        insruanceManager.claimRegistered+=claims.OnClaimRegistered;
-        insruanceManager.premiumPaid+=renewals.OnPolicyRenewed;
+        insruanceManager.claimRegistered+= claims.OnClaimRegistered;
         insruanceManager.RegisterClaim(claim);
         return "Claim is Register";
 
@@ -68,19 +59,15 @@ app.MapPost("/api/policies/renew", (Policy policy) =>
         RenewalDepartment renewals=new RenewalDepartment();
 
         EmailNotificationService emailSvc=new EmailNotificationService();
-        insruanceManager.policyPurchased+=sales.OnPolicyPurchased;
-        insruanceManager.policyPurchased+=emailSvc.SendMessage;
 
-        insruanceManager.premiumPaid+=accounts.RecordPayment;
-        insruanceManager.claimRegistered+=claims.OnClaimRegistered;
-        insruanceManager.premiumPaid+=renewals.OnPolicyRenewed;
+        insruanceManager.policyRenewed += renewals.OnPolicyRenewed;
           bool status = insruanceManager.RenewPolicy(policy.PolicyNumber);
         if(status)
         {
                 return Results.Ok("Policy Renewed Successfully");
         }
 
- return Results.NotFound("Policy Not Found");
+        return Results.NotFound("Policy Not Found");
 
 });
  

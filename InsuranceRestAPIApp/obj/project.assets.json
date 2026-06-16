@@ -88,11 +88,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\InsuranceRestAPIApp\\InsuranceRestAPIApp\\InsuranceRestAPIApp.csproj",
+      "projectUniqueName": "A:\\TAP\\GitHub\\DotNet\\InsuranceRestAPIApp\\InsuranceRestAPIApp.csproj",
       "projectName": "InsuranceRestAPIApp",
-      "projectPath": "A:\\InsuranceRestAPIApp\\InsuranceRestAPIApp\\InsuranceRestAPIApp.csproj",
+      "projectPath": "A:\\TAP\\GitHub\\DotNet\\InsuranceRestAPIApp\\InsuranceRestAPIApp.csproj",
       "packagesPath": "C:\\Users\\91997\\.nuget\\packages\\",
-      "outputPath": "A:\\InsuranceRestAPIApp\\InsuranceRestAPIApp\\obj\\",
+      "outputPath": "A:\\TAP\\GitHub\\DotNet\\InsuranceRestAPIApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\91997\\AppData\\Roaming\\NuGet\\NuGet.Config",

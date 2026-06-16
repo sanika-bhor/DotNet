@@ -2,4 +2,4 @@ using   MaxNewYorkInsurance.Models;
  
 namespace MaxNewYorkInsurance.Agents;
 
-public delegate  void ClaimsAgent (Policy policy, double claimAmount);
+public delegate  void ClaimsAgent (Claim claim);

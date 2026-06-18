@@ -67,21 +67,50 @@ app.MapPost("/api/policies/registerclaim", (Claim claim) =>
 });
 
 // Approve claim
-app.MapPost("/api/claims/approve/{claimid}", (Claim claim) =>
+app.MapPost("/api/claims/approve/", (Claim claim) =>
 {
     ClaimsManager claimsManager = new ClaimsManager();
-
     ClaimDepartment claims = new ClaimDepartment();
+    AccountsDepartment accounts=new AccountsDepartment();
 
     claimsManager.claimApproved += claims.OnClaimApproved;
+    claimsManager.claimApproved += accounts.OnClaimApproved;
 
     claimsManager.ApproveClaim(claim);
 
-    return Results.Ok("Claim approved successfully.");
+    return Results.Ok("Claim provide for approval plz check.");
 });
 
 
+// Settle claim
+app.MapPost("/api/claims/settle", (Claim claim) =>
+{
+    ClaimsManager claimManager = new ClaimsManager();
 
+    ClaimDepartment claims = new ClaimDepartment();
+    AccountsDepartment accounts = new AccountsDepartment();
+
+    claimManager.claimSettled += claims.OnClaimSettled;
+    // claimManager.claimSettled += accounts.OnClaimSettled;
+
+    claimManager.SettleClaim(claim);
+
+    return Results.Ok("Claim settled successfully.");
+});
+
+//Reject claim
+app.MapPost("/api/claims/reject", (Claim claim) =>
+{
+    ClaimsManager claimManager = new ClaimsManager();
+
+    ClaimDepartment claims = new ClaimDepartment();
+
+    claimManager.claimRejected += claims.OnClaimRejected;
+
+    claimManager.RejectClaim(claim);
+
+    return Results.Ok("Claim rejected successfully.");
+});
 
 // Get all policies
 app.MapGet("/api/policies", () =>
@@ -107,78 +136,45 @@ app.MapGet("/api/policies", () =>
 // });
 
 
-
-
-// // Reject claim
-// app.MapPost("/api/claims/reject", (Claim claim) =>
-// {
-//     InsurancePolicyManager manager = new InsurancePolicyManager();
-
-//     ClaimDepartment claims = new ClaimDepartment();
-
-//     manager.claimRejected += claims.OnClaimRejected;
-
-//     manager.RejectClaim(claim);
-
-//     return Results.Ok("Claim rejected successfully.");
-// });
-
-// // Settle claim
-// app.MapPost("/api/claims/settle", (Claim claim) =>
-// {
-//     InsurancePolicyManager manager = new InsurancePolicyManager();
-
-//     ClaimDepartment claims = new ClaimDepartment();
-//     AccountsDepartment accounts = new AccountsDepartment();
-
-//     manager.claimSettled += claims.OnClaimSettled;
-//     manager.claimSettled += accounts.OnClaimSettled;
-
-//     manager.SettleClaim(claim);
-
-//     return Results.Ok("Claim settled successfully.");
-// });
-
-
 // // Cancel policy
 // app.MapPost("/api/policies/cancel/{policyNumber}", (string policyNumber) =>
 // {
-//     InsurancePolicyManager manager = new InsurancePolicyManager();
+//     SalesManager salesManager = new SalesManager();
 
-//     manager.CancelPolicy(policyNumber);
+//     salesManager.CancelPolicy(policyNumber);
 
 //     return Results.Ok("Policy cancelled successfully.");
 // });
 
-// // Send renewal reminder
-// app.MapPost("/api/policies/reminder/{policyNumber}", (string policyNumber) =>
-// {
-//     InsurancePolicyManager manager = new InsurancePolicyManager();
+// Send renewal reminder
+app.MapPost("/api/policies/reminder/{policyNumber}", (string policyNumber) =>
+{
+    RenewalManager renewalManager = new RenewalManager();
 
-//     EmailNotificationService emailService =
-//         new EmailNotificationService();
+    EmailNotificationService emailService =
+        new EmailNotificationService();
 
-//     manager.renewalReminderSent += emailService.OnRenewalReminderSent;
+    renewalManager.renewalReminderSent += emailService.OnRenewalReminderSent;
 
-//     manager.SendRenewalReminder(policyNumber);
+    renewalManager.SendRenewalReminder(policyNumber);
 
-//     return Results.Ok("Renewal reminder sent.");
-// });
+    return Results.Ok("Renewal reminder sent.");
+});
 
-// // Generate policy document
-// app.MapPost("/api/policies/document/{policyNumber}", (string policyNumber) =>
-// {
-//     InsurancePolicyManager manager = new InsurancePolicyManager();
+// Generate policy document
+app.MapPost("/api/policies/document/{policyNumber}", (string policyNumber) =>
+{
+    PolicyAdminManager policyAdminManager = new PolicyAdminManager();
 
-//     EmailNotificationService emailService =
-//         new EmailNotificationService();
+    EmailNotificationService emailService =
+        new EmailNotificationService();
 
-//     manager.policyDocumentSent += emailService.OnPolicyDocumentSent;
+    policyAdminManager.policyDocumentGenerated += emailService.OnPolicyDocumentSent;
 
-//     manager.SendPolicyDocument(policyNumber);
+    policyAdminManager.SendPolicyDocument(policyNumber);
 
-//     return Results.Ok("Policy document sent.");
-// });
+    return Results.Ok("Policy document sent.");
+});
 
 
 app.Run();

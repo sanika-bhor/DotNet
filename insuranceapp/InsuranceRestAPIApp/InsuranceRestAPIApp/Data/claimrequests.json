@@ -36,10 +36,10 @@
         "ClaimType": "",
         "Reason": "Eye sugery",
         "ClaimAmount": 500000,
-        "ApprovedAmount": 0,
-        "Status": "Registered",
-        "Remarks": "",
-        "SettlementDate": null
+        "ApprovedAmount": 450000,
+        "Status": "Rejected",
+        "Remarks": "Documents not verified",
+        "SettlementDate": "2026-06-18T11:29:22.0733219+05:30"
     },
     {
         "ClaimId": 1004,

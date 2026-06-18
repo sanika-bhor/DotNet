@@ -12,12 +12,14 @@ public class AccountsDepartment
         List<Policy> policyList=policyRepository.GetAllPolicies();
         policyList.Add(policy);
         policyRepository.SaveAllPolicies(policyList);
+        
         Console.WriteLine("====================================");
         Console.WriteLine("Accounts Department");
         Console.WriteLine($"New policy purchased: {policy.PolicyNumber}");
         Console.WriteLine("Financial records updated.");
         Console.WriteLine("====================================");
     }
+
 
     public void OnPremiumPaid(Premium premium)
     {

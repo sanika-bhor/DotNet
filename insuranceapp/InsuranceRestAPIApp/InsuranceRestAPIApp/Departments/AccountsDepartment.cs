@@ -20,6 +20,40 @@ public class AccountsDepartment
         Console.WriteLine("====================================");
     }
 
+    public void OnPolicyCancel(string policyno)
+    {
+        bool status=false;
+        PolicyRepository policyRepository = new PolicyRepository();
+        List<Policy> policyList = policyRepository.GetAllPolicies();
+      
+      foreach(Policy policy in policyList)
+        {
+            if(policy.PolicyNumber == policyno)
+            {
+                policy.Status = "Deactive";
+                status = true;
+                policyRepository.SaveAllPolicies(policyList);
+            }
+        }
+
+        if(status)
+        {
+            Console.WriteLine("====================================");
+            Console.WriteLine("Accounts Department");
+            Console.WriteLine($" policy Cancel: {policyno}");
+            Console.WriteLine("Financial records updated.");
+            Console.WriteLine("====================================");
+        }
+        else
+        {
+            Console.WriteLine("====================================");
+            Console.WriteLine("Accounts Department");
+            Console.WriteLine($"failed to Cancel policy: {policyno}");
+            Console.WriteLine("Financial records updated.");
+            Console.WriteLine("====================================");
+        }
+    }
+
 
     public void OnPremiumPaid(Premium premium)
     {

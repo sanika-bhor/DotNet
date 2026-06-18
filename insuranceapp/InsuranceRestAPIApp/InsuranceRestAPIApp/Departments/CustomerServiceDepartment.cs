@@ -1,4 +1,5 @@
 using MaxNewYorkInsurance.Models;
+using MaxNewYorkInsurance.Repositories;
 
 namespace MaxNewYorkInsurance.Departments;
 
@@ -6,6 +7,11 @@ public class CustomerServiceDepartment
 {
     public void OnCustomerRegistered(Customer customer)
     {
+        CustomerRepository customerRepository = new CustomerRepository();
+        List<Customer> customers = customerRepository.GetAllCustomers();
+        customers.Add(customer);
+        customerRepository.SaveAllCustomers(customers);
+
         Console.WriteLine("====================================");
         Console.WriteLine("Customer Service Department");
         Console.WriteLine($"Customer '{customer.FullName + customer.LastName}' registered successfully.");

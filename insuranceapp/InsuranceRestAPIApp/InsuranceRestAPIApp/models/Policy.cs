@@ -13,6 +13,8 @@ public class Policy
     public decimal PolicyAmount { get; set; }
     public bool IsRenewed { get; set; } = false;
 
+    public string Status{get;set;}="Active";
+
     public Policy()
     {
         

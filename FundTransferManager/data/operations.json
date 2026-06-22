@@ -1,0 +1,80 @@
+[
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "C",
+        "StatusMessage": "Salary credited to account.",
+        "OperationON": "2026-06-20T09:00:00"
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "D",
+        "StatusMessage": "Fund transfer to ACC1002.",
+        "OperationON": "2026-06-20T10:15:00"
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "C",
+        "StatusMessage": "Fund received from ACC1001.",
+        "OperationON": "2026-06-20T10:15:05"
+    },
+    {
+        "AccountNumber": "ACC1003",
+        "Status": "D",
+        "StatusMessage": "ATM cash withdrawal.",
+        "OperationON": "2026-06-20T11:30:00"
+    },
+    {
+        "AccountNumber": "ACC1004",
+        "Status": "C",
+        "StatusMessage": "Interest credited.",
+        "OperationON": "2026-06-20T12:00:00"
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "D",
+        "StatusMessage": "ATM cash withdrawal.",
+        "OperationON": "2026-06-20T11:25:41.8517558+05:30"
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "C",
+        "StatusMessage": "Salary credited to account",
+        "OperationON": "2026-06-20T11:26:42.2205538+05:30"
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "D",
+        "StatusMessage": "Fund transfer to ACC1001",
+        "OperationON": "2026-06-20T11:28:08.4256456+05:30"
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "C",
+        "StatusMessage": "Fund received from ACC1002",
+        "OperationON": "2026-06-20T11:28:08.4256485+05:30"
+    },
+    {
+        "AccountNumber": "ACC1004",
+        "Status": "D",
+        "StatusMessage": "ATM cash withdrawal.",
+        "OperationON": "2026-06-20T11:41:07.6123848+05:30"
+    },
+    {
+        "AccountNumber": "ACC1004",
+        "Status": "D",
+        "StatusMessage": "ATM cash withdrawal.",
+        "OperationON": "2026-06-20T11:41:43.3674709+05:30"
+    },
+    {
+        "AccountNumber": "ACC1004",
+        "Status": "D",
+        "StatusMessage": "ATM cash withdrawal.",
+        "OperationON": "2026-06-20T12:13:02.9460499+05:30"
+    },
+    {
+        "AccountNumber": "ACC1004",
+        "Status": "C",
+        "StatusMessage": "Salary credited to account",
+        "OperationON": "2026-06-20T12:16:40.028764+05:30"
+    }
+]

@@ -1,4 +1,4 @@
-namespace ActionListener.Services
+namespace FundTransfer.NotificationServices
 {
     public class SMSService : NotificationService
     {

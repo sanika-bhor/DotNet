@@ -5,9 +5,9 @@ namespace FundTransfer.FileManager
     public interface IFileManager
     {
         List<Account> GetAllAccounts();
-        void SaveAllAccounts();
+        bool SaveAllAccounts(List<Account> accounts);
 
-        void saveOpeations();
+        bool saveOpeations(List<Operation> operations);
         List<Operation> GetAllOperations();
     }
 }

@@ -1,0 +1,32 @@
+[
+    {
+        "Name": "Ravi Tambade",
+        "Email": "ravi.tambade@example.com",
+        "AccountNumber": "ACC1001",
+        "Balance": 29438.75
+    },
+    {
+        "Name": "Priya Sharma",
+        "Email": "priya.sharma@example.com",
+        "AccountNumber": "ACC1002",
+        "Balance": 80400
+    },
+    {
+        "Name": "Amit Patil",
+        "Email": "amit.patil@example.com",
+        "AccountNumber": "ACC1003",
+        "Balance": 120000.5
+    },
+    {
+        "Name": "Sneha Kulkarni",
+        "Email": "sneha.kulkarni@example.com",
+        "AccountNumber": "ACC1004",
+        "Balance": 6600
+    },
+    {
+        "Name": "sanika bhor",
+        "Email": "bhorsanika0239@gmail.com",
+        "AccountNumber": "ACC1006",
+        "Balance": 500
+    }
+]

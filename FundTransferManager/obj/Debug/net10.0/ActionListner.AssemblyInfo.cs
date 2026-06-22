@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ActionListner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+305cc6edbf9ab2620732c14e501e2125469be0a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+688c33e6847e9e3000b8eb129e8fde874401146f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ActionListner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ActionListner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

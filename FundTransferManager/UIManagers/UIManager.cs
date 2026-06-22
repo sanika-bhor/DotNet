@@ -1,63 +1,65 @@
-using FundTransfer.models;
+using TFLBank.models;
 
-namespace FundTransfer.UIManager
+namespace TFLBank.UIManagers
 {
     public class UIManager
     {
-        public void displayMenu()
+        public void DisplayMenu()
         {
-             Console.WriteLine("***********************************************************");
              Console.WriteLine("****************************MENU***************************");
-             Console.WriteLine("***********************************************************");
              Console.WriteLine("1.check balance ");
              Console.WriteLine("2.withdraw");
              Console.WriteLine("3.Deposite");
              Console.WriteLine("4.Transfer fund");
-             Console.WriteLine("5.create new account");
-             Console.WriteLine("6.Exit");
+             Console.WriteLine("5.Create New Account");
+             Console.WriteLine("6.Get Mini Statement");
+             Console.WriteLine("7.Exit");
              Console.WriteLine("***********************************************************");
         }
-        public int getChoice()
+        public int GetChoice()
         {
              Console.WriteLine("enter your choice: ");
              int choice=int.Parse(Console.ReadLine());
              return choice;
         }
 
-        public void exitApplication()
+        public void ExitApplication()
         {
             Console.WriteLine("***********************************************************");
             Console.WriteLine("           THANK YOU FOR USING OUR APPLICATION             ");
             Console.WriteLine("***********************************************************");
         }
 
-        public void displayBalance(double balance)
+        public void DisplayBalance(double balance)
         {
+            Console.WriteLine("\n***********************************************************");
             Console.WriteLine("Current Balance: "+balance);
+            Console.WriteLine("***********************************************************\n");
+
         }
 
-        public string enterAccountNumber(string msg="")
+        public string EnterAccountNumber(string msg="")
         {
             Console.WriteLine(msg+"enter your account number: ");
             string accno = Console.ReadLine();
             return accno;
         }
 
-        public double enterAmount()
+        public double EnterAmount()
         {
             Console.WriteLine("enter Amount: ");
             double amount = double.Parse(Console.ReadLine());
             return amount;
         }
 
-        public void displayMessage(string message)
+        public void DisplayMessage(string message)
         {
             Console.WriteLine(message);
             Console.WriteLine();
         }
 
 
-        public  Account getAccountInfo()
+        public  Account GetAccountInfo()
         {
             Account account=new Account();
             Console.WriteLine("Enter your name");
@@ -72,7 +74,15 @@ namespace FundTransfer.UIManager
             Console.WriteLine("Enter your initial balance");
             account.Balance = double.Parse(Console.ReadLine());
 
+            account.CreatedOn=DateTime.Now;
+
             return account;
+        }
+
+        public void DisplayOperation(Operation operation)
+        {
+            Console.WriteLine(operation.Status+" | "+operation.StatusMessage+" | "+operation.Amount+" | "+operation.OperationON);
+            Console.WriteLine();
         }
     }
 }

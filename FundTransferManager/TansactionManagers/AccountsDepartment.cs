@@ -1,28 +1,32 @@
-using FundTransfer.Listener;
-using FundTransfer.NotificationServices;
-using FundTransfer.TransactionManager.operations;
-using FundTransfer.models;
-using FundTransfer.FileManager;
+using TFLBank.Listener;
+using TFLBank.NotificationServices;
+using TFLBank.TransactionManager.operations;
+using TFLBank.models;
+using TFLBank.FileManager;
 
 namespace ActionListener.publishers
 {
-    public class AccountDepartment : DepositeOperation, WithdrawOperation, FundTransferOperation, CreateAccountOperation
+    public class AccountsDepartment : IDepositOperation, IWithdrawOperation, IFundTransferOperation
+    , ICreateAccountOperation,IMiniStatement
     {
 
         public List<Account> accounts { get; set; }
-        private List<AccountListener> listeners = new List<AccountListener>();
-        private NotificationService notificationService;
-        private IFileManager fileManager;
+        public List<Operation> allOperations=new List<Operation>();
+        private List<IAccountsHandler> listeners = new List<IAccountsHandler>();
+        private INotificationService notificationService;
+        private IAccountsRepository accountsRepository;
+        private IOperationsRepository operationsRepository;
 
-        public AccountDepartment(List<Account> account, NotificationService notificationService,IFileManager fileManager)
+        public AccountsDepartment(List<Account> account, INotificationService notificationService, IAccountsRepository accountsRepository, IOperationsRepository operationsRepository)
         {
             this.accounts = account;
             this.notificationService = notificationService;
-            this.fileManager = fileManager;
+            this.accountsRepository = accountsRepository;
+            this.operationsRepository = operationsRepository;
         }
 
 
-        public double getBalance(string accountId)
+        public double GetBalance(string accountId)
         {
             foreach (Account account in accounts)
             {
@@ -35,7 +39,7 @@ namespace ActionListener.publishers
         }
 
 
-        public bool deposite(string accountId, double amount)
+        public bool Deposit(string accountId, double amount)
         {
             bool status = false;
             foreach (Account account in accounts)
@@ -43,22 +47,15 @@ namespace ActionListener.publishers
                 if (account.AccountNumber == accountId)
                 {
                     account.Balance += amount;
-                    checkBalance(account);
-                    if (amount > 50000)
-                    {
-                        status = false;
-                    }
-                    else
-                    {
+                    CheckBalance(account);
                         status = true;
-                        fileManager.SaveAllAccounts(accounts);
-                    }
+                    accountsRepository.SaveAllAccounts(accounts);
                     break;
                 }
             }
             return status;
         }
-        public bool withdraw(string accountId, double amount)
+        public bool Withdraw(string accountId, double amount)
         {
             bool status=false;
             foreach (Account account in accounts)
@@ -66,7 +63,7 @@ namespace ActionListener.publishers
                 if (account.AccountNumber == accountId)
                 {
                     account.Balance -= amount;
-                    checkBalance(account);
+                    CheckBalance(account);
                     if (account.Balance < 0)
                     {
                         status=false;
@@ -74,7 +71,7 @@ namespace ActionListener.publishers
                     else
                     {
                         status=true;
-                        fileManager.SaveAllAccounts(accounts);
+                        accountsRepository.SaveAllAccounts(accounts);
                     }
                     break;
                 }
@@ -83,7 +80,7 @@ namespace ActionListener.publishers
             return status;
         }
         
-        public bool tranferFund(string fromAccountId, string toAccountId, double amount)
+        public bool FundTransfer(string fromAccountId, string toAccountId, double amount)
         {
             bool status = false;
             Account fromAccount=new Account();
@@ -107,14 +104,15 @@ namespace ActionListener.publishers
             }
             
             bool depositeStatus;
-            bool withdrawStatus=withdraw(fromAccount.AccountNumber,amount);
+
+            bool withdrawStatus=Withdraw(fromAccount.AccountNumber,amount);
 
            if (withdrawStatus)
             {
-                depositeStatus=deposite(toAccount.AccountNumber, amount);
+                depositeStatus=Deposit(toAccount.AccountNumber, amount);
                 if(!depositeStatus)
                 {
-                    deposite(fromAccount.AccountNumber, amount);
+                    Deposit(fromAccount.AccountNumber, amount);
                 }
                 if (withdrawStatus && depositeStatus)
                 {
@@ -125,31 +123,31 @@ namespace ActionListener.publishers
             return status;
         }
     
-         public bool createAccount(Account account)
+         public bool CreateAccount(Account account)
         {
             bool status=false;
             accounts.Add(account);
-            fileManager.SaveAllAccounts(accounts);
+            accountsRepository.SaveAllAccounts(accounts);
             status =true;
             return status;
         }
-        private void checkBalance(Account account)
+        private void CheckBalance(Account account)
         {
 
             if (account.Balance < 1000)
             {
-                foreach (AccountListener l in listeners)
+                foreach (IAccountsHandler l in listeners)
                 {
-                    l.onUnderBalance(account.Balance);
+                    l.OnUnderBalance(account);
                     notificationService.send("Amount is less than  minimum balance policy");
                 }
             }
 
             if (account.Balance > 25000)
             {
-                foreach (AccountListener l in listeners)
+                foreach (IAccountsHandler l in listeners)
                 {
-                    l.onOverBalance(account.Balance);
+                    l.OnOverBalance(account);
                     notificationService.send("Amount is greater than  Taxable income policy");
                 }
             }
@@ -158,9 +156,30 @@ namespace ActionListener.publishers
 
         }
 
-        public void addListener(AccountListener listener)
+        public void addListener(IAccountsHandler listener)
         {
             listeners.Add(listener);
+        }
+
+        public List<Operation> GetMiniStatement(string accountId)
+        {
+           List<Operation> miniStatement = new List<Operation>();
+           allOperations= operationsRepository.GetAllOperations();
+           int count=0;
+           
+           foreach(Operation operation in allOperations)
+            {
+                if (operation.AccountNumber== accountId)
+                {
+                    miniStatement.Add(operation);
+                    count++;
+                    if(count==5)
+                    {
+                        break;
+                    }
+                }
+            }
+           return miniStatement;
         }
     }
 }

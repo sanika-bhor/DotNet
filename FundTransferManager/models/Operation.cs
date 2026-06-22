@@ -1,4 +1,4 @@
-namespace FundTransfer.models
+namespace TFLBank.models
 {
     public class Operation
     {
@@ -6,5 +6,6 @@ namespace FundTransfer.models
         public string Status{get;set;}
         public string StatusMessage{get;set;}
         public DateTime OperationON{get;set;}
+        public double Amount{get;set;}
     }
 }

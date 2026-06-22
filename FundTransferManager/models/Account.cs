@@ -1,4 +1,4 @@
-namespace FundTransfer.models
+namespace TFLBank.models
 {
     public class Account
     {
@@ -7,6 +7,8 @@ namespace FundTransfer.models
         public string AccountNumber{get;set;}
 
         public double Balance{get;set;}
+
+        public DateTime CreatedOn{get;set;}
 
     }
 }

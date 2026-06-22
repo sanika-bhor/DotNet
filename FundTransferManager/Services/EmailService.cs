@@ -1,6 +1,6 @@
-namespace FundTransfer.NotificationServices
+namespace TFLBank.NotificationServices
 {
-    public class EmailService: NotificationService
+    public class EmailService: INotificationService
     {
         public void send(string msg)
         {

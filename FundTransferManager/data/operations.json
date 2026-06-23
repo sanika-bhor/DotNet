@@ -1,122 +1,82 @@
 [
     {
         "AccountNumber": "ACC1001",
-        "Status": "D",
-        "StatusMessage": "ATM cash withdrawal.",
-        "OperationON": "2026-06-23T13:26:47.7075097+05:30",
-        "Amount": 9855.75,
-        "CurrentBalance": 10000
+        "Status": "C",
+        "StatusMessage": "Opening Balance",
+        "OperationON": "2026-06-01T10:00:00.000+05:30",
+        "Amount": 15000.0,
+        "CurrentBalance": 15000.0
     },
     {
         "AccountNumber": "ACC1001",
         "Status": "D",
-        "StatusMessage": "ATM cash withdrawal.",
-        "OperationON": "2026-06-23T13:27:10.229222+05:30",
-        "Amount": 1000,
-        "CurrentBalance": 9000
+        "StatusMessage": "Groceries Store",
+        "OperationON": "2026-06-03T10:00:00.000+05:30",
+        "Amount": 1200.5,
+        "CurrentBalance": 13799.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "D",
+        "StatusMessage": "Utility Bill",
+        "OperationON": "2026-06-06T10:00:00.000+05:30",
+        "Amount": 850.0,
+        "CurrentBalance": 12949.5
     },
     {
         "AccountNumber": "ACC1001",
         "Status": "C",
-        "StatusMessage": "Salary credited to account",
-        "OperationON": "2026-06-23T13:27:21.7057728+05:30",
-        "Amount": 2000,
-        "CurrentBalance": 11000
+        "StatusMessage": "Freelance Payout",
+        "OperationON": "2026-06-11T10:00:00.000+05:30",
+        "Amount": 4500.0,
+        "CurrentBalance": 17449.5
     },
     {
-        "AccountNumber": "ACC1002",
+        "AccountNumber": "ACC1001",
         "Status": "D",
-        "StatusMessage": "ATM cash withdrawal.",
-        "OperationON": "2026-06-23T13:27:45.6114425+05:30",
-        "Amount": 12290,
-        "CurrentBalance": 70000
+        "StatusMessage": "ATM Withdrawal",
+        "OperationON": "2026-06-15T10:00:00.000+05:30",
+        "Amount": 2000.0,
+        "CurrentBalance": 15449.5
     },
     {
         "AccountNumber": "ACC1001",
-        "Status": "I",
-        "StatusMessage": "Interest is deposited",
-        "OperationON": "2026-06-23T13:31:20.3169531+05:30",
-        "Amount": 700,
-        "CurrentBalance": 11700
+        "Status": "D",
+        "StatusMessage": "Online Shopping",
+        "OperationON": "2026-06-18T10:00:00.000+05:30",
+        "Amount": 3150.75,
+        "CurrentBalance": 12298.75
     },
     {
         "AccountNumber": "ACC1001",
-        "Status": "I",
-        "StatusMessage": "Interest is deposited",
-        "OperationON": "2026-06-23T13:50:44.8283861+05:30",
-        "Amount": 729.75,
-        "CurrentBalance": 11700
-    },
-    {
-        "AccountNumber": "ACC1002",
-        "Status": "I",
-        "StatusMessage": "Interest is deposited",
-        "OperationON": "2026-06-23T13:50:44.8649221+05:30",
-        "Amount": 4900,
-        "CurrentBalance": 70000
+        "Status": "C",
+        "StatusMessage": "Salary Credited",
+        "OperationON": "2026-06-23T10:00:00.000+05:30",
+        "Amount": 50000.0,
+        "CurrentBalance": 62298.75
     },
     {
         "AccountNumber": "ACC1001",
-        "Status": "I",
-        "StatusMessage": "Interest is deposited",
-        "OperationON": "2026-06-23T14:52:23.9857464+05:30",
-        "Amount": 747.6,
-        "CurrentBalance": 12429.75
-    },
-    {
-        "AccountNumber": "ACC1002",
-        "Status": "I",
-        "StatusMessage": "Interest is deposited",
-        "OperationON": "2026-06-23T14:52:24.0260176+05:30",
-        "Amount": 4900,
-        "CurrentBalance": 74900
+        "Status": "D",
+        "StatusMessage": "Rent Payment",
+        "OperationON": "2026-06-24T10:00:00.000+05:30",
+        "Amount": 18000.0,
+        "CurrentBalance": 44298.75
     },
     {
         "AccountNumber": "ACC1001",
-        "Status": "I",
-        "StatusMessage": "Interest is deposited",
-        "OperationON": "2026-06-23T15:05:02.9732706+05:30",
-        "Amount": 768.01375,
-        "CurrentBalance": 13945.36375
+        "Status": "D",
+        "StatusMessage": "Restaurant Bill",
+        "OperationON": "2026-06-28T10:00:00.000+05:30",
+        "Amount": 450.25,
+        "CurrentBalance": 43848.5
     },
     {
-        "AccountNumber": "ACC1002",
-        "Status": "I",
-        "StatusMessage": "Interest is deposited",
-        "OperationON": "2026-06-23T15:05:03.0105157+05:30",
-        "Amount": 5014.333333333333,
-        "CurrentBalance": 84814.33333333333
-    },
-    {
-        "AccountNumber": "ACC1003",
-        "Status": "I",
-        "StatusMessage": "Interest is deposited",
-        "OperationON": "2026-06-23T15:05:03.0321022+05:30",
-        "Amount": 0,
-        "CurrentBalance": 120070.5
-    },
-    {
-        "AccountNumber": "ACC1004",
-        "Status": "I",
-        "StatusMessage": "Interest is deposited",
-        "OperationON": "2026-06-23T15:05:03.0637043+05:30",
-        "Amount": 0,
-        "CurrentBalance": 6600
-    },
-    {
-        "AccountNumber": "ACC1006",
-        "Status": "I",
-        "StatusMessage": "Interest is deposited",
-        "OperationON": "2026-06-23T15:05:03.0996205+05:30",
-        "Amount": 0,
-        "CurrentBalance": 500
-    },
-    {
-        "AccountNumber": "ACC1007",
-        "Status": "I",
-        "StatusMessage": "Interest is deposited",
-        "OperationON": "2026-06-23T15:05:03.1480514+05:30",
-        "Amount": 0,
-        "CurrentBalance": 95000
+        "AccountNumber": "ACC1001",
+        "Status": "C",
+        "StatusMessage": "Dividends Received",
+        "OperationON": "2026-06-30T10:00:00.000+05:30",
+        "Amount": 150.0,
+        "CurrentBalance": 43998.5
     }
 ]

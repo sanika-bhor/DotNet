@@ -147,20 +147,21 @@ namespace TFLBank.Routes
                         {
                             string accno = ui.EnterAccountNumber();
                            double totalInterest = accountDepartment.CalculateInterest(accno);
-                            bool status = accountDepartment.Deposit(accno, totalInterest);
+                           Console.WriteLine("" + totalInterest);
+                            // bool status = accountDepartment.Deposit(accno, totalInterest);
                            
-                            double balance = accountDepartment.GetBalance(accno);
-                            if (status)
-                            {
-                                Operation newOperation = new Operation { AccountNumber = accno, Status = "I", StatusMessage = "Interest is deposited", OperationON = DateTime.Now, Amount = totalInterest , CurrentBalance = balance };
-                                operations.Add(newOperation);
-                                operationsRespository.SaveOpeations(operations);
-                                ui.DisplayMessage("Interest amount deposit successfully");
-                            }
-                            else
-                            {
-                                ui.DisplayMessage("Interest amount not deposit");
-                            }
+                            // double balance = accountDepartment.GetBalance(accno);
+                            // if (status)
+                            // {
+                            //     Operation newOperation = new Operation { AccountNumber = accno, Status = "I", StatusMessage = "Interest is deposited", OperationON = DateTime.Now, Amount = totalInterest , CurrentBalance = balance };
+                            //     operations.Add(newOperation);
+                            //     operationsRespository.SaveOpeations(operations);
+                            //     ui.DisplayMessage("Interest amount deposit successfully");
+                            // }
+                            // else
+                            // {
+                            //     ui.DisplayMessage("Interest amount not deposit");
+                            // }
                             break;
                         }
 

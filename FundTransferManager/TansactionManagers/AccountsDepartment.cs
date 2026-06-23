@@ -195,34 +195,59 @@ namespace ActionListener.publishers
            return miniStatement;
         }
 
+
+
+
         public double CalculateInterest(string accountId)
         {
-            double totalTransactionBalance=0;
-            bool userExist=false;
-            int noOfTransaction=0;
-            allOperations=operationsRepository.GetAllOperations();
+           
+            bool userExist = false;
+            Operation firstOperation = new Operation();
+            Operation secondOperation=new Operation();
+            double totalInterestTillNow=0;
+
+            allOperations = operationsRepository.GetAllOperations();
+          
+            List<Operation> userOperation=new List<Operation>();
 
             foreach (Operation operation in allOperations)
             {
                 if (operation.AccountNumber == accountId)
                 {
-                    totalTransactionBalance += operation.CurrentBalance;
-                    noOfTransaction++;
-                    userExist=true;
+                    userOperation.Add(operation);
                 }
             }
 
-            if(userExist)
-            {    
-                double avgOfTotalTransactionBalance=(double)totalTransactionBalance/noOfTransaction;
-                double totalInterest=(avgOfTotalTransactionBalance*InterestRate)/100;
-                return totalInterest;
-            }
-            else
+
+            firstOperation = userOperation[0];
+            double newInterestRate=InterestRate/100;
+
+            double finalInterset=0;
+            for (int i=1;i< userOperation.Count();i++)
             {
-                return 0;
+                secondOperation = userOperation[i];
+                TimeSpan difference = secondOperation.OperationON - firstOperation.OperationON;
+
+                double totalDays = difference.TotalDays;
+                // Console.WriteLine("" + totalDays);
+
+                double baseAmount= 1 + (InterestRate/100.0 / 365.0);
+                // Console.WriteLine(baseAmount);
+
+                double afterpower = Math.Pow(baseAmount, totalDays);
+                // Console.WriteLine(afterpower);
+
+                totalInterestTillNow = firstOperation.CurrentBalance * afterpower;
+                // Console.WriteLine("" + totalInterestTillNow);
+
+                double interset=totalInterestTillNow- firstOperation.CurrentBalance;
+                finalInterset+= interset;
+                firstOperation =secondOperation;
             }
+
+            return finalInterset;
         }
+
 
         public bool ApplyInterest()
         {

@@ -6,7 +6,7 @@ using TFLBank.FileManager;
 
 namespace ActionListener.publishers
 {
-    public class AccountsDepartment : IDepositOperation, IWithdrawOperation, IFundTransferOperation
+    public class AccountsDepartment : IDepositOperation, IWithdrawOperation, IFundTransferOperation, ICalculateInterestOperation, IApplyInterestOperation
     , ICreateAccountOperation,IMiniStatement
     {
 
@@ -16,6 +16,7 @@ namespace ActionListener.publishers
         private INotificationService notificationService;
         private IAccountsRepository accountsRepository;
         private IOperationsRepository operationsRepository;
+        private int InterestRate=7;
 
         public AccountsDepartment(List<Account> account, INotificationService notificationService, IAccountsRepository accountsRepository, IOperationsRepository operationsRepository)
         {
@@ -48,7 +49,7 @@ namespace ActionListener.publishers
                 {
                     account.Balance += amount;
                     CheckBalance(account);
-                        status = true;
+                    status = true;
                     accountsRepository.SaveAllAccounts(accounts);
                     break;
                 }
@@ -131,6 +132,18 @@ namespace ActionListener.publishers
             status =true;
             return status;
         }
+      
+         public Account GetAccount(string accountId)
+        {
+            foreach (Account account in accounts)
+            {
+                if (account.AccountNumber == accountId)
+                {
+                    return account;
+                }
+            }
+            return null;
+        }
         private void CheckBalance(Account account)
         {
 
@@ -180,6 +193,60 @@ namespace ActionListener.publishers
                 }
             }
            return miniStatement;
+        }
+
+        public double CalculateInterest(string accountId)
+        {
+            double totalTransactionBalance=0;
+            bool userExist=false;
+            int noOfTransaction=0;
+            allOperations=operationsRepository.GetAllOperations();
+
+            foreach (Operation operation in allOperations)
+            {
+                if (operation.AccountNumber == accountId)
+                {
+                    totalTransactionBalance += operation.CurrentBalance;
+                    noOfTransaction++;
+                    userExist=true;
+                }
+            }
+
+            if(userExist)
+            {    
+                double avgOfTotalTransactionBalance=(double)totalTransactionBalance/noOfTransaction;
+                double totalInterest=(avgOfTotalTransactionBalance*InterestRate)/100;
+                return totalInterest;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        public bool ApplyInterest()
+        {
+            bool applyInterestStatus=false;
+            allOperations= operationsRepository.GetAllOperations();
+            foreach (Account account in accounts)
+            {
+               double totalInterest= CalculateInterest(account.AccountNumber);
+               Console.WriteLine(""+totalInterest);
+                bool status= Deposit(account.AccountNumber, totalInterest);
+               double balance=GetBalance(account.AccountNumber);
+                if (status)
+                {
+                    Operation newOperation = new Operation { AccountNumber = account.AccountNumber, Status = "I", StatusMessage = "Interest is deposited", OperationON = DateTime.Now, Amount = totalInterest, CurrentBalance = balance };
+                    allOperations.Add(newOperation);
+                    operationsRepository.SaveOpeations(allOperations);
+                    applyInterestStatus=true;
+                }
+                else
+                {
+                    applyInterestStatus = false;
+                }
+            }
+            return applyInterestStatus;
         }
     }
 }

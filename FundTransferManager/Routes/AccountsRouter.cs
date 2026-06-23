@@ -37,8 +37,10 @@ namespace TFLBank.Routes
                         {
                             string accno = ui.EnterAccountNumber();
                             double balance = accountDepartment.GetBalance(accno);
+                            Account account= accountDepartment.GetAccount(accno);
                             if (balance > 0)
                             {
+                                ui.DisplayAccountSummary(account);
                                 ui.DisplayBalance(balance);
                             }
                             else
@@ -52,9 +54,10 @@ namespace TFLBank.Routes
                             string accno = ui.EnterAccountNumber();
                             double amount = ui.EnterAmount();
                             bool status = accountDepartment.Withdraw(accno, amount);
+                            double balance = accountDepartment.GetBalance(accno);
                             if (status)
                             {
-                                Operation newOperation = new Operation { AccountNumber = accno, Status = "D", StatusMessage = "ATM cash withdrawal.", OperationON = DateTime.Now, Amount = amount };
+                                Operation newOperation = new Operation { AccountNumber = accno, Status = "D", StatusMessage = "ATM cash withdrawal.", OperationON = DateTime.Now, Amount = amount ,CurrentBalance=balance };
                                 operations.Add(newOperation);
                                 operationsRespository.SaveOpeations(operations);
                                 ui.DisplayMessage("withdraw amount succesfully");
@@ -71,9 +74,10 @@ namespace TFLBank.Routes
                             string accno = ui.EnterAccountNumber();
                             double amount = ui.EnterAmount();
                             bool status = accountDepartment.Deposit(accno, amount);
+                            double balance = accountDepartment.GetBalance(accno);
                             if (status)
                             {
-                                Operation newOperation = new Operation { AccountNumber = accno, Status = "C", StatusMessage = "Salary credited to account", OperationON = DateTime.Now, Amount = amount };
+                                Operation newOperation = new Operation { AccountNumber = accno, Status = "C", StatusMessage = "Salary credited to account", OperationON = DateTime.Now, Amount = amount , CurrentBalance = balance };
                                 operations.Add(newOperation);
                                 operationsRespository.SaveOpeations(operations);
                                 ui.DisplayMessage("deposite amount successfully");
@@ -95,8 +99,10 @@ namespace TFLBank.Routes
 
                             if (status)
                             {
-                                Operation newOperation1 = new Operation { AccountNumber = fromAccount, Status = "D", StatusMessage = "Fund transfer to " + toAccount, OperationON = DateTime.Now, Amount = amount };
-                                Operation newOperation2 = new Operation { AccountNumber = toAccount, Status = "C", StatusMessage = "Fund received from " + fromAccount, OperationON = DateTime.Now, Amount = amount };
+                                double fromAccountBalance = accountDepartment.GetBalance(fromAccount);
+                                double toAccountBalance = accountDepartment.GetBalance(fromAccount);
+                                Operation newOperation1 = new Operation { AccountNumber = fromAccount, Status = "D", StatusMessage = "Fund transfer to " + toAccount, OperationON = DateTime.Now, Amount = amount, CurrentBalance = fromAccountBalance };
+                                Operation newOperation2 = new Operation { AccountNumber = toAccount, Status = "C", StatusMessage = "Fund received from " + fromAccount, OperationON = DateTime.Now, Amount = amount , CurrentBalance = toAccountBalance };
                                 operations.Add(newOperation1);
                                 operations.Add(newOperation2);
                                 operationsRespository.SaveOpeations(operations);
@@ -128,8 +134,7 @@ namespace TFLBank.Routes
                         {
                             string accno = ui.EnterAccountNumber();
                             List<Operation> miniStatement = accountDepartment.GetMiniStatement(accno);
-                            double balance = accountDepartment.GetBalance(accno);
-                            ui.DisplayBalance(balance);
+                            ui.DisplayHeading();
                             foreach (Operation op in miniStatement)
                             {
 
@@ -138,12 +143,44 @@ namespace TFLBank.Routes
                             }
                             break;
                         }
-
                     case 7:
+                        {
+                            string accno = ui.EnterAccountNumber();
+                           double totalInterest = accountDepartment.CalculateInterest(accno);
+                            bool status = accountDepartment.Deposit(accno, totalInterest);
+                           
+                            double balance = accountDepartment.GetBalance(accno);
+                            if (status)
+                            {
+                                Operation newOperation = new Operation { AccountNumber = accno, Status = "I", StatusMessage = "Interest is deposited", OperationON = DateTime.Now, Amount = totalInterest , CurrentBalance = balance };
+                                operations.Add(newOperation);
+                                operationsRespository.SaveOpeations(operations);
+                                ui.DisplayMessage("Interest amount deposit successfully");
+                            }
+                            else
+                            {
+                                ui.DisplayMessage("Interest amount not deposit");
+                            }
+                            break;
+                        }
+
+                    case 8:
+                        bool applyInterestStatus = accountDepartment.ApplyInterest();
+                        if (applyInterestStatus)
+                        {
+                            ui.DisplayMessage("Interest amount deposit successfully");
+                        }
+                        else
+                        {
+                            ui.DisplayMessage("Interest amount not deposit");
+                        }
+                        break;
+
+                    case 9:
                         ui.ExitApplication();
                         break;
                 }
-            } while (choice != 7);
+            } while (choice != 9);
 
         }
     }

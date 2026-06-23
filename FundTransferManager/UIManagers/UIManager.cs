@@ -12,8 +12,10 @@ namespace TFLBank.UIManagers
              Console.WriteLine("3.Deposite");
              Console.WriteLine("4.Transfer fund");
              Console.WriteLine("5.Create New Account");
-             Console.WriteLine("6.Get Mini Statement");
-             Console.WriteLine("7.Exit");
+             Console.WriteLine("6.Get Mini Statement");  
+             Console.WriteLine("7.Calculate And Collect Interest");  
+             Console.WriteLine("8.All Interest to All");  
+             Console.WriteLine("9.Exit");
              Console.WriteLine("***********************************************************");
         }
         public int GetChoice()
@@ -79,10 +81,27 @@ namespace TFLBank.UIManagers
             return account;
         }
 
+        public void DisplayAccountSummary(Account account)
+        {
+            Console.WriteLine("Account Number: "+account.AccountNumber);
+            Console.WriteLine("Name: "+account.Name);
+            Console.WriteLine("Email: "+account.Email);
+            Console.WriteLine("Created On: "+account.CreatedOn);
+        }
+
         public void DisplayOperation(Operation operation)
         {
-            Console.WriteLine(operation.Status+" | "+operation.StatusMessage+" | "+operation.Amount+" | "+operation.OperationON);
-            Console.WriteLine();
+            Console.WriteLine("|     "+operation.Status+"     |    "+operation.StatusMessage+"      |      "+operation.Amount+"     |     "+operation.OperationON +"     |        "+operation.CurrentBalance);
+            Console.WriteLine("-----------------------------------------------------------------------------------------------------------");
+
+        }
+
+        public void DisplayHeading()
+        {
+            Console.WriteLine("------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("| Operation Type. |           Status              |     Amount     |  Date         |     CurrentBalance      ");
+            Console.WriteLine("-------------------------------------------------------------------------------------------------------------");
+
         }
     }
 }

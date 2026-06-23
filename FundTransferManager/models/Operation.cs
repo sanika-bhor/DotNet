@@ -7,5 +7,6 @@ namespace TFLBank.models
         public string StatusMessage{get;set;}
         public DateTime OperationON{get;set;}
         public double Amount{get;set;}
+        public double CurrentBalance{get;set;}
     }
 }

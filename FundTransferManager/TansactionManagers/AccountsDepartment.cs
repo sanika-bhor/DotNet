@@ -11,7 +11,7 @@ namespace ActionListener.publishers
     {
 
         public List<Account> accounts { get; set; }
-        public List<Operation> allOperations=new List<Operation>();
+        
         private List<IAccountsHandler> listeners = new List<IAccountsHandler>();
         private INotificationService notificationService;
         private IAccountsRepository accountsRepository;
@@ -176,11 +176,13 @@ namespace ActionListener.publishers
 
         public List<Operation> GetMiniStatement(string accountId)
         {
-           List<Operation> miniStatement = new List<Operation>();
+            List<Operation> allOperations = new List<Operation>();
+            List<Operation> miniStatement = new List<Operation>();
            allOperations= operationsRepository.GetAllOperations();
            int count=0;
            
            foreach(Operation operation in allOperations)
+
             {
                 if (operation.AccountNumber== accountId)
                 {
@@ -195,62 +197,66 @@ namespace ActionListener.publishers
            return miniStatement;
         }
 
-
-
-
         public double CalculateInterest(string accountId)
         {
-           
+            List<Operation> allOperations = new List<Operation>();
             bool userExist = false;
             Operation firstOperation = new Operation();
             Operation secondOperation=new Operation();
-            double totalInterestTillNow=0;
+            double totalInterestNow=0;
 
             allOperations = operationsRepository.GetAllOperations();
           
-            List<Operation> userOperation=new List<Operation>();
+            List<Operation> accountOperations=new List<Operation>();
 
             foreach (Operation operation in allOperations)
             {
                 if (operation.AccountNumber == accountId)
                 {
-                    userOperation.Add(operation);
+                    accountOperations.Add(operation);
+                    userExist=true;
                 }
             }
 
+        if(userExist)
+        {
 
-            firstOperation = userOperation[0];
-            double newInterestRate=InterestRate/100;
-
+            firstOperation = accountOperations[0];
+         
             double finalInterset=0;
-            for (int i=1;i< userOperation.Count();i++)
+            for (int i=1;i< accountOperations.Count();i++)
             {
-                secondOperation = userOperation[i];
-                TimeSpan difference = secondOperation.OperationON - firstOperation.OperationON;
+                secondOperation = accountOperations[i];
+                TimeSpan consecutiveOperationsTimeSpan = secondOperation.OperationON - firstOperation.OperationON;
 
-                double totalDays = difference.TotalDays;
+                double totalDays = consecutiveOperationsTimeSpan.TotalDays;
                 // Console.WriteLine("" + totalDays);
 
-                double baseAmount= 1 + (InterestRate/100.0 / 365.0);
+                double baseAmount= 1 + (InterestRate/100.0 / 365.0); //formula for calcuating  daily balance
                 // Console.WriteLine(baseAmount);
 
                 double afterpower = Math.Pow(baseAmount, totalDays);
                 // Console.WriteLine(afterpower);
 
-                totalInterestTillNow = firstOperation.CurrentBalance * afterpower;
+                totalInterestNow = firstOperation.CurrentBalance * afterpower;
                 // Console.WriteLine("" + totalInterestTillNow);
 
-                double interset=totalInterestTillNow- firstOperation.CurrentBalance;
+                double interset=totalInterestNow- firstOperation.CurrentBalance;
                 finalInterset+= interset;
                 firstOperation =secondOperation;
             }
-
             return finalInterset;
+        }
+        else
+            {
+                return 0;
+            }
         }
 
 
         public bool ApplyInterest()
         {
+            List<Operation> allOperations = new List<Operation>();
             bool applyInterestStatus=false;
             allOperations= operationsRepository.GetAllOperations();
             foreach (Account account in accounts)

@@ -1,5 +1,6 @@
 using TFLBank.models;
 
+
 namespace TFLBank.TransactionManager.operations
 {
     public interface ICalculateInterestOperation

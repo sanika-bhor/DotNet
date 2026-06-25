@@ -1,0 +1,234 @@
+[
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "C",
+        "StatusMessage": "Opening Balance",
+        "OperationON": "2026-06-01T10:00:00+05:30",
+        "Amount": 15000,
+        "CurrentBalance": 15000
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "D",
+        "StatusMessage": "Groceries Store",
+        "OperationON": "2026-06-03T10:00:00+05:30",
+        "Amount": 1200.5,
+        "CurrentBalance": 13799.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "D",
+        "StatusMessage": "Utility Bill",
+        "OperationON": "2026-06-06T10:00:00+05:30",
+        "Amount": 850,
+        "CurrentBalance": 12949.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "C",
+        "StatusMessage": "Freelance Payout",
+        "OperationON": "2026-06-11T10:00:00+05:30",
+        "Amount": 4500,
+        "CurrentBalance": 17449.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "D",
+        "StatusMessage": "ATM Withdrawal",
+        "OperationON": "2026-06-15T10:00:00+05:30",
+        "Amount": 2000,
+        "CurrentBalance": 15449.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "D",
+        "StatusMessage": "Online Shopping",
+        "OperationON": "2026-06-18T10:00:00+05:30",
+        "Amount": 3150.75,
+        "CurrentBalance": 12298.75
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "C",
+        "StatusMessage": "Salary Credited",
+        "OperationON": "2026-06-23T10:00:00+05:30",
+        "Amount": 50000,
+        "CurrentBalance": 62298.75
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "D",
+        "StatusMessage": "Rent Payment",
+        "OperationON": "2026-06-24T10:00:00+05:30",
+        "Amount": 18000,
+        "CurrentBalance": 44298.75
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "D",
+        "StatusMessage": "Restaurant Bill",
+        "OperationON": "2026-06-28T10:00:00+05:30",
+        "Amount": 450.25,
+        "CurrentBalance": 43848.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "C",
+        "StatusMessage": "Dividends Received",
+        "OperationON": "2026-06-30T10:00:00+05:30",
+        "Amount": 150,
+        "CurrentBalance": 43998.5
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "C",
+        "StatusMessage": "Opening Balance",
+        "OperationON": "2026-06-01T09:00:00+05:30",
+        "Amount": 25000,
+        "CurrentBalance": 25000
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "D",
+        "StatusMessage": "Electricity Bill",
+        "OperationON": "2026-06-04T11:00:00+05:30",
+        "Amount": 1800,
+        "CurrentBalance": 23200
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "D",
+        "StatusMessage": "Fuel Expense",
+        "OperationON": "2026-06-07T10:30:00+05:30",
+        "Amount": 2500,
+        "CurrentBalance": 20700
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "C",
+        "StatusMessage": "Project Payment",
+        "OperationON": "2026-06-10T15:00:00+05:30",
+        "Amount": 12000,
+        "CurrentBalance": 32700
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "D",
+        "StatusMessage": "Medical Expense",
+        "OperationON": "2026-06-14T14:00:00+05:30",
+        "Amount": 3500,
+        "CurrentBalance": 29200
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "D",
+        "StatusMessage": "Mobile Recharge",
+        "OperationON": "2026-06-17T09:45:00+05:30",
+        "Amount": 599,
+        "CurrentBalance": 28601
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "C",
+        "StatusMessage": "Salary Credited",
+        "OperationON": "2026-06-22T10:00:00+05:30",
+        "Amount": 45000,
+        "CurrentBalance": 73601
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "D",
+        "StatusMessage": "Home Loan EMI",
+        "OperationON": "2026-06-25T10:00:00+05:30",
+        "Amount": 15000,
+        "CurrentBalance": 58601
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "D",
+        "StatusMessage": "Supermarket Purchase",
+        "OperationON": "2026-06-27T18:30:00+05:30",
+        "Amount": 2250.5,
+        "CurrentBalance": 56350.5
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "C",
+        "StatusMessage": "Interest Credit",
+        "OperationON": "2026-06-30T10:00:00+05:30",
+        "Amount": 275,
+        "CurrentBalance": 56625.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "D",
+        "StatusMessage": "Fund transfer to ACC1002",
+        "OperationON": "2026-06-25T12:16:47.3757139+05:30",
+        "Amount": 3395,
+        "CurrentBalance": 40603.5
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "C",
+        "StatusMessage": "Fund received from ACC1001",
+        "OperationON": "2026-06-25T12:16:47.3758099+05:30",
+        "Amount": 3395,
+        "CurrentBalance": 40603.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "D",
+        "StatusMessage": "Fund transfer to ACC1002",
+        "OperationON": "2026-06-25T12:22:05.1029241+05:30",
+        "Amount": 603,
+        "CurrentBalance": 40000.5
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "C",
+        "StatusMessage": "Fund received from ACC1001",
+        "OperationON": "2026-06-25T12:22:05.1031023+05:30",
+        "Amount": 603,
+        "CurrentBalance": 60623.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "D",
+        "StatusMessage": "ATM cash withdrawal.",
+        "OperationON": "2026-06-25T14:50:32.7124693+05:30",
+        "Amount": 200,
+        "CurrentBalance": 39800.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "C",
+        "StatusMessage": "Salary credited to account",
+        "OperationON": "2026-06-25T14:54:47.08779+05:30",
+        "Amount": 400,
+        "CurrentBalance": 40200.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "D",
+        "StatusMessage": "ATM cash withdrawal.",
+        "OperationON": "2026-06-25T15:49:30.6747021+05:30",
+        "Amount": 50,
+        "CurrentBalance": 40150.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "D",
+        "StatusMessage": "Fund transfer to ACC1002",
+        "OperationON": "2026-06-25T15:55:30.5935176+05:30",
+        "Amount": 10,
+        "CurrentBalance": 40140.5
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "C",
+        "StatusMessage": "Fund received from ACC1001",
+        "OperationON": "2026-06-25T15:55:30.5936921+05:30",
+        "Amount": 10,
+        "CurrentBalance": 60633.5
+    }
+]

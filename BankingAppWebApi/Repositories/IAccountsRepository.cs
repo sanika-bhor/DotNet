@@ -6,6 +6,5 @@ namespace TFLBank.FileManager
     {
         List<Account> GetAllAccounts();
         bool SaveAllAccounts(List<Account> accounts);
-
-           }
+    }
 }

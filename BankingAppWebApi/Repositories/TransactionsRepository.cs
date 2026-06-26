@@ -1,28 +1,30 @@
 using System.Text.Json;
+
 using TFLBank.models;
 
 namespace TFLBank.FileManager
 {
-    public class OperationsRepository : IOperationsRepository
+    public class TransactionsRepository : ITransactionsRepository
     {
 
-        public List<Operation> GetAllOperations()
+        string fileName = @"./Data/transactions.json";
+        public List<Transaction> LoadTransactions()
         {
-            string fileName = @"./Data/operations.json";
             string jsonString = File.ReadAllText(fileName);
             var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-            List<Operation>? operations = JsonSerializer.Deserialize<List<Operation>>(jsonString, options);
-            return operations;
+            List<Transaction>? transactionHistory = JsonSerializer.Deserialize<List<Transaction>>(jsonString, options);
+            return transactionHistory;
         }
-        public bool SaveOpeations(List<Operation> accounts)
+
+        public bool SaveTransactions(List<Transaction> transactionHistory)
         {
             bool status = false;
-            string fileName = @"./Data/operations.json";
             var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-            string jsonString = JsonSerializer.Serialize(accounts, options);
+            string jsonString = JsonSerializer.Serialize(transactionHistory, options);
             File.WriteAllText(fileName, jsonString);
             status = true;
             return status;
         }
+
     }   
 }

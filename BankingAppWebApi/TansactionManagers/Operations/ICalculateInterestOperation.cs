@@ -5,6 +5,6 @@ namespace TFLBank.TransactionManager.operations
 {
     public interface ICalculateInterestOperation
     {
-        double CalculateInterest(string accountId);
+        double CalculateInterest(string accountNumber);
     }
 }

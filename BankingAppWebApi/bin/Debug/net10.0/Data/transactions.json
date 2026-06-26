@@ -230,5 +230,69 @@
         "OperationON": "2026-06-25T15:55:30.5936921+05:30",
         "Amount": 10,
         "CurrentBalance": 60633.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "I",
+        "StatusMessage": "Interest is deposited",
+        "OperationON": "2026-06-25T16:15:19.3879363+05:30",
+        "Amount": 82.75702075827576,
+        "CurrentBalance": 40223.257020758276
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "Status": "I",
+        "StatusMessage": "Interest is deposited",
+        "OperationON": "2026-06-25T16:20:38.4275147+05:30",
+        "Amount": 82.86293147328252,
+        "CurrentBalance": 40306.11995223156
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "Status": "I",
+        "StatusMessage": "Interest is deposited",
+        "OperationON": "2026-06-25T16:20:38.4729381+05:30",
+        "Amount": 154.7631331027369,
+        "CurrentBalance": 60788.26313310274
+    },
+    {
+        "AccountNumber": "ACC1003",
+        "Status": "I",
+        "StatusMessage": "Interest is deposited",
+        "OperationON": "2026-06-25T16:20:38.4935527+05:30",
+        "Amount": 0,
+        "CurrentBalance": 120073.19739516597
+    },
+    {
+        "AccountNumber": "ACC1004",
+        "Status": "I",
+        "StatusMessage": "Interest is deposited",
+        "OperationON": "2026-06-25T16:20:38.5109597+05:30",
+        "Amount": 0,
+        "CurrentBalance": 6600.148270204474
+    },
+    {
+        "AccountNumber": "ACC1006",
+        "Status": "I",
+        "StatusMessage": "Interest is deposited",
+        "OperationON": "2026-06-25T16:20:38.5301972+05:30",
+        "Amount": 0,
+        "CurrentBalance": 500.0112326218972
+    },
+    {
+        "AccountNumber": "ACC1007",
+        "Status": "I",
+        "StatusMessage": "Interest is deposited",
+        "OperationON": "2026-06-25T16:20:38.543633+05:30",
+        "Amount": 0,
+        "CurrentBalance": 95002.13420333275
+    },
+    {
+        "AccountNumber": "ACC1008",
+        "Status": "I",
+        "StatusMessage": "Interest is deposited",
+        "OperationON": "2026-06-25T16:20:38.5593992+05:30",
+        "Amount": 0,
+        "CurrentBalance": 50000
     }
 ]

@@ -1,0 +1,402 @@
+[
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Opening Balance",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 15000,
+        "CurrentBalance": 15000
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Groceries Store",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 1200.5,
+        "CurrentBalance": 13799.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Utility Bill",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 850,
+        "CurrentBalance": 12949.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Freelance Payout",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 4500,
+        "CurrentBalance": 17449.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "ATM Withdrawal",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 2000,
+        "CurrentBalance": 15449.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Online Shopping",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 3150.75,
+        "CurrentBalance": 12298.75
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Salary Credited",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 50000,
+        "CurrentBalance": 62298.75
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Rent Payment",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 18000,
+        "CurrentBalance": 44298.75
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Restaurant Bill",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 450.25,
+        "CurrentBalance": 43848.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Dividends Received",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 150,
+        "CurrentBalance": 43998.5
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": null,
+        "StatusMessage": "Opening Balance",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 25000,
+        "CurrentBalance": 25000
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": null,
+        "StatusMessage": "Electricity Bill",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 1800,
+        "CurrentBalance": 23200
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": null,
+        "StatusMessage": "Fuel Expense",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 2500,
+        "CurrentBalance": 20700
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": null,
+        "StatusMessage": "Project Payment",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 12000,
+        "CurrentBalance": 32700
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": null,
+        "StatusMessage": "Medical Expense",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 3500,
+        "CurrentBalance": 29200
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": null,
+        "StatusMessage": "Mobile Recharge",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 599,
+        "CurrentBalance": 28601
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": null,
+        "StatusMessage": "Salary Credited",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 45000,
+        "CurrentBalance": 73601
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": null,
+        "StatusMessage": "Home Loan EMI",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 15000,
+        "CurrentBalance": 58601
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": null,
+        "StatusMessage": "Supermarket Purchase",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 2250.5,
+        "CurrentBalance": 56350.5
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": null,
+        "StatusMessage": "Interest Credit",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 275,
+        "CurrentBalance": 56625.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Fund transfer to ACC1002",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 3395,
+        "CurrentBalance": 40603.5
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": null,
+        "StatusMessage": "Fund received from ACC1001",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 3395,
+        "CurrentBalance": 40603.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Fund transfer to ACC1002",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 603,
+        "CurrentBalance": 40000.5
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": null,
+        "StatusMessage": "Fund received from ACC1001",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 603,
+        "CurrentBalance": 60623.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "ATM cash withdrawal.",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 200,
+        "CurrentBalance": 39800.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Salary credited to account",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 400,
+        "CurrentBalance": 40200.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "ATM cash withdrawal.",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 50,
+        "CurrentBalance": 40150.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Fund transfer to ACC1002",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 10,
+        "CurrentBalance": 40140.5
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": null,
+        "StatusMessage": "Fund received from ACC1001",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 10,
+        "CurrentBalance": 60633.5
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 82.75702075827576,
+        "CurrentBalance": 40223.257020758276
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": null,
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 82.86293147328252,
+        "CurrentBalance": 40306.11995223156
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": null,
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 154.7631331027369,
+        "CurrentBalance": 60788.26313310274
+    },
+    {
+        "AccountNumber": "ACC1003",
+        "TransactionStatus": null,
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 0,
+        "CurrentBalance": 120073.19739516597
+    },
+    {
+        "AccountNumber": "ACC1004",
+        "TransactionStatus": null,
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 0,
+        "CurrentBalance": 6600.148270204474
+    },
+    {
+        "AccountNumber": "ACC1006",
+        "TransactionStatus": null,
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 0,
+        "CurrentBalance": 500.0112326218972
+    },
+    {
+        "AccountNumber": "ACC1007",
+        "TransactionStatus": null,
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 0,
+        "CurrentBalance": 95002.13420333275
+    },
+    {
+        "AccountNumber": "ACC1008",
+        "TransactionStatus": null,
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "0001-01-01T00:00:00",
+        "Amount": 0,
+        "CurrentBalance": 50000
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": "D",
+        "StatusMessage": "ATM cash withdrawal.",
+        "TransactionDate": "2026-06-26T11:51:37.8737515+05:30",
+        "Amount": 15,
+        "CurrentBalance": 40291.11995223156
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": "C",
+        "StatusMessage": "Salary credited to account",
+        "TransactionDate": "2026-06-26T11:52:02.4782964+05:30",
+        "Amount": 25,
+        "CurrentBalance": 40316.11995223156
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": "D",
+        "StatusMessage": "Fund transfer to ACC1002",
+        "TransactionDate": "2026-06-26T11:52:39.6573185+05:30",
+        "Amount": 62,
+        "CurrentBalance": 40254.11995223156
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": "C",
+        "StatusMessage": "Fund received from ACC1001",
+        "TransactionDate": "2026-06-26T11:52:39.6573219+05:30",
+        "Amount": 62,
+        "CurrentBalance": 60850.26313310274
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": "I",
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "2026-06-26T11:55:10.9071879+05:30",
+        "Amount": 1.6455127552785753E+66,
+        "CurrentBalance": 1.6455127552785753E+66
+    },
+    {
+        "AccountNumber": "ACC1001",
+        "TransactionStatus": "I",
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "2026-06-26T11:55:42.083519+05:30",
+        "Amount": 1.6455127552785753E+66,
+        "CurrentBalance": 3.2910255105571507E+66
+    },
+    {
+        "AccountNumber": "ACC1002",
+        "TransactionStatus": "I",
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "2026-06-26T11:55:42.1422781+05:30",
+        "Amount": 2.4817044208624397E+66,
+        "CurrentBalance": 2.4817044208624397E+66
+    },
+    {
+        "AccountNumber": "ACC1003",
+        "TransactionStatus": "I",
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "2026-06-26T11:55:42.1789093+05:30",
+        "Amount": 0,
+        "CurrentBalance": 120073.19739516597
+    },
+    {
+        "AccountNumber": "ACC1004",
+        "TransactionStatus": "I",
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "2026-06-26T11:55:42.2132552+05:30",
+        "Amount": 0,
+        "CurrentBalance": 6600.148270204474
+    },
+    {
+        "AccountNumber": "ACC1006",
+        "TransactionStatus": "I",
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "2026-06-26T11:55:42.2463211+05:30",
+        "Amount": 0,
+        "CurrentBalance": 500.0112326218972
+    },
+    {
+        "AccountNumber": "ACC1007",
+        "TransactionStatus": "I",
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "2026-06-26T11:55:42.2907965+05:30",
+        "Amount": 0,
+        "CurrentBalance": 95002.13420333275
+    },
+    {
+        "AccountNumber": "ACC1008",
+        "TransactionStatus": "I",
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "2026-06-26T11:55:42.3297249+05:30",
+        "Amount": 0,
+        "CurrentBalance": 50000
+    },
+    {
+        "AccountNumber": "ACC1009",
+        "TransactionStatus": "I",
+        "StatusMessage": "Interest is deposited",
+        "TransactionDate": "2026-06-26T11:55:42.3725426+05:30",
+        "Amount": 0,
+        "CurrentBalance": 50000
+    }
+]

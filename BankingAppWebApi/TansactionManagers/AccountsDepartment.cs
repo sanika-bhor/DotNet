@@ -16,88 +16,88 @@ namespace ActionListener.publishers
         private List<IAccountsHandler> listeners = new List<IAccountsHandler>();
         private readonly INotificationService notificationService;
         private readonly IAccountsRepository accountsRepository;
-        private readonly IOperationsRepository operationsRepository;
+        private readonly ITransactionsRepository transactionsRepository;
         private int InterestRate=7;
 
-        public AccountsDepartment( INotificationService notificationService, IAccountsRepository accountsRepository, IOperationsRepository operationsRepository)
+        public AccountsDepartment( INotificationService notificationService, IAccountsRepository accountsRepository, ITransactionsRepository transactionsRepository)
         {
             this.notificationService = notificationService;
             this.accountsRepository = accountsRepository;
-            this.operationsRepository = operationsRepository;
+            this.transactionsRepository = transactionsRepository;
         }
 
-        public double GetBalance(string accountId)
+        public double GetBalance(string accountNumber)
         {
             //LINQ: Language Intergrated Query
             List<Account> accounts = accountsRepository.GetAllAccounts();
-            return accounts.FirstOrDefault(account => account.AccountNumber == accountId)?.Balance ?? 0;
+            return accounts.FirstOrDefault(account => account.AccountNumber == accountNumber)?.Balance ?? 0;
         }
 
-        public bool Deposit(string accountId, double amount)
+        public bool Deposit(string accountNumber, double depositAmount)
         {
-            bool status = false;
+            bool isDepositSuccessful = false;
             List<Account> accounts = accountsRepository.GetAllAccounts();
-            Account account = accounts.FirstOrDefault(a => a.AccountNumber == accountId);
+            Account account = accounts.FirstOrDefault(a => a.AccountNumber == accountNumber);
             if (account != null)
             {
-                account.Balance += amount;
+                account.Balance += depositAmount;
                 CheckBalance(account);
-                status = true;
+                isDepositSuccessful = true;
                 accountsRepository.SaveAllAccounts(accounts);
             }
-            return status;
+            return isDepositSuccessful;
         }
 
-        public bool Withdraw(string accountId, double amount)
+        public bool Withdraw(string accountNumber, double withdrawAmount)
         {
-            bool status = false;
+            bool isWithdrawSuccessful = false;
             List<Account> accounts = accountsRepository.GetAllAccounts();
-            Account account = accounts.FirstOrDefault(a => a.AccountNumber == accountId);
+            Account account = accounts.FirstOrDefault(a => a.AccountNumber == accountNumber);
             if (account != null)
             {
-                if (amount > account.Balance)
+                if (withdrawAmount > account.Balance)
                 {
-                    status = false;
+                    isWithdrawSuccessful = false;
                 }
                 else
                 {
-                    account.Balance -= amount;
+                    account.Balance -= withdrawAmount;
                     CheckBalance(account);
-                    status = true;
+                    isWithdrawSuccessful = true;
                     accountsRepository.SaveAllAccounts(accounts);
                 }
             }
-            return status;
+            return isWithdrawSuccessful;
 
         }
         
-        public bool FundTransfer(string fromAccountId, string toAccountId, double amount)
+        public bool FundTransfer(string fromAccountNumber, string toAccountNumber, double transferAmount)
         {
-            bool status = false;
+            bool isFundTransferSuccessful = false;
             
             List<Account> accounts = accountsRepository.GetAllAccounts();
           
-            Account fromAccount = accounts.FirstOrDefault(a => a.AccountNumber == fromAccountId);
-            Account toAccount = accounts.FirstOrDefault(a => a.AccountNumber == toAccountId);
+            Account fromAccount = accounts.FirstOrDefault(a => a.AccountNumber == fromAccountNumber);
+            Account toAccount = accounts.FirstOrDefault(a => a.AccountNumber == toAccountNumber);
             
             bool depositeStatus;
 
-            bool withdrawStatus=Withdraw(fromAccount.AccountNumber,amount);
+            bool withdrawStatus=Withdraw(fromAccount.AccountNumber, transferAmount);
 
            if (withdrawStatus)
             {
-                depositeStatus=Deposit(toAccount.AccountNumber, amount);
+                depositeStatus=Deposit(toAccount.AccountNumber, transferAmount);
                 if(!depositeStatus)
                 {
-                    Deposit(fromAccount.AccountNumber, amount);
+                    Deposit(fromAccount.AccountNumber, transferAmount);
                 }
                 if (withdrawStatus && depositeStatus)
                 {
-                    status = true;
+                    isFundTransferSuccessful = true;
                 }
             }
            
-            return status;
+            return isFundTransferSuccessful;
         }
     
          public bool CreateAccount(Account account)
@@ -110,10 +110,10 @@ namespace ActionListener.publishers
             return status;
         }
       
-         public Account GetAccount(string accountId)
+         public Account GetAccount(string accountNumber)
         {
             List<Account> accounts = accountsRepository.GetAllAccounts();
-            Account account = accounts.FirstOrDefault(a => a.AccountNumber == accountId);
+            Account account = accounts.FirstOrDefault(a => a.AccountNumber == accountNumber);
             if (account != null)
             {
                 return account;
@@ -152,37 +152,37 @@ namespace ActionListener.publishers
             listeners.Add(listener);
         }
 
-        public List<Operation> GetMiniStatement(string accountId)
+        public List<Transaction> GetMiniStatement(string accountNumber)
         {
-            List<Operation> miniStatement = new List<Operation>();
-            List<Operation> allOperations = operationsRepository.GetAllOperations();
+            List<Transaction> miniStatement = new List<Transaction>();
+            List<Transaction> transactionsHistory = transactionsRepository.LoadTransactions();
 
-            List<Operation> accountOperations = new List<Operation>();
-            accountOperations = allOperations
-                .Where(o => o.AccountNumber == accountId)
+            List<Transaction> accountTransactions = new List<Transaction>();
+            accountTransactions = transactionsHistory
+                .Where(o => o.AccountNumber == accountNumber)
                 .ToList();
 
 
-            for (int i= accountOperations.Count-5;i< accountOperations.Count;i++)
+            for (int i= accountTransactions.Count-5;i< accountTransactions.Count;i++)
             {
-                miniStatement.Add(accountOperations[i]);
+                miniStatement.Add(accountTransactions[i]);
             }
             return miniStatement;
         }
 
-        private double Calculate(List<Operation> accountOperations)
+        private double Calculate(List<Transaction> accountOperations)
         {
-            Operation firstOperation = new Operation();
-            Operation secondOperation = new Operation();
+            Transaction firstTransaction = new Transaction();
+            Transaction secondTransaction = new Transaction();
             double totalInterestNow = 0;
 
-            firstOperation = accountOperations[0];
+            firstTransaction = accountOperations[0];
 
             double finalInterset = 0;
             for (int i = 1; i < accountOperations.Count(); i++)
             {
-                secondOperation = accountOperations[i];
-                TimeSpan consecutiveOperationsTimeSpan = secondOperation.OperationON - firstOperation.OperationON;
+                secondTransaction = accountOperations[i];
+                TimeSpan consecutiveOperationsTimeSpan = secondTransaction.TransactionDate - firstTransaction.TransactionDate;
 
                 double totalDays = consecutiveOperationsTimeSpan.TotalDays;
                 // Console.WriteLine("" + totalDays);
@@ -193,35 +193,35 @@ namespace ActionListener.publishers
                 double afterpower = Math.Pow(baseAmount, totalDays);
                 // Console.WriteLine(afterpower);
 
-                totalInterestNow = firstOperation.CurrentBalance * afterpower;
+                totalInterestNow = firstTransaction.CurrentBalance * afterpower;
                 // Console.WriteLine("" + totalInterestTillNow);
 
-                double interset = totalInterestNow - firstOperation.CurrentBalance;
+                double interset = totalInterestNow - firstTransaction.CurrentBalance;
                 finalInterset += interset;
-                firstOperation = secondOperation;
+                firstTransaction = secondTransaction;
 
             }
             return finalInterset;
         }
 
-        public double CalculateInterest(string accountId)
+        public double CalculateInterest(string accountNumber)
         {
-            List<Operation> allOperations = new List<Operation>();
-            
-           
+            List<Transaction> transactionsHistory = new List<Transaction>();
 
-            allOperations = operationsRepository.GetAllOperations();
+
+
+            transactionsHistory = transactionsRepository.LoadTransactions();
           
-            List<Operation> accountOperations=new List<Operation>();
-            accountOperations = allOperations
-                .Where(o => o.AccountNumber == accountId)
+            List<Transaction> accountTransactions=new List<Transaction>();
+            accountTransactions = transactionsHistory
+                .Where(o => o.AccountNumber == accountNumber)
                 .ToList();
 
-            bool userExist = accountOperations.Count > 0;
+            bool userExist = accountTransactions.Count > 0;
 
             if (userExist)
             {
-                double finalInterset=Calculate(accountOperations);
+                double finalInterset=Calculate(accountTransactions);
                 return finalInterset;
             
             }
@@ -233,9 +233,9 @@ namespace ActionListener.publishers
 
         public bool ApplyInterest()
         {
-            List<Operation> allOperations = new List<Operation>();
+            List<Transaction> transactionsHistory = new List<Transaction>();
             bool applyInterestStatus=false;
-            allOperations= operationsRepository.GetAllOperations();
+            transactionsHistory = transactionsRepository.LoadTransactions();
             List<Account> accounts = accountsRepository.GetAllAccounts();
             foreach (Account account in accounts)
             {
@@ -246,9 +246,9 @@ namespace ActionListener.publishers
                double balance=GetBalance(account.AccountNumber);
                 if (status)
                 {
-                    Operation newOperation = new Operation { AccountNumber = account.AccountNumber, Status = "I", StatusMessage = "Interest is deposited", OperationON = DateTime.Now, Amount = totalInterest, CurrentBalance = balance };
-                    allOperations.Add(newOperation);
-                    operationsRepository.SaveOpeations(allOperations);
+                    Transaction interestTransaction = new Transaction { AccountNumber = account.AccountNumber, TransactionStatus = "I", StatusMessage = "Interest is deposited", TransactionDate = DateTime.Now, Amount = totalInterest, CurrentBalance = balance };
+                    transactionsHistory.Add(interestTransaction);
+                    transactionsRepository.SaveTransactions(transactionsHistory);
                     applyInterestStatus=true;
                 }
                 else
@@ -258,5 +258,7 @@ namespace ActionListener.publishers
             }
             return applyInterestStatus;
         }
+
+  
     }
 }

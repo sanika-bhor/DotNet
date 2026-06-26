@@ -3,14 +3,14 @@
         "Name": "Ravi Tambade",
         "Email": "ravi.tambade@example.com",
         "AccountNumber": "ACC1001",
-        "Balance": 40140.5,
+        "Balance": 40306.11995223156,
         "CreatedOn": "2026-06-22T11:37:35.1455942+05:30"
     },
     {
         "Name": "Priya Sharma",
         "Email": "priya.sharma@example.com",
         "AccountNumber": "ACC1002",
-        "Balance": 60633.5,
+        "Balance": 60788.26313310274,
         "CreatedOn": "2026-06-22T11:37:35.1455942+05:30"
     },
     {

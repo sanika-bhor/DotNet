@@ -1,7 +1,6 @@
 A:\TAP\GitHub\DotNet\BankingAppWebApi\bin\Debug\net10.0\appsettings.Development.json
 A:\TAP\GitHub\DotNet\BankingAppWebApi\bin\Debug\net10.0\appsettings.json
 A:\TAP\GitHub\DotNet\BankingAppWebApi\bin\Debug\net10.0\Data\accounts.json
-A:\TAP\GitHub\DotNet\BankingAppWebApi\bin\Debug\net10.0\Data\operations.json
 A:\TAP\GitHub\DotNet\BankingAppWebApi\bin\Debug\net10.0\BankingAppWebApi.staticwebassets.endpoints.json
 A:\TAP\GitHub\DotNet\BankingAppWebApi\bin\Debug\net10.0\BankingAppWebApi.exe
 A:\TAP\GitHub\DotNet\BankingAppWebApi\bin\Debug\net10.0\BankingAppWebApi.deps.json
@@ -34,3 +33,4 @@ A:\TAP\GitHub\DotNet\BankingAppWebApi\obj\Debug\net10.0\refint\BankingAppWebApi.
 A:\TAP\GitHub\DotNet\BankingAppWebApi\obj\Debug\net10.0\BankingAppWebApi.pdb
 A:\TAP\GitHub\DotNet\BankingAppWebApi\obj\Debug\net10.0\BankingAppWebApi.genruntimeconfig.cache
 A:\TAP\GitHub\DotNet\BankingAppWebApi\obj\Debug\net10.0\ref\BankingAppWebApi.dll
+A:\TAP\GitHub\DotNet\BankingAppWebApi\bin\Debug\net10.0\Data\transactions.json

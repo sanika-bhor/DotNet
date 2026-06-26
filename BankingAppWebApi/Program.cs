@@ -7,71 +7,59 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
 builder.Services.AddScoped<IAccountsRepository,AccountsRepository>();
-builder.Services.AddScoped<IOperationsRepository,OperationsRepository>();
+builder.Services.AddScoped<ITransactionsRepository,TransactionsRepository>();
 builder.Services.AddScoped<INotificationService,SMSService>();
-builder.Services.AddScoped<AccountsDepartment>();
+builder.Services.AddScoped<AccountsDepartment>(); 
 
 var app = builder.Build();
-
-
 app.UseHttpsRedirection();
 
-// IAccountsRepository accountsRepository = new AccountsRepository();
-// IOperationsRepository operationsRespository = new OperationsRepository();
-// INotificationService smsService = new SMSService();
 
-// AccountsDepartment accountDepartment = new AccountsDepartment(smsService, accountsRepository, operationsRespository);
-
-app.MapGet("/GetBalance/{accno}", (string accno, AccountsDepartment accountDepartment) =>
+app.MapGet("/GetBalance/{accountNumber}", (string accountNumber, AccountsDepartment accountDepartment) =>
 {
-    double balance = accountDepartment.GetBalance(accno);
-    Account account = accountDepartment.GetAccount(accno);
-    if (balance > 0)
+    double currentBalance = accountDepartment.GetBalance(accountNumber);
+    Account account = accountDepartment.GetAccount(accountNumber);
+    if (currentBalance > 0)
     {
         return Results.Ok(new
         {
             Account = account,
-            Balance = balance
+            Balance = currentBalance
         });
     }
-
     return Results.NotFound("Account does not exist");
 
 });
 
-
-app.MapPost("/Withdraw/{accno}/Amount/{amount}", (string accno,double amount, AccountsDepartment accountDepartment,IOperationsRepository operationsRespository) =>
+app.MapPost("/Withdraw/{accountNumber}/Amount/{withdrawAmount}", (string accountNumber,double withdrawAmount, AccountsDepartment accountDepartment,ITransactionsRepository transactionsRespository) =>
 {
-    List<Operation> operations = operationsRespository.GetAllOperations();
-    bool status = accountDepartment.Withdraw(accno, amount);
-    double balance = accountDepartment.GetBalance(accno);
-    if (status)
+    List<Transaction> transactionHistory = transactionsRespository.LoadTransactions();
+    bool isWithdrawSucessful = accountDepartment.Withdraw(accountNumber, withdrawAmount);
+    double updatedBalance = accountDepartment.GetBalance(accountNumber);
+    if (isWithdrawSucessful)
     {
-        Operation newOperation = new Operation { AccountNumber = accno, Status = "D", StatusMessage = "ATM cash withdrawal.", OperationON = DateTime.Now, Amount = amount, CurrentBalance = balance };
-        operations.Add(newOperation);
-        operationsRespository.SaveOpeations(operations);
+        Transaction withdrawalTransaction = new Transaction { AccountNumber = accountNumber, TransactionStatus = "D", StatusMessage = "ATM cash withdrawal.", TransactionDate = DateTime.Now, Amount = withdrawAmount, CurrentBalance = updatedBalance };
+        transactionHistory.Add(withdrawalTransaction);
+        transactionsRespository.SaveTransactions(transactionHistory);
         return Results.Ok("withdraw amount succesfully");
     }
     else
     {
         return Results.NotFound("does not withdraw amount first check your balancet");
     }
-
 });
 
-
-
-app.MapPost("/Deposite/{accno}/Amount/{amount}", (string accno, double amount, AccountsDepartment accountDepartment, IOperationsRepository operationsRespository) =>
+app.MapPost("/Deposite/{accountNumber}/Amount/{depositAmount}", (string accountNumber, double depositAmount, AccountsDepartment accountDepartment, ITransactionsRepository transactionsRespository) =>
 {
-    List<Operation> operations = operationsRespository.GetAllOperations();
+    List<Transaction> transactionsHistory = transactionsRespository.LoadTransactions();
   
-    bool status = accountDepartment.Deposit(accno, amount);
-    double balance = accountDepartment.GetBalance(accno);
-    if (status)
+    bool isDepositeSucessful = accountDepartment.Deposit(accountNumber, depositAmount);
+    double updatedBalance = accountDepartment.GetBalance(accountNumber);
+    if (isDepositeSucessful)
     {
-        Operation newOperation = new Operation { AccountNumber = accno, Status = "C", StatusMessage = "Salary credited to account", OperationON = DateTime.Now, Amount = amount, CurrentBalance = balance };
-        operations.Add(newOperation);
-        operationsRespository.SaveOpeations(operations);
+        Transaction depositTransaction = new Transaction { AccountNumber = accountNumber, TransactionStatus = "C", StatusMessage = "Salary credited to account", TransactionDate = DateTime.Now, Amount = depositAmount, CurrentBalance = updatedBalance };
+        transactionsHistory.Add(depositTransaction);
+        transactionsRespository.SaveTransactions(transactionsHistory);
         return Results.Ok("deposite amount successfully");
     }
     else
@@ -81,22 +69,22 @@ app.MapPost("/Deposite/{accno}/Amount/{amount}", (string accno, double amount, A
 
 });
 
-app.MapPost("/FundTransfer/From/{fromaccno}/To/{toaccno}/Amount/{amount}", (string fromaccno,string toaccno, double amount, AccountsDepartment accountDepartment, IOperationsRepository operationsRespository) =>
+
+app.MapPost("/FundTransfer/From/{fromAccountNumber}/To/{toAccountNumber}/Amount/{transferAmount}", (string fromAccountNumber,string toAccountNumber, double transferAmount, AccountsDepartment accountDepartment, ITransactionsRepository transactionsRespository) =>
 {
-    List<Operation> operations = operationsRespository.GetAllOperations();
+    List<Transaction> transactionsHistory = transactionsRespository.LoadTransactions();
 
-    bool status = accountDepartment.FundTransfer(fromaccno, toaccno, amount);
+    bool isTransferSucessful = accountDepartment.FundTransfer(fromAccountNumber, toAccountNumber, transferAmount);
 
-
-    if (status)
+    if (isTransferSucessful)
     {
-        double fromAccountBalance = accountDepartment.GetBalance(fromaccno);
-        double toAccountBalance = accountDepartment.GetBalance(toaccno);
-        Operation newOperation1 = new Operation { AccountNumber = fromaccno, Status = "D", StatusMessage = "Fund transfer to " + toaccno, OperationON = DateTime.Now, Amount = amount, CurrentBalance = fromAccountBalance };
-        Operation newOperation2 = new Operation { AccountNumber = toaccno, Status = "C", StatusMessage = "Fund received from " + fromaccno, OperationON = DateTime.Now, Amount = amount, CurrentBalance = toAccountBalance };
-        operations.Add(newOperation1);
-        operations.Add(newOperation2);
-        operationsRespository.SaveOpeations(operations);
+        double fromAccountUpdatedBalance = accountDepartment.GetBalance(fromAccountNumber);
+        double toAccountUpdatedBalance = accountDepartment.GetBalance(toAccountNumber);
+        Transaction withdrawalTransaction = new Transaction { AccountNumber = fromAccountNumber, TransactionStatus = "D", StatusMessage = "Fund transfer to " + toAccountNumber, TransactionDate = DateTime.Now, Amount = transferAmount, CurrentBalance = fromAccountUpdatedBalance };
+        Transaction depositTransaction = new Transaction { AccountNumber = toAccountNumber, TransactionStatus = "C", StatusMessage = "Fund received from " + fromAccountNumber, TransactionDate = DateTime.Now, Amount = transferAmount, CurrentBalance = toAccountUpdatedBalance };
+        transactionsHistory.Add(withdrawalTransaction);
+        transactionsHistory.Add(depositTransaction);
+        transactionsRespository.SaveTransactions(transactionsHistory);
         return Results.Ok("fund transfer successfully");
     }
     else
@@ -107,10 +95,10 @@ app.MapPost("/FundTransfer/From/{fromaccno}/To/{toaccno}/Amount/{amount}", (stri
 });
 
 
-app.MapPost("/AddAccount", (Account account, AccountsDepartment accountDepartment) =>
+app.MapPost("/AddAccount", (Account newAccount, AccountsDepartment accountDepartment) =>
 {
-    bool status = accountDepartment.CreateAccount(account);
-    if (status)
+    bool isAccountCreated = accountDepartment.CreateAccount(newAccount);
+    if (isAccountCreated)
     {
         return Results.Ok("account created successfully");
     }
@@ -121,28 +109,39 @@ app.MapPost("/AddAccount", (Account account, AccountsDepartment accountDepartmen
 
 });
 
-
-app.MapGet("/Ministatement/{accno}", (string accno, AccountsDepartment accountDepartment) =>
+app.MapGet("/Ministatement/{accountNumber}", (string accountNumber, AccountsDepartment accountDepartment) =>
 {
-    List<Operation> miniStatement = accountDepartment.GetMiniStatement(accno);
+    List<Transaction> miniStatement = accountDepartment.GetMiniStatement(accountNumber);
     return Results.Ok(miniStatement);
 
 });
 
-
-app.MapGet("/CalculateInterest/{accno}", (string accno, AccountsDepartment accountDepartment, IOperationsRepository operationsRespository) =>
+app.MapPost("/CalculateInterest/{accountNumber}", (string accountNumber, AccountsDepartment accountDepartment, ITransactionsRepository transactionsRespository) =>
 {
-    List<Operation> operations = operationsRespository.GetAllOperations();
-    double totalInterest = accountDepartment.CalculateInterest(accno);
+    List<Transaction> transactionsHistory = transactionsRespository.LoadTransactions();
+    double totalInterest = accountDepartment.CalculateInterest(accountNumber);
 
-    bool status = accountDepartment.Deposit(accno, totalInterest);
+    bool isDepositeSucessful = accountDepartment.Deposit(accountNumber, totalInterest);
 
-    double balance = accountDepartment.GetBalance(accno);
-    if (status)
+    double updatedBalance = accountDepartment.GetBalance(accountNumber);
+    if (isDepositeSucessful)
     {
-        Operation newOperation = new Operation { AccountNumber = accno, Status = "I", StatusMessage = "Interest is deposited", OperationON = DateTime.Now, Amount = totalInterest, CurrentBalance = balance };
-        operations.Add(newOperation);
-        operationsRespository.SaveOpeations(operations);
+        Transaction newOperation = new Transaction { AccountNumber = accountNumber, TransactionStatus = "I", StatusMessage = "Interest is deposited", TransactionDate = DateTime.Now, Amount = totalInterest, CurrentBalance = updatedBalance };
+        transactionsHistory.Add(newOperation);
+        transactionsRespository.SaveTransactions(transactionsHistory);
+        return Results.Ok("Interest amount deposit successfully");
+    }
+    else
+    {
+        return Results.NotFound("Interest amount not deposit");
+    }
+});
+
+app.MapPost("/ApplyInterestForAll/", ( AccountsDepartment accountDepartment) =>
+{
+    bool applyInterestStatus = accountDepartment.ApplyInterest();
+    if (applyInterestStatus)
+    {
         return Results.Ok("Interest amount deposit successfully");
     }
     else

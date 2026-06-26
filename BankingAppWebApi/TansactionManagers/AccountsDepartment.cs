@@ -174,6 +174,7 @@ namespace ActionListener.publishers
         {
             Transaction firstTransaction = new Transaction();
             Transaction secondTransaction = new Transaction();
+              
             double totalInterestNow = 0;
 
             firstTransaction = accountOperations[0];
@@ -204,15 +205,14 @@ namespace ActionListener.publishers
             return finalInterset;
         }
 
-        public double CalculateInterest(string accountNumber)
+        public double  CalculateInterest(string accountNumber)
         {
             List<Transaction> transactionsHistory = new List<Transaction>();
-
-
 
             transactionsHistory = transactionsRepository.LoadTransactions();
           
             List<Transaction> accountTransactions=new List<Transaction>();
+
             accountTransactions = transactionsHistory
                 .Where(o => o.AccountNumber == accountNumber)
                 .ToList();

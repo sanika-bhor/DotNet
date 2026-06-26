@@ -69,7 +69,6 @@ app.MapPost("/Deposite/{accountNumber}/Amount/{depositAmount}", (string accountN
 
 });
 
-
 app.MapPost("/FundTransfer/From/{fromAccountNumber}/To/{toAccountNumber}/Amount/{transferAmount}", (string fromAccountNumber,string toAccountNumber, double transferAmount, AccountsDepartment accountDepartment, ITransactionsRepository transactionsRespository) =>
 {
     List<Transaction> transactionsHistory = transactionsRespository.LoadTransactions();
@@ -93,7 +92,6 @@ app.MapPost("/FundTransfer/From/{fromAccountNumber}/To/{toAccountNumber}/Amount/
     }
 
 });
-
 
 app.MapPost("/AddAccount", (Account newAccount, AccountsDepartment accountDepartment) =>
 {

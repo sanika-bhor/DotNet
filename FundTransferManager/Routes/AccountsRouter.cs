@@ -6,12 +6,12 @@ using TFLBank.models;
 using TFLBank.NotificationServices;
 using TFLBank.UIManagers;
 
-
 namespace TFLBank.Routes
 {
     public class AccountsRouter
     {
         int choice;
+
         IAccountsRepository accountsRepository = new AccountsRepository();
         IOperationsRepository operationsRespository = new OperationsRepository();
         INotificationService smsService = new SMSService();
@@ -20,12 +20,10 @@ namespace TFLBank.Routes
 
         public void BankingOperations()
         {
-            List<Account> accounts = accountsRepository.GetAllAccounts();
+    
             List<Operation> operations = operationsRespository.GetAllOperations();
-            AccountsDepartment accountDepartment = new AccountsDepartment(accounts, smsService, accountsRepository, operationsRespository);
-
-            accountDepartment.addListener(new AccountsHandler());
-            
+            AccountsDepartment accountDepartment = new AccountsDepartment(smsService, accountsRepository, operationsRespository);
+            accountDepartment.addListener(new AccountsHandler());            
             do
             {
                 ui.DisplayMenu();
@@ -100,7 +98,7 @@ namespace TFLBank.Routes
                             if (status)
                             {
                                 double fromAccountBalance = accountDepartment.GetBalance(fromAccount);
-                                double toAccountBalance = accountDepartment.GetBalance(fromAccount);
+                                double toAccountBalance = accountDepartment.GetBalance(toAccount);
                                 Operation newOperation1 = new Operation { AccountNumber = fromAccount, Status = "D", StatusMessage = "Fund transfer to " + toAccount, OperationON = DateTime.Now, Amount = amount, CurrentBalance = fromAccountBalance };
                                 Operation newOperation2 = new Operation { AccountNumber = toAccount, Status = "C", StatusMessage = "Fund received from " + fromAccount, OperationON = DateTime.Now, Amount = amount , CurrentBalance = toAccountBalance };
                                 operations.Add(newOperation1);

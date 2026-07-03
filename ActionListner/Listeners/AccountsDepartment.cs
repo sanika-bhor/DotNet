@@ -1,6 +1,6 @@
 namespace ActionListener.Listener
 {
-    public class AccountsDepartment : IActionListener
+    public class AccountsDepartment : AccountListener
     {
         public void onUnderBalance(double balance)
         {

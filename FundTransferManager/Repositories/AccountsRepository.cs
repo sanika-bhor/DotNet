@@ -7,7 +7,7 @@ namespace TFLBank.FileManager
     {
         public List<Account> GetAllAccounts()
         {
-            string fileName = @"A:\TAP\GitHub\DotNet\FundTransferManager\Data\accounts.json";
+            string fileName = @"./Data/accounts.json";
             string jsonString = File.ReadAllText(fileName);
             var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
             List<Account>? accounts = JsonSerializer.Deserialize<List<Account>>(jsonString, options);
@@ -17,7 +17,7 @@ namespace TFLBank.FileManager
         public bool SaveAllAccounts(List<Account> accounts)
         {
             bool status = false;
-            string fileName = @"A:\TAP\GitHub\DotNet\FundTransferManager\Data\accounts.json";
+            string fileName = @"./Data/accounts.json";
             var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
             string jsonString = JsonSerializer.Serialize(accounts, options);
             File.WriteAllText(fileName, jsonString);

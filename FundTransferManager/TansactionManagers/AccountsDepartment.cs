@@ -6,103 +6,79 @@ using TFLBank.FileManager;
 
 namespace ActionListener.publishers
 {
+ 
+    //Interface Saggrigation  Principle
+    
     public class AccountsDepartment : IDepositOperation, IWithdrawOperation, IFundTransferOperation, ICalculateInterestOperation, IApplyInterestOperation
     , ICreateAccountOperation,IMiniStatement
     {
 
-        public List<Account> accounts { get; set; }
-        
         private List<IAccountsHandler> listeners = new List<IAccountsHandler>();
         private INotificationService notificationService;
         private IAccountsRepository accountsRepository;
         private IOperationsRepository operationsRepository;
         private int InterestRate=7;
 
-        public AccountsDepartment(List<Account> account, INotificationService notificationService, IAccountsRepository accountsRepository, IOperationsRepository operationsRepository)
+        public AccountsDepartment( INotificationService notificationService, IAccountsRepository accountsRepository, IOperationsRepository operationsRepository)
         {
-            this.accounts = account;
             this.notificationService = notificationService;
             this.accountsRepository = accountsRepository;
             this.operationsRepository = operationsRepository;
         }
 
-
         public double GetBalance(string accountId)
         {
-            foreach (Account account in accounts)
-            {
-                if (account.AccountNumber == accountId)
-                {
-                    return account.Balance;
-                }
-            }
-            return 0;
+            //LINQ: Language Intergrated Query
+            List<Account> accounts = accountsRepository.GetAllAccounts();
+            return accounts.FirstOrDefault(account => account.AccountNumber == accountId)?.Balance ?? 0;
         }
-
 
         public bool Deposit(string accountId, double amount)
         {
             bool status = false;
-            foreach (Account account in accounts)
+            List<Account> accounts = accountsRepository.GetAllAccounts();
+            Account account = accounts.FirstOrDefault(a => a.AccountNumber == accountId);
+            if (account != null)
             {
-                if (account.AccountNumber == accountId)
-                {
-                    account.Balance += amount;
-                    CheckBalance(account);
-                    status = true;
-                    accountsRepository.SaveAllAccounts(accounts);
-                    break;
-                }
+                account.Balance += amount;
+                CheckBalance(account);
+                status = true;
+                accountsRepository.SaveAllAccounts(accounts);
             }
             return status;
         }
+
         public bool Withdraw(string accountId, double amount)
         {
-            bool status=false;
-            foreach (Account account in accounts)
+            bool status = false;
+            List<Account> accounts = accountsRepository.GetAllAccounts();
+            Account account = accounts.FirstOrDefault(a => a.AccountNumber == accountId);
+            if (account != null)
             {
-                if (account.AccountNumber == accountId)
+                if (amount > account.Balance)
+                {
+                    status = false;
+                }
+                else
                 {
                     account.Balance -= amount;
                     CheckBalance(account);
-                    if (account.Balance < 0)
-                    {
-                        status=false;
-                    }
-                    else
-                    {
-                        status=true;
-                        accountsRepository.SaveAllAccounts(accounts);
-                    }
-                    break;
+                    status = true;
+                    accountsRepository.SaveAllAccounts(accounts);
                 }
             }
-
             return status;
+
         }
         
         public bool FundTransfer(string fromAccountId, string toAccountId, double amount)
         {
             bool status = false;
-            Account fromAccount=new Account();
-            Account toAccount=new Account();
-            foreach(Account account in accounts)
-            {
-                if (account.AccountNumber == fromAccountId)
-                {
-                    fromAccount=account;
-                    break;
-                }
-            }
-
-            foreach (Account account in accounts)
-            {
-                if (account.AccountNumber == toAccountId)
-                {
-                    toAccount = account;
-                    break;
-                }
-            }
+            
+            List<Account> accounts = accountsRepository.GetAllAccounts();
+          
+            Account fromAccount = accounts.FirstOrDefault(a => a.AccountNumber == fromAccountId);
+            Account toAccount = accounts.FirstOrDefault(a => a.AccountNumber == toAccountId);
             
             bool depositeStatus;
 
@@ -127,6 +103,7 @@ namespace ActionListener.publishers
          public bool CreateAccount(Account account)
         {
             bool status=false;
+            List<Account> accounts = accountsRepository.GetAllAccounts();
             accounts.Add(account);
             accountsRepository.SaveAllAccounts(accounts);
             status =true;
@@ -135,15 +112,16 @@ namespace ActionListener.publishers
       
          public Account GetAccount(string accountId)
         {
-            foreach (Account account in accounts)
+            List<Account> accounts = accountsRepository.GetAllAccounts();
+            Account account = accounts.FirstOrDefault(a => a.AccountNumber == accountId);
+            if (account != null)
             {
-                if (account.AccountNumber == accountId)
-                {
-                    return account;
-                }
+                return account;
             }
+
             return null;
         }
+
         private void CheckBalance(Account account)
         {
 
@@ -176,55 +154,32 @@ namespace ActionListener.publishers
 
         public List<Operation> GetMiniStatement(string accountId)
         {
-            List<Operation> allOperations = new List<Operation>();
             List<Operation> miniStatement = new List<Operation>();
-           allOperations= operationsRepository.GetAllOperations();
-           int count=0;
-           
-           foreach(Operation operation in allOperations)
+            List<Operation> allOperations = operationsRepository.GetAllOperations();
 
+            List<Operation> accountOperations = new List<Operation>();
+            accountOperations = allOperations
+                .Where(o => o.AccountNumber == accountId)
+                .ToList();
+
+
+            for (int i= accountOperations.Count-5;i< accountOperations.Count;i++)
             {
-                if (operation.AccountNumber== accountId)
-                {
-                    miniStatement.Add(operation);
-                    count++;
-                    if(count==5)
-                    {
-                        break;
-                    }
-                }
+                miniStatement.Add(accountOperations[i]);
             }
-           return miniStatement;
+            return miniStatement;
         }
 
-        public double CalculateInterest(string accountId)
+        private double Calculate(List<Operation> accountOperations)
         {
-            List<Operation> allOperations = new List<Operation>();
-            bool userExist = false;
             Operation firstOperation = new Operation();
-            Operation secondOperation=new Operation();
-            double totalInterestNow=0;
-
-            allOperations = operationsRepository.GetAllOperations();
-          
-            List<Operation> accountOperations=new List<Operation>();
-
-            foreach (Operation operation in allOperations)
-            {
-                if (operation.AccountNumber == accountId)
-                {
-                    accountOperations.Add(operation);
-                    userExist=true;
-                }
-            }
-
-        if(userExist)
-        {
+            Operation secondOperation = new Operation();
+            double totalInterestNow = 0;
 
             firstOperation = accountOperations[0];
-         
-            double finalInterset=0;
-            for (int i=1;i< accountOperations.Count();i++)
+
+            double finalInterset = 0;
+            for (int i = 1; i < accountOperations.Count(); i++)
             {
                 secondOperation = accountOperations[i];
                 TimeSpan consecutiveOperationsTimeSpan = secondOperation.OperationON - firstOperation.OperationON;
@@ -232,7 +187,7 @@ namespace ActionListener.publishers
                 double totalDays = consecutiveOperationsTimeSpan.TotalDays;
                 // Console.WriteLine("" + totalDays);
 
-                double baseAmount= 1 + (InterestRate/100.0 / 365.0); //formula for calcuating  daily balance
+                double baseAmount = 1 + (InterestRate / 100.0 / 365.0); //formula for calcuating  daily balance
                 // Console.WriteLine(baseAmount);
 
                 double afterpower = Math.Pow(baseAmount, totalDays);
@@ -241,29 +196,53 @@ namespace ActionListener.publishers
                 totalInterestNow = firstOperation.CurrentBalance * afterpower;
                 // Console.WriteLine("" + totalInterestTillNow);
 
-                double interset=totalInterestNow- firstOperation.CurrentBalance;
-                finalInterset+= interset;
-                firstOperation =secondOperation;
+                double interset = totalInterestNow - firstOperation.CurrentBalance;
+                finalInterset += interset;
+                firstOperation = secondOperation;
+
             }
             return finalInterset;
         }
-        else
+
+        public double CalculateInterest(string accountId)
+        {
+            List<Operation> allOperations = new List<Operation>();
+            
+           
+
+            allOperations = operationsRepository.GetAllOperations();
+          
+            List<Operation> accountOperations=new List<Operation>();
+            accountOperations = allOperations
+                .Where(o => o.AccountNumber == accountId)
+                .ToList();
+
+            bool userExist = accountOperations.Count > 0;
+
+            if (userExist)
+            {
+                double finalInterset=Calculate(accountOperations);
+                return finalInterset;
+            
+            }
+            else
             {
                 return 0;
             }
         }
-
 
         public bool ApplyInterest()
         {
             List<Operation> allOperations = new List<Operation>();
             bool applyInterestStatus=false;
             allOperations= operationsRepository.GetAllOperations();
+            List<Account> accounts = accountsRepository.GetAllAccounts();
             foreach (Account account in accounts)
             {
                double totalInterest= CalculateInterest(account.AccountNumber);
-               Console.WriteLine(""+totalInterest);
+            
                 bool status= Deposit(account.AccountNumber, totalInterest);
+
                double balance=GetBalance(account.AccountNumber);
                 if (status)
                 {

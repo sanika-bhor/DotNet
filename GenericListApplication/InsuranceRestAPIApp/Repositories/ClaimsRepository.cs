@@ -1,6 +1,7 @@
 
 using MaxNewYorkInsurance.Models;
 using System.Text.Json;
+
 using TFLCollections;
 
 namespace MaxNewYorkInsurance.Repositories;
@@ -8,16 +9,16 @@ namespace MaxNewYorkInsurance.Repositories;
 public class ClaimsRepository
 {
     
-    public TFLList<Claim> GetAllRegisterClaim()
+    public TFLDoublyList<Claim> GetAllRegisterClaim()
     {
         string fileName = @"A:\TAP\GitHub\DotNet\insuranceapp\InsuranceRestAPIApp\InsuranceRestAPIApp\Data\claimrequests.json";
         string jsonString = File.ReadAllText(fileName);
         var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-        TFLList<Claim>? RegisterClaims = JsonSerializer.Deserialize<TFLList<Claim>>(jsonString, options);
+        TFLDoublyList<Claim>? RegisterClaims = JsonSerializer.Deserialize<TFLDoublyList<Claim>>(jsonString, options);
         return RegisterClaims;
     }
 
-    public bool SaveRegisterClaim(TFLList<Claim> claims)
+    public bool SaveRegisterClaim(TFLDoublyList<Claim> claims)
     {
         bool status = false;
         string fileName = @"A:\TAP\GitHub\DotNet\insuranceapp\InsuranceRestAPIApp\InsuranceRestAPIApp\Data\claimrequests.json";

@@ -1,5 +1,6 @@
 using MaxNewYorkInsurance.Models;
 using MaxNewYorkInsurance.Repositories;
+
 using TFLCollections;
 
 namespace MaxNewYorkInsurance.Departments;
@@ -9,8 +10,8 @@ public class CustomerServiceDepartment
     public void OnCustomerRegistered(Customer customer)
     {
         CustomerRepository customerRepository = new CustomerRepository();
-        TFLList<Customer> customers = customerRepository.GetAllCustomers();
-        customers.AddNodeEnd(customer);
+        TFLDoublyList<Customer> customers = customerRepository.GetAllCustomers();
+        customers.InsertAtLast(customer);
         customerRepository.SaveAllCustomers(customers);
 
         Console.WriteLine("====================================");

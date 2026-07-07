@@ -10,9 +10,9 @@ public class AccountsDepartment
     public void OnPolicyPurchased(Policy policy)
     {
         PolicyRepository policyRepository= new PolicyRepository();
-        TFLList<Policy> policyTFLList=policyRepository.GetAllPolicies();
-        policyTFLList.AddNodeEnd(policy);
-        policyRepository.SaveAllPolicies(policyTFLList);
+        TFLDoublyList<Policy> policyTFLDoublyList=policyRepository.GetAllPolicies();
+        policyTFLDoublyList.InsertAtLast(policy);
+        policyRepository.SaveAllPolicies(policyTFLDoublyList);
         
         Console.WriteLine("====================================");
         Console.WriteLine("Accounts Department");
@@ -25,15 +25,15 @@ public class AccountsDepartment
     {
         bool status=false;
         PolicyRepository policyRepository = new PolicyRepository();
-        TFLList<Policy> policyTFLList = policyRepository.GetAllPolicies();
+        TFLDoublyList<Policy> policyTFLDoublyList = policyRepository.GetAllPolicies();
       
-      foreach(Policy policy in policyTFLList)
+      foreach(Policy policy in policyTFLDoublyList)
         {
             if(policy.PolicyNumber == policyno)
             {
                 policy.Status = "Deactive";
                 status = true;
-                policyRepository.SaveAllPolicies(policyTFLList);
+                policyRepository.SaveAllPolicies(policyTFLDoublyList);
             }
         }
 
@@ -60,9 +60,9 @@ public class AccountsDepartment
     {
 
         PremiumRepository premiumRepository = new PremiumRepository();
-        TFLList<Premium> premiumTFLList = premiumRepository.GetAllPremimum();
-        premiumTFLList.AddNodeEnd(premium);
-        premiumRepository.SaveAllPremium(premiumTFLList);
+        TFLDoublyList<Premium> premiumTFLDoublyList = premiumRepository.GetAllPremimum();
+        premiumTFLDoublyList.InsertAtLast(premium);
+        premiumRepository.SaveAllPremium(premiumTFLDoublyList);
         Console.WriteLine("====================================");
         Console.WriteLine("Premium Payment Received");
         Console.WriteLine($"Policy Id      : {premium.PolicyId}");

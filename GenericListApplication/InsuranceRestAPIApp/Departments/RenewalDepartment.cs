@@ -11,7 +11,7 @@ public class RenewalDepartment
         bool isEligibleForRenewal = false;
 
         PolicyRepository policyRepository = new PolicyRepository();
-        TFLList<Policy> policies = policyRepository.GetAllPolicies();
+        TFLDoublyList<Policy> policies = policyRepository.GetAllPolicies();
 
         Console.WriteLine("====================================");
         Console.WriteLine("Renewal Department");

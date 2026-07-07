@@ -1,6 +1,7 @@
 
 using MaxNewYorkInsurance.Models;
 using System.Text.Json;
+
 using TFLCollections;
 
 namespace MaxNewYorkInsurance.Repositories;
@@ -8,23 +9,23 @@ namespace MaxNewYorkInsurance.Repositories;
 public class PolicyRepository
 {
     
-    public TFLList<Policy> GetAllPolicies()
+    public TFLDoublyList<Policy> GetAllPolicies()
     {
         string fileName = @"A:\TAP\GitHub\DotNet\insuranceapp\InsuranceRestAPIApp\InsuranceRestAPIApp\Data\policies.json";
         string jsonString = File.ReadAllText(fileName);
         var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-        // TFLList<Policy>? policies = JsonSerializer.Deserialize<TFLList<Policy>>(jsonString, options);
+        // TFLDoublyList<Policy>? policies = JsonSerializer.Deserialize<TFLDoublyList<Policy>>(jsonString, options);
         List<Policy> policies = JsonSerializer.Deserialize<List<Policy>>(jsonString, options);
-        TFLList<Policy> tPolicies =new TFLList<Policy>();
+        TFLDoublyList<Policy> tPolicies =new TFLDoublyList<Policy>();
         foreach(Policy thePolicy in policies)
         {
-            tPolicies.AddNodeEnd(thePolicy);
+            tPolicies.InsertAtLast(thePolicy);
         } 
         return tPolicies;
     }
 
 
-    public bool SaveAllPolicies(TFLList<Policy> policies)
+    public bool SaveAllPolicies(TFLDoublyList<Policy> policies)
     {
         bool status = false;
         string fileName = @"A:\TAP\GitHub\DotNet\insuranceapp\InsuranceRestAPIApp\InsuranceRestAPIApp\Data\policies.json";

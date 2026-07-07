@@ -12,14 +12,14 @@ public class ClaimDepartment
     {
         ClaimsRepository claimsRepository = new ClaimsRepository();
         PolicyRepository policyRepository = new PolicyRepository();
-        TFLList<Policy> policies = policyRepository.GetAllPolicies();
+        TFLDoublyList<Policy> policies = policyRepository.GetAllPolicies();
         bool status = false;
         foreach (Policy policy in policies)
         {
             if (policy.PolicyNumber == claim.PolicyNumber)
             {
-                TFLList<Claim> claims = claimsRepository.GetAllRegisterClaim();
-                claims.AddNodeEnd(claim);
+                TFLDoublyList<Claim> claims = claimsRepository.GetAllRegisterClaim();
+                claims.InsertAtLast(claim);
                 claimsRepository.SaveRegisterClaim(claims);
                 status = true;
                 break;
@@ -55,7 +55,7 @@ public class ClaimDepartment
     {
         bool status = false;
         ClaimsRepository claimsRepository = new ClaimsRepository();
-        TFLList<Claim> claims = claimsRepository.GetAllRegisterClaim();
+        TFLDoublyList<Claim> claims = claimsRepository.GetAllRegisterClaim();
 
         foreach (Claim claim2 in claims)
         {
@@ -95,7 +95,7 @@ public class ClaimDepartment
     {
         bool status = false;
         ClaimsRepository claimsRepository = new ClaimsRepository();
-        TFLList<Claim> claims = claimsRepository.GetAllRegisterClaim();
+        TFLDoublyList<Claim> claims = claimsRepository.GetAllRegisterClaim();
 
         foreach (Claim claim2 in claims)
         {
@@ -132,7 +132,7 @@ public class ClaimDepartment
     {
         bool status = false;
         ClaimsRepository claimsRepository = new ClaimsRepository();
-        TFLList<Claim> claims = claimsRepository.GetAllRegisterClaim();
+        TFLDoublyList<Claim> claims = claimsRepository.GetAllRegisterClaim();
 
         foreach (Claim claim2 in claims)
         {

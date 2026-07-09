@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("passwordverificafion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6dd468197ad1c8cd33c5f1561948e36e9c71da1d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d832fe2d75358c0f00716d18308437234d85d60")]
 [assembly: System.Reflection.AssemblyProductAttribute("passwordverificafion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("passwordverificafion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

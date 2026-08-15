@@ -4,8 +4,10 @@ using CSVFileIO.Entity;
 using DataHelper.Repository.Implementation;
 using DataHelper.Repository.Interface;
 
-Console.WriteLine("Hello, World!");
-
+#region   File Io CSV for Candidate
+// ---------------------------------------------------------------------------------------------------------
+// --------------------------- File Io CSV for Candidate---------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------
 FileIoRepository<Candidate> fileIoRepository = new FileIoRepository<Candidate>();
 FileIoService<Candidate> fileIoService = new FileIoService<Candidate>(fileIoRepository);
 
@@ -47,64 +49,78 @@ Console.WriteLine("");
 Console.WriteLine("");
 Console.WriteLine("");
 
-// Question newquestion = new Question
-// {
-//     Id = 3,
-//     Concept = "Inheritance",
-//     Subject = "C#",
-//     Title = "Which keyword is used to inherit a class in C#?",
-//     A = "implements",
-//     B = "extends",
-//     C = ":",
-//     D = "inherits",
-//     AnswerKey = "C",
-//     DifficultyLevel = "Easy",
-//     CreatedBy = "Admin"
-// };
-
-// List<Question> jsonquestions = fileIoService.ReadDataFromJSON("./Data/");
-// jsonquestions.Add(newquestion);
-// bool insertJsonQuestion = fileIoService.WriteDataToJSON(jsonquestions);
-// if (insertJsonQuestion)
-// {
-//     Console.WriteLine("Question inserted in json file");
-// }
-// else
-// {
-//     Console.WriteLine("Question not inserted in json file");
-// }
-// foreach (Question question in jsonquestions)
-// {
-//     Console.WriteLine(question.Id.ToString() + "," + question.Concept + "," + question.Subject + "," + question.Title + "," + question.A + "," + question.B + "," + question.C + "," + question.D + "," + question.AnswerKey + "," + question.DifficultyLevel + "," + question.CreatedBy);
-// }
-// Console.WriteLine("");
+#endregion
 
 
-// List<Question> newQuestions = new List<Question>();
-// newQuestions.Add(new Question(16, "MainMethod", "C#", "Main method is", "Optional", "Entry point", "Abstract", "Overloaded", "B", "Easy", "Admin"));
-// newQuestions.Add(new Question(17, "MainMethod", "C#", "Main method is", "Optional", "Entry point", "Abstract", "Overloaded", "B", "Easy", "Admin"));
+#region  File Io CSV for Admin NOtifications
+// ---------------------------------------------------------------------------------------------------------
+// --------------------------- File Io CSV for Admin NOtifications------------------------------------------
+// ---------------------------------------------------------------------------------------------------------
+FileIoRepository<AdminNotification> fileIoAdminNotificationRepository = new FileIoRepository<AdminNotification>();
+FileIoService<AdminNotification> fileIoAdminNotificationService = new FileIoService<AdminNotification>(fileIoAdminNotificationRepository);
 
-// bool status =fileIoService.WriteDataToCSV(newQuestions);
-// if(status)
-// {
-//     Console.WriteLine("questions added to the file");
-// }
-// else
-// {
-//     Console.WriteLine("questions not added to the file");
-// }
-
-
-// Console.WriteLine("");
-// if(fileIoService.InsertDataInDB())
-// {
-//     Console.WriteLine("data inserted into the database");
-// }
-// else
-// {
-//     Console.WriteLine("something went wrong");
-// }
+List<AdminNotification> adminNotifications = fileIoAdminNotificationService.ReadDataFromCSV("./Data/CSV/notifications/adminNotifications.csv", columns => new AdminNotification
+{
+    Id = int.Parse(columns[0]),
+    Title = columns[1],
+    Message = columns[2],
+    Type = columns[3],
+    Timestamp =columns[4],
+    Read=bool.Parse(columns[5])
+});
 
 
+adminNotifications.Add(new AdminNotification
+{
+    Id = 5,
+    Title = "New Assessment Available",
+    Message = "A new assessment has been assigned to 8 candidates. Please review the assessment details.",
+    Type = "info",
+    Timestamp = "Just now",
+    Read = false
+});
 
-// 
+fileIoAdminNotificationService.WriteDataToCSV("./Data/CSV/notifications/adminNotifications.csv", adminNotifications);
+foreach (AdminNotification adminNotification in adminNotifications)
+{
+    Console.WriteLine(adminNotification.ToString());
+}
+
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+#endregion
+
+
+#region  File Io Json for Skill Requirement
+// ---------------------------------------------------------------------------------------------------------
+// --------------------------- File Io Json for Skill Requirement-------------------------------------------
+// ---------------------------------------------------------------------------------------------------------
+FileIoRepository<SkillRequirement> fileIoSkillRequirementRepository = new FileIoRepository<SkillRequirement>();
+FileIoService<SkillRequirement> fileIoSkillRequirementService = new FileIoService<SkillRequirement>(fileIoSkillRequirementRepository);
+
+List<SkillRequirement> skillRequirements = fileIoSkillRequirementRepository.ReadDataFromJSON("./Data/JSON/skills/skillrequirements.json");
+
+
+skillRequirements.Add( new SkillRequirement
+ {
+     Skill = "Machine Learning",
+     RequiredLevel = "advanced",
+     CandidatesCovered = 2,
+     TotalRequired = 4,
+     FillPercentage = 50
+ });
+
+fileIoSkillRequirementRepository.WriteDataToJSON("./Data/JSON/skills/skillrequirements.json", skillRequirements);
+foreach (SkillRequirement skillRequirement in skillRequirements)
+{
+    Console.WriteLine(skillRequirement.ToString());
+}
+
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+
+#endregion 

@@ -53,31 +53,8 @@ namespace DataHelper.Repository.Implementation
 
             return data;
         }
-        // public bool WriteDataToCSV(string _file,List<T> tObj)
-        // {
-        //     bool status = false;
-        //     try
-        //     {
-        //         using (StreamWriter streamWriter = new StreamWriter(_file, true))
-        //         {
-        //             foreach (T obj in tObj)
-        //             {
-        //                 streamWriter.WriteLine(obj.ToString());
-        //                 status = true;
-        //             }
-        //         }
-        //     }
-        //     catch (Exception e)
-        //     {
-        //         Console.WriteLine(e.Message);
-        //     }
-        //     return status;
-        // }
 
-
-        public bool WriteDataToCSV(
-                   string file,
-                   List<T> tobj)
+        public bool WriteDataToCSV( string file, List<T> tobj)
         {
             try
             {
@@ -115,16 +92,28 @@ namespace DataHelper.Repository.Implementation
             }
         }
 
-        public List<T> ReadDataFromJSON(string _file)
+        public List<T> ReadDataFromJSON(string file)
         {
-            string json = File.ReadAllText(_file);
+            try
+            {
+                string json = File.ReadAllText(file);
 
-            List<T> tobj =
-                JsonSerializer.Deserialize<List<T>>(json);
+                JsonSerializerOptions options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                };
 
-            return tobj;
+                List<T>? data =
+                    JsonSerializer.Deserialize<List<T>>(json, options);
+
+                return data ?? new List<T>();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return new List<T>();
+            }
         }
-
 
     }
 }

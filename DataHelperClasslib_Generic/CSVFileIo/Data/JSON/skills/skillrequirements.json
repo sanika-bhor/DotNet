@@ -1,30 +1,37 @@
- [
-    {
-      "skill": "React Development",
-      "requiredLevel": "advanced",
-      "candidatesCovered": 3,
-      "totalRequired": 5,
-      "fillPercentage": 60
-    },
-    {
-      "skill": "Backend Development (Java/Python)",
-      "requiredLevel": "advanced",
-      "candidatesCovered": 4,
-      "totalRequired": 4,
-      "fillPercentage": 100
-    },
-    {
-      "skill": "Cloud Architecture (AWS)",
-      "requiredLevel": "intermediate",
-      "candidatesCovered": 2,
-      "totalRequired": 3,
-      "fillPercentage": 67
-    },
-    {
-      "skill": "DevOps & Infrastructure",
-      "requiredLevel": "advanced",
-      "candidatesCovered": 1,
-      "totalRequired": 3,
-      "fillPercentage": 33
-    }
-  ]
+[
+  {
+    "Skill": "React Development",
+    "RequiredLevel": "advanced",
+    "CandidatesCovered": 3,
+    "TotalRequired": 5,
+    "FillPercentage": 60
+  },
+  {
+    "Skill": "Backend Development (Java/Python)",
+    "RequiredLevel": "advanced",
+    "CandidatesCovered": 4,
+    "TotalRequired": 4,
+    "FillPercentage": 100
+  },
+  {
+    "Skill": "Cloud Architecture (AWS)",
+    "RequiredLevel": "intermediate",
+    "CandidatesCovered": 2,
+    "TotalRequired": 3,
+    "FillPercentage": 67
+  },
+  {
+    "Skill": "DevOps \u0026 Infrastructure",
+    "RequiredLevel": "advanced",
+    "CandidatesCovered": 1,
+    "TotalRequired": 3,
+    "FillPercentage": 33
+  },
+  {
+    "Skill": "Machine Learning",
+    "RequiredLevel": "advanced",
+    "CandidatesCovered": 2,
+    "TotalRequired": 4,
+    "FillPercentage": 50
+  }
+]
